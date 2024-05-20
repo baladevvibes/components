@@ -1,0 +1,55 @@
+/* Jost */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Acme */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Merienda */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+/* Freeman */
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+/* raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.raleway-font{
+  font-family: "Raleway", sans-serif;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+}
+
+.dm-sans-font{
+  font-family: "DM Sans", sans-serif;
+}
+
+.jost-font {
+  font-family: "Jost", sans-serif;
+}
+
+.freeman-font {
+  font-family: "Freeman", sans-serif;
+}
+
+.merienda-font{
+    font-family: "Merienda", cursive;
+
+}
+
+.acme-font {
+    font-family: "Acme", sans-serif;
+}
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+.pt-sans-narrow-regular-font {
+  font-family: "PT Sans Narrow", sans-serif;
+}

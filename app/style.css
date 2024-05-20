@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* Jost */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Acme */
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+/* Merienda */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+/* Freeman */
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+
+/* raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  /* background-color: rgb(255 255 255); */
+  font-family: "DM Sans", sans-serif;
+}
+
+.title-font {
+  font-family: "Exo 2", sans-serif;
+}
+
+.drop-css {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+}
+
+.mtk8,
+.mtk1,
+.mtk2 .mtk3,
+.mtk4,
+.mtk5 {
+  color: #569cd6 !important;
+}
+.mtk1 {
+  color: #569cd6;
+}
+.invisible {
+  z-index: 1!important;
+}
