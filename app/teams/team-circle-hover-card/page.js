@@ -32,6 +32,7 @@ export default function Teams001() {
   const [code, setCode] = useState(false);
   const [copy, setCopy] = useState(false);
   const [fileName, setFileName] = useState("app.js");
+  const [responsiveState,setResponsiveState]= useState(false)
 
   const [forceRender, setForceRender] = useState(false);
   const files = {
@@ -79,6 +80,7 @@ export default function Teams001() {
   };
 
   const handleScreen = (size) => {
+    setResponsiveState(true)
     if (size === "sm") {
       setSmScreen(true);
       setMdScreen(false);
@@ -435,7 +437,7 @@ export default function Teams001() {
                         mdScreen ? `grid-cols-2 gap-16 py-32 h-[100vh]` : ``
                       } ${lgScreen ? `grid-cols-2 gap-16 py-32 ` : ``}  ${
                         xlScreen ? `grid-cols-4 gap-6  py-32  h-[100vh]` : ``
-                      }  sm:gap-16 lg:px-2 lge:px-2 md:px-2 mdsm:px-2 sm:px-2`}
+                      } ${responsiveState ? `` : `sm:grid-cols-1 md:grid-cols-2 mdsm:grid-cols-2 lg:grid-cols-4 lge:grid-cols-4` }  sm:gap-16 lg:px-2 lge:px-2 md:px-2 mdsm:px-2 sm:px-2`}
                     >
                       <div className={`group  relative`}>
                         <div className={` -top-12 left-[34%]  absolute`}>
