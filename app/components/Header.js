@@ -43,7 +43,7 @@ export default function Header() {
         </div>
         <div className={`bg-primary`}>
           <div className={` container mx-auto px-2 py-1`}>
-            <div className={` overflow-auto flex space-x-2`}>
+            {/* <div className={` overflow-auto flex space-x-2`}>
               <button
                 className={`py-0.2 px-2 font-semibold bg-white rounded-md text-sm`}
               >
@@ -84,7 +84,7 @@ export default function Header() {
               >
                 Footer
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

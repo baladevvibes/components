@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "../../font.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import aboutData from "../aboutData";
+import cardData from "../cardData";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
 import AOS from "aos";
@@ -24,7 +24,7 @@ const myCustomTheme = {
   },
 };
 
-export default function Hero001() {
+export default function Teams001() {
   const [smScreen, setSmScreen] = useState(false);
   const [mdScreen, setMdScreen] = useState(false);
   const [lgScreen, setLgScreen] = useState(false);
@@ -32,6 +32,7 @@ export default function Hero001() {
   const [code, setCode] = useState(false);
   const [copy, setCopy] = useState(false);
   const [fileName, setFileName] = useState("app.js");
+  const [responsiveState, setResponsiveState] = useState(false);
 
   const [forceRender, setForceRender] = useState(false);
   const files = {
@@ -39,7 +40,7 @@ export default function Hero001() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: aboutData[0]?.htmlcode,
+      value: cardData[0]?.htmlcode,
     },
     "style.css": {
       _id: 1,
@@ -79,6 +80,7 @@ export default function Hero001() {
   };
 
   const handleScreen = (size) => {
+    setResponsiveState(true);
     if (size === "sm") {
       setSmScreen(true);
       setMdScreen(false);
@@ -112,11 +114,11 @@ export default function Hero001() {
       <Header />
       <div className={`pt-[100px] container mx-auto`}>
         <ComponentsHeader
-          title={`Gallery frame About us`}
+          title={`Offer wise card section`}
           des={`This component create using CSS framework tailwindcss. It fully
               responsive component.`}
-          section_name={`Hero`}
-          using_font="dm-sans, freeman"
+          section_name={`Card`}
+          using_font="Freeman"
         />
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-t-lg  px-4">
@@ -247,7 +249,7 @@ export default function Hero001() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/about/gallery-frame-aboutus/preview" target="_blank">
+                  <a href="/card/offer-wise-card-section/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -410,7 +412,7 @@ export default function Hero001() {
                 <div
                   className={` ${
                     smScreen
-                      ? `  w-[640px] h-auto overflow-auto mx-auto   `
+                      ? `  w-[640px] h-auto overflow-auto mx-auto   px-20 `
                       : `${
                           mdScreen
                             ? `  w-[780px] h-auto overflow-auto mx-auto`
@@ -422,48 +424,90 @@ export default function Hero001() {
                         }`
                   } `}
                 >
-                   <section className={` h-[80vh]`}>
-      <div className={` container mx-auto py-24`}>
-        <div className={` grid grid-cols-12 gap-10 sm:gap-0 sm:px-2`}>
-          <div
-            className={`${xlScreen ? `col-span-5` :` `} ${lgScreen? ` col-span-12` : ``} ${mdScreen ? ` col-span-12` :``} ${smScreen ? `col-span-12` : ``}  p-10 sm:p-6 relative`}
-          >
-            <div
-              className={` absolute h-36 w-36 sm:top-0 sm:left-0 -z-10 top-4 left-4 bg-[#009e4f]`}
-            ></div>
-            <div
-              className={` absolute h-36 w-36 sm:right-0 sm:bottom-0 -z-10 bottom-4 right-4 bg-[#009e4f]`}
-            ></div>
+                  <div className={` container mx-auto py-20  h-[80vh] overflow-auto `}>
+                    <section>
+                      <div
+                        className={` grid ${xlScreen ?  `grid-cols-5`:``}  ${lgScreen ?  `grid-cols-2`:``}  ${mdScreen ?  `grid-cols-2`:``} ${smScreen ? `sm:grid-cols-1` : ``}  ${responsiveState ? `` :`lg:grid-cols-5 lge:grid-cols-5 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1`}  gap-2 p-2`}
+                      >
+                        <div className={` col-span-2  ${smScreen ? ` col-span-3` : ``}`}>
+                          <div className={` group relative `}>
+                            <div
+                              className={` cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 `}
+                            >
+                              <div className={` group-hover:block hidden`}>
+                                <div
+                                  className={` freeman-font transition delay-300  tracking-wide text-6xl text-[#fff]  `}
+                                >
+                                  New York
+                                </div>
+                              </div>
+                            </div>
+                            <img
+                              src={`https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                              className={` object-cover h-[400px] ${smScreen ? `w-full`: ``}  sm:w-full w-full`}
+                              alt="New York"
+                            />
+                          </div>
+                        </div>
+                        <div className={` col-span-3 h-full gap-2 `}>
+                          <div
+                            className={` ${xlScreen ?  `h-[40%]` : ``} ${mdScreen ?  `h-[400px] ` : ``} ${lgScreen ? `h-[400px] ` : ``}  ${smScreen ? `h-[400px] ` :``} ${responsiveState ? `` : `lg:h-[40%] lge:h-[40%] md:h-[400px] mdsm:h-[400px] sm:h-[400px]`}  relative group bg-[url('https://images.pexels.com/photos/1721747/pexels-photo-1721747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] overflow-hidden bg-primary  bg-hero bg-no-repeat bg-cover bg-center `}
+                          >
+                            <div className=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
+                              <div className={` group-hover:block hidden`}>
+                                <div
+                                  className={` uppercase freeman-font transition delay-300  tracking-wide text-6xl text-[#fff]  `}
+                                >
+                                  INDIA{" "}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className={` h-[58%] mt-2 overflow-hidden `}>
+                            <div className={` grid grid-cols-2 gap-2  h-full `}>
+                              <div className={`group relative h-full  `}>
+                                <img
+                                  src={`https://images.pexels.com/photos/2915957/pexels-photo-2915957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                                  alt=""
+                                  className={` h-full object-cover`}
+                                />
+                                <div
+                                  className={` cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 `}
+                                >
+                                  <div className={` group-hover:block hidden`}>
+                                    <div
+                                      className={` uppercase freeman-font transition delay-300  tracking-wide text-6xl text-[#fff]  `}
+                                    >
+                                      China{" "}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
-            <img
-              src={`https://images.pexels.com/photos/840719/pexels-photo-840719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-              className={`  ${xlScreen ? `h-[300px]` : ``} ${lgScreen ? `h-[450px]` : ``} ${mdScreen ?  `h-[450px]` : ``} ${smScreen ? `h-[350px]` : ``}  sm:w-full w-full object-cover`}
-            />
-          </div>
-          <div
-            className={` ${xlScreen ? `col-span-7` :` `} ${lgScreen? ` col-span-12` : ``} ${mdScreen ? ` col-span-12` :``} ${smScreen ? `col-span-12` : ``} px-0 md:px-2 mdsm:px-1`}
-          >
-            <h1
-              className={`  ${xlScreen ? `text-left pt-16` :` `} ${lgScreen? ` text-center pt-12` : ``} ${mdScreen ? ` text-center pt-4` :``} ${smScreen ? ` text-center pt-4` : ``}   text-4xl text-[#009e4f] freeman-font`}
-            >
-              About us{" "}
-            </h1>
-            <p className={`pt-4 dm-sans-font text-base text-[#5a5a5a]`}>
-              Welcome to <b>Traveller GHJ,</b> where we craft unforgettable
-              journeys across the United States. With a passion for exploration
-              and a commitment to exceptional service, we strive to create
-              unique travel experiences that inspire, delight, and create
-              lasting memories for our clients. From iconic landmarks to hidden
-              gems, our expert team curates every aspect of your journey,
-              ensuring seamless logistics and personalized touches. Join us on a
-              voyage of discovery, as we explore the rich tapestry of cultures,
-              landscapes, and adventures that await across this remarkable
-              nation."
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+                              <div className={` group relative h-full`}>
+                                <img
+                                  src={`https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                                  alt=""
+                                  className={` h-full object-cover`}
+                                />
+                                <div
+                                  className={` cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 `}
+                                >
+                                  <div className={` group-hover:block hidden`}>
+                                    <div
+                                      className={` uppercase freeman-font transition delay-300  tracking-wide text-6xl text-[#fff]  `}
+                                    >
+                                      Paris{" "}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
                 </div>
               </>
             )}
