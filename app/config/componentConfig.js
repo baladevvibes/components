@@ -29,6 +29,9 @@ const componentConfig =[
           plugins: [],
         }
         `,
+
+
+        
     }
 ]
 

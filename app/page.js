@@ -12,7 +12,6 @@ export default function Home() {
     <main>
       <div className={` `}>
         <Header />
-
         <div className={`pt-[150px] container mx-auto py-6`}>
           <div className={` grid grid-cols-3 gap-10`}>
             {HomeComponents?.map((v, i) => {
