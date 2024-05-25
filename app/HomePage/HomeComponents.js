@@ -29,6 +29,13 @@ const HomeComponents = [
         tag:"Card",
         link:"/card/offer-wise-card-section/",
     },
+    {
+        _id:"005",
+        image:"./Image/card/card002.webp",
+        title:"Three Grid card Template",
+        tag:"Card",
+        link:"/card/three-grid-card-template",
+    },
    
 ]
 
