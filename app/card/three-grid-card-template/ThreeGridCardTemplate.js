@@ -283,7 +283,7 @@ export default function ThreeGridCardTemplate() {
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
                   <a
-                    href="/teams/team-circle-hover-card/preview"
+                    href="/card/three-grid-card-template/preview"
                     target="_blank"
                   >
                     <div className={` group`}>

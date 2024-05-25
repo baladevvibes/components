@@ -13,12 +13,12 @@ export const metadata = {
     siteName: "www.makecomponents.com",
     images: [
       {
-        url: "https://nextjs.org/og.png", // Must be an absolute URL
+        url: "https://www.makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://nextjs.org/og-alt.png", // Must be an absolute URL
+        url: "https://www.makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: "Three Grid card Template",
