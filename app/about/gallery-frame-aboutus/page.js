@@ -320,6 +320,7 @@ export default function Hero001() {
                       </svg>
                     </div>
                     <p className={` text-sm text-center `}> copy</p>
+                    
                     {copy ? (
                       <div
                         data-aos="fade-up"
