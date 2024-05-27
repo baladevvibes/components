@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import "../globals.css";
 import "../style.css";
@@ -12,17 +12,27 @@ export default function Header() {
   }, []);
   return (
     <div>
-      <div data-aos="fade-down" className={`z-10 fixed top-0 w-full bg-[#fff] py-2`}>
+      <div
+        data-aos="fade-down"
+        className={`z-10 fixed top-0 w-full bg-[#fff] py-2`}
+      >
         <div className={` container mx-auto`}>
           <div className={` grid grid-cols-2`}>
             <div>
               <div className=" flex">
-                <img src={`./Image/logo.png`} className={`h-[60px]`} />
-                <h1
-                  className={`title-font text-secondary font-semibold text-2xl px-2 mt-5 `}
-                >
-                  Make Components
-                </h1>
+                <a href="/">
+                  <img
+                    src={`https://www.makecomponents.com/Image/logo.png`}
+                    className={`h-[60px]`}
+                  />
+                </a>
+                <a href="/">
+                  <h1
+                    className={`title-font text-secondary font-semibold text-2xl px-2 mt-5 `}
+                  >
+                    Make Components
+                  </h1>
+                </a>
               </div>
             </div>
             <div className={`pt-7 flex justify-end space-x-6`}>

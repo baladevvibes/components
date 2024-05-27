@@ -83,7 +83,7 @@ const cardData = [
       title:"Three Grid card Template",
       des:"This component create using CSS framework tailwindcss. It full responsive component. This template used for card section",
       section:"Card",
-      image:"./Image/card/card002.webp",
+      image:"../../Image/card/card002.webp",
       slug:"three-grid-card-template",
       link:"/card/three-grid-card-template",
       htmlcode:`<section class="container mx-auto py-24">

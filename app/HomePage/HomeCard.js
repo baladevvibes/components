@@ -12,7 +12,7 @@ export default function HomeCard({ title, img, tag, link }) {
   return (
     <div data-aos="fade-up">
       <Link href={link}>
-        <div className={`group cursor-pointer relative h-[350px] drop-css rounded-lg`}>
+        <div className={`group cursor-pointer relative  drop-css rounded-lg`}>
           <div
             className={`w-full rounded-t-lg overflow-hidden duration-700	 relative`}
           >

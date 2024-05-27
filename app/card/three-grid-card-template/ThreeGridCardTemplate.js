@@ -284,7 +284,7 @@ export default function ThreeGridCardTemplate() {
                 <div className={` flex space-x-5`}>
                   <a
                     href="/card/three-grid-card-template/preview"
-                    target="_blank"
+                    // target="_blank"
                   >
                     <div className={` group`}>
                       <div
@@ -310,7 +310,7 @@ export default function ThreeGridCardTemplate() {
                     </div>
                   </a>
                   <div className={` group`}>
-                    <a href={`/File/ThreeGridCardTemplate.html`} download="ThreeGridCardTemplate.html"> 
+                    <a href={`/File/card/ThreeGridCardTemplate.html`} download="ThreeGridCardTemplate.html"> 
 
                 
                     <div
@@ -367,7 +367,7 @@ export default function ThreeGridCardTemplate() {
                           file?._id === 2 ? `-left-24` : `-left-10`
                         }  drop-css  rounded-md text-sm bg-[#82bd69] py-1 px-3 text-[#13250e]  `}
                       >
-                        <div>{file?.name} </div>{" "}
+                      <div>{file?.name ==="app.js" ? "index.html" : <>{file?.name}</>} </div>{" "}
                         <div className={` px-1`}> Copied</div>{" "}
                       </div>
                     ) : null}
