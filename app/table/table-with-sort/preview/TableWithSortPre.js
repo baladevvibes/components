@@ -3,8 +3,6 @@ import React from 'react'
 export default function TableWithSortPre() {
   return (
     <div> 
-
-      
         <div className={` container mx-auto`}>
       <div className={` py-10 px-10`}>
         <div className=" sm:w-full overflow-auto">
