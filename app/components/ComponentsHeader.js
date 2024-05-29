@@ -15,7 +15,7 @@ export default function ComponentsHeader({
       }, []);
   return (
     <div>
-      <div data-aos="fade-up" className={` grid lge:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 py-4 sm:px-2`}>
+      <div data-aos="fade-up" className={` grid lge:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 py-4 `}>
         <div className={`py-6 px-4 drop-css rounded-lg `}>
           <h2 data-aos="fade-up" className={`title-font text-secondary text-2xl font-semibold`}>
             {title}

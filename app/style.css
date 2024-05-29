@@ -41,67 +41,67 @@
 
 
 * {
-  /* background-color: rgb(255 255 255); */
   font-family: "DM Sans", sans-serif;
 }
+
 .milonga-font{
-  font-family: "Milonga", serif;
+  font-family: "Milonga", serif!important;
 }
 
 .quicksand-font{
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif!important;
 
 }
 
 .plus-jakarta-sans-font{
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif!important;
 
 }
 .sedan-sc-font{
-  font-family: "Sedan SC", serif;
+  font-family: "Sedan SC", serif!important;
 }
 
 .passion-one-font{
-  font-family: "Passion One", sans-serif;
+  font-family: "Passion One", sans-serif!important
 }
 
 .title-font {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Exo 2", sans-serif!important;
 }
 .raleway-font{
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif!important;
 }
 
 .inter-font{
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif!important;
 }
 
 .dm-sans-font{
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif!important;
 }
 
 .jost-font {
-  font-family: "Jost", sans-serif;
+  font-family: "Jost", sans-serif!important;
 }
 
 .freeman-font {
-  font-family: "Freeman", sans-serif;
+  font-family: "Freeman", sans-serif!important;
 }
 
 .merienda-font{
-    font-family: "Merienda", cursive;
+    font-family: "Merienda", cursive!important;
 
 }
 
 .acme-font {
-    font-family: "Acme", sans-serif;
+    font-family: "Acme", sans-serif!important;
 }
 
 .poppins-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif!important;
 }
 .pt-sans-narrow-regular-font {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif!important;
 }
 
 .drop-css {

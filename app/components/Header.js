@@ -17,7 +17,7 @@ export default function Header() {
         className={`z-10 fixed top-0 w-full bg-[#fff] py-2`}
       >
         <div className={` container mx-auto`}>
-          <div className={` grid grid-cols-2`}>
+          <div className={` grid grid-cols-2 sm:grid-cols-1`}>
             <div>
               <div className=" flex">
                 <a href="/">
@@ -34,8 +34,9 @@ export default function Header() {
                   </h1>
                 </a>
               </div>
+
             </div>
-            <div className={`pt-7 flex justify-end space-x-6`}>
+            <div className={`pt-7 sm:hidden flex justify-end space-x-6`}>
               <div
                 className={`text-base cursor-pointer hover:text-primary text-secondary font-semibold`}
               >

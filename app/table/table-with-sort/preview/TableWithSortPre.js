@@ -53,10 +53,10 @@ export default function TableWithSortPre() {
                 </th>
                 <th className={`py-2  `}>
                   <div
-                    className={`sm:w-[150px] lg:w-auto lge:w-auto md:w-[100px] mdsm:w-w-[100px] flex px-2`}
+                    className={`  sm:w-[150px] lg:w-auto lge:w-[100px] md:w-[100px] mdsm:w-[150px] sm:text-xs    text-sm font-medium leading-4.3  flex px-2`}
                   >
                     <div
-                      className={`sm:text-xs   text-sm font-medium leading-4.3 `}
+                      className={` `}
                     >
                       Due Date{" "}
                     </div>

@@ -145,7 +145,7 @@ export default function GreenForestInfoTemplate() {
   return (
     <div className="bg-[rgb(255 255 255)]">
       <Header />
-      <div className={`pt-[100px] container mx-auto`}>
+      <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Green Forest Info Template`}
           des={`This component create using CSS framework tailwindcss. It full responsive component. This template used for Info section`}

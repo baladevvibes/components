@@ -7,7 +7,7 @@ export const metadata = {
   title: "Make Components",
   description: "This compoenets is easy and make a website",
   icons: {
-    icon: '/favicon.ico',
+    icon: 'https://www.makecomponents.com/favicon.ico',
   }
 };
 

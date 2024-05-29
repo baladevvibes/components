@@ -9,18 +9,9 @@ import ComponentsHeader from "../../components/ComponentsHeader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import cardData from "../../card/cardData";
-import InfoData from "../../info/InfoData";
+import tableData from "../TableData";
 
-// import "../../../public/HTML/ThreeGridCardTemplate.html"
-// import HTML from  "../three-grid-card-template/ThreeGridCardTemplate.html"
-import Link from "next/link";
 import HomeCard from "../../HomePage/HomeCard";
-
-// export const metadata = {
-//   title: "Contact Page",
-//   description: "Contact Page",
-// };
-
 const myCustomTheme = {
   base: "vs-dark",
   inherit: true,
@@ -57,7 +48,7 @@ export default function TableSort() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: InfoData[0]?.htmlcode,
+      value: tableData[0]?.htmlcode,
     },
     "style.css": {
       _id: 1,
@@ -145,13 +136,13 @@ export default function TableSort() {
   return (
     <div className="bg-[rgb(255 255 255)]">
       <Header />
-      <div className={`pt-[100px] container mx-auto`}>
+      <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Card Info Section Eight Grid`}
+          title={`Table with sort option`}
           des={`This component create using CSS framework tailwindcss. It fully
               responsive component.`}
-          section_name={`Info`}
-          using_font="Milonga Font"
+          section_name={`Table`}
+          using_font="DM Sans, sans-serif"
         />
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-lg pb-4  px-4">
@@ -283,7 +274,7 @@ export default function TableSort() {
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
                   <a
-                    href="/info/card-info-section-eight-grid/preview"
+                    href="/table/table-with-sort/preview"
                     // target="_blank"
                   >
                     <div className={` group`}>
@@ -311,8 +302,8 @@ export default function TableSort() {
                   </a>
                   <div className={` group`}>
                     <a
-                      href={`/File/info/CardInfoSectionEightGrid.html`}
-                      download="CardInfoSectionEightGrid.html"
+                      href={`/File/table/TableWithSortOption.html`}
+                      download="TableWithSortOption.html"
                     >
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -481,12 +472,24 @@ export default function TableSort() {
                                 className={`bg-[#e5f3ff] border border-t-[#e4ebff] border-b-[#e4ebff] border-r-[#fdfdfd00] border-l-[#fdfdfd00]`}
                               >
                                 <th
-                                  className={`${smScreen ?`py-4 `:``}  ${mdScreen ?`py-4` :``} ${responsiveState ? `` :` lg:w-auto lge:w-auto md:w-[60px] mdsm:w-w-[60px] sm:w-auto  lg:py-2 lge:py-2 md:py-4 mdsm:p-4  sm:py-4 `} flex text-sm font-medium leading-4.2 px-2 py-2 sm:text-xs`}
+                                  className={`${smScreen ? `py-4 ` : ``}  ${
+                                    mdScreen ? `py-4` : ``
+                                  } ${
+                                    responsiveState
+                                      ? ``
+                                      : ` lg:w-auto lge:w-auto md:w-[60px] mdsm:w-w-[60px] sm:w-auto  lg:py-2 lge:py-2 md:py-4 mdsm:p-4  sm:py-4 `
+                                  } flex text-sm font-medium leading-4.2 px-2 py-2 sm:text-xs`}
                                 >
                                   S.No
                                 </th>
                                 <th className={`py-2  `}>
-                                  <div className={` ${mdScreen ? `w-[300px]` : ``}  ${smScreen ? `w-[250px]` : ``} sm:w-[250px]  lg:auto lge:auto md:w-[300px] mdsm:w-[300px] flex px-2 `}>
+                                  <div
+                                    className={` ${
+                                      mdScreen ? `w-[300px]` : ``
+                                    }  ${
+                                      smScreen ? `w-[250px]` : ``
+                                    } sm:w-[250px]  lg:auto lge:auto md:w-[300px] mdsm:w-[300px] flex px-2 `}
+                                  >
                                     <div
                                       className={` sm:text-xs  text-sm font-medium leading-4.3 `}
                                     >
@@ -522,7 +525,13 @@ export default function TableSort() {
                                 </th>
                                 <th className={`py-2  `}>
                                   <div
-                                    className={`${mdScreen ? `w-[100px]` : ``}  ${smScreen ? `w-[150px]`: ``} ${responsiveState ? `` : `sm:w-[100px] lg:w-auto lge:w-auto md:w-[100px] mdsm:w-w-[100px]`}   flex px-2`}
+                                    className={`${
+                                      mdScreen ? `w-[100px]` : ``
+                                    }  ${smScreen ? `w-[150px]` : ``} ${
+                                      responsiveState
+                                        ? ``
+                                        : `sm:w-[150px] lg:w-auto lge:w-[100px] md:w-[100px] mdsm:w-[150px] sm:text-xs    text-sm font-medium leading-4.3  flex px-2`
+                                    }   flex px-2`}
                                   >
                                     <div
                                       className={`sm:text-xs   text-sm font-medium leading-4.3 `}

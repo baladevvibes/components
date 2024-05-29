@@ -146,7 +146,7 @@ export default function CardInfoSectionEightGrid() {
   return (
     <div className="bg-[rgb(255 255 255)]">
       <Header />
-      <div className={`pt-[100px] container mx-auto`}>
+      <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Card Info Section Eight Grid`}
           des={`This component create using CSS framework tailwindcss. It fully
@@ -465,7 +465,7 @@ export default function CardInfoSectionEightGrid() {
                         }`
                   } `}
                 >
-                   <section className={` container mx-auto py-24`}>
+                   <section className={`h-[80vh] container mx-auto py-24`}>
         <div
           className={`  grid ${xlScreen ? ` grid-cols-12` : ``} ${lgScreen ? ` grid-cols-12` : ``} ${smScreen ? `grid-cols-1 ` :``} ${mdScreen ? `grid-cols-12` : ``} ${responsiveState ? `` :`lg:grid-cols-12 lge:grid-cols-12 md:grid-cols-12 mdsm:grid-cols-12 sm:grid-cols-1` } `}
         >

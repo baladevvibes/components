@@ -50,6 +50,13 @@ const HomeComponents = [
         tag:"Info",
         link:"/info/card-info-section-eight-grid",
     },
+    {
+        _id:"007",
+        image:"./Image/table/table001.webp",
+        title:"Table with sort option",
+        tag:"Table",
+        link:"/table/table-with-sort",
+    },
    
 ]
 

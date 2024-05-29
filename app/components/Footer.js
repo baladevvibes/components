@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div
-      className={`mt-6 bg-secondary border border-[#ccc] border-l-0 border-r-0 border-b-0  py-4 `}
+      className={`mt-6 sm:px-4 bg-secondary border border-[#ccc] border-l-0 border-r-0 border-b-0  py-4 `}
     >
       <div className={`  container mx-auto`}>
         <div className={` grid grid-cols-2`}>
