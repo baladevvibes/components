@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from 'next/link';
 
 export default function HomeCard({ title, img, tag, link }) {
   useEffect(() => {
@@ -10,7 +11,7 @@ export default function HomeCard({ title, img, tag, link }) {
   }, []);
   return (
     <div data-aos="fade-up">
-      <a href={link}>
+      <Link href={link}>
         <div className={`group cursor-pointer relative  drop-css rounded-lg`}>
           <div
             className={`w-full rounded-t-lg overflow-hidden duration-700	 relative`}
@@ -37,7 +38,7 @@ export default function HomeCard({ title, img, tag, link }) {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

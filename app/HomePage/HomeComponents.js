@@ -23,11 +23,32 @@ const HomeComponents = [
         link:"/hero/hero-with-searchbar",
     },
     {
-        _id:"005",
+        _id:"004",
         image:"./Image/card/card001.webp",
         title:"Offer wise card section",
         tag:"Card",
         link:"/card/offer-wise-card-section/",
+    },
+    {
+        _id:"005",
+        image:"./Image/card/card002.webp",
+        title:"Three Grid card Template",
+        tag:"Card",
+        link:"/card/three-grid-card-template",
+    },
+    // {
+    //     _id:"006",
+    //     image:"./Image/card/card002.webp",
+    //     title:"Green Forest Info Template",
+    //     tag:"Info",
+    //     link:"/info/green-forest-info-template",
+    // },
+    {
+        _id:"006",
+        image:"./Image/info/info001.webp",
+        title:"Card Info Section Eight Grid",
+        tag:"Info",
+        link:"/info/card-info-section-eight-grid",
     },
    
 ]

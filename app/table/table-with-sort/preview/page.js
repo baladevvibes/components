@@ -1,228 +1,38 @@
 import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
-import { BsEye } from "react-icons/bs";
-import { FiEdit3 } from "react-icons/fi";
+import TableWithSortPre from "./TableWithSortPre";
 
-import { MdDeleteOutline } from "react-icons/md";
+export const metadata = {
+  title: "Table with sort",
+  description:
+    "This component create using CSS framework tailwindcss. It full responsive component. This template used for Table",
+    keywords:"Table,free components,free code, make components, make component",
+  openGraph: {
+    title: "Table with sort",
+    description: "This component create using CSS framework tailwindcss. It full responsive component. This template used for Table",
+    url: "https://www.makecomponents.com/table/table-with-sort/preview",
+    siteName: "www.makecomponents.com",
+    images: [
+      {
+        url: "https://www.makecomponents.com/Image/table/table001.webp", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://www.makecomponents.com/Image/table/table001.webp", // Must be an absolute URL
+        width: 800,
+        height: 600,
+        alt: "Table with sort",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function page() {
   return (
-    <div className={` container mx-auto`}>
-      <div className={` py-32 px-10`}>
-        <table className={` w-full`}>
-          <thead>
-            <tr
-              className={`bg-[#e5f3ff] border border-t-[#e4ebff] border-b-[#e4ebff] border-r-[#fdfdfd00] border-l-[#fdfdfd00]`}
-            >
-              <th className={` py-2 flex text-sm font-medium leading-4.2 px-2`}>
-                S.No
-              </th>
-              <th className={`py-2  `}>
-                <div className={` flex px-2 `}>
-                  <div className={` text-sm font-medium leading-4.3 `}>
-                    Invoice{" "}
-                  </div>
-                  <div className={`mt-0.5 `}>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z"></path>
-                    </svg>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
-                    </svg>
-                  </div>
-                </div>
-              </th>
-              <th className={`py-2  `}>
-                <div className={` flex px-2`}>
-                  <div className={` text-sm font-medium leading-4.3 `}>
-                    Due Date{" "}
-                  </div>
-                  <div className={`mt-0.5 `}>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z"></path>
-                    </svg>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
-                    </svg>
-                  </div>
-                </div>
-              </th>
-              <th className={`py-2  `}>
-                <div className={` flex px-2 `}>
-                  <div className={` text-sm font-medium leading-4.3 `}>
-                    Status
-                  </div>
-                  <div className={`mt-0.5 `}>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z"></path>
-                    </svg>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
-                    </svg>
-                  </div>
-                </div>
-              </th>
-              <th className={`py-2  `}>
-                <div className={` flex justify-end px-2`}>
-                  <div className={` text-sm font-medium leading-4.3 `}>
-                    Amount
-                  </div>
-                  <div className={`mt-0.5 `}>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z"></path>
-                    </svg>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      class="text-[#008cff] hover:text-[#0000ca] cursor-pointer text-[16px] mx-1 h-[8px] w-[14px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
-                    </svg>
-                  </div>
-                </div>
-              </th>
-              <th className={`py-2  w-[200px]  `}>
-                <div className={`flex px-2`}>
-                  <div className={` text-sm font-medium leading-4.2 `}>
-                    Actions{" "}
-                  </div>
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border border-b-[#ebebeb] border-t-[#fff] border-r-[#fff] border-l-[#fff]">
-              <td className="py-3 px-2  text-sm text-[#333]"> 001</td>
-              <td className="py-3 px-2  text-sm text-[#333] font-semibold">
-                TechCorp Solutions
-              </td>
-              <td className="py-3 px-2  text-sm text-[#333] ">22 Feb 2024</td>
-              <td className="py-3 px-2  text-sm text-[#333] ">
-                <div className="py-1 px-2 bg-[#b4ff8e] text-[#0b6c00] rounded-full w-16">
-                  Unpaid
-                </div>
-              </td>
-              <td className="py-3 px-4  text-right text-sm text-[#333] ">
-                $785.6
-              </td>
-              <td className="py-4 px-4  flex  space-x-12 text-sm text-[#333] ">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class=" text-[#008cff] hover:text-[#0000ca]  cursor-pointer delay-200 transition-all text-[16px]"
-                >
-                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"></path>
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"></path>
-                </svg>
-
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="text-[#444] hover:text-[#0b6c00]  cursor-pointer delay-200 transition-all text-[16px]"
-                >
-                  <path d="M12 20h9"></path>
-                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                </svg>
-
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  class="text-[#444] hover:text-[#c20000]  cursor-pointer delay-200 transition-all text-[18px]"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path fill="none" d="M0 0h24v24H0V0z"></path>
-                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5-1-1h-5l-1 1H5v2h14V4z"></path>
-                </svg>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+   <>
+   <TableWithSortPre/>
+   </>
   );
 }

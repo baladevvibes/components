@@ -3,35 +3,110 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 /* Jost */
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Acme */
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 /* Merienda */
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 /* Freeman */
-@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
 
 /* raleway */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* passion one */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Sedan */
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+/* Quicksand */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Milonga */
+
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+
 
 * {
   /* background-color: rgb(255 255 255); */
   font-family: "DM Sans", sans-serif;
 }
+.milonga-font{
+  font-family: "Milonga", serif;
+}
+
+.quicksand-font{
+  font-family: "Quicksand", sans-serif;
+
+}
+
+.plus-jakarta-sans-font{
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+.sedan-sc-font{
+  font-family: "Sedan SC", serif;
+}
+
+.passion-one-font{
+  font-family: "Passion One", sans-serif;
+}
 
 .title-font {
   font-family: "Exo 2", sans-serif;
+}
+.raleway-font{
+  font-family: "Raleway", sans-serif;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+}
+
+.dm-sans-font{
+  font-family: "DM Sans", sans-serif;
+}
+
+.jost-font {
+  font-family: "Jost", sans-serif;
+}
+
+.freeman-font {
+  font-family: "Freeman", sans-serif;
+}
+
+.merienda-font{
+    font-family: "Merienda", cursive;
+
+}
+
+.acme-font {
+    font-family: "Acme", sans-serif;
+}
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+.pt-sans-narrow-regular-font {
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .drop-css {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.raleway-font {
-  font-family: "Raleway", sans-serif;
 }
 
 .mtk8,
