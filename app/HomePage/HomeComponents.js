@@ -57,7 +57,6 @@ const HomeComponents = [
         tag:"Table",
         link:"/table/table-with-sort",
     },
-   
 ]
 
 export default HomeComponents
