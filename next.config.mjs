@@ -3,7 +3,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
+        source: "/about/gallery-frame-aboutus",
         has: [{ type: "host", value: "makecomponents.com" }],
         destination: "https://www.makecomponents.com/:path*",
         permanent: true,
