@@ -37,7 +37,7 @@ export default function Header() {
 
             </div>
             <div className={`pt-7 sm:hidden flex justify-end space-x-6`}>
-              <div
+              {/* <div
                 className={`text-base cursor-pointer hover:text-primary text-secondary font-semibold`}
               >
                 {" "}
@@ -48,7 +48,7 @@ export default function Header() {
               >
                 {" "}
                 Contact
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
