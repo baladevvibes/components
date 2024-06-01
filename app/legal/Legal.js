@@ -7,6 +7,7 @@ import Footer from "../components/Footer"
 export default function Legal() {
   return (
     <>
+    
   <Header/>
     <div className=" container mx-auto px-4">
       <div className="lg:pt-[400px] lge:pt-[400px] md:pt-[400px] mdsm:pt-[300px]  sm:pt-[250px] grid grid-cols-5">
