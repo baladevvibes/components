@@ -22,7 +22,7 @@ export default function ComponentsHeader({
           </h2>
           <p data-aos="fade-up" className={` text-textcolor pt-2`}>{des}</p>
 
-          <div data-aos="fade-up" className={`flex space-x-3 pt-6`}>
+          {/* <div data-aos="fade-up" className={`flex space-x-3 pt-6`}>
             <div className={` group`}>
               <div
                 className={` p-1.5  group-hover:bg-secondary  cursor-pointer border  rounded-md`}
@@ -79,7 +79,7 @@ export default function ComponentsHeader({
                 </svg>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div data-aos="fade-up" className={`text-secondary font-semibold text-base pt-4`}>
             Section : {section_name}
