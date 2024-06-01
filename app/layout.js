@@ -7,13 +7,18 @@ export const metadata = {
   title: "Make Components",
   description: "This compoenets is easy and make a website",
   icons: {
-    icon: 'https://www.makecomponents.com/favicon.ico',
-  }
+    icon: "https://www.makecomponents.com/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
+        crossorigin="anonymous"
+      ></script>
       <body className={inter.className}>{children}</body>
     </html>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../font.css";
+import "../../../style.css";
 
 
 export const metadata = {
