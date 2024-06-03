@@ -273,7 +273,7 @@ export default function GalleryFrameAboutUs() {
                     </div>
                   </a>
                   <div className={` group`}>
-                  <a href={`/File/about/GalleryFrameAboutus.html`} download="GalleryFrameAboutus.html"> 
+                  <a href={`../../../public/File/about/GalleryFrameAboutus.html`} download="GalleryFrameAboutus.html"> 
                     <div
                       className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
                     >
