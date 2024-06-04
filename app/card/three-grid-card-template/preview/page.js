@@ -10,16 +10,16 @@ export const metadata = {
   openGraph: {
     title: "Three Grid card Template",
     description: "This component create using CSS framework tailwindcss. It full responsive component. This template used for card section",
-    url: "https://www.makecomponents.com/card/three-grid-card-template/preview",
-    siteName: "www.makecomponents.com",
+    url: "https://makecomponents.com/card/three-grid-card-template/preview",
+    siteName: "makecomponents.com",
     images: [
       {
-        url: "https://www.makecomponents.com/Image/card/card003.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/card/card003.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://www.makecomponents.com/Image/card/card003.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/card/card003.webp", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: "Three Grid card Template",

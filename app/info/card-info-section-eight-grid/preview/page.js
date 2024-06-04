@@ -11,16 +11,16 @@ export const metadata = {
     openGraph: {
       title: "Card Info Section Eight Grid",
       description: "This component create using CSS framework tailwindcss. It full responsive component. This template used for info section",
-      url: "https://www.makecomponents.com/info/card-info-section-eight-grid/preview",
-      siteName: "www.makecomponents.com",
+      url: "https://makecomponents.com/info/card-info-section-eight-grid/preview",
+      siteName: "makecomponents.com",
       images: [
         {
-          url: "https://www.makecomponents.com/Image/info/info001.webp", // Must be an absolute URL
+          url: "https://makecomponents.com/Image/info/info001.webp", // Must be an absolute URL
           width: 800,
           height: 600,
         },
         {
-          url: "https://www.makecomponents.com/Image/info/info001.webp", // Must be an absolute URL
+          url: "https://makecomponents.com/Image/info/info001.webp", // Must be an absolute URL
           width: 800,
           height: 600,
           alt: "Card Info Section Eight Grid",

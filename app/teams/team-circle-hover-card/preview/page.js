@@ -10,16 +10,16 @@ export const metadata = {
     title: "Team Circle Hover Card Preview",
     description:
       "This component create using CSS framework tailwindcss. It full responsive component. This template used for Team section Preview",
-    url: "https://www.makecomponents.com/teams/team-circle-hover-card/preview",
-    siteName: "www.makecomponents.com",
+    url: "https://makecomponents.com/teams/team-circle-hover-card/preview",
+    siteName: "makecomponents.com",
     images: [
       {
-        url: "https://www.makecomponents.com/Image/teams/Teams001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/teams/Teams001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://www.makecomponents.com/Image/teams/Teams001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/teams/Teams001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: "Team Circle Hover Card",

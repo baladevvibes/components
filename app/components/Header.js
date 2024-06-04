@@ -22,7 +22,7 @@ export default function Header() {
               <div className=" flex">
                 <a href="/">
                   <img
-                    src={`https://www.makecomponents.com/Image/logo.png`}
+                    src={`https://makecomponents.com/Image/logo.png`}
                     className={`h-[60px]`}
                   />
                 </a>

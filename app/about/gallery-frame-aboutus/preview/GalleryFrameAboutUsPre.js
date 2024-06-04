@@ -11,16 +11,16 @@ export const metadata = {
       title: "Gallery frame About us Preview",
       description:
         "This component create using CSS framework tailwindcss. It full responsive component. This template used for About section Preview",
-      url: "https://www.makecomponents.com/about/gallery-frame-aboutus/preview",
-      siteName: "www.makecomponents.com",
+      url: "https://makecomponents.com/about/gallery-frame-aboutus/preview",
+      siteName: "makecomponents.com",
       images: [
         {
-          url: "https://www.makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
+          url: "https://makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
           width: 800,
           height: 600,
         },
         {
-          url: "https://www.makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
+          url: "https://makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
           width: 800,
           height: 600,
           alt: "Gallery frame About us",

@@ -30,6 +30,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+/* Bakbak */
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+
+/* Kalam */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 
 /* Quicksand */
 
@@ -50,6 +58,15 @@
 
 .quicksand-font{
   font-family: "Quicksand", sans-serif!important;
+
+}
+.bakbak-one-font{
+  font-family: "Bakbak One", sans-serif;
+
+}
+
+.kalam-font{
+  font-family: "Kalam", cursive;
 
 }
 

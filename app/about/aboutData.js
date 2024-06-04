@@ -23,6 +23,50 @@ const aboutData = [
           </div>
         </div>
       </section>`
-    }
+    },
+    {
+      _id:1,
+      name:"formal-about-section",
+      title:"Formal About Section",
+      des:"This component create using CSS framework tailwindcss. It fully responsive component. ",
+      section:"About",
+      slug:"formal-about-section",
+      htmlcode:`  <section class="container sm:px-4 mx-auto py-32">
+      <div
+        class="grid grid-cols-12 gap-16 sm:gap-0 lg:gap-16 lge:gap-16 md:gap-0 mdsm:gap-0"
+      >
+        <div
+          class="sm:col-span-12 lg:col-span-6 lge:col-span-6 md:col-span-full mdsm:col-span-full"
+        >
+          <div class="">
+            <img
+              src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="rounded-3xl w-full h-[400px] object-cover"
+            />
+          </div>
+        </div>
+        <div
+          class="sm:col-span-12 lg:col-span-6 lge:col-span-6 md:col-span-full mdsm:col-span-full"
+        >
+          <div>
+            <h2
+              class=" text-[#fab700] lg:text-left lge:text-left md:text-center mdsm:text-center sm:text-center text-5xl pt-16 font-semibold pb-4"
+            >
+              About us
+            </h2>
+            <p
+              class="w-[100%] pt-2 text-2xl text-[#333333] sm:w-full text-justify"
+            >
+              At Our Company, travel isn't just a trip, it's a transformative
+              experience. We are a team of passionate travel enthusiasts
+              dedicated to travel. From bustling cityscapes to hidden beaches,
+              we curate journeys that ignite your curiosity and leave you with
+              memories that last a lifetime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>`
+  }
 ]
 export default aboutData

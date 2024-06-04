@@ -5,9 +5,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Make Components",
-  description: "This compoenets is easy and make a website",
+  description: "Free Componenets for tailwind. This compoenets is easy and make a website",
   icons: {
-    icon: "https://www.makecomponents.com/favicon.ico",
+    icon: "./favicon.ico",
   },
 };
 

@@ -1,29 +1,28 @@
 import React from 'react'
-import GalleryFrameAboutUs from './GalleryFrameAboutUs'
-
+import FormalAboutSection from './FormalAboutSection'
 export const metadata = {
-  title: "Gallery frame About us",
+  title: "Formal About Section",
   description:
     "This component create using CSS framework tailwindcss. It full responsive component. This template used for About section",
   keywords:
     "about section,free components,free code, make components, make component",
   openGraph: {
-    title: "Gallery frame About us",
+    title: "Formal About Section",
     description:
       "This component create using CSS framework tailwindcss. It full responsive component. This template used for About section",
-    url: "https://makecomponents.com/about/gallery-frame-aboutus",
+    url: "https://makecomponents.com/about/formal-about-section",
     siteName: "makecomponents.com",
     images: [
       {
-        url: "https://makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/about/about002.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/about/about002.webp", // Must be an absolute URL
         width: 800,
         height: 600,
-        alt: "Gallery frame About us",
+        alt: "Formal About Section",
       },
     ],
     locale: "en_US",
@@ -31,8 +30,12 @@ export const metadata = {
   },
 };
 
+
 export default function page() {
   return (
-    <div><GalleryFrameAboutUs/></div>
+    <div>
+
+        <FormalAboutSection/>
+    </div>
   )
 }

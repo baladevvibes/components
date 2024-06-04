@@ -8,7 +8,7 @@ const nextConfig = {
   //       has: [
   //         {
   //           type: "host",
-  //           value: "www.makecomponents.com",
+  //           value: "makecomponents.com",
   //         },
   //       ],
   //       destination: "https://makecomponents.com/:path*",
@@ -27,7 +27,7 @@ const nextConfig = {
 //         has: [
 //           {
 //             type: 'host',
-//             value: 'www.makecomponents.com',
+//             value: 'makecomponents.com',
 //           },
 //         ],
 //         destination: 'https://makecomponents.com/:path*',

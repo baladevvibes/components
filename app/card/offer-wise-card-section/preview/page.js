@@ -11,16 +11,16 @@ export const metadata = {
     title: "Offer wise card section Preview",
     description:
       "This component create using CSS framework tailwindcss. It full responsive component. This template used for Card section Preview",
-    url: "https://www.makecomponents.com/card/offer-wise-card-section/preview",
-    siteName: "www.makecomponents.com",
+    url: "https://makecomponents.com/card/offer-wise-card-section/preview",
+    siteName: "makecomponents.com",
     images: [
       {
-        url: "https://www.makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://www.makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: "Hero Banner With Searching Options",

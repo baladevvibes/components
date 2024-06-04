@@ -9,16 +9,16 @@ export const metadata = {
     openGraph: {
       title: "Green Forest Info Template",
       description: "This component create using CSS framework tailwindcss. It full responsive component. This template used for Info section",
-      url: "https://www.makecomponents.com/info/green-forest-info-template",
-      siteName: "www.makecomponents.com",
+      url: "https://makecomponents.com/info/green-forest-info-template",
+      siteName: "makecomponents.com",
       images: [
         {
-          url: "https://www.makecomponents.com/Image/info/info001.webp", // Must be an absolute URL
+          url: "https://makecomponents.com/Image/info/info001.webp", // Must be an absolute URL
           width: 800,
           height: 600,
         },
         {
-          url: "https://www.makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
+          url: "https://makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
           width: 800,
           height: 600,
           alt: "Three Grid card Template",
