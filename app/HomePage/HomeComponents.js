@@ -1,5 +1,38 @@
 
 const HomeComponents = [
+
+    {
+        _id:"009",
+        image:"../Image/partners/partners001.webp",
+        title:"Partners Hover effect scale section",
+        tag:"Partners ",
+        link:"/partners/partners-hover-effects-scale",
+    },
+    
+    {
+        _id:"008",
+        image:"../Image/about/about002.webp",
+        title:"Formal About Section",
+        tag:"About us",
+        link:"/about/formal-about-section",
+    },
+    {
+        _id:"007",
+        image:"../Image/table/table001.webp",
+        title:"Table with sort option",
+        tag:"Table",
+        link:"/table/table-with-sort",
+    },
+
+    {
+        _id:"006",
+        image:"../Image/info/info001.webp",
+        title:"Card Info Section Eight Grid",
+        tag:"Info",
+        link:"/info/card-info-section-eight-grid",
+    },
+
+
    
     {
         _id:"002",
@@ -43,28 +76,6 @@ const HomeComponents = [
     //     tag:"Info",
     //     link:"/info/green-forest-info-template",
     // },
-    {
-        _id:"006",
-        image:"../Image/info/info001.webp",
-        title:"Card Info Section Eight Grid",
-        tag:"Info",
-        link:"/info/card-info-section-eight-grid",
-    },
-    {
-        _id:"007",
-        image:"../Image/table/table001.webp",
-        title:"Table with sort option",
-        tag:"Table",
-        link:"/table/table-with-sort",
-    },
-    {
-        _id:"008",
-        image:"../Image/about/about002.webp",
-        title:"Formal About Section",
-        tag:"About us",
-        link:"/about/formal-about-section",
-    },
-
 
 
 ]

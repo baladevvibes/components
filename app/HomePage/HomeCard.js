@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from 'next/link';
 
-export default function HomeCard({ title, img, tag, link }) {
+export default function HomeCard({ title, img, tag, link,date }) {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
