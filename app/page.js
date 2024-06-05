@@ -17,7 +17,6 @@ export default function Home() {
 
       <div className={` `}>
         <Header />
-
         <div
           className={`lg:pt-[400px] lge:pt-[400px] md:pt-[400px] mdsm:pt-[300px]  sm:pt-[250px] sm:px-4 container mx-auto py-6`}
         >

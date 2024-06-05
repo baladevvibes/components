@@ -1,6 +1,22 @@
 
 const HomeComponents = [
 
+    //   {
+    //     _id:"006",
+    //     image:"./Image/card/card002.webp",
+    //     title:"Green Forest Info Template",
+    //     tag:"Info",
+    //     link:"/info/green-forest-info-template",
+    // },
+
+    {
+        _id:"010",
+        image:"../Image/teams/Teams002.webp",
+        title:"Team hover layer card section",
+        tag:"Team ",
+        link:"/teams/team-hover-layer-card-section",
+    },
+
     {
         _id:"009",
         image:"../Image/partners/partners001.webp",
@@ -69,13 +85,7 @@ const HomeComponents = [
         tag:"Card",
         link:"/card/three-grid-card-template",
     },
-    // {
-    //     _id:"006",
-    //     image:"./Image/card/card002.webp",
-    //     title:"Green Forest Info Template",
-    //     tag:"Info",
-    //     link:"/info/green-forest-info-template",
-    // },
+  
 
 
 ]
