@@ -2,7 +2,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
+import AdSense from "react-adsense";
+
+// import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 export default function ComponentsHeader({
   title,
@@ -92,13 +94,22 @@ export default function ComponentsHeader({
 
         </div>
         <div>
+
           
-        <Adsense client_id="2500160320143617"/>
+        <AdSense.Google
+          client="ca-pub-2500160320143617"
+          slot="2477731086"
+          style={{ display: "block" }}
+          format="auto"
+          responsive="true"
+        />
+          
+        {/* <Adsense client_id="2500160320143617"/>
       <AdUnit className="adsbygoogle block"
                 data-ad-client="ca-pub-2500160320143617"
                 data-ad-slot="2477731086"
                 data-ad-format="auto"
-                data-full-width-responsive="true"/>
+                data-full-width-responsive="true"/> */}
         </div>
       </div>
     </div>
