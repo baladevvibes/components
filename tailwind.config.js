@@ -8,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'footer-texture': "url('../Image/teams/Teams002.webp')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      
       },
     },
     screens: {

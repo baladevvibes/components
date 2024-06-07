@@ -17,6 +17,14 @@ const HomeComponents = [
     //     link:"/e-card/white-space-product-design-card",
     // },
 
+        {
+        _id:"011",
+        image:"../Image/services/services001.webp",
+        title:"Half Background layer services sections",
+        tag:"Services ",
+        link:"/card/half-background-layer-card",
+    },
+
     {
         _id:"010",
         image:"../Image/teams/Teams002.webp",
