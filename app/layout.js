@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
+import Script from "next/script";
+import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,20 +18,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-adsense-account"
-          content="ca-pub-2500160320143617"
-        ></meta>
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-2500160320143617" />
 
-        <link rel="canonical" href={"https://makecomponents.com"} />
-
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
-        ></script>
-      </head>
+        ></Script>
+      </Head>
 
       <body className={inter.className}>{children}</body>
     </html>

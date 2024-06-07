@@ -9,6 +9,14 @@ const HomeComponents = [
     //     link:"/info/green-forest-info-template",
     // },
 
+    // {
+    //     _id:"011",
+    //     image:"../Image/teams/Teams002.webp",
+    //     title:"Team hover layer card section",
+    //     tag:"E-Card ",
+    //     link:"/e-card/white-space-product-design-card",
+    // },
+
     {
         _id:"010",
         image:"../Image/teams/Teams002.webp",

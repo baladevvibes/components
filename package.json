@@ -12,6 +12,7 @@
     "deploy": "npm run export && gh-pages -d distDir"
   },
   "dependencies": {
+    "@eisberg-labs/next-google-adsense": "^4.0.2",
     "@monaco-editor/react": "^4.6.0",
     "aos": "^2.3.4",
     "gh-pages": "^6.1.1",
