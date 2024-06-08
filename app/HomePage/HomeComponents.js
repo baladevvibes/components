@@ -17,6 +17,14 @@ const HomeComponents = [
     //     link:"/e-card/white-space-product-design-card",
     // },
 
+    {
+        _id:"012",
+        image:"../Image/about/about003.webp",
+        title:"Side Half Grid About Section",
+        tag:"About ",
+        link:"/about/side-half-grid-about-section",
+    },
+
         {
         _id:"011",
         image:"../Image/services/services001.webp",
