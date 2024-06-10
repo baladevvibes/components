@@ -47,11 +47,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
 
+/* Varela Varela*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* display  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* Cinzel */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+/* Alegreya */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   font-family: "DM Sans", sans-serif;
   /* background-color: #f7f9fb; */
 }
+.cinzel-font {
+  font-family: "Cinzel", serif;
+}
+.alegreya-font{
+  font-family: "Alegreya", serif;
+
+}
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+}
+
+.varela-round-font{
+  font-family: "Varela Round", sans-serif;
+
+}
+
 
 .milonga-font{
   font-family: "Milonga", serif!important;

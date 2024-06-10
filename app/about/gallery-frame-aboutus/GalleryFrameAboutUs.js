@@ -42,9 +42,9 @@ export default function GalleryFrameAboutUs() {
       language: "javascript",
       value: aboutData[0]?.htmlcode,
     },
-    "style.css": {
+    "index.css": {
       _id: 1,
-      name: "style.css",
+      name: "index.css",
       language: "css",
       value: componentConfig[0]?.css,
     },
@@ -380,14 +380,14 @@ export default function GalleryFrameAboutUs() {
                   index.html
                 </button>
                 <button
-                  name="style"
+                  name="index"
                   className={` ${
-                    fileName === "style.css" ? `bg-primary` : ` bg-[#f19c1c8a]`
+                    fileName === "index.css" ? `bg-primary` : ` bg-[#f19c1c8a]`
                   }   rounded-t-lg py-2  px-4 mr-2`}
-                  disabled={fileName === "style.css"}
-                  onClick={() => setFileName("style.css")}
+                  disabled={fileName === "index.css"}
+                  onClick={() => setFileName("index.css")}
                 >
-                  style
+                  index.css
                 </button>
                 <button
                   name="tailwindconfig"

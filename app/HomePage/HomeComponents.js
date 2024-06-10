@@ -18,6 +18,14 @@ const HomeComponents = [
     // },
 
     {
+        _id:"013",
+        image:"../Image/hero/hero002.webp",
+        title:"Two Grid Hero Section",
+        tag:"Hero",
+        link:"/hero/two-grid-hero-section",
+    },
+
+    {
         _id:"012",
         image:"../Image/about/about003.webp",
         title:"Side Half Grid About Section",

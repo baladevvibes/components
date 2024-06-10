@@ -414,7 +414,7 @@ export default function SideHalfGridAbout() {
                   disabled={fileName === "index.css"}
                   onClick={() => setFileName("index.css")}
                 >
-                  style
+                  index.css
                 </button>
                 <button
                   name="tailwindconfig"

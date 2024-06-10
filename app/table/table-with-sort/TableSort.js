@@ -50,9 +50,9 @@ export default function TableSort() {
       language: "javascript",
       value: tableData[0]?.htmlcode,
     },
-    "style.css": {
+    "index.css": {
       _id: 1,
-      name: "style.css",
+      name: "index.css",
       language: "css",
       value: componentConfig[0]?.css,
     },
@@ -300,31 +300,7 @@ export default function TableSort() {
                       <p className={` text-sm text-center `}> pre</p>
                     </div>
                   </a>
-                  <div className={` group`}>
-                    <a
-                      href={`/File/table/TableWithSortOption.html`}
-                      download="TableWithSortOption.html"
-                    >
-                      <div
-                        className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          class=" text-1xl  text-textcolor group-hover:text-white"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
-                          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
-                        </svg>
-                      </div>
-                    </a>
-                    <p className={` text-sm text-center `}> dow</p>
-                  </div>
+              
 
                   <div className={`relative group`}>
                     <div
@@ -415,14 +391,14 @@ export default function TableSort() {
                   index.html
                 </button>
                 <button
-                  name="style"
+                  name="index"
                   className={` ${
-                    fileName === "style.css" ? `bg-primary` : ` bg-[#f19c1c8a]`
+                    fileName === "index.css" ? `bg-primary` : ` bg-[#f19c1c8a]`
                   }   rounded-t-lg py-2  px-4 mr-2`}
-                  disabled={fileName === "style.css"}
-                  onClick={() => setFileName("style.css")}
+                  disabled={fileName === "index.css"}
+                  onClick={() => setFileName("index.css")}
                 >
-                  style
+                  index
                 </button>
                 <button
                   name="tailwindconfig"

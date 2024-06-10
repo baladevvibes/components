@@ -4,13 +4,43 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import cardData from "../cardData";
-import HomeComponents from "../../HomePage/HomeComponents";
+import heroData from "../heroData";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HomeCard from "../../HomePage/HomeCard";
+import HomeComponents from "../../HomePage/HomeComponents";
+
+export const metadata = {
+  title: "Two Grid Hero Section",
+  description:
+    "This component create on 10/06/2024 using CSS framework tailwindcss. It full responsive component. This template used for Hero section",
+  keywords:
+    "hero section,free components,free code, make components, make component",
+  openGraph: {
+    title: "Two Grid Hero Section",
+    description:
+      "This component create using CSS framework tailwindcss. It full responsive component. This template used for Hero section",
+    url: "https://makecomponents.com/hero/two-grid-hero-section",
+    siteName: "makecomponents.com",
+    images: [
+      {
+        url: "https://makecomponents.com/Image/hero/hero002.webp", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://makecomponents.com/Image/hero/hero002.webp", // Must be an absolute URL
+        width: 800,
+        height: 600,
+        alt: "Two Grid Hero Section",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -26,24 +56,23 @@ const myCustomTheme = {
   },
 };
 
-export default function HalfBackgroundLayerCard() {
+export default function SideHalfGridAbout() {
   const [smScreen, setSmScreen] = useState(false);
   const [mdScreen, setMdScreen] = useState(false);
   const [lgScreen, setLgScreen] = useState(false);
   const [xlScreen, setXlScreen] = useState(true);
   const [code, setCode] = useState(false);
-  const [reelatedComp, setRelatedComponents] = useState();
   const [copy, setCopy] = useState(false);
+  const [reelatedComp, setRelatedComponents] = useState();
   const [fileName, setFileName] = useState("app.js");
   const [responsiveState, setResponsiveState] = useState(false);
-
   const [forceRender, setForceRender] = useState(false);
   const files = {
     "app.js": {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: cardData[2]?.htmlcode,
+      value: heroData[1]?.htmlcode,
     },
     "index.css": {
       _id: 1,
@@ -82,6 +111,20 @@ export default function HalfBackgroundLayerCard() {
     setForceRender(!forceRender);
   };
 
+  const FilterCard = () => {
+    // id=1
+    var arr = [];
+    var idSection = "013";
+    HomeComponents?.forEach((el) => {
+      if (el._id !== idSection) {
+        console.log(el);
+        arr.push(el);
+      }
+    });
+
+    setRelatedComponents(arr);
+  };
+
   const handleScreen = (size) => {
     setResponsiveState(true);
     if (size === "sm") {
@@ -108,35 +151,21 @@ export default function HalfBackgroundLayerCard() {
     setForceRender(true);
   };
 
-  const FilterCard = () => {
-    // id=1
-    var arr = [];
-    var idSection = "011";
-    HomeComponents?.forEach((el) => {
-      if (el._id !== idSection) {
-        console.log(el);
-        arr.push(el);
-      }
-    });
-
-    setRelatedComponents(arr);
-  };
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    FilterCard()
+    FilterCard();
   }, []);
   return (
     <div className="bg-[rgb(255 255 255)]">
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Half backgroun layer services section`}
+          title={`Two Grid Hero Section`}
           des={`This component create using CSS framework tailwindcss. It fully
               responsive component.`}
-          section_name={`Services`}
-          using_font="Bak Bak one,DM Sans sans-serif "
+          section_name={`Hero`}
+          using_font="Cinzel , Alegreya"
         />
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-lg pb-4   px-4">
@@ -267,7 +296,7 @@ export default function HalfBackgroundLayerCard() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/card/half-background-layer-card/preview">
+                  <a href="/hero/two-grid-hero-section/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -291,6 +320,32 @@ export default function HalfBackgroundLayerCard() {
                       <p className={` text-sm text-center `}> pre</p>
                     </div>
                   </a>
+                  {/* <div className={` group`}>
+                    <a
+                      href={`/File/about/GalleryFrameAboutus.html`}
+                      download="GalleryFrameAboutus.html"
+                      locale={false}
+                    >
+                      <div
+                        className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 16 16"
+                          class=" text-1xl  text-textcolor group-hover:text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
+                          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
+                        </svg>
+                      </div>
+                      <p className={` text-sm text-center `}> dow</p>
+                    </a>
+                  </div> */}
 
                   <div className={`relative group`}>
                     <div
@@ -318,6 +373,7 @@ export default function HalfBackgroundLayerCard() {
                       </svg>
                     </div>
                     <p className={` text-sm text-center `}> copy</p>
+
                     {copy ? (
                       <div
                         data-aos="fade-up"
@@ -366,7 +422,7 @@ export default function HalfBackgroundLayerCard() {
           </div>
 
           <div
-            className={`border border-[#ccc] rounded-b-lg  pt-2 px-4 pb-4  overflow-auto`}
+            className={`border border-[#ccc] rounded-b-lg  pt-2 px-1 pb-4  overflow-auto`}
           >
             {code ? (
               <>
@@ -381,14 +437,14 @@ export default function HalfBackgroundLayerCard() {
                   index.html
                 </button>
                 <button
-                  name="index"
+                  name="style"
                   className={` ${
                     fileName === "index.css" ? `bg-primary` : ` bg-[#f19c1c8a]`
                   }   rounded-t-lg py-2  px-4 mr-2`}
                   disabled={fileName === "index.css"}
                   onClick={() => setFileName("index.css")}
                 >
-                  index
+                  index.css
                 </button>
                 <button
                   name="tailwindconfig"
@@ -414,9 +470,9 @@ export default function HalfBackgroundLayerCard() {
             ) : (
               <>
                 <div
-                  className={` ${
+                  className={`sm:px-0 lg:px-4 lge:px-4 md:px-6 mdsm:px-6 ${
                     smScreen
-                      ? `  w-[640px] h-auto overflow-auto mx-auto   px-20 `
+                      ? `  w-[640px] h-auto overflow-auto mx-auto   `
                       : `${
                           mdScreen
                             ? `  w-[780px] h-auto overflow-auto mx-auto`
@@ -428,207 +484,158 @@ export default function HalfBackgroundLayerCard() {
                         }`
                   } `}
                 >
+                  <section className={` h-[80vh]`}>
+                  <div className={` py-20`}>
+      <header>
+
+ 
+      <div className={`grid grid-cols-3 h-[100vh] overflow-hidden relative`}>
+        <nav className={` absolute z-20 top-0 w-full py-4`}>
+          <div className={` container mx-auto`}>
+            <div className={` grid grid-cols-12`}>
+              <div
+                className={`  ${xlScreen ? ` col-span-4` : ``} ${lgScreen? `col-span-full`: ``} ${mdScreen ? ` col-span-full`: ``} ${smScreen? ` col-span-full` : ``} ${responsiveState? ``: `lg:col-span-4 lge:col-span-4 md:col-span-4 mdsm:col-span-full sm:col-span-full`}  px-4`}
+              >
+                <div className={` relative`}>
                   <div
-                    className={` container mx-auto py-20  h-[80vh] overflow-auto `}
+                    className={`pt-2 cinzel-font ${xlScreen ? ` text-5xl text-[#fff] text-left`:``} ${lgScreen ? ` text-5xl text-[#181818] text-left`: ``} ${mdScreen ? ` text-5xl text-left text-[#181818] `: ``} ${smScreen? ` text-left  text-[#181818] text-3xl`: ``} ${responsiveState? ``: `lg:text-[#fff] lge:text-[#fff] md:text-[#181818] mdsm:text-[#181818] sm:text-[#181818] lg:text-5xl lge:text-5xl md:text-5xl mdsm:text-5xl sm:text-3xl lg:text-left lge:text-left md:text-left mdsm:text-left sm:text-left  `}  font-semibold  `}
                   >
-                    <div className="">
-                      <section className="pb-[300px] sm:pb-[200px] relative">
-                        <div className=" relative">
-                          <div className={` ${lgScreen? ` h-[500px]`: ``}  ${xlScreen? ` h-[500px]`: ``}  ${mdScreen? ` h-[500px]`: ``} ${smScreen ? `h-[250px]` :``}  ${responsiveState ? `` : `h-[500px] sm:h-[250px] `} bg-[url('https://images.pexels.com/photos/193999/pexels-photo-193999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]  bg-no-repeat bg-cover bg-center  `}>
-                            <div className=" bg-[#0f2471c7]  h-full absolute top-0 w-full z-10"></div>
-                            <div className="px-4 container mx-auto">
-                              <div className=" absolute z-20 top-0">
-                                <div className=" text-white bakbak-one-font  tracking-wide text-[44px] sm:px-4 pt-8 pb-16">
-                                  Our
-                                  <span className=" font-semibold bakbak-one-font">
-                                    {" "}
-                                    Services{" "}
-                                  </span>
-                                </div>
-                              </div>
-                              <div className=" pt-[140px]">
-                                <div
-                                  className={` grid ${xlScreen ? `  grid-cols-4` : ``} ${lgScreen ? ` grid-cols-3` : ``} ${mdScreen ? ` grid-cols-2`: ``} ${smScreen ? ` grid-cols-1`: ``} ${responsiveState ? `` : ` lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1`} overflow-auto gap-6 relative z-20`}
-                                >
-                                  <div>
-                                    <img
-                                      src={`https://images.pexels.com/photos/3264504/pexels-photo-3264504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                                      className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
-                                    />
-                                    <div className=" sm:bg-white relative rounded-b-lg">
-                                      <div className=" absolute top-[-34px] right-[20px] bg-[#0f2471] rounded-md p-1.5">
-                                        <div className=" h-[50px] flex justify-center items-center w-[50px]">
-                                          <svg
-                                            stroke="currentColor"
-                                            fill="currentColor"
-                                            stroke-width="0"
-                                            viewBox="0 0 512 512"
-                                            class="text-4xl text-white"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              d="M469.71 234.6c-7.33-9.73-34.56-16.43-46.08-33.94s-20.95-55.43-50.27-70S288 112 256 112s-88 4-117.36 18.63-38.75 52.52-50.27 70-38.75 24.24-46.08 33.97S29.8 305.84 32.94 336s9 48 9 48h86c14.08 0 18.66-5.29 47.46-8 31.6-3 62.6-4 80.6-4s50 1 81.58 4c28.8 2.73 33.53 8 47.46 8h85s5.86-17.84 9-48-2.04-91.67-9.33-101.4zM400 384h56v16h-56zm-344 0h56v16H56z"
-                                              fill="none"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="32"
-                                            ></path>
-                                            <path d="M364.47 309.16c-5.91-6.83-25.17-12.53-50.67-16.35S279 288 256.2 288s-33.17 1.64-57.61 4.81-42.79 8.81-50.66 16.35C136.12 320.6 153.42 333.44 167 335c13.16 1.5 39.47.95 89.31.95s76.15.55 89.31-.95c13.56-1.65 29.62-13.6 18.85-25.84zm67.1-66.11a3.23 3.23 0 0 0-3.1-3c-11.81-.42-23.8.42-45.07 6.69a93.88 93.88 0 0 0-30.08 15.06c-2.28 1.78-1.47 6.59 1.39 7.1a455.32 455.32 0 0 0 52.82 3.1c10.59 0 21.52-3 23.55-12.44a52.41 52.41 0 0 0 .49-16.51zm-351.14 0a3.23 3.23 0 0 1 3.1-3c11.81-.42 23.8.42 45.07 6.69a93.88 93.88 0 0 1 30.08 15.06c2.28 1.78 1.47 6.59-1.39 7.1a455.32 455.32 0 0 1-52.82 3.1c-10.59 0-21.52-3-23.55-12.44a52.41 52.41 0 0 1-.49-16.51z"></path>
-                                            <path
-                                              d="M432 192h16m-384 0h16m-2 19s46.35-12 178-12 178 12 178 12"
-                                              fill="none"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="32"
-                                            ></path>
-                                          </svg>
-                                        </div>
-                                      </div>
-                                      <h4 className="text-2xl bakbak-one-font  tracking-wider text-[#222] pt-8 text-black font-semibold text-left">
-                                        New Arrivals{" "}
-                                      </h4>
-                                      <p className="pt-3 text-[#454545] text-justify text-base">
-                                        Discover the latest additions to our
-                                        showroom! Featuring cutting-edge
-                                        technology, modern design, and superior
-                                        performance, our new arrivals are sure
-                                        to impress. Be among the first to test
-                                        drive these stunning vehicles.
-                                      </p>
-                                    </div>
-                                  </div>
+                    Logo
+                  </div>
+                  <div className={` ${xlScreen ? `hidden` : ``} ${lgScreen ? `block w-full `:``} ${mdScreen ? `block`: ``}  ${smScreen? `block`: ``} ${responsiveState ? ``: `lg:hidden lge:hidden md:hidden mdsm:block sm:block`} w-full absolute top-4 right-4 flex justify-end`}>
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" class="text-[30px] sm:text-[24px]"><path d="M4 19h16v2H4zm0-4h11v2H4zm0-4h16v2H4zm0-8h16v2H4zm0 4h11v2H4z"></path></svg>
 
-                                  <div>
-                                    <img
-                                      src={`https://images.pexels.com/photos/4173189/pexels-photo-4173189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                                      className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
-                                    />
-                                    <div className=" sm:bg-white relative rounded-b-lg">
-                                      <div className=" absolute top-[-34px] right-[20px] bg-[#0f2471] rounded-md p-1.5">
-                                        <div className=" h-[50px] flex justify-center items-center w-[50px]">
-                                          <svg
-                                            stroke="currentColor"
-                                            fill="none"
-                                            stroke-width="2"
-                                            viewBox="0 0 24 24"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="text-4xl text-white"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                            <circle
-                                              cx="9"
-                                              cy="7"
-                                              r="4"
-                                            ></circle>
-                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                          </svg>
-                                        </div>
-                                      </div>
-                                      <h4 className="text-2xl bakbak-one-font  tracking-wider text-[#222] pt-8 text-black font-semibold text-left">
-                                        Customer Reviews
-                                      </h4>
-                                      <p className="pt-3 text-[#454545]  text-justify text-base">
-                                        Our customers love us! Read real reviews
-                                        and testimonials from satisfied buyers
-                                        who found their perfect vehicle with us.
-                                        Their experiences speak volumes about
-                                        our commitment to quality and service.
-                                      </p>
-                                    </div>
-                                  </div>
+                  </div>
+                </div>
+              </div>
+              <div className={` ${xlScreen? `block`: ``} ${lgScreen? ` hidden `: ``} col-span-8`}>
+                <div 
+                  className={` ${xlScreen ? `block`: ``} ${lgScreen? `hidden`: ``} ${mdScreen ? `hidden`: ``} ${smScreen? `hidden`: ``}  ${responsiveState ? ``: `  lg:block lge:block md:block mdsm:hidden sm:hidden`}`}
+                >
+                  <div className={`  flex space-x-16 justify-end px-4 py-4`}>
+                    <div
+                      className={`alegreya-font text-[22px] text-[#181818] relative after:w-[0%] cursor-pointer hover:after:content-[""] hover:after:h-[4px] hover:after:bg-[#181818] hover:after:w-[70%] hover:after:absolute hover:after:bottom-0 hover:after:left-0 `}
+                    >
+                      Home
+                    </div>
+                    <div
+                      className={`alegreya-font text-[22px]  text-[#181818] relative after:w-[0%] cursor-pointer hover:after:content-[""] hover:after:h-[4px] hover:after:bg-[#181818] hover:after:w-[70%] hover:after:absolute hover:after:bottom-0 hover:after:left-0 `}
+                    >
+                      About
+                    </div>
 
-                                  <div>
-                                    <img
-                                      src={`https://images.pexels.com/photos/7578984/pexels-photo-7578984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                                      className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
-                                    />
-                                    <div className=" sm:bg-white relative rounded-b-lg">
-                                      <div className=" absolute top-[-34px] right-[20px] bg-[#0f2471] rounded-md p-1.5">
-                                        <div className=" h-[50px] flex justify-center items-center w-[50px]">
-                                          <svg
-                                            stroke="currentColor"
-                                            fill="currentColor"
-                                            stroke-width="0"
-                                            viewBox="0 0 24 24"
-                                            class="text-4xl text-white"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path d="M16.75 8.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z"></path>
-                                            <path d="M15.75 0a8.25 8.25 0 1 1-2.541 16.101l-1.636 1.636a1.744 1.744 0 0 1-1.237.513H9.25a.25.25 0 0 0-.25.25v1.448a.876.876 0 0 1-.256.619l-.214.213a.75.75 0 0 1-.545.22H5.25a.25.25 0 0 0-.25.25v1A1.75 1.75 0 0 1 3.25 24h-1.5A1.75 1.75 0 0 1 0 22.25v-2.836c0-.464.185-.908.513-1.236l7.386-7.388A8.249 8.249 0 0 1 15.75 0ZM9 8.25a6.733 6.733 0 0 0 .463 2.462.75.75 0 0 1-.168.804l-7.722 7.721a.25.25 0 0 0-.073.177v2.836c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-1c0-.966.784-1.75 1.75-1.75H7.5v-1c0-.966.784-1.75 1.75-1.75h1.086a.25.25 0 0 0 .177-.073l1.971-1.972a.75.75 0 0 1 .804-.168A6.75 6.75 0 1 0 9 8.25Z"></path>
-                                          </svg>
-                                        </div>
-                                      </div>
-                                      <h4 className="text-2xl bakbak-one-font  tracking-wider text-[#222] pt-8 text-black font-semibold text-left">
-                                        Special Offers
-                                      </h4>
-                                      <p className="pt-3 text-[#454545] text-justify text-base">
-                                        Take advantage of our limited-time
-                                        special offers and drive away with
-                                        incredible savings. From discounted
-                                        prices to attractive financing options,
-                                        there's never been a better time to buy
-                                        your dream car.
-                                      </p>
-                                    </div>
-                                  </div>
-
-                                  <div>
-                                    <img
-                                      src={`https://images.pexels.com/photos/6870318/pexels-photo-6870318.jpeg`}
-                                      className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
-                                    />
-                                    <div className=" sm:bg-white relative rounded-b-lg">
-                                      <div className=" absolute top-[-34px] right-[20px] bg-[#0f2471] rounded-md p-1.5">
-                                        <div className=" h-[50px] flex justify-center items-center w-[50px]">
-                                          <svg
-                                            stroke="currentColor"
-                                            fill="currentColor"
-                                            stroke-width="0"
-                                            viewBox="0 0 512 512"
-                                            class="text-4xl text-white"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              fill="none"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="32"
-                                              d="M262.29 192.31a64 64 0 1 0 57.4 57.4 64.13 64.13 0 0 0-57.4-57.4zM416.39 256a154.34 154.34 0 0 1-1.53 20.79l45.21 35.46a10.81 10.81 0 0 1 2.45 13.75l-42.77 74a10.81 10.81 0 0 1-13.14 4.59l-44.9-18.08a16.11 16.11 0 0 0-15.17 1.75A164.48 164.48 0 0 1 325 400.8a15.94 15.94 0 0 0-8.82 12.14l-6.73 47.89a11.08 11.08 0 0 1-10.68 9.17h-85.54a11.11 11.11 0 0 1-10.69-8.87l-6.72-47.82a16.07 16.07 0 0 0-9-12.22 155.3 155.3 0 0 1-21.46-12.57 16 16 0 0 0-15.11-1.71l-44.89 18.07a10.81 10.81 0 0 1-13.14-4.58l-42.77-74a10.8 10.8 0 0 1 2.45-13.75l38.21-30a16.05 16.05 0 0 0 6-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 0 0-6.07-13.94l-38.19-30A10.81 10.81 0 0 1 49.48 186l42.77-74a10.81 10.81 0 0 1 13.14-4.59l44.9 18.08a16.11 16.11 0 0 0 15.17-1.75A164.48 164.48 0 0 1 187 111.2a15.94 15.94 0 0 0 8.82-12.14l6.73-47.89A11.08 11.08 0 0 1 213.23 42h85.54a11.11 11.11 0 0 1 10.69 8.87l6.72 47.82a16.07 16.07 0 0 0 9 12.22 155.3 155.3 0 0 1 21.46 12.57 16 16 0 0 0 15.11 1.71l44.89-18.07a10.81 10.81 0 0 1 13.14 4.58l42.77 74a10.8 10.8 0 0 1-2.45 13.75l-38.21 30a16.05 16.05 0 0 0-6.05 14.08c.33 4.14.55 8.3.55 12.47z"
-                                            ></path>
-                                          </svg>
-                                        </div>
-                                      </div>
-                                      <h4 className="text-2xl bakbak-one-font  tracking-wider text-[#222] pt-8 text-black font-semibold text-left">
-                                        Service & Maintenance
-                                      </h4>
-                                      <p className="pt-3 text-[#454545] text-justify text-base">
-                                        Keep your vehicle running smoothly with
-                                        our top-notch service and maintenance
-                                        packages. Our experienced technicians
-                                        use the latest tools and technology to
-                                        ensure your car is in peak condition.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>{" "}
-                          </div>
-                        </div>
-                      </section>
+                    <div
+                      className={`alegreya-font text-[22px] text-[#181818] relative after:w-[0%] cursor-pointer hover:after:content-[""] hover:after:h-[4px] hover:after:bg-[#181818] hover:after:w-[70%] hover:after:absolute hover:after:bottom-0 hover:after:left-0 `}
+                    >
+                      Services
+                    </div>
+                    <div
+                      className={`alegreya-font text-[22px] text-[#181818] relative after:w-[0%] cursor-pointer hover:after:content-[""] hover:after:h-[4px] hover:after:bg-[#181818] hover:after:w-[70%] hover:after:absolute hover:after:bottom-0 hover:after:left-0 `}
+                    >
+                      Contact
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div className={` ${xlScreen ? `block`: ``} ${lgScreen ? `hidden`:``} ${mdScreen ? `hidden`: ``} ${smScreen ? `hidden`: ``}  ${responsiveState ? ``: `lg:block lge:block md:hidden mdsm:hidden sm:hidden `} bg-[#181818] h-full relative`}>
+          <div className={` `}>
+            <div
+              className={` absolute flex justify-center items-center h-full  left-0 bottom-50 z-10  mx-4`}
+            >
+              <div>
+                <div className={` group cursor-pointer mt-8`}>
+                  <div
+                    className={`border hover:border-[#fff] group-hover:bg-[#181818] bg-[#fff] p-2`}
+                  >
+                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-[20px] group-hover:text-[#fff] text-[#181818]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"></path></svg>
+                  </div>
+                </div>
+
+                <div className={`mt-6 group cursor-pointer`}>
+                  <div
+                    className={` border hover:border-[#fff] group-hover:bg-[#181818] bg-[#fff] p-2`}
+                  >
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-[20px] group-hover:text-[#fff] text-[#181818]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                  </div>
+                </div>
+
+                <div className={`mt-6 group cursor-pointer`}>
+                  <div
+                    className={`border hover:border-[#fff] group-hover:bg-[#181818] bg-[#fff] p-2`}
+                  >
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="text-[20px] group-hover:text-[#fff] text-[#181818]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M960 509.2c0-2.2 0-4.7-.1-7.6-.1-8.1-.3-17.2-.5-26.9-.8-27.9-2.2-55.7-4.4-81.9-3-36.1-7.4-66.2-13.4-88.8a139.52 139.52 0 0 0-98.3-98.5c-28.3-7.6-83.7-12.3-161.7-15.2-37.1-1.4-76.8-2.3-116.5-2.8-13.9-.2-26.8-.3-38.4-.4h-29.4c-11.6.1-24.5.2-38.4.4-39.7.5-79.4 1.4-116.5 2.8-78 3-133.5 7.7-161.7 15.2A139.35 139.35 0 0 0 82.4 304C76.3 326.6 72 356.7 69 392.8c-2.2 26.2-3.6 54-4.4 81.9-.3 9.7-.4 18.8-.5 26.9 0 2.9-.1 5.4-.1 7.6v5.6c0 2.2 0 4.7.1 7.6.1 8.1.3 17.2.5 26.9.8 27.9 2.2 55.7 4.4 81.9 3 36.1 7.4 66.2 13.4 88.8 12.8 47.9 50.4 85.7 98.3 98.5 28.2 7.6 83.7 12.3 161.7 15.2 37.1 1.4 76.8 2.3 116.5 2.8 13.9.2 26.8.3 38.4.4h29.4c11.6-.1 24.5-.2 38.4-.4 39.7-.5 79.4-1.4 116.5-2.8 78-3 133.5-7.7 161.7-15.2 47.9-12.8 85.5-50.5 98.3-98.5 6.1-22.6 10.4-52.7 13.4-88.8 2.2-26.2 3.6-54 4.4-81.9.3-9.7.4-18.8.5-26.9 0-2.9.1-5.4.1-7.6v-5.6zm-72 5.2c0 2.1 0 4.4-.1 7.1-.1 7.8-.3 16.4-.5 25.7-.7 26.6-2.1 53.2-4.2 77.9-2.7 32.2-6.5 58.6-11.2 76.3-6.2 23.1-24.4 41.4-47.4 47.5-21 5.6-73.9 10.1-145.8 12.8-36.4 1.4-75.6 2.3-114.7 2.8-13.7.2-26.4.3-37.8.3h-28.6l-37.8-.3c-39.1-.5-78.2-1.4-114.7-2.8-71.9-2.8-124.9-7.2-145.8-12.8-23-6.2-41.2-24.4-47.4-47.5-4.7-17.7-8.5-44.1-11.2-76.3-2.1-24.7-3.4-51.3-4.2-77.9-.3-9.3-.4-18-.5-25.7 0-2.7-.1-5.1-.1-7.1v-4.8c0-2.1 0-4.4.1-7.1.1-7.8.3-16.4.5-25.7.7-26.6 2.1-53.2 4.2-77.9 2.7-32.2 6.5-58.6 11.2-76.3 6.2-23.1 24.4-41.4 47.4-47.5 21-5.6 73.9-10.1 145.8-12.8 36.4-1.4 75.6-2.3 114.7-2.8 13.7-.2 26.4-.3 37.8-.3h28.6l37.8.3c39.1.5 78.2 1.4 114.7 2.8 71.9 2.8 124.9 7.2 145.8 12.8 23 6.2 41.2 24.4 47.4 47.5 4.7 17.7 8.5 44.1 11.2 76.3 2.1 24.7 3.4 51.3 4.2 77.9.3 9.3.4 18 .5 25.7 0 2.7.1 5.1.1 7.1v4.8zM423 646l232-135-232-133z"></path></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={` px-4 flex justify-center items-center h-full  ${xlScreen ? `mt-6`: ``} ${lgScreen? `mt-0`: ``} ${responsiveState? ``: ` lg:mt-6 lge:mt-0`}  ml-24 z-10`}>
+            <div className={` block`}>
+              <h1 className="  text-[#fff] pb-4 ml-14 text-[50px] cinzel-font font-semibold ">
+                Collect
+              </h1>
+              {/* Hello */}
+              <img
+                src={`../../Image/hero/hero002/shirts.webp`}
+                className={`h-[50vh] mt-2 w-full  object-cover`}
+                alt="shirts"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          className={` ${xlScreen? `col-span-2`: ``} ${lgScreen? `col-span-full`: ``} ${mdScreen? `col-span-full`: ``} ${smScreen? `col-span-full`: ``} ${responsiveState? ``: `lg:col-span-2 lge:col-span-2 md:col-span-full mdsm:col-span-full sm:col-span-full`}  h-full relative`}
+        >
+          <div
+            className={` h-full absolute top-0  w-full bg-[#f2f2f2ad]`}
+          ></div>
+          <div className={`  container mx-auto`}>
+            <div className={`absolute h-full flex justify-start items-center`}>
+              <div className={` block`}>
+              <h1
+                className={` text-[#181818]  ${xlScreen ? `mt-6 text-[50px]`: ``} ${lgScreen? `mt-10 text-[30px]`: ``} ${mdScreen? `text-[30px]`: ``} ${smScreen? `text-[30px]`: ``} ${responsiveState? ``: `lg:text-[50px] lge:text-[50px] md:text-[30px] mdsm:text-[30px] sm:text-[30px] lg:mt-6 lge:mt-10`}  relative   px-4    font-semibold cinzel-font `}
+              >
+                Clothes and T-shirts
+              </h1>
+              <p
+                className={`pt-1 alegreya-font  text-[#333] font-semibold text-justify ${xlScreen? `text-[24px] w-[70%] `: ``} ${lgScreen? `text-[20px] w-[90%] `: ``} ${mdScreen? ` text-[20px] w-[90%]`: ``} ${smScreen? `w-[100%] text-[20px] `: ``} ${responsiveState? ``: `lg:text-[24px] lge:text-[24px] md:text-[24px] mdsm:text-[20px] sm:text-[20px] lg:w-[70%] lge:w-[70%] md:w-[90%] mdsm:w-[90%] sm:w-[100%]`}  px-4`}
+              >
+                Explore the latest trends in fashion with our exclusive
+                collection of clothes and t-shirts. Whether you're looking for
+                casual comfort or stylish elegance, we've got you covered.
+              </p>
+              <p
+                className={`pt-1 alegreya-font  text-[#333] font-semibold text-justify ${xlScreen? `text-[24px] w-[70%] `: ``} ${lgScreen? `text-[20px] w-[90%] `: ``} ${mdScreen? ` text-[20px] w-[90%]`: ``} ${smScreen? `w-[100%] text-[20px] `: ``} ${responsiveState? ``: `lg:text-[24px] lge:text-[24px] md:text-[24px] mdsm:text-[20px] sm:text-[20px] lg:w-[70%] lge:w-[70%] md:w-[90%] mdsm:w-[90%] sm:w-[100%]`}  px-4`}
+              >
+                Stay ahead of the fashion curve with our weekly new arrivals.
+                Each piece is designed with you in mind, blending comfort,
+                quality, and style.
+              </p>
+
+              <button
+                className={`alegreya-font ${xlScreen? `text-[22px]`: ``}  ${lgScreen? `text-[18px]`:``} ${mdScreen? `text-[18px]`: ``} ${smScreen? `text-[16px]`: ``} ${responsiveState? ``: `lg:text-[22px] lge:text-[22px] md:text-[22px] mdsm:text-[18px] sm:text-[16px]`}  font-semibold tracking-widest mx-4 bg-[#181818] text-base mt-4 hover:bg-[#fff] border-2 border-[#181818]  hover:font-semibold hover:text-[#181818] px-16 py-3 text-[#fff]`}
+              >
+                Shop Now
+              </button>
+            
+              </div>
+              </div>
+          </div>
+
+          <img
+            src={`https://images.unsplash.com/photo-1608739872119-f78feab7f976?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+            className={` h-full object-cover`}
+            alt="clothes"
+          />
+        </div>
+      </div>
+      </header>
+    </div>
+                  </section>
                 </div>
               </>
             )}

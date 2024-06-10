@@ -415,7 +415,7 @@ export default function FormalAboutSection() {
                   disabled={fileName === "index.css"}
                   onClick={() => setFileName("index.css")}
                 >
-                  style
+                  index.css
                 </button>
                 <button
                   name="tailwindconfig"

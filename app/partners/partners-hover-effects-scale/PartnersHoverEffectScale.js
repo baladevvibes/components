@@ -407,14 +407,14 @@ export default function PartnersHoverEffectScale() {
                   index.html
                 </button>
                 <button
-                  name="style"
+                  name="index"
                   className={` ${
                     fileName === "index.css" ? `bg-primary` : ` bg-[#f19c1c8a]`
                   }   rounded-t-lg py-2  px-4 mr-2`}
                   disabled={fileName === "index.css"}
                   onClick={() => setFileName("index.css")}
                 >
-                  style
+                  index
                 </button>
                 <button
                   name="tailwindconfig"
