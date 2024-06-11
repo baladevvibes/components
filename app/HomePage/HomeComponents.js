@@ -18,6 +18,14 @@ const HomeComponents = [
     // },
 
     {
+        _id:"014",
+        image:"../Image/card/card003.webp",
+        title:"Center Align Circle Card section",
+        tag:"Card",
+        link:"/card/center-align-circle-card",
+    },
+
+    {
         _id:"013",
         image:"../Image/hero/hero002.webp",
         title:"Two Grid Hero Section",
