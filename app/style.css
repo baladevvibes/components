@@ -58,6 +58,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 
+/* Milonga */
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+
 * {
   font-family: "DM Sans", sans-serif;
   /* background-color: #f7f9fb; */
@@ -67,6 +70,10 @@
 }
 .alegreya-font{
   font-family: "Alegreya", serif;
+
+}
+.milonga-font{
+  font-family: "Milonga", serif;
 
 }
 .dm-serif-display-regular {

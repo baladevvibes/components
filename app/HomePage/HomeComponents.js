@@ -18,6 +18,14 @@ const HomeComponents = [
     // },
 
     {
+        _id:"015",
+        image:"../Image/footer/footer001.webp",
+        title:"Landing page footer section",
+        tag:"Footer",
+        link:"/footer/landing-page-footer",
+    },
+
+    {
         _id:"014",
         image:"../Image/card/card003.webp",
         title:"Center Align Circle Card section",
