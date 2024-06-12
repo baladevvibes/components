@@ -1,7 +1,9 @@
+// "use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import Script from "next/script";
+import Home from "./page";
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,15 +20,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="google-adsense-account" content="ca-pub-2500160320143617" />
-
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
-        ></Script>
-      </Head>
+        ></script>
+      </head>
 
       <body className={inter.className}>{children}</body>
     </html>

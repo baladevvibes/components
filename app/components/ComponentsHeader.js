@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AdSense from "react-adsense";
+// import AdSense from "react-adsense";
 
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
@@ -12,6 +12,16 @@ export default function ComponentsHeader({
   section_name,
   using_font,
 }) {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        console.error('AdSense error', e);
+      }
+    }
+  }, []);
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -96,13 +106,22 @@ export default function ComponentsHeader({
         <div>
 
           
-        <AdSense.Google
+        <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-2500160320143617"
+        data-ad-slot="2477731086"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+
+      ></ins>
+        {/* <AdSense.Google
           client="ca-pub-2500160320143617"
           slot="2477731086"
           style={{ display: "block" }}
           format="auto"
           responsive="true"
-        />
+        /> */}
           
         {/* <Adsense client_id="2500160320143617"/>
       <AdUnit className="adsbygoogle block"

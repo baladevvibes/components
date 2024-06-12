@@ -19,7 +19,7 @@ export default function Footer() {
             <div className=" w-full">
 
        
-            <div      data-aos="fade-up" className={` text-white text-sm px-2 pt-2 flex `}>
+            <div     className={` text-white text-sm px-2 pt-2 flex `}>
               Contact {" "}
               <div className="text-white px-2 hover:text-primary cursor-pointer">
                 makecomponents7202@gmail.com

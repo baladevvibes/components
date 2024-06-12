@@ -133,7 +133,7 @@ export default function CenterAlignCircleCard() {
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Center Align Circle Card`}
-          des={`This component create on 11/July/2024 using CSS framework tailwindcss. It fully
+          des={`This component create on 11/June/2024 using CSS framework tailwindcss. It fully
               responsive component.`}
           section_name={`Card`}
           using_font=" plus merienda font,DM Sans sans-serif "

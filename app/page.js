@@ -7,25 +7,44 @@ import HomeComponents from "./HomePage/HomeComponents";
 import HomeCard from "./HomePage/HomeCard";
 import Footer from "./components/Footer";
 import Head from "next/head";
-import AdSense from "react-adsense";
 import { BsDisplay } from "react-icons/bs";
+import { useEffect } from "react";
 
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 export default function Home() {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        console.error('AdSense error', e);
+      }
+    }
+  }, []);
   return (
     <main className=" relative">
       <div className={` `}>
+       
         <Header />
+        <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-2500160320143617"
+        data-ad-slot="2477731086"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
 
-        <AdSense.Google
-          client="ca-pub-2500160320143617"
-          slot="7792904426"
-          style={{ display: "block" }}
-          format="auto"
-          responsive="true"
-        />
+      ></ins>
+   
 
+        {/* <ins
+        className="adsbygoogle"
+        style={{ width: 500, height: 300, float: 'left' }}
+        data-ad-client="ca-pub-7292810486004926"
+        data-ad-slot="7806394673"
+        data-ad-format="auto"
+      ></ins> */}
         {/* <AdSense.Google
   client='ca-pub-7292810486004926'
   slot='7806394673'
@@ -56,20 +75,17 @@ export default function Home() {
             })}
           </div>
         </div>
+        <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-2500160320143617"
+        data-ad-slot="2477731086"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
 
-        <AdSense.Google
-          client="ca-pub-2500160320143617"
-          slot="9781506038"
-          style={{ display: "block" }}
-        />
+      ></ins>
+    
 
-
-        {/* <Adsense client_id="2500160320143617"/>
-      <AdUnit className="adsbygoogle block"
-          //  style="display:block"
-                 data-ad-format="autorelaxed"
-                 data-ad-client="ca-pub-2500160320143617"
-                 data-ad-slot="9781506038"/> */}
         <Footer />
       </div>
     </main>
