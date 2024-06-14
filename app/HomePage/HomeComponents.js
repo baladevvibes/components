@@ -20,7 +20,7 @@ const HomeComponents = [
     {
         _id:"016",
         image:"../Image/card/card004.webp",
-        title:"SemiCricle Design",
+        title:"Semi Circle Design",
         tag:"card",
         link:"card/semi-card-design",
     },
