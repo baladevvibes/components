@@ -106,7 +106,7 @@ export default function ComponentsHeader({
         <div>
 
           
-        <ins
+        {/* <ins
         className="adsbygoogle"
         style={{ display: "block" }}
         data-ad-client="ca-pub-2500160320143617"
@@ -114,7 +114,7 @@ export default function ComponentsHeader({
         data-ad-format="auto"
         data-full-width-responsive="true"
 
-      ></ins>
+      ></ins> */}
         {/* <AdSense.Google
           client="ca-pub-2500160320143617"
           slot="2477731086"

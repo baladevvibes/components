@@ -18,6 +18,14 @@ const HomeComponents = [
     // },
 
     {
+        _id:"016",
+        image:"../Image/card/card004.webp",
+        title:"SemiCricle Design",
+        tag:"card",
+        link:"card/semi-card-design",
+    },
+
+    {
         _id:"015",
         image:"../Image/footer/footer001.webp",
         title:"Landing page footer section",
