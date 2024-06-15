@@ -28,7 +28,7 @@ export default function HomeCard({ title, img, tag, link, date }) {
   }, []);
   return (
     <div data-aos="fade-up">
-      {/* <Link href={link}> */}
+      <Link href={link}> 
         <div
           onClick={() => handleClick(tag)}
           className={`group cursor-pointer relative  drop-css rounded-lg`}
@@ -58,7 +58,7 @@ export default function HomeCard({ title, img, tag, link, date }) {
             </div>
           </div>
         </div>
-      {/* </Link> */}
+      </Link> 
     </div>
   );
 }
