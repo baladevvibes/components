@@ -2,17 +2,37 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from 'next/link';
+import Link from "next/link";
+import axios from "axios";
 
-export default function HomeCard({ title, img, tag, link,date }) {
+export default function HomeCard({ title, img, tag, link, date }) {
+  const handleClick = (tag) => {
+    console.log(tag);
+    const data ={
+      views:0,
+      tag:tag,
+      name:title
+    }
+    axios
+      .post("https://backend-api-coral.vercel.app/api/countadd", data)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
   return (
     <div data-aos="fade-up">
-      <Link href={link}>
-        <div className={`group cursor-pointer relative  drop-css rounded-lg`}>
+      {/* <Link href={link}> */}
+        <div
+          onClick={() => handleClick(tag)}
+          className={`group cursor-pointer relative  drop-css rounded-lg`}
+        >
           <div
             className={`w-full rounded-t-lg overflow-hidden duration-700	 relative`}
           >
@@ -38,7 +58,7 @@ export default function HomeCard({ title, img, tag, link,date }) {
             </div>
           </div>
         </div>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 }
