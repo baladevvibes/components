@@ -19,9 +19,9 @@ export default function HighLightCapturePre() {
                 Transform your living space with expert advice and stay ahead
                 with the latest trends. Join our community today!
               </p>
-              <div className="mt-4 flex pt-4">
-              <input type="text" placeholder=" Get in touch" className="varela-font text-[#333] w-[50%] outline-none px-4 py-3 border	 border-[#fff] "/>
-                <button className="bg-[#00333d] varela-font py-3 px-16 mx-10 hover:border hover:border-[#00333d] hover:bg-[#fff] hover:text-[#00333d] text-[#fff]">Subscribe</button>
+              <div className="mt-4 lg:flex lge:flex md:flex mdsm:block sm:block  pt-4">
+              <input type="text" placeholder=" Get in touch" className="varela-font text-[#333] lg:w-[50%] lge:w-[50%] md:w-[50%]  mdsm:w-full sm:w-full outline-none px-4 py-3 border	 border-[#fff] "/>
+                <button className="bg-[#00333d] lg:w-auto lge:w-auto md:w-auto mdsm:w-full varela-font py-3 px-16 lg:mx-10 lge:mx-10 md:mx-10 mdsm:mx-0  lg:mt-0 lge:mt-0 md:mt-0 mdsm:mt-4 sm:mt-4 sm:w-full sm:mx-0 hover:border hover:border-[#00333d] hover:bg-[#fff] hover:text-[#00333d] text-[#fff]">Subscribe</button>
               </div>
             </div>
           </div>

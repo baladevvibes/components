@@ -16,6 +16,13 @@ const HomeComponents = [
   // },
 
   {
+    _id: "018",
+    image: "../Image/contact/contact001.webp",
+    title: "Two grid Contact section",
+    tag: "contact",
+    link: "contact/two-gird-contact-us",
+  },
+  {
     _id: "017",
     image: "../Image/highlight/highlight001.webp",
     title: "Highlight Capture",
