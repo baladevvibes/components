@@ -438,7 +438,7 @@ export default function TableSort() {
                         }`
                   } `}
                 >
-                  <section className={` h-[80vh] container mx-auto `}>
+                  <section className={`  container mx-auto `}>
                     <div className={` container mx-auto`}>
                       <div className={` py-10 px-10`}>
                         <div className=" sm:w-full overflow-auto">
@@ -1349,7 +1349,7 @@ export default function TableSort() {
 
         <div>
           {/* <h2>Related Components</h2>  */}
-          <h2
+          {/* <h2
             data-aos="fade-up"
             className={`title-font pt-10 pb-6 text-center text-secondary text-2xl font-semibold`}
           >
@@ -1371,7 +1371,7 @@ export default function TableSort() {
                 );
               })}
             </div>
-          </div>
+          </div> */}
 
           <div></div>
         </div>

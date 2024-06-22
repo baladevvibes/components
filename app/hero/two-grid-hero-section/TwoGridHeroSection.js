@@ -484,7 +484,7 @@ export default function SideHalfGridAbout() {
                         }`
                   } `}
                 >
-                  <section className={` h-[80vh]`}>
+                  <section className={` `}>
                   <div className={` py-20`}>
       <header>
 

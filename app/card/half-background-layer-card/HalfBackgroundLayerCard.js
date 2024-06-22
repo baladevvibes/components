@@ -429,7 +429,7 @@ export default function HalfBackgroundLayerCard() {
                   } `}
                 >
                   <div
-                    className={` container mx-auto py-20  h-[80vh] overflow-auto `}
+                    className={` container mx-auto py-20   overflow-auto `}
                   >
                     <div className="">
                       <section className="pb-[300px] sm:pb-[200px] relative">

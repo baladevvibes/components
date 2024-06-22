@@ -429,7 +429,7 @@ export default function LandingPageFooter() {
                   } `}
                 >
                   <div
-                    className={`   h-[80vh] overflow-auto py-20 `}
+                    className={`    overflow-auto py-20 `}
                   >
                      <div className="">
       <footer>

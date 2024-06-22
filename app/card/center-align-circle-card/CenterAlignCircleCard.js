@@ -429,7 +429,7 @@ export default function CenterAlignCircleCard() {
                   } `}
                 >
                   <div
-                    className={` container mx-auto py-20  h-[80vh] overflow-auto `}
+                    className={` container mx-auto py-20   overflow-auto `}
                   >
                   <div className={` `}>
             <div className={` grid ${xlScreen? ` grid-cols-3`: ``} ${lgScreen? ` grid-cols-2`:``} ${mdScreen? ` grid-cols-2`: ``} ${smScreen ? ` grid-cols-1`: ``} ${responsiveState ? ``: `lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 `} gap-16`}>

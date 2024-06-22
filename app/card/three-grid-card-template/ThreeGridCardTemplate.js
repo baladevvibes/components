@@ -309,7 +309,7 @@ export default function ThreeGridCardTemplate() {
                       <p className={` text-sm text-center `}> pre</p>
                     </div>
                   </a>
-                  <div className={` group`}>
+                  {/* <div className={` group`}>
                     <a href={`/File/card/ThreeGridCardTemplate.html`} download="ThreeGridCardTemplate.html"> 
 
                 
@@ -332,7 +332,7 @@ export default function ThreeGridCardTemplate() {
                     </div>
                     </a>
                     <p className={` text-sm text-center `}> dow</p>
-                  </div>
+                  </div> */}
 
                   <div className={`relative group`}>
                     <div
@@ -465,7 +465,7 @@ export default function ThreeGridCardTemplate() {
                   } `}
                 >
                   <section>
-                    <div className={` h-[80vh] overflow-auto`}>
+                    <div className={`  overflow-auto`}>
                       <div
                         className={` grid ${smScreen ? `grid-cols-1`: ``} ${mdScreen ? `grid-cols-2 ` : ``}  ${lgScreen ? `grid-cols-3` : ``}  ${xlScreen ?  `grid-cols-3` : ``}  ${responsiveState ? `` : `lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1` }`}
                       >
@@ -570,12 +570,12 @@ export default function ThreeGridCardTemplate() {
 
         <div>
          {/* <h2>Related Components</h2>  */}
-         <h2 data-aos="fade-up" className={`title-font pt-10 pb-4 text-center text-secondary text-2xl font-semibold`}>
+         {/* <h2 data-aos="fade-up" className={`title-font pt-10 pb-4 text-center text-secondary text-2xl font-semibold`}>
          Related Components
-          </h2>
+          </h2> */}
 
           <div>
-          <div className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}>
+          {/* <div className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}>
             {reelatedComp?.map((v, i) => {
               return (
                 <HomeCard
@@ -586,7 +586,7 @@ export default function ThreeGridCardTemplate() {
                 />
               );
             })}
-          </div>
+          </div> */}
             </div>
 
           <div>

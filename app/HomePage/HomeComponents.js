@@ -20,14 +20,14 @@ const HomeComponents = [
     image: "../Image/contact/contact001.webp",
     title: "Two grid Contact section",
     tag: "contact",
-    link: "contact/two-gird-contact-us",
+    link: "/contact/two-gird-contact-us",
   },
   {
     _id: "017",
     image: "../Image/highlight/highlight001.webp",
     title: "Highlight Capture",
     tag: "highlight",
-    link: "highlight/highlight-capture",
+    link: "/highlight/highlight-capture",
   },
 
   {
@@ -35,7 +35,7 @@ const HomeComponents = [
     image: "../Image/card/card004.webp",
     title: "Semi Circle Design",
     tag: "card",
-    link: "card/semi-card-design",
+    link: "/card/semi-card-design",
   },
 
   {

@@ -424,7 +424,7 @@ export default function HeroWithSearchBar() {
                         }`
                   } `}
                 >
-                  <div className={` h-[80vh]`}>
+                  <div className={` `}>
 
               
                   <div className='bg-no-repeat relative w-full bg-[url("https://images.pexels.com/photos/176400/pexels-photo-176400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-[100vh] bg-cover bg-center'>

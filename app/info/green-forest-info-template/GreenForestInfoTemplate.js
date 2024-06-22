@@ -464,7 +464,7 @@ export default function GreenForestInfoTemplate() {
                   } `}
                 >
                   <section>
-                    <div className={` h-[80vh] overflow-auto`}>
+                    <div className={`  overflow-auto`}>
                       <div
                         className={` grid ${smScreen ? `grid-cols-1`: ``} ${mdScreen ? `grid-cols-2 ` : ``}  ${lgScreen ? `grid-cols-3` : ``}  ${xlScreen ?  `grid-cols-3` : ``}  ${responsiveState ? `` : `lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1` }`}
                       >

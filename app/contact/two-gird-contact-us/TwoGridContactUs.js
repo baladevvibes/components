@@ -429,7 +429,7 @@ export default function TwoGridContactUs() {
                   } `}
                 >
                   <div
-                    className={` container mx-auto py-20  h-[80vh] overflow-auto `}
+                    className={` container mx-auto py-20   overflow-auto `}
                   >
             <div className={` bg-[#8d465b] `}>
       <div className=" container  mx-auto py-20  overflow-hidden ">

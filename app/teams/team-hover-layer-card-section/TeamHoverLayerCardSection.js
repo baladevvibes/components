@@ -455,7 +455,7 @@ export default function TeamHoverLayerCardSection() {
                   } `}
                 >
                 
-                <section className=" h-[80vh]">
+                <section className=" ">
         <div className={` container mx-auto py-16 ${smScreen ? `px-32`:``}`}>
           <h1
             className={`text-[#101820] text-center w-full text-6xl pt-4 font-bold freeman-font`}

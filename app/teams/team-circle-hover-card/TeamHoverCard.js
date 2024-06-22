@@ -439,7 +439,7 @@ export default function TeamHoverCard() {
                         }`
                   } `}
                 >
-                  <div className={` container mx-auto h-[80vh] `}>
+                  <div className={` container mx-auto  `}>
                     <div
                       className={`  grid ${
                         smScreen

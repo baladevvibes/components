@@ -455,7 +455,7 @@ export default function FormalAboutSection() {
                         }`
                   } `}
                 >
-                  <section className={` h-[80vh]`}>
+                  <section className={` `}>
                     <div className=" container sm:px-4 mx-auto py-32">
                       <div className={`grid grid-cols-12 ${responsiveState ? ``: `gap-16 sm:gap-0 lg:gap-16 lge:gap-16 md:gap-0 mdsm:gap-0`} `}>
                         <div

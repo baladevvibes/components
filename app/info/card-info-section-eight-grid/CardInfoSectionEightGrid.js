@@ -465,7 +465,7 @@ export default function CardInfoSectionEightGrid() {
                         }`
                   } `}
                 >
-                   <section className={`h-[80vh] container mx-auto py-24`}>
+                   <section className={` container mx-auto py-24`}>
         <div
           className={`  grid ${xlScreen ? ` grid-cols-12` : ``} ${lgScreen ? ` grid-cols-12` : ``} ${smScreen ? `grid-cols-1 ` :``} ${mdScreen ? `grid-cols-12` : ``} ${responsiveState ? `` :`lg:grid-cols-12 lge:grid-cols-12 md:grid-cols-12 mdsm:grid-cols-12 sm:grid-cols-1` } `}
         >
@@ -674,12 +674,12 @@ export default function CardInfoSectionEightGrid() {
 
         <div>
          {/* <h2>Related Components</h2>  */}
-         <h2 data-aos="fade-up" className={`title-font pt-10 pb-6 text-center text-secondary text-2xl font-semibold`}>
+         {/* <h2 data-aos="fade-up" className={`title-font pt-10 pb-6 text-center text-secondary text-2xl font-semibold`}>
          Related Components
-          </h2>
+          </h2> */}
 
           <div>
-          <div className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}>
+          {/* <div className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}>
             {reelatedComp?.map((v, i) => {
               return (
                 <HomeCard
@@ -690,7 +690,7 @@ export default function CardInfoSectionEightGrid() {
                 />
               );
             })}
-          </div>
+          </div> */}
             </div>
 
           <div>

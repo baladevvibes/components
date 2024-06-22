@@ -454,7 +454,7 @@ export default function HighLightCapture() {
                         }`
                   } `}
                 >
-                  <section className={` h-[80vh]`}>
+                  <section className={` `}>
                     <div className=" bg-[#ccf7ff] my-32">
                       <div className=" container mx-auto">
                         <section>

@@ -426,7 +426,7 @@ export default function OfferWiseCardSection() {
                         }`
                   } `}
                 >
-                  <div className={` container mx-auto py-20  h-[80vh] overflow-auto `}>
+                  <div className={` container mx-auto py-20   overflow-auto `}>
                     <section>
                       <div
                         className={` grid ${xlScreen ?  `grid-cols-5`:``}  ${lgScreen ?  `grid-cols-2`:``}  ${mdScreen ?  `grid-cols-2`:``} ${smScreen ? `sm:grid-cols-1` : ``}  ${responsiveState ? `` :`lg:grid-cols-5 lge:grid-cols-5 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1`}  gap-2 p-2`}

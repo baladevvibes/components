@@ -429,7 +429,7 @@ export default function SemiCardDesign() {
                   } `}
                 >
                   <div
-                    className={` container mx-auto py-20  h-[80vh] overflow-auto `}
+                    className={` container mx-auto py-20   overflow-auto `}
                   >
                     <div className={` grid  ${xlScreen ? ` grid-cols-4 `: ``} ${lgScreen? ` grid-cols-2 px-10`:``} ${mdScreen ? `  grid-cols-2 px-10`: ``} ${smScreen ? ` grid-cols-1 px-10`:``} ${responsiveState ? ``:`lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 `} gap-10`}>
                       <div>
