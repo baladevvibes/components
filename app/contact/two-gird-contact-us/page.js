@@ -14,12 +14,12 @@ export const metadata = {
     siteName: "makecomponents.com",
     images: [
       {
-        url: "https://makecomponents.com/Image/contact/contact003.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/contact/contact001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://makecomponents.com/Image/contact/contact003.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/contact/contact001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: "Two grid Contact section",
