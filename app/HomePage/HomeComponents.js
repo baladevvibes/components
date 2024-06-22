@@ -16,6 +16,14 @@ const HomeComponents = [
   // },
 
   {
+    _id: "019",
+    image: "../Image/404/404001.webp",
+    title: "Page Not Found",
+    tag: "404 page",
+    link: "/404/page-not-found",
+  },
+
+  {
     _id: "018",
     image: "../Image/contact/contact001.webp",
     title: "Two grid Contact section",
