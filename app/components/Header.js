@@ -54,11 +54,11 @@ export default function Header() {
         </div>
         <div className={`bg-primary`}>
           <div className={` container mx-auto px-2 py-1`}>
-            {/* <div className={` overflow-auto flex space-x-2`}>
-              <button
+            {/* <div className={`  flex flex-wrap space-y-1  space-x-2`}>
+            <button
                 className={`py-0.2 px-2 font-semibold bg-white rounded-md text-sm`}
               >
-                Header
+                Hero
               </button>
 
               <button
@@ -87,7 +87,7 @@ export default function Header() {
               <button
                 className={`py-0.2 px-2 font-semibold bg-white rounded-md text-sm`}
               >
-                FAQ
+                Highlight
               </button>
 
               <button

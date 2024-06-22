@@ -9,7 +9,7 @@ import Home from "./page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Make Components",
+  title: "Tailwind css free components",
   description:
     "Free Componenets for tailwind. This compoenets is easy and make a website",
   icons: {
