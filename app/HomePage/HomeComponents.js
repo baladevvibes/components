@@ -16,6 +16,14 @@ const HomeComponents = [
   // },
 
   {
+    _id: "020",
+    image: "../Image/dashboard-info/dashboard-info001.webp",
+    title: "Dashbaord Percentage Info Component",
+    tag: "Dashbaord  Info",
+    link: "/dashboard-info/dashbaord-percentage-info",
+  },
+
+  {
     _id: "019",
     image: "../Image/404/404001.webp",
     title: "Page Not Found",
