@@ -2,13 +2,13 @@ import React from 'react'
 import DashboardPercentageInfo from './DashboardPercentageInfo'
 
 export const metadata = {
-    title: "Dashbaord Percentage Info Component",
+    title: "Dashboard Percentage Into Component",
     description:
       "This component create using CSS framework tailwindcss. It full responsive component. This template used for Info section",
     keywords:
       "dashboard-info,free components,free code, make components, make component",
     openGraph: {
-      title: "Dashbaord Percentage Info Component",
+      title: "Dashboard Percentage Into Component",
       description:
         "This component create using CSS framework tailwindcss. It full responsive component. This template used for Info section",
       url: "https://makecomponents.com/dashboard-info/dashbaord-percentage-info",

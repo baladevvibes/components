@@ -131,7 +131,7 @@ export default function DashboardPercentageInfo() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Dashbaord Percentage Info Component`}
+          title={`Dashboard Percentage Into Component`}
           des={`This component create on 23/July/2024 using CSS framework tailwindcss. It fully
               responsive component.`}
           section_name={`Percentage`}
