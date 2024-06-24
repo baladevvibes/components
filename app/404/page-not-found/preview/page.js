@@ -2,13 +2,13 @@ import React from 'react'
 import PageNotFoundPre from './PageNotFoundPre'
 
 export const metadata = {
-    title: "Page Not Found Preview",
+    title: "404 page not found tailwind css",
     description:
       "This component create using CSS framework tailwindcss. It full responsive component. This template used for 404 section Preview",
     keywords:
       "Page Not Found section,free components,free code, make components, make component",
     openGraph: {
-      title: "Page Not Found Preview",
+      title: "404 page not found tailwind css",
       description:
         "This component create using CSS framework tailwindcss. It full responsive component. This template used for 404 section Preview",
       url: "https://makecomponents.com/404/page-not-found/preview",
