@@ -92,5 +92,7 @@ export default function StandardLoginPagePre() {
         </div>
       </div>
     </div>
+    
   );
+
 }
