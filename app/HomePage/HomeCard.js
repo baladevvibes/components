@@ -39,7 +39,7 @@ export default function HomeCard({ title, img, tag, link, date }) {
             <img
               src={img}
               alt={title}
-              className={`group-hover:scale-125 duration-700 `}
+              className={`group-hover:scale-90 duration-700 `}
             />
           </div>
 
