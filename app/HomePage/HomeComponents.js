@@ -16,6 +16,14 @@ const HomeComponents = [
   // },
 
   {
+    _id: "021",
+    image: "../Image/login/login001.webp",
+    title: "Standard Login Page",
+    tag: "Login in",
+    link: "/login-in/standard-login-page",
+  },
+
+  {
     _id: "020",
     image: "../Image/dashboard-info/dashboard-info001.webp",
     title: "Dashbaord Percentage Info Component",

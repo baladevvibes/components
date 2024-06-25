@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import PageNotFoundData from "../../404/PageNotFoundData";
+import loginInData from "../loginInData"
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -43,7 +43,7 @@ export default function StandardLoginPage() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: PageNotFoundData[0]?.htmlcode,
+      value: loginInData[0]?.htmlcode,
     },
     "index.css": {
       _id: 1,
@@ -111,7 +111,7 @@ export default function StandardLoginPage() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "019";
+    var idSection = "021";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -267,7 +267,7 @@ export default function StandardLoginPage() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/404/page-not-found/preview">
+                  <a href="/login-in/standard-login-page/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}

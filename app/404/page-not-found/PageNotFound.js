@@ -431,7 +431,7 @@ export default function PageNotFound() {
                   <div className="py-6 px-4 drop-css rounded-lg  bg-[#f2f2f2]">
                     <div className="py-24  container mx-auto px-4">
                       <section>
-                        <h2 className="milonga-font text-center text-[150px]">
+                        <h2 className="milonga-font text-center sm:text-[100px] text-[150px]">
                           404
                         </h2>
                         <p className="text-[30px] font-semibold  text-center">

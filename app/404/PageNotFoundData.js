@@ -6,7 +6,7 @@ const PageNotFoundData = [
     htmlcode: `<div class=" bg-[#f2f2f2]">
       <div class="py-24  container mx-auto px-4">
         <section>
-          <h2 class="text-center text-[150px]">404</h2>
+          <h2 class="text-center sm:text-[100px] text-[150px]">404</h2>
           <p class="text-[30px] font-semibold  text-center">
             HERE THER IS <span class=" bg-[#ccc]">NOTHING..</span>
           </p>
