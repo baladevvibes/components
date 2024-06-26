@@ -12,6 +12,7 @@ export const metadata = {
   title: "Tailwind css free components",
   description:
     "Free Componenets for tailwind. This compoenets is easy and make a website",
+  
   icons: {
     icon: "./favicon.ico",
   },
@@ -21,6 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <meta charset="utf-8"/>
+
+      <meta name="robots" content="index, follow"/>
+
         <meta name="google-adsense-account" content="ca-pub-2500160320143617" />
         <script
           async
