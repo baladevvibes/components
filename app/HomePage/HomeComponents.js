@@ -15,13 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
 
-  // {
-  //   _id: "022",
-  //   image: "../Image/login/login002.webp",
-  //   title: "Sample Login Page",
-  //   tag: "Login in",
-  //   link: "/login-in/sample-login-page",
-  // },
+  {
+    _id: "022",
+    image: "../Image/login/login002.webp",
+    title: "Sample Login Page",
+    tag: "Login in",
+    link: "/login-in/sample-login-page",
+  },
 
   {
     _id: "021",

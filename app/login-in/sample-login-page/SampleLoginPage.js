@@ -43,7 +43,7 @@ export default function SampleLoginPage() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: loginInData[0]?.htmlcode,
+      value: loginInData[1]?.htmlcode,
     },
     "index.css": {
       _id: 1,
@@ -111,7 +111,7 @@ export default function SampleLoginPage() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "021";
+    var idSection = "022";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -267,7 +267,7 @@ export default function SampleLoginPage() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/login-in/standard-login-page/preview">
+                  <a href="/login-in/sample-login-page/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
