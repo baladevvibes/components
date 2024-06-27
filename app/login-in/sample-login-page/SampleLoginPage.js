@@ -438,7 +438,7 @@ export default function SampleLoginPage() {
                             <div></div>
                             <div className="p-8 sm:p-2 ">
                               <div
-                                className={` ${xlScreen? `w-[40%]`: ``} ${lgScreen? ` w-[40%]`: ``} ${mdScreen? `w-[60%]`: ``} ${smScreen? ` w-[100%]`: ``}  ${responsiveState ? ``: `lg:w-[34%] lge:w-[40%] md:w-[60%]`} mx-auto bg-white rounded-lg`}
+                                className={` ${xlScreen? `w-[100%]`: ``} ${lgScreen? ` w-[40%]`: ``} ${mdScreen? `w-[60%]`: ``} ${smScreen? ` w-[100%]`: ``}  ${responsiveState ? ``: `lg:w-[34%] lge:w-[40%] md:w-[60%]`} mx-auto bg-white rounded-lg`}
                               >
                                 <img
                                   src={"../../Image/login/002/login.webp"}
