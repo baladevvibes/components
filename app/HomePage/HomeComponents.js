@@ -16,6 +16,14 @@ const HomeComponents = [
   // },
 
   {
+    _id: "023",
+    image: "../Image/services/services002.webp",
+    title: "Services section template",
+    tag: "Services",
+    link: "/services/icon-side-alignment",
+  },
+
+  {
     _id: "022",
     image: "../Image/login/login002.webp",
     title: "Sample Login Page",
