@@ -1,0 +1,9 @@
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow: /api/*
+
+
+Sitemap: https://makecomponents.com/sitemap.xml
+# ---------------------------
+# END YOAST BLOCK

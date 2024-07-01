@@ -1,6 +1,14 @@
+'use client'
+
 import React from "react";
 import "../../../style.css";
+import { useSearchParams } from 'next/navigation'
+
 export default function IconSideAlignmentPre() {
+  const searchParams = useSearchParams()
+  const search = searchParams.get('search')
+  console.log(searchParams)
+
   return (
     <div className=" container mx-auto  ">
       <section className="py-8 sm:p-2">

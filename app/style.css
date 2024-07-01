@@ -222,3 +222,13 @@
 .invisible {
   z-index: 1 !important;
 }
+.rcp-field-label {
+  display: none;
+}
+.rcp-field:nth-child(2) {
+  display: none!important;
+}
+
+.rcp-field:nth-child(0) {
+  display: none!important;
+}
