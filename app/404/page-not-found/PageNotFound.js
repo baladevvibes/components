@@ -36,7 +36,21 @@ export default function PageNotFound() {
   const [copy, setCopy] = useState(false);
   const [fileName, setFileName] = useState("app.js");
   const [responsiveState, setResponsiveState] = useState(false);
-
+  function addSchema() {
+    return {
+      __html: `{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Make sdsssssssssssssssssssssssssssss",
+  "url": "https://makecomponents.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://makecomponents.com/{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}`,
+    };
+  }
   const [forceRender, setForceRender] = useState(false);
   const files = {
     "app.js": {
@@ -128,6 +142,15 @@ export default function PageNotFound() {
     FilterCard();
   }, []);
   return (
+    <>
+  
+    <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addSchema()}
+          key="product-jsonld"
+        />
+  
+
     <div className="bg-[rgb(255 255 255)]">
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
@@ -480,5 +503,6 @@ export default function PageNotFound() {
       </div>
       <Footer />
     </div>
+    </>
   );
 }

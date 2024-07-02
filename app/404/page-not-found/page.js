@@ -51,30 +51,10 @@ export const metadata = {
 
 export default function page() {
 
-  function addSchema() {
-    return {
-      __html: `{
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Make sdsssssssssssssssssssssssssssss",
-  "url": "https://makecomponents.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://makecomponents.com/{search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}`,
-    };
-  }
+ 
   return (
     <div>
-      <head>
-      <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={addSchema()}
-          key="product-jsonld"
-        />
-      </head>
+    
         <PageNotFound/>
     </div>
   )

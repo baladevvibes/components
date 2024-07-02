@@ -1,46 +1,9 @@
-// "use client";
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SchemaData from "./HomePage/SchemaData";
+import { useEffect, useState } from "react";
 
-export const metadata = {
-  keywords: "tailwind free components, tailwind components, free components",
-  // icons: {
-  //   icon: '/favicon.ico',
-  // },
-  openGraph: {
-    title: "Tailwind css free components",
-    description:
-      "Free Componenets for tailwind. This compoenets is easy and make a website.",
-    url: "https://makecomponents.com",
-    siteName: "makecomponents.com",
-    alternates: {
-      canonical: `https://makecomponents.com`,
-    },
-    images: [
-      {
-        url: "https://makecomponents.com/Image/logo.png", // Must be an absolute URL
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "https://makecomponents.com/Image/logo.png", // Must be an absolute URL
-        width: 800,
-        height: 600,
-        alt: "make components",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  metadataBase: new URL(`https://makecomponents.com`),
-  title: {
-    default: `Tailwind css free components`,
-  },
-  alternates: {
-    canonical: "https://makecomponents.com",
-  },
-};
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -56,19 +19,18 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }) {
+  const [schemaData, setSchemData] = useState();
+  useEffect(() => {
+    SchemaData?.forEach((el) => {
+      if (el.url === "window.location.href") {
+        setSchemData(schemaData?.schema);
+      }
+      console.log(el);
+    });
+  }, []);
   function addSchema() {
     return {
-      __html: `{
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Make Components",
-  "url": "https://makecomponents.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://makecomponents.com/{search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}`,
+      __html: schemaData,
     };
   }
   return (
@@ -83,11 +45,11 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
         ></script>
-        {/* <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={addSchema()}
           key="product-jsonld"
-        /> */}
+        />
       </head>
 
       <body className={inter.className}>{children}</body>
