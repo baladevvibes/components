@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Head from "next/head";
 import { BsDisplay } from "react-icons/bs";
 import { useEffect } from "react";
+import { DatasetJsonLd } from 'next-seo';
 
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
@@ -25,7 +26,11 @@ export default function Home() {
   return (
     <main className=" relative">
       <div className={` `}>
-       
+      {/* <DatasetJsonLd
+      description="The description needs to be at least 50 characters long"
+      name="name of the dataset"
+      license="https//www.example.com"
+    /> */}
         <Header />
         <ins
         className="adsbygoogle"
