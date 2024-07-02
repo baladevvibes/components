@@ -1,18 +1,13 @@
 // "use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SchemaData from "./HomePage/SchemaData";
 
 export const metadata = {
   keywords: "tailwind free components, tailwind components, free components",
-  icons: {
-    icon: '/icon.png',
-    shortcut: '/shortcut-icon.png',
-    apple: '/apple-icon.png',
-    other: {
-      rel: 'apple-touch-icon-precomposed',
-      url: '/apple-touch-icon-precomposed.png',
-    },
-  },
+  // icons: {
+  //   icon: '/favicon.ico',
+  // },
   openGraph: {
     title: "Tailwind css free components",
     description:
@@ -61,7 +56,7 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }) {
-  function addProductJsonLd() {
+  function addSchema() {
     return {
       __html: `{
   "@context": "https://schema.org/",
@@ -81,17 +76,18 @@ export default function RootLayout({ children }) {
       <head>
         <meta charset="utf-8" />
         <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="google-adsense-account" content="ca-pub-2500160320143617" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
         ></script>
-        <script
+        {/* <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={addProductJsonLd()}
+          dangerouslySetInnerHTML={addSchema()}
           key="product-jsonld"
-        />
+        /> */}
       </head>
 
       <body className={inter.className}>{children}</body>

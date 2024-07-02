@@ -1,12 +1,12 @@
 const heroData = [
-    {
-        _id:0,
-        name:"hero-with-searchbar",
-        title:"Hero Banner With Searching Options",
-        des:"This component create using CSS framework tailwindcss. It fully responsive component. Added Seacrh bar.",
-        section:"Hero",
-        slug:"hero-with-searchbar-preview",
-        htmlcode:`<div class='bg-no-repeat relative w-full bg-[url("https://images.pexels.com/photos/176400/pexels-photo-176400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-[100vh] bg-cover bg-center'>
+  {
+    _id: 0,
+    name: "hero-with-searchbar",
+    title: "Hero Banner With Searching Options",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component. Added Seacrh bar.",
+    section: "Hero",
+    slug: "hero-with-searchbar-preview",
+    htmlcode: `<div class='bg-no-repeat relative w-full bg-[url("https://images.pexels.com/photos/176400/pexels-photo-176400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-[100vh] bg-cover bg-center'>
         <section>
           <header className="w-full">
             <div class="absolute h-[100vh] bg-[#060505cf] top-0 w-full">
@@ -70,16 +70,16 @@ const heroData = [
             </div>
           </header>
         </section>
-      </div>`
-    },
-    {
-      _id:1,
-      name:"two-grid-hero-section",
-      title:"Two Grid Hero Section",
-      des:"This component create using CSS framework tailwindcss. It fully responsive component.",
-      section:"Hero",
-      slug:"two-grid-hero-section-preview",
-      htmlcode:` <div>
+      </div>`,
+  },
+  {
+    _id: 1,
+    name: "two-grid-hero-section",
+    title: "Two Grid Hero Section",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component.",
+    section: "Hero",
+    slug: "two-grid-hero-section-preview",
+    htmlcode: ` <div>
       <header>
       <div class="grid grid-cols-3 h-[100vh] overflow-hidden relative">
         <nav class=" absolute z-20 top-0 w-full py-4">
@@ -225,9 +225,8 @@ const heroData = [
         </div>
       </div>
       </header>
-    </div>`
-  }
-]
-
+    </div>`,
+  },
+];
 
 export default heroData;

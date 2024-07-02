@@ -4,15 +4,15 @@ import PageNotFoundPre from "./PageNotFoundPre";
 export const metadata = {
   keywords:
     "page not found section,free components,free code, make components, make component",
-    icons: {
-      icon: "../../favicon.ico",
-      shortcut: "../favicon.ico",
-      apple: "../../favicon.ico",
-      other: {
-        rel: "apple-touch-icon-precomposed",
-        url: "../../favicon.ico",
-      },
+  icons: {
+    icon: "../../favicon.ico",
+    shortcut: "../favicon.ico",
+    apple: "../../favicon.ico",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "../../favicon.ico",
     },
+  },
   openGraph: {
     title: "404 page not found tailwind css",
     description:
