@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       if (el.url === window.location.href) {
         setSchemData(schemaData?.schema);
       }
-      console.log(el, window.location.href) ;
+      console.log(el.url=== window.location.href) ;
     });
   }, []);
   function addSchema() {
