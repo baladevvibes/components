@@ -22,10 +22,10 @@ export default function RootLayout({ children }) {
   const [schemaData, setSchemData] = useState();
   useEffect(() => {
     SchemaData?.forEach((el) => {
-      if (el.url === "window.location.href") {
+      if (el.url === window.location.href) {
         setSchemData(schemaData?.schema);
       }
-      console.log(el);
+      console.log(el, window.location.href) ;
     });
   }, []);
   function addSchema() {
