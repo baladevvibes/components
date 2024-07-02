@@ -21,11 +21,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   const [schemaData, setSchemData] = useState();
   useEffect(() => {
+    alert("hello")
     SchemaData?.forEach((el) => {
       if (el.url === window.location.href) {
-        setSchemData(schemaData?.schema);
+        setSchemData(el?.schema);
       }
-      console.log(el.url=== window.location.href, schemaData?.schema ,"data");
+      console.log(el.url=== window.location.href, el?.schema ,"data");
     });
     addSchema()
   }, []);
