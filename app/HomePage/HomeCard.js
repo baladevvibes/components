@@ -16,7 +16,7 @@ export default function HomeCard({ title, img, tag, link, date }) {
     axios
       .post("https://backend-api-coral.vercel.app/api/countadd", data)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
       })
       .catch((err) => {
         console.log(err);

@@ -28,12 +28,14 @@ export default function RootLayout({ children }) {
       console.log(el.url=== window.location.href, schemaData?.schema ,"data");
     });
     addSchema()
-    function addSchema() {
-      return {
-        __html: schemaData,
-      };
-    }
   }, []);
+
+
+  function addSchema() {
+    return {
+      __html: schemaData,
+    };
+  }
 
   return (
     <html lang="en">
