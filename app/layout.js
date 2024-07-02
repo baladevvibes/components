@@ -25,14 +25,16 @@ export default function RootLayout({ children }) {
       if (el.url === window.location.href) {
         setSchemData(schemaData?.schema);
       }
-      console.log(el.url=== window.location.href) ;
+      console.log(el.url=== window.location.href, schemaData?.schema ,"data");
     });
+    addSchema()
+    function addSchema() {
+      return {
+        __html: schemaData,
+      };
+    }
   }, []);
-  function addSchema() {
-    return {
-      __html: schemaData,
-    };
-  }
+
   return (
     <html lang="en">
       <head>
