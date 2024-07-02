@@ -20,6 +20,22 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  function addProductJsonLd() {
+    return {
+      __html: `{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Make Components",
+  "url": "https://makecomponents.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://makecomponents.com/{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+  `,
+    };
+  }
   return (
     <html lang="en">
       <head>
@@ -33,6 +49,12 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
         ></script>
+  <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addProductJsonLd()}
+          key="product-jsonld"
+        />
+
       </head>
 
       <body className={inter.className}>{children}</body>
