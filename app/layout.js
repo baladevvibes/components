@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
         ></script>
-        
+          
       </head>
 
       <body className={inter.className}>{children}</body>
