@@ -1,42 +1,11 @@
 "use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SchemaData from "./HomePage/SchemaData";
-import { useEffect, useState } from "react";
-
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata = {
-//   title: "Tailwind css free components",
-//   description:
-//     "Free Componenets for tailwind. This compoenets is easy and make a website",
-
-//   icons: {
-//     icon: "/favicon.ico",
-//   },
-// };
-
 export default function RootLayout({ children }) {
-  const [schemaData, setSchemData] = useState();
-  useEffect(() => {
-    alert("hello")
-    SchemaData?.forEach((el) => {
-      if (el.url === window.location.href) {
-        setSchemData(el?.schema);
-      }
-      console.log(el.url=== window.location.href, el?.schema ,"data");
-    });
-    addSchema()
-  }, []);
-
-
-  function addSchema() {
-    return {
-      __html: schemaData,
-    };
-  }
 
   return (
     <html lang="en">
@@ -50,11 +19,7 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
         ></script>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={addSchema()}
-          key="product-jsonld"
-        />
+        
       </head>
 
       <body className={inter.className}>{children}</body>

@@ -1,5 +1,5 @@
-import React from 'react'
-import PageNotFound from './PageNotFound'
+import React from "react";
+import PageNotFound from "./PageNotFound";
 
 export const metadata = {
   keywords:
@@ -38,9 +38,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL(
-    `https://makecomponents.com/404/page-not-found/`
-  ),
+  metadataBase: new URL(`https://makecomponents.com/404/page-not-found/`),
   title: {
     default: `404 page not found tailwind css`,
   },
@@ -50,12 +48,22 @@ export const metadata = {
 };
 
 export default function page() {
-
- 
+  const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    name: "Make Components",
+    url: "https://makecomponents.comdfjfbhdfbhfbhf/",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://makecomponents.com/{search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
   return (
     <div>
-    
-        <PageNotFound/>
+   
+
+      <PageNotFound />
     </div>
-  )
+  );
 }

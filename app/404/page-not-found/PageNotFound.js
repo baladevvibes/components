@@ -144,11 +144,7 @@ export default function PageNotFound() {
   return (
     <>
   
-    <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={addSchema()}
-          key="product-jsonld"
-        />
+ 
   
 
     <div className="bg-[rgb(255 255 255)]">
