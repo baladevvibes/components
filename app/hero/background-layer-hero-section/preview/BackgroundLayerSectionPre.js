@@ -1,17 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import React from "react";
+
 import "../../../style.css";
 
-export default function BackgroundLayerSectionPre({ params }) {
-  const searchParams = useSearchParams();
-  const [queryParams, setQueryParams] = useState([]);
+export default function BackgroundLayerSectionPre() {
 
-  useEffect(() => {
-    const params = Object.fromEntries(searchParams.entries());
-    setQueryParams(params);
-    // console.log(params, params.number, ",dlsmkdskm");
-  }, [searchParams]);
   return (
     <>
       <section>
