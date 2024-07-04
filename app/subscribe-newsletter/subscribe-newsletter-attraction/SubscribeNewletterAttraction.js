@@ -141,7 +141,7 @@ export default function SubscribeNewletterAttraction() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "025";
+    var idSection = "026";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
