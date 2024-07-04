@@ -14,7 +14,13 @@ const HomeComponents = [
   //     tag:"E-Card ",
   //     link:"/e-card/white-space-product-design-card",
   // },
-
+  {
+    _id: "026",
+    image: "../Image/news-letter/news-letter001.webp",
+    title: "Subscribe newsletter attraction section",
+    tag: "news-letter",
+    link: "/subscribe-newsletter/subscribe-newsletter-attraction",
+  },
   {
     _id: "025",
     image: "../Image/hero/hero003.webp",
@@ -82,7 +88,7 @@ const HomeComponents = [
     _id: "017",
     image: "../Image/highlight/highlight001.webp",
     title: "Highlight Capture",
-    tag: "highlight",
+    tag: "news-letter",
     link: "/highlight/highlight-capture",
   },
 

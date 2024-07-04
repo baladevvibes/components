@@ -1,9 +1,8 @@
-import React from "react";
-import HeroCard from "./HeroCard";
-
+import React from 'react'
+import NewsLetterCard from './NewsLetterCard'
 export const metadata = {
   keywords:
-    "tailwind css header example,header tailwind css,tailwind css header example",
+    "newsletter free section,free newsletter tailwind,newsletter section",
     description:
     "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
   icons: {
@@ -16,42 +15,42 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "2+ Hero section tailwind css",
+    title: "2+ Newsletter section tailwind css",
     description:
       "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
-    url: "https://makecomponents.com/hero",
+    url: "https://makecomponents.com/subscribe-newsletter",
     siteName: "makecomponents.com",
     alternates: {
       canonical: `https://makecomponents.com/hero`,
     },
     images: [
       {
-        url: "https://makecomponents.com/Image/hero/hero002.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/highlight/highlight001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://makecomponents.com/Image/hero/hero002.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/highlight/highlight001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
-        alt: "hero components",
+        alt: "newsletter components",
       },
     ],
     locale: "en_US",
     type: "website",
   },
   metadataBase: new URL(
-    `https://makecomponents.com/hero`
+    `https://makecomponents.com/subscribe-newsletter`
   ),
   title: {
-    default: `2+ Hero section tailwind css`,
+    default: `2+ Newsletter section tailwind css`,
   },
   alternates: {
-    canonical: "https://makecomponents.com/hero",
+    canonical: "https://makecomponents.com/subscribe-newsletter",
   },
 };
 
-export default function Hero() {
+export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
@@ -65,20 +64,18 @@ export default function Hero() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Hero Components",
-        item: "https://makecomponents.com/hero",
+        name: "Newsletter Components",
+        item: "https://makecomponents.com/subscribe-newsletter",
       },
     ],
   };
   return (
     <div>
-      
         <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        
       />
-      <HeroCard />
+      <NewsLetterCard/>
     </div>
-  );
+  )
 }

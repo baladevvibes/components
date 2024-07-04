@@ -74,7 +74,7 @@ export default function page() {
       "@type": "ListItem", 
       "position": 4, 
       "name": "Background layer hero section preview",
-      "item": "https://makecomponents.com/hero/background-layer-hero-section/preview/preview"  
+      "item": "https://makecomponents.com/hero/background-layer-hero-section/preview"  
     }]
   }
   return (
@@ -82,7 +82,6 @@ export default function page() {
         <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        key="product-jsonld"
       />
       <BackgroundLayerSectionPre />
     </div>

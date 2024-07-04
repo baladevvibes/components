@@ -81,6 +81,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 /* Rowdies */
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+/* Concert */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* Catamaran */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
 
@@ -96,6 +100,12 @@
 
 .cormorant{
   font-family: "Cormorant Garamond", serif;
+}
+.catamaran{
+  font-family: "Catamaran", sans-serif;
+}
+.concert{
+  font-family: "Concert One", sans-serif;
 }
 .rowdies{
   font-family: "Rowdies", sans-serif;
