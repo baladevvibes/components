@@ -27,11 +27,11 @@ export default function Header() {
                   />
                 </a>
                 <a href="/">
-                  <h1
+                  <h2
                     className={`title-font text-secondary font-semibold text-2xl px-2 mt-5 `}
                   >
                     Make Components
-                  </h1>
+                  </h2>
                 </a>
               </div>
 

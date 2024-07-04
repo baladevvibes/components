@@ -61,7 +61,11 @@ export default function HomeRender() {
                 data-ad-format="auto"
                 data-full-width-responsive="true"/> */}
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
-
+        <h1
+            className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
+          >
+            Make Components 
+          </h1>
           
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}

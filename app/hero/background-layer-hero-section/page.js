@@ -5,7 +5,7 @@ export const metadata = {
   keywords:
     "free header section,responsive header tailwind, background layer hero section",
     description:
-    "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make chnage the design.",
+    "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
   icons: {
     icon: "../favicon.ico",
     shortcut: "../favicon.ico",
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Background layer hero section",
     description:
-      "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make chnage the design. It is hero section",
+      "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design. It is hero section",
     url: "https://makecomponents.com/hero/background-layer-hero-section",
     siteName: "makecomponents.com",
     alternates: {

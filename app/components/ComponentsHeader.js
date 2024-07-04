@@ -30,9 +30,9 @@ export default function ComponentsHeader({
     <div>
       <div data-aos="fade-up" className={` grid lge:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 py-4 `}>
         <div className={`py-6 px-4 drop-css rounded-lg `}>
-          <h2 data-aos="fade-up" className={`title-font text-secondary text-2xl font-semibold`}>
+          <h1 data-aos="fade-up" className={`title-font text-secondary text-2xl font-semibold`}>
             {title}
-          </h2>
+          </h1>
           <p data-aos="fade-up" className={` text-textcolor pt-2`}>{des}</p>
 
           {/* <div data-aos="fade-up" className={`flex space-x-3 pt-6`}>
