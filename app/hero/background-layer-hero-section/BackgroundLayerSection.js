@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import servicesData from "../../services/servicesData";
+import heroData from "../heroData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -52,7 +52,7 @@ export default function BackgroundLayerSection() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: servicesData[1]?.htmlcode,
+      value: heroData[2]?.htmlcode,
     },
     "index.css": {
       _id: 1,
@@ -141,7 +141,7 @@ export default function BackgroundLayerSection() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "024";
+    var idSection = "025";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -162,7 +162,7 @@ export default function BackgroundLayerSection() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Background Layer Hero Section`}
+          title={`Background layer hero section`}
           des={`This component create using CSS framework tailwindcss. It fully
               responsive component.`}
           section_name={`Hero`}
@@ -297,7 +297,7 @@ export default function BackgroundLayerSection() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href={`/services/icon-services-section/preview`}>
+                  <a href={`/hero/background-layer-hero-section/preview`}>
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -350,7 +350,7 @@ export default function BackgroundLayerSection() {
                     <p className={` text-sm text-center `}> font</p>
                   </div> */}
 
-                  <div className={`relative group`}>
+                  {/* <div className={`relative group`}>
                     <div
                       onClick={() => handleColor()}
                       className={`flex justify-center p-1.5 border  ${
@@ -381,7 +381,7 @@ export default function BackgroundLayerSection() {
                     )}
 
                     <p className={` text-sm text-center `}> color</p>
-                  </div>
+                  </div> */}
 
                   <div className={`relative group`}>
                     <div
@@ -663,10 +663,30 @@ export default function BackgroundLayerSection() {
                               <div className=" h-full flex justify-center items-center pt-20">
                                 <div className=" block">
                                   {" "}
-                                  <h2 className={`text-[#fff] rowdies ${xlScreen? `text-[64px]`: ``} ${lgScreen?`text-[54px]`: ``} ${mdScreen? `text-[40px]`: ``} ${smScreen?`text-[38px]`: ``} ${responsiveState? ``: `lg:text-[64px] lge:text-[54px] md:text-[40px] mdsm:text-[40px] sm:text-[38px]`} `}>
+                                  <h2
+                                    className={`text-[#fff] rowdies ${
+                                      xlScreen ? `text-[64px]` : ``
+                                    } ${lgScreen ? `text-[54px]` : ``} ${
+                                      mdScreen ? `text-[40px]` : ``
+                                    } ${smScreen ? `text-[38px]` : ``} ${
+                                      responsiveState
+                                        ? ``
+                                        : `lg:text-[64px] lge:text-[54px] md:text-[40px] mdsm:text-[40px] sm:text-[38px]`
+                                    } `}
+                                  >
                                     Plan Move Deliver
                                   </h2>
-                                  <p className={` text-[#fff] ${lgScreen? `text-2xl w-full`: ``} ${xlScreen? `text-2xl w-full`: ``} ${mdScreen? `text-1xl w-[90%]`: ``} ${smScreen? `text-1xl w-[96%] `: ``} ${responsiveState? ``:`lg:w-full lge:w-full md:w-[90%] mdsm:w-[90%] sm:w-full lg:text-2xl lge:text-2xl md:text-1xl mdsm:text-1xl sm:text-1xl`} `}>
+                                  <p
+                                    className={` text-[#fff] ${
+                                      lgScreen ? `text-2xl w-full` : ``
+                                    } ${xlScreen ? `text-2xl w-full` : ``} ${
+                                      mdScreen ? `text-1xl w-[90%]` : ``
+                                    } ${smScreen ? `text-1xl w-[96%] ` : ``} ${
+                                      responsiveState
+                                        ? ``
+                                        : `lg:w-full lge:w-full md:w-[90%] mdsm:w-[90%] sm:w-full lg:text-2xl lge:text-2xl md:text-1xl mdsm:text-1xl sm:text-1xl`
+                                    } `}
+                                  >
                                     Storing goods until they are needed. This
                                     includes inventory management, which ensures
                                     that the right amount of stock is available

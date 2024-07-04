@@ -16,6 +16,14 @@ const HomeComponents = [
   // },
 
   {
+    _id: "025",
+    image: "../Image/hero/hero003.webp",
+    title: "Background Layer Hero Section",
+    tag: "Hero",
+    link: "/hero/background-layer-hero-section",
+  },
+
+  {
     _id: "024",
     image: "../Image/services/services003.webp",
     title: "Icon Services Section",
