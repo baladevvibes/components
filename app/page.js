@@ -1,15 +1,21 @@
 import HomeRender from "./HomeRender";
-
-// import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 export const metadata = {
   keywords: "tailwind free components, tailwind components, free components",
-  // icons: {
-  //   icon: '/favicon.ico',
-  // },
+    description:
+    "Free Componenets for tailwind. This compoenets is easy and make a website. It will helpfull for all the developer, It most use front end developer for design the webpage.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/favicon.ico",
+    },
+  },
   openGraph: {
     title: "Tailwind css free components",
     description:
-      "Free Componenets for tailwind. This compoenets is easy and make a website.",
+      "Free Componenets for tailwind. This compoenets is easy and make a website. It will helpfull for all the developer, It most use front end developer for design the webpage.",
     url: "https://makecomponents.com",
     siteName: "makecomponents.com",
     alternates: {
@@ -31,7 +37,9 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL(`https://makecomponents.com`),
+  metadataBase: new URL(
+    `https://makecomponents.com`
+  ),
   title: {
     default: `Tailwind css free components`,
   },
@@ -39,11 +47,12 @@ export const metadata = {
     canonical: "https://makecomponents.com",
   },
 };
+
+// import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
+
 export default function Home() {
   return (
     <main className=" relative">
-
-      
       <HomeRender />
     </main>
   );
