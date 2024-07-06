@@ -50,7 +50,6 @@ export const metadata = {
     canonical: "https://makecomponents.com/hero/background-layer-hero-section",
   },
 };
-
 export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",
@@ -81,7 +80,6 @@ export default function page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        
       />
       <BackgroundLayerSection />
     </div>

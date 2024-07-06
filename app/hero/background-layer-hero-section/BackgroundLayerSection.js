@@ -32,6 +32,7 @@ const myCustomTheme = {
   },
 };
 
+
 export default function BackgroundLayerSection() {
   const [smScreen, setSmScreen] = useState(false);
   const [mdScreen, setMdScreen] = useState(false);

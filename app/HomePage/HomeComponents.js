@@ -16,6 +16,13 @@ const HomeComponents = [
   // },
   {
     _id: "026",
+    image: "../Image/card/card005.webp",
+    title: "Card layout section",
+    tag: "card",
+    link: "/card/card-layout-section",
+  },
+  {
+    _id: "026",
     image: "../Image/news-letter/news-letter001.webp",
     title: "Subscribe newsletter attraction section",
     tag: "news-letter",
@@ -112,7 +119,7 @@ const HomeComponents = [
     _id: "014",
     image: "../Image/card/card003.webp",
     title: "Center Align Circle Card section",
-    tag: "Card",
+    tag: "card",
     link: "/card/center-align-circle-card",
   },
 
@@ -144,7 +151,7 @@ const HomeComponents = [
     _id: "010",
     image: "../Image/teams/Teams002.webp",
     title: "Team hover layer card section",
-    tag: "Team ",
+    tag: "team",
     link: "/teams/team-hover-layer-card-section",
   },
 
@@ -183,7 +190,7 @@ const HomeComponents = [
     _id: "002",
     image: "../Image/teams/Teams001.webp",
     title: "Team Circle Hover Card",
-    tag: "Teams",
+    tag: "team",
     link: "/teams/team-circle-hover-card",
   },
   {
@@ -204,14 +211,14 @@ const HomeComponents = [
     _id: "004",
     image: "../Image/card/card001.webp",
     title: "Offer wise card section",
-    tag: "Card",
+    tag: "card",
     link: "/card/offer-wise-card-section/",
   },
   {
     _id: "005",
     image: "../Image/card/card002.webp",
     title: "Three Grid card Template",
-    tag: "Card",
+    tag: "card",
     link: "/card/three-grid-card-template",
   },
 ];

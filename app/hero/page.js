@@ -4,7 +4,7 @@ import HeroCard from "./HeroCard";
 export const metadata = {
   keywords:
     "tailwind css header example,header tailwind css,tailwind css header example",
-    description:
+  description:
     "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
   icons: {
     icon: "../favicon.ico",
@@ -40,9 +40,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL(
-    `https://makecomponents.com/hero`
-  ),
+  metadataBase: new URL(`https://makecomponents.com/hero`),
   title: {
     default: `2+ Hero section tailwind css`,
   },
@@ -72,11 +70,9 @@ export default function Hero() {
   };
   return (
     <div>
-      
-        <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        
       />
       <HeroCard />
     </div>

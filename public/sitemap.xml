@@ -13,6 +13,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://makecomponents.com/card/card-layout-section</loc>
+  <lastmod>2024-07-05T15:13:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://makecomponents.com/subscribe-newsletter/subscribe-newsletter-attraction</loc>
   <lastmod>2024-07-05T15:13:49+00:00</lastmod>
   <priority>0.80</priority>
@@ -151,6 +156,12 @@
   <loc>https://makecomponents.com/legal</loc>
   <lastmod>2024-07-05T15:13:49+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<!-- preview -->
+<url>
+  <loc>https://makecomponents.com/card/card-layout-section/preview</loc>
+  <lastmod>2024-07-05T15:13:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/subscribe-newsletter/subscribe-newsletter-attraction/preview</loc>

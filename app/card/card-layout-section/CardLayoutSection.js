@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import NewsLetterData from "../NewsLetter";
+import heroData from "../../hero/heroData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -32,7 +32,7 @@ const myCustomTheme = {
   },
 };
 
-export default function SubscribeNewletterAttraction() {
+export default function CardLayoutSection() {
   const [smScreen, setSmScreen] = useState(false);
   const [mdScreen, setMdScreen] = useState(false);
   const [lgScreen, setLgScreen] = useState(false);
@@ -52,7 +52,7 @@ export default function SubscribeNewletterAttraction() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: NewsLetterData[0]?.htmlcode,
+      value: heroData[2]?.htmlcode,
     },
     "index.css": {
       _id: 1,
@@ -141,7 +141,7 @@ export default function SubscribeNewletterAttraction() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "026";
+    var idSection = "027";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -162,11 +162,11 @@ export default function SubscribeNewletterAttraction() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Subscribe Newsletter Attraction`}
+          title={`Card layout section`}
           des={`This component create using CSS framework tailwindcss. It fully
               responsive component.`}
-          section_name={`Subscribe Newsletter`}
-          using_font=" Catamaran, Concert"
+          section_name={`Card`}
+          using_font=" Passion One, Quicksand "
         />
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-lg pb-4   px-4">
@@ -297,9 +297,7 @@ export default function SubscribeNewletterAttraction() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a
-                    href={`/subscribe-newsletter/subscribe-newsletter-attraction/preview`}
-                  >
+                  <a href={`/card/card-layout-section/preview`}>
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -521,90 +519,72 @@ export default function SubscribeNewletterAttraction() {
                         }`
                   } `}
                 >
-                  <section>
-                    <div className=" my-40 container mx-auto px-4">
-                      <div className=" bg-[#0f67f5] overflow-hidden py-10  px-10 rounded-lg relative">
-                        <div className=" absolute  bg-[#70a1ff] -left-6 -top-4 z-10 h-[100px] w-[100px]  rounded-full"></div>
-                        <div
-                          className={` grid  ${
-                            xlScreen ? ` grid-cols-3` : ``
-                          } ${lgScreen ? ` grid-cols-1` : ``} ${
-                            mdScreen ? ` grid-cols-1` : ``
-                          } ${smScreen ? `grid-cols-1` : ``} ${
-                            responsiveState
-                              ? ``
-                              : `lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1`
-                          } `}
-                        >
-                          <div className=" col-span-2">
-                            <h2 className=" text-[#fff] z-20  relative concert text-4xl">
-                              Subscribe Newsletter
-                            </h2>
-                            <h2 className="pt-2 catamaran z-20  relative text-[18px] text-[#fff] ">
-                              Get the latest industry news, trends, and
-                              exclusive content delivered directly to your
-                              inbox.
-                            </h2>
-                          </div>
-                          <div>
-                            <div
-                              className={` relative ${xlScreen ? `mt-0` : ``} ${
-                                lgScreen ? `mt-2` : ``
-                              } ${mdScreen ? `mt-4` : ``} ${
-                                smScreen ? ` mt-4` : ``
-                              } ${
-                                responsiveState
-                                  ? `lg:mt-0 lge:mt-0 md:mt-4 mdsm:mt-4 sm:mt-4`
-                                  : ``
-                              }  `}
-                            >
-                              <form>
-                                <label className="text-[#fff] catamaran">
-                                  e-mail
-                                </label>
-                                <input
-                                  type="text"
-                                  className="w-full  py-2 text-[#434343] px-3  catamaran outline-none border border-[#fff]"
-                                  required
-                                />
-                                <div
-                                  className={`${
-                                    xlScreen
-                                      ? `absolute z-20 group bottom-0 right-0`
-                                      : ``
-                                  } ${
-                                    lgScreen
-                                      ? `absolute z-20 group bottom-0 right-0`
-                                      : ``
-                                  } ${
-                                    mdScreen
-                                      ? `absolute z-20 group bottom-0 right-0`
-                                      : ``
-                                  } ${smScreen ? `relative w-full mt-4` : ``} ${
-                                    responsiveState
-                                      ? ``
-                                      : `sm:relative sm:w-full sm:mt-4 absolute z-20 group bottom-0 right-0`
-                                  }  `}
-                                >
-                                  <button className={` w-full justify-center group-hover:bg-[#fff] group-hover:text-[#0f67f5] group-hover:border-[#0f67f5] flex space-x-1 text-[#fff] bg-[#0f67f5] border border-[#fff] catamaran px-10 py-2`}>
-                                    Subscribe{" "}
-                                    <svg
-                                      stroke="currentColor"
-                                      fill="currentColor"
-                                      stroke-width="0"
-                                      viewBox="0 0 256 256"
-                                      class=" mx-1 mt-1"
-                                      height="1em"
-                                      width="1em"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path d="M227.57,27.7a7,7,0,0,0-7.13-1.22L17.78,105.79a12.23,12.23,0,0,0,2.1,23.39L74,139.81V200a14,14,0,0,0,24.08,9.71l26.64-27.63,41.58,36.45a13.9,13.9,0,0,0,9.2,3.49,14.33,14.33,0,0,0,4.36-.69,13.86,13.86,0,0,0,9.34-10.17L229.82,34.57A7,7,0,0,0,227.57,27.7ZM22.05,117.37h0a.46.46,0,0,1,0-.32.51.51,0,0,1,.15-.08L181.91,54.45l-103.3,74L22.2,117.41Zm67.39,84A2,2,0,0,1,86,200V148.11l29.69,26Zm88.07,7.08a1.93,1.93,0,0,1-1.34,1.44,2,2,0,0,1-2-.4L89.64,135.34,215,45.5Z"></path>
-                                    </svg>
-                                  </button>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
+                  <section className=" my-20 container mx-auto">
+                    <div className={` grid ${xlScreen? ` grid-cols-3`: ``} ${lgScreen? `grid-cols-2`: ``} ${mdScreen? `grid-cols-2`: ``} ${smScreen? `grid-cols-1`: ``} ${responsiveState? ``: `lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2  mdsm:grid-cols-2 sm:grid-cols-1`}  gap-10 px-4`}>
+                      <div className=" overflow-hidden group relative">
+                        <img
+                          src={`../../Image/card/card005/industry-1.webp`}
+                          className={` h-[450px] object-cover`}
+                        />
+                        <div className=" absolute top-0 h-full w-full "></div>
+
+                        <div className="hidden  group-hover:block absolute top-0 w-full h-full bg-[#090808b3]"></div>
+                        <div className="transition duration-700  absolute p-6 group-hover:-translate-y-[400px]  ">
+                          <h3 className="passion-one-font  text-center text-[#e6a500] text-4xl font-semibold">
+                            Industry
+                          </h3>
+                          <p className="quicksand-font leading-7 text-1xl text-[#fff] pt-4">
+                            Advancements in artificial intelligence are
+                            revolutionizing the tech industry, driving
+                            innovation and efficiency. Companies are leveraging
+                            big data and machine learning to create smarter
+                            solutions for complex problems.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className=" overflow-hidden group relative">
+                        <img
+                          src={`../../Image/card/card005/Healthcare.webp`}
+                          className={` h-[450px] object-cover`}
+                        />
+                        <div className=" absolute top-0 h-full w-full "></div>
+
+                        <div className="hidden  group-hover:block absolute top-0 w-full h-full bg-[#090808b3]"></div>
+                        <div className="transition duration-700  absolute p-6 group-hover:-translate-y-[400px]  ">
+                          <h3 className="passion-one-font  text-center text-[#e6a500] text-4xl font-semibold">
+                            Healthcare
+                          </h3>
+                          <p className="quicksand-font leading-6  text-1xl text-[#fff] pt-4">
+                            The healthcare industry is increasingly adopting
+                            digital health technologies to improve patient
+                            outcomes. Innovations in telemedicine and wearable
+                            devices are transforming the way healthcare is
+                            delivered and managed.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className=" overflow-hidden group relative">
+                        <img
+                          src={`../../Image/card/card005/Finance.webp`}
+                          className={` h-[450px] object-cover`}
+                        />
+                        <div className=" absolute top-0 h-full w-full "></div>
+
+                        <div className="hidden  group-hover:block absolute top-0 w-full h-full bg-[#090808b3]"></div>
+                        <div className="transition duration-700  absolute p-6 group-hover:-translate-y-[400px]  ">
+                          <h3 className="passion-one-font  text-center text-[#e6a500] text-4xl font-semibold">
+                            Finance
+                          </h3>
+                          <p className="quicksand-font leading-7 text-1xl text-[#fff] pt-4">
+                            Fintech innovations are reshaping the financial
+                            landscape by providing more accessible and efficient
+                            services. Blockchain technology and digital
+                            currencies are at the forefront of this
+                            transformation, offering new opportunities for
+                            secure and transparent transactions.
+                          </p>
                         </div>
                       </div>
                     </div>

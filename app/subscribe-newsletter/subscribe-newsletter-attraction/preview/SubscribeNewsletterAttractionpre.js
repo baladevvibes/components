@@ -1,6 +1,5 @@
 import React from "react";
 import "../../../style.css";
-import { PiTelegramLogoLight } from "react-icons/pi";
 
 export default function SubscribeNewsletterAttractionpre() {
   return (
@@ -9,7 +8,9 @@ export default function SubscribeNewsletterAttractionpre() {
         <div className=" my-40 container mx-auto px-4">
           <div className=" bg-[#0f67f5] overflow-hidden py-10  px-10 rounded-lg relative">
             <div className=" absolute  bg-[#70a1ff] -left-6 -top-4 z-10 h-[100px] w-[100px]  rounded-full"></div>
-            <div className={` grid  lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1`}>
+            <div
+              className={` grid  lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1`}
+            >
               <div className=" col-span-2">
                 <h2 className=" text-[#fff] z-20  relative concert text-4xl">
                   Subscribe Newsletter
@@ -28,8 +29,8 @@ export default function SubscribeNewsletterAttractionpre() {
                       className="w-full  py-2 text-[#434343] px-3  catamaran outline-none border border-[#fff]"
                       required
                     />
-                    <div className=" absolute z-20 group bottom-0 right-0 ">
-                      <button className="  group-hover:bg-[#fff] group-hover:text-[#0f67f5] group-hover:border-[#0f67f5] flex space-x-1 text-[#fff] bg-[#0f67f5] border border-[#fff] catamaran px-10 py-2">
+                    <div className=" sm:relative sm:w-full sm:mt-4 absolute z-20 group bottom-0 right-0 ">
+                      <button className=" w-full justify-center group-hover:bg-[#fff] group-hover:text-[#0f67f5] group-hover:border-[#0f67f5] flex space-x-1 text-[#fff] bg-[#0f67f5] border border-[#fff] catamaran px-10 py-2">
                         Subscribe{" "}
                         <svg
                           stroke="currentColor"

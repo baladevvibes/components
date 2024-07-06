@@ -50,7 +50,6 @@ export const metadata = {
     canonical: "https://makecomponents.com/hero/background-layer-hero-section/preview",
   },
 };
-
 export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/", 
@@ -69,7 +68,7 @@ export default function page() {
       "@type": "ListItem", 
       "position": 3, 
       "name": "Background layer hero section",
-      "item": "https://makecomponents.com/hero/background-layer-hero-section/preview"  
+      "item": "https://makecomponents.com/hero/background-layer-hero-section"  
     },{
       "@type": "ListItem", 
       "position": 4, 

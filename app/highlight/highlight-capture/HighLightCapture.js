@@ -134,7 +134,7 @@ export default function HighLightCapture() {
           title={`Highlight Capture`}
           des={`This component create on 19/July/2024 using CSS framework tailwindcss. It fully
               responsive component.`}
-          section_name={`Highlight`}
+          section_name={`Subscribe Newsletter`}
           using_font="Varela round , dosis-font"
         />
 

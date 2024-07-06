@@ -1,6 +1,5 @@
-import React from 'react'
-import HighLightCapturePre from './HighLightCapturePre'
-
+import React from "react";
+import HighLightCapturePre from "./HighLightCapturePre";
 
 export const metadata = {
   title: "Highlight Capture preview",
@@ -36,9 +35,39 @@ export const metadata = {
 };
 
 export default function page() {
+  const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://makecomponents.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Subscribe Newsletter components",
+        item: "https://makecomponents.com/subscribe-newsletter",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Highlight Capture",
+        item: "https://makecomponents.com/highlight/highlight-capture",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Highlight Capture preview",
+        item: "https://makecomponents.com/highlight/highlight-capture/preview",
+      },
+    ],
+  };
   return (
     <div>
-        <HighLightCapturePre/>
+      <HighLightCapturePre />
     </div>
-  )
+  );
 }
