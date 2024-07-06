@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import heroData from "../../hero/heroData";
+import cardData from "../cardData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -52,7 +52,7 @@ export default function CardLayoutSection() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: heroData[2]?.htmlcode,
+      value: cardData[4]?.htmlcode,
     },
     "index.css": {
       _id: 1,

@@ -470,6 +470,91 @@ const cardData = [
       </div>
     </div>`,
   },
+  {
+    _id: 5,
+    name: "Card layout section",
+    htmlcode: `<section class="my-20 container mx-auto">
+      <div
+        class="grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10 px-4"
+      >
+        <div class="overflow-hidden group relative">
+          <img
+            src="https://makecomponents.com/Image/card/card005/industry-1.webp"
+            class="h-[450px] object-cover"
+          />
+          <div class="absolute top-0 h-full w-full"></div>
+
+          <div
+            class="hidden group-hover:block absolute top-0 w-full h-full bg-[#090808b3]"
+          ></div>
+          <div
+            class="transition duration-700 absolute p-6 group-hover:-translate-y-[400px]"
+          >
+            <h3 class="text-center text-[#e6a500] text-4xl font-semibold">
+              Industry
+            </h3>
+            <p class="leading-7 text-1xl text-[#fff] pt-4">
+              Advancements in artificial intelligence are revolutionizing the
+              tech industry, driving innovation and efficiency. Companies are
+              leveraging big data and machine learning to create smarter
+              solutions for complex problems.
+            </p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden group relative">
+          <img
+            src="https://makecomponents.com/Image/card/card005/Healthcare.webp"
+            class="h-[450px] object-cover"
+          />
+          <div class="absolute top-0 h-full w-full"></div>
+
+          <div
+            class="hidden group-hover:block absolute top-0 w-full h-full bg-[#090808b3]"
+          ></div>
+          <div
+            class="transition duration-700 absolute p-6 group-hover:-translate-y-[400px]"
+          >
+            <h3 class="text-center text-[#e6a500] text-4xl font-semibold">
+              Healthcare
+            </h3>
+            <p class="leading-6 text-1xl text-[#fff] pt-4">
+              The healthcare industry is increasingly adopting digital health
+              technologies to improve patient outcomes. Innovations in
+              telemedicine and wearable devices are transforming the way
+              healthcare is delivered and managed.
+            </p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden group relative">
+          <img
+            src="https://makecomponents.com/Image/card/card005/Finance.webp"
+            class="h-[450px] object-cover"
+          />
+          <div class="absolute top-0 h-full w-full"></div>
+
+          <div
+            class="hidden group-hover:block absolute top-0 w-full h-full bg-[#090808b3]"
+          ></div>
+          <div
+            class="transition duration-700 absolute p-6 group-hover:-translate-y-[400px]"
+          >
+            <h3 class="text-center text-[#e6a500] text-4xl font-semibold">
+              Finance
+            </h3>
+            <p class="leading-7 text-1xl text-[#fff] pt-4">
+              Fintech innovations are reshaping the financial landscape by
+              providing more accessible and efficient services. Blockchain
+              technology and digital currencies are at the forefront of this
+              transformation, offering new opportunities for secure and
+              transparent transactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>`,
+  },
 ];
 
 export default cardData;
