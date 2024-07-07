@@ -403,7 +403,7 @@ const cardData = [
       <div class=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
         <div>
           <img
-            src="https://images.unsplash.com/photo-1643579265541-2a6359ff8b57?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           src="https://makecomponents.com/Image/card/card004/Succulent.webp"
             class="rounded-t-full h-[200px] sm:h-[250px] object-cover w-full"
             alt="Succulent Plants"
           />
@@ -419,7 +419,7 @@ const cardData = [
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1573714000387-71694087c82e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           src="https://makecomponents.com/Image/card/card004/Jade.webp"
             class="rounded-t-full h-[200px] sm:h-[250px]  object-cover w-full"
             alt="Jade Plants"
           />
@@ -436,7 +436,7 @@ const cardData = [
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1604907899106-bdbf31469ae9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+         src="https://makecomponents.com/Image/card/card004/Monstera.webp"
             class="rounded-t-full h-[200px] sm:h-[250px]  w-full object-cover"
             alt="Monstera"
           />
@@ -453,7 +453,7 @@ const cardData = [
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1537039557108-4a42c334fd5e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      src="https://makecomponents.com/Image/card/card004/Money Plant.webp"
             class="rounded-t-full h-[200px] sm:h-[250px]  w-full object-cover"
             alt="Money Plant"
           />
