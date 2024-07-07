@@ -44,11 +44,11 @@ export default function HomeCard({ title, img, tag, link, date }) {
           </div>
 
           <div className={`rounded-b-lg`}>
-            <h2
+            <h3
               className={`group-hover:text-secondary text-[18px] duration-700 pb-2	py-2 px-4 text-textcolor text-base pt-2 font-semibold`}
             >
               {title}
-            </h2>
+            </h3>
             <div className="pb-2 px-4">
               <div
                 className={` absolute text-center duration-700	 group-hover:bg-primary group-hover:text-secondary top-2 right-2 px-2 py-1 rounded-md bg-secondary text-white title-font text-sm`}

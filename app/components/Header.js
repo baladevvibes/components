@@ -23,6 +23,7 @@ export default function Header() {
                 <a href="/">
                   <img
                     src={`https://makecomponents.com/Image/logo.png`}
+                    alt="make components"
                     className={`h-[60px]`}
                   />
                 </a>
