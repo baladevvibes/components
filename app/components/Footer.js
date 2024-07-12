@@ -10,12 +10,12 @@ export default function Footer() {
       <div className={`  container mx-auto`}>
         <div className={` grid grid-cols-2`}>
           <div>
-            <h1
+            <h4
             
               className={`title-font text-white font-semibold text-2xl px-2  `}
             >
               Make Components
-            </h1>
+            </h4>
             <div className=" w-full">
 
        
