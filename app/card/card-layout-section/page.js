@@ -73,6 +73,7 @@ export default function page() {
       },
     ],
   };
+  
   return (
     <div>
       <script
