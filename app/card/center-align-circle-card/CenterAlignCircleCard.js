@@ -436,7 +436,7 @@ export default function CenterAlignCircleCard() {
                 <div >
                     <div className=' h-[200px] mx-auto w-[200px] object-cover  relative rounded-full'>
                         <div className=' absolute -top-2 -right-2 h-full w-full bg-[#F19C1C] rounded-full'></div>
-                        <img src={`https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`} className='relative z-10 h-[200px] w-[200px] object-cover  rounded-full'/>
+                        <img src={`../Image/card/card/person1.webp`} alt="person 1"  className='relative z-10 h-[200px] w-[200px] object-cover  rounded-full'/>
                     </div>
                     <h2 className={` text-2xl mt-2 text-center text-[#F19C1C] font-semibold  plus-merienda-font`}>Alexandra Rivera</h2>
                     <p className={` text-center pt-2 text-[#181818]`}>
@@ -447,7 +447,7 @@ export default function CenterAlignCircleCard() {
                 <div >
                     <div className=' h-[200px] mx-auto w-[200px] object-cover  relative rounded-full'>
                         <div className=' absolute -top-2 -right-2 h-full w-full bg-[#033c89] rounded-full'></div>
-                        <img src={`https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`} className='relative z-10 h-[200px] w-[200px] object-cover  rounded-full'/>
+                        <img src={`../Image/card/card/person2.webp`} alt="person 2"  className='relative z-10 h-[200px] w-[200px] object-cover  rounded-full'/>
                     </div>
                     <h2 className={` text-2xl mt-2 text-center plus-merienda-font  plus-merienda-font   text-[#033c89] font-semibold`}>Michael Thompson</h2>
                     <p className={` text-center pt-2 text-[#181818]`}>
@@ -459,7 +459,7 @@ export default function CenterAlignCircleCard() {
                 <div >
                     <div className=' h-[200px] mx-auto w-[200px] object-cover  relative rounded-full'>
                         <div className=' absolute -top-2 -right-2 h-full w-full bg-[#F19C1C] rounded-full'></div>
-                        <img src={`https://images.unsplash.com/photo-1598257006458-087169a1f08d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`} className='relative z-10 h-[200px] w-[200px] object-cover  rounded-full'/>
+                        <img src={`../Image/card/card/person3.webp`} alt="person 3" className='relative z-10 h-[200px] w-[200px] object-cover  rounded-full'/>
                     </div>
                     <h2 className={` text-2xl mt-2 text-center  plus-merienda-font text-[#F19C1C] font-semibold`}>Samantha Patel</h2>
                     <p className={` text-center pt-2 text-[#181818]`}>
