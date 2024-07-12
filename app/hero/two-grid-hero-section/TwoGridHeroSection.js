@@ -643,11 +643,11 @@ export default function SideHalfGridAbout() {
         </div>
 
         <div>
-          <h1
+          <h3
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
           >
             Related Components
-          </h1>
+          </h3>
         </div>
 
         <div
