@@ -361,66 +361,6 @@ export default function BackgroundCubeSection() {
                     </div>
                   </a>
 
-                  {/* <div className={`relative group`}>
-                    <div
-                      onClick={() => handleClickFont()}
-                      className={`flex justify-center p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                    >
-                      <AiOutlineFontSize />
-                      <div className="  p-4 rounded-lg drop-css bg-white  z-50 absolute top-16 ">
-                        <div className=" text-secondary font-semibold ">
-                          Select T1
-                        </div>
-                        <select
-                          onChange={(e) => handleChnage(e)}
-                          name="font"
-                          className=" text-textcolor  outline-none  border-b-2 border-b-textcolor "
-                        >
-                          {fontData?.map((v, i) => {
-                            return (
-                              <option className=" text-textcolor ">
-                                {v?.name}
-                              </option>
-                            );
-                          })}
-                        </select>
-                      </div>
-                    </div>
-                    <p className={` text-sm text-center `}> font</p>
-                  </div> */}
-
-                  {/* <div className={`relative group`}>
-                    <div
-                      onClick={() => handleColor()}
-                      className={`flex justify-center p-1.5 border  ${
-                        colorCode ? `bg-secondary text-white` : ``
-                      } border-[#ccc]   group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                    >
-                      <VscSymbolColor
-                        className={`text-1xl ${
-                          colorCode ? `text-white` : ``
-                        }  text-textcolor group-hover:text-white`}
-                      />
-                    </div>
-                    {colorCode ? (
-                      <>
-                        {" "}
-                        <div className=" absolute z-50 top-16 -left-16">
-                          <div className=" flex justify-end px-2 py-2 bg-[white] cursor-pointer">
-                            <IoIosClose
-                              onClick={() => handleColor()}
-                              className=" hover:bg-primary "
-                            />
-                          </div>
-                          <ColorPicker color={color} onChange={setColor} />
-                        </div>
-                      </>
-                    ) : (
-                      <></>
-                    )}
-
-                    <p className={` text-sm text-center `}> color</p>
-                  </div> */}
 
                   <div className={`relative group`}>
                     <div
@@ -565,7 +505,7 @@ export default function BackgroundCubeSection() {
                         <div className={` ${xlScreen ? `col-span-4`: ``} ${lgScreen? `col-span-4`: ``} ${mdScreen? `col-span-full`: ``} ${smScreen? `col-span-full`: ``} ${responsiveState ? ``: `lg:col-span-4 lge:col-span-4 md:col-span-full mdsm:col-span-full sm:col-span-full`}  relative px-6`}>
                           <div className="  h-[400px]  mx-auto">
                             <img
-                              src={`../../Image/overall/person/person5.png`}
+                              src={`../../Image/overall/person/person1.webp`}
                               className=" h-[400px] object-cover  mx-auto relative z-20"
                             />
                             <div className=" absolute top-0 w-full right-2 z-10 border-[10px] border-[#ff0056] h-full "></div>

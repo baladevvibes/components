@@ -34,7 +34,7 @@ export default function BackgroundCubeSectionPre() {
             <div className=" lg:col-span-4 lge:col-span-4 md:col-span-full mdsm:col-span-full sm:col-span-full relative px-6">
               <div className="  h-[400px]  mx-auto">
                 <img
-                  src={`../../Image/overall/person/person5.png`}
+                  src={`../../Image/overall/person/person1.webp`}
                   className=" h-[400px] object-cover  mx-auto relative z-20"
                 />
                 <div className=" absolute top-0 w-full right-2 z-10 border-[10px] border-[#ff0056] h-full "></div>
