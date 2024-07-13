@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import heroData from "../../hero/heroData";
+import aboutData from "../aboutData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -62,7 +62,7 @@ export default function BackgroundCubeSection() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: heroData[2]?.htmlcode,
+      value: aboutData[3]?.htmlcode,
     },
     "index.css": {
       _id: 1,
@@ -151,7 +151,7 @@ export default function BackgroundCubeSection() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "025";
+    var idSection = "027";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -328,15 +328,12 @@ export default function BackgroundCubeSection() {
                           </>
                         )}
                       </div>
-                      <p className={` text-sm text-center `}>
-                        {" "}
-                      
-                      {dark ? <p className={` text-sm text-center `}> Da</p>: <p className={` text-sm text-center `}> Li</p>}
-                      </p>
+                     
+                     <p className={` text-sm text-center `}>{dark? "Da":"Li"}</p>
                     </div>
                   </div>
 
-                  <a href={`/hero/background-layer-hero-section/preview`}>
+                  <a href={`/about/background-cube-about-section/preview`}>
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -505,7 +502,7 @@ export default function BackgroundCubeSection() {
                         <div className={` ${xlScreen ? `col-span-4`: ``} ${lgScreen? `col-span-4`: ``} ${mdScreen? `col-span-full`: ``} ${smScreen? `col-span-full`: ``} ${responsiveState ? ``: `lg:col-span-4 lge:col-span-4 md:col-span-full mdsm:col-span-full sm:col-span-full`}  relative px-6`}>
                           <div className="  h-[400px]  mx-auto">
                             <img
-                              src={`../../Image/overall/person/person1.webp`}
+                              src={`../Image/overall/person/person1.webp`}
                               className=" h-[400px] object-cover  mx-auto relative z-20"
                             />
                             <div className=" absolute top-0 w-full right-2 z-10 border-[10px] border-[#ff0056] h-full "></div>

@@ -1,12 +1,12 @@
 const aboutData = [
-    {
-        _id:0,
-        name:"gallery-frame-aboutus",
-        title:"Gallery frame About us",
-        des:"This component create using CSS framework tailwindcss. It fully responsive component. ",
-        section:"Hero",
-        slug:"gallery-frame-aboutus-preview",
-        htmlcode:`<section>
+  {
+    _id: 0,
+    name: "gallery-frame-aboutus",
+    title: "Gallery frame About us",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component. ",
+    section: "Hero",
+    slug: "gallery-frame-aboutus-preview",
+    htmlcode: `<section>
         <div class="container mx-auto py-36">
           <div class="grid grid-cols-12 gap-10 sm:gap-0 sm:px-2">
             <div class="lg:col-span-5 lge:col-span-5 md:col-span-12 mdsm:col-span-12 sm:col-span-12 p-10 sm:p-6 relative">
@@ -22,16 +22,16 @@ const aboutData = [
             </div>
           </div>
         </div>
-      </section>`
-    },
-    {
-      _id:1,
-      name:"formal-about-section",
-      title:"Formal About Section",
-      des:"This component create using CSS framework tailwindcss. It fully responsive component. ",
-      section:"About",
-      slug:"formal-about-section",
-      htmlcode:`  <section class="container sm:px-4 mx-auto py-32">
+      </section>`,
+  },
+  {
+    _id: 1,
+    name: "formal-about-section",
+    title: "Formal About Section",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component. ",
+    section: "About",
+    slug: "formal-about-section",
+    htmlcode: `  <section class="container sm:px-4 mx-auto py-32">
       <div
         class="grid grid-cols-12 gap-16 sm:gap-0 lg:gap-16 lge:gap-16 md:gap-0 mdsm:gap-0"
       >
@@ -66,16 +66,16 @@ const aboutData = [
           </div>
         </div>
       </div>
-    </section>`
+    </section>`,
   },
   {
-    _id:2,
-    name:"side-half-grid-about-section",
-    title:"Side Half Grid About Section",
-    des:"This component create using CSS framework tailwindcss. It fully responsive component. ",
-    section:"About",
-    slug:"side-half-grid-about-section",
-    htmlcode:`<div class=" py-20 pb-32">
+    _id: 2,
+    name: "side-half-grid-about-section",
+    title: "Side Half Grid About Section",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component. ",
+    section: "About",
+    slug: "side-half-grid-about-section",
+    htmlcode: `<div class=" py-20 pb-32">
       <section>
         <div class=" lg:flex lge:flex md:block mdsm:block sm:block ">
           <div class="lg:block lge:block  md:hidden mdsm:hidden sm:hidden w-[40%] relative">
@@ -133,7 +133,49 @@ const aboutData = [
           </div>
         </div>
       </section>
-    </div>`
-}
-]
-export default aboutData
+    </div>`,
+  },
+  {
+    _id: 3,
+    name: "Background cube about section",
+    title: "Background cube about section",
+    htmlcode: `<section class=" py-32 relative">
+      <div class=" container mx-auto px-4">
+        <div class=" grid lg:grid-cols-12 lge:grid-cols-12 md:grid-cols-12 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
+          <div class=" lg:block lge:block  md:hidden mdsm:hidden sm:hidden"></div>
+          <div class=" lg:col-span-4 lge:col-span-4 md:col-span-full mdsm:col-span-full sm:col-span-full relative px-6">
+            <div class="  h-[400px]  mx-auto">
+              <img
+                src="https://makecomponents.com/Image/overall/person/person1.webp"
+                class=" h-[400px] object-cover  mx-auto relative z-20"
+              />
+              <div class=" absolute top-0 w-full right-2 z-10 border-[10px] border-[#ff0056] h-full "></div>
+            </div>
+          </div>
+          <div class=" h-full  lg:col-span-6 lge:col-span-6 md:col-span-full mdsm:col-span-full sm:col-span-full ">
+            <div class=" h-full justify-center items-center flex">
+              <div class=" block">
+                <h2 class="signika text-[48px] font-semibold  text-[#ff0056]">
+                  About Us
+                </h2>
+                <p class="titillium font-semibold text-[24px] text-[#454545]">
+                  Welcome to Freelance Services!
+                </p>
+                <p class="pt-2  titillium text-[18px] leading-[24px] text-[#454545]">
+                  At Freelance Services, we are dedicated to providing
+                  top-notch writing, graphic design, web development, seo,
+                  Services side support and etc to help you achieve your
+                  business goals. With a passion for creativity and a
+                  commitment to excellence, we strive to deliver high-quality
+                  work that exceeds your expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" lg:block lge:block  md:hidden mdsm:hidden sm:hidden"></div>
+        </div>
+      </div>
+    </section>`,
+  },
+];
+export default aboutData;
