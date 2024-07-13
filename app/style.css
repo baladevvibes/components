@@ -85,6 +85,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 /* Catamaran */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+/* Signika */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+/* Titillium */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
 
@@ -103,6 +107,13 @@
 }
 .catamaran{
   font-family: "Catamaran", sans-serif;
+}
+.titillium{
+  font-family: "Titillium Web", sans-serif;
+
+}
+.signika{
+  font-family: "Signika", sans-serif;
 }
 .concert{
   font-family: "Concert One", sans-serif;
