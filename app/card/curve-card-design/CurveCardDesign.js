@@ -4,7 +4,6 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import aboutData from "../../about/aboutData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -20,6 +19,7 @@ import { AiOutlineFontSize } from "react-icons/ai";
 import fontData from "../../components/Font";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
+import cardData from "../cardData";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -61,7 +61,7 @@ export default function CurveCardDesign() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: aboutData[3]?.htmlcode,
+      value: cardData[6]?.htmlcode,
     },
     "darkThemeCode.js": {
       _id: 1,
@@ -342,7 +342,7 @@ export default function CurveCardDesign() {
                     </div>
                   </div>
 
-                  <a href={`/about/background-cube-about-section/preview`}>
+                  <a href={`/card/curve-card-design/preview`}>
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
