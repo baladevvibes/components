@@ -13,6 +13,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://makecomponents.com/card/curve-card-design</loc>
+  <lastmod>2024-07-17T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://makecomponents.com/about/background-cube-about-section</loc>
   <lastmod>2024-07-14T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -161,6 +166,11 @@
   <loc>https://makecomponents.com/legal</loc>
   <lastmod>2024-07-07T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/card/curve-card-design/preview</loc>
+  <lastmod>2024-07-17T04:34:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/about/background-cube-about-section/preview</loc>
