@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "029",
+    image: "../Image/call-to-action/call001.webp",
+    title: "Attrative Call to action",
+    tag: "call-to-action",
+    link: "/call-to-action/call-to-action-attractive",
+  },
+  {
     _id: "028",
     image: "../Image/card/card006.webp",
     title: "Curve card design",

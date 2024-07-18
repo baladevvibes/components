@@ -2,79 +2,46 @@ const cardData = [
     {
         _id: 0,
         name: "Attrative Call to action",
-        htmlcode: ` <div class="relative py-20 ">
-          <section class="container mx-auto">
-            <div
-              class="grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 px-4 gap-10"
-            >
+        htmlcode: `<div class=" py-[300px] dark:bg-secondary">
+      <section
+        class="  relative py-10 bg-[url('https://makecomponents.com/Image/call-to-action/001/001.webp')] h-[300px] bg-no-repeat bg-cover bg-center "
+      >
+        <div class="absolute w-full bottom-0 mx-auto px-4">
+          <div class="  container mx-auto ">
+            <div class=" grid lg:grid-cols-3  lge:grid-cols-3 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 ">
               <div>
-                <div class="h-[450px] overflow-hidden rounded-2xl relative">
+                <div class="lg:block lge:block md:hidden mdsm:hidden sm:hidden ">
                   <img
-                    src="https://makecomponents.com/Image/overall/building/building1.webp"
-                    alt="building"
-                    class="w-full"
+                    src="https://makecomponents.com/Image/overall/person/person2.webp"
+                    alt="person "
+                    class="  h-[500px] mx-auto "
                   />
-                </div>
-                <div class="">
-                  <h3 class="text-[#3b3b3b]  text-2xl pt-6">
-                    Emphasis on Functionality and Simplicity
-                  </h3>
-                  <p class="pt-2 text-[#5a5a5a] ">
-                    Modern architecture prioritizes the functionality of spaces,
-                    often embracing minimalist designs. This approach emphasizes
-                    clean lines, open floor plans, and the use of materials like
-                    steel, glass, and concrete to create efficient and
-                    straightforward structures.
-                  </p>
                 </div>
               </div>
-    
-              <div>
-                <div class="h-[450px] overflow-hidden rounded-2xl">
-                  <img
-                    src="https://makecomponents.com/Image/overall/building/building2.webp"
-                    alt="building"
-                    class="w-full"
-                  />
-                </div>
-                <div class="">
-                  <h3 class="text-[#3b3b3b]  text-2xl pt-6">
-                    Integration of Sustainable Practices
+              <div class=" col-span-2 relative ">
+                <div class=" absolute bottom-0 py-10">
+                  <h3 class=" text-[#c7b130]  relative after:bg-[#fff] after:w-[10%] text-4xl font-semibold   pb-4">
+                    Get a Free Quote
                   </h3>
-                  <p class="pt-2 text-[#5a5a5a] ">
-                    Sustainability is a cornerstone of modern architecture.
-                    Architects incorporate eco-friendly materials, energy-efficient
-                    systems, and green building techniques to reduce environmental
-                    impact. Innovations such as green roofs, solar panels, and
-                    passive heating and cooling systems are commonly integrated into
-                    modern designs.
-                  </p>
-                </div>
-              </div>
-    
-              <div>
-                <div class="h-[450px] overflow-hidden rounded-2xl">
-                  <img
-                    src="https://makecomponents.com/Image/overall/building/building3.webp"
-                    alt="building"
-                    class="w-full"
-                  />
-                </div>
-                <div class=" ">
-                  <h3 class="text-[#3b3b3b]  text-2xl pt-6">
-                    Influence of Technology and Digital Tools
-                  </h3>
-                  <p class="pt-2 text-[#5a5a5a] ">
-                    Advancements in technology have significantly influenced modern
-                    architecture. Digital design tools and software, such as
-                    Building Information Modeling (BIM), allow architects to create
-                    more precise and complex structures.
-                  </p>
+                  <h4 class=" text-[#fff]  text-[20px] ">
+                    Looking for reliable logistics solutions? Get a free,
+                    no-obligation quote today and discover how we can
+                    streamline your supply chain.
+                    <span class=" text-[#c7b130]  underline underline-[#fff] underline-offset-2 ">
+                   
+                      Request your quote now!
+                    </span>
+                  </h4>
+                  <button class=" bg-[#c7b130]  rounded-lg   py-2 px-16 mt-4 hover:bg-[#fff] ">
+                    Call Now
+                  </button>
                 </div>
               </div>
             </div>
-          </section>
-        </div>`,
+          </div>
+        </div>
+      </section>
+    </div>`,
       },
 ]
 

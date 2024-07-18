@@ -19,7 +19,7 @@ import { AiOutlineFontSize } from "react-icons/ai";
 import fontData from "../../components/Font";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
-import cardData from "../../card/cardData";
+import callData from "../CallData";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -61,7 +61,7 @@ export default function CallToActionAtt() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: cardData[6]?.htmlcode,
+      value: callData[0]?.htmlcode,
     },
     "darkThemeCode.js": {
       _id: 1,
@@ -156,7 +156,7 @@ export default function CallToActionAtt() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "028";
+    var idSection = "029";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -454,7 +454,7 @@ export default function CallToActionAtt() {
                 >
                   index.html
                 </button>
-                <button
+                {/* <button
                   name="darkThemeCode"
                   className={` ${
                     fileName === "darkThemeCode.js"
@@ -465,7 +465,7 @@ export default function CallToActionAtt() {
                   onClick={() => setFileName("darkThemeCode.js")}
                 >
                   darkThemeCode.html
-                </button>
+                </button> */}
                 <button
                   name="index"
                   className={` ${
