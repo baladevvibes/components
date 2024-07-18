@@ -73,13 +73,13 @@ export default function page() {
         "@type": "ListItem",
         position: 3,
         name: "Highlight Capture",
-        item: "https://makecomponents.com/highlight/highlight-capture/preview",
+        item: "https://makecomponents.com/highlight/highlight-capture",
       },
       {
         "@type": "ListItem",
         position: 4,
         name: "Highlight Capture preview",
-        item: "https://makecomponents.com/highlight/highlight-capture/preview/preview",
+        item: "https://makecomponents.com/highlight/highlight-capture/preview",
       },
     ],
   };
