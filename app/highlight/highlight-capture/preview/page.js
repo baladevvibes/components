@@ -56,6 +56,7 @@ export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
+    "name":"Subscribe Newsletter",
     itemListElement: [
       {
         "@type": "ListItem",
