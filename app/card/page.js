@@ -4,7 +4,7 @@ export const metadata = {
   keywords:
     "card tailwind css components, free card section, tailwind card component, Tailwind card component react, Tailwind card component css",
   description:
-    "Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
+    "10+ card sections using Tailwind CSS There are many more card component templates on this page. take reference and code. It is useful for the developer and designer, too.",
   icons: {
     icon: "../favicon.ico",
     shortcut: "../favicon.ico",
@@ -15,9 +15,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "7+ Card section tailwind css",
+    title: "10+ Card section tailwind css",
     description:
-      "Card section tailwind css. Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
+      "10+ card sections using Tailwind CSS There are many more card component templates on this page. take reference and code. It is useful for the developer and designer, too.",
     url: "https://makecomponents.com/card",
     siteName: "makecomponents.com",
     alternates: {
@@ -41,7 +41,7 @@ export const metadata = {
   },
   metadataBase: new URL(`https://makecomponents.com/card`),
   title: {
-    default: `7+ Card section tailwind css`,
+    default: `10+ Card section tailwind css`,
   },
   alternates: {
     canonical: "https://makecomponents.com/card",

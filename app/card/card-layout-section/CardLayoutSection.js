@@ -163,8 +163,7 @@ export default function CardLayoutSection() {
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Card layout section`}
-          des={`This component create using CSS framework tailwindcss. It fully
-              responsive component.`}
+          des={`The layout of the card and make a design in Tailwind CSS. It is fully responsive and a template for the user.`}
           section_name={`Card`}
           using_font=" Passion One, Quicksand "
         />

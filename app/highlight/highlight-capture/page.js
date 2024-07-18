@@ -5,7 +5,7 @@ export const metadata = {
   keywords:
     "highlight section,free components,free code, make components, make component",
   description:
-    "Highlight Section Capture. Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
+    "Highlight Section Capture. This section Subscribe to the newsletter and code by tailwind CSS. This highlight section, Subscribe Newsletter, and attractive design in Tailwind CSS",
   icons: {
     icon: "../favicon.ico",
     shortcut: "../favicon.ico",
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Highlight Capture",
     description:
-      "Highlight Newsletter Capture. Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design. It is Highlight Newsletter section",
+      "Highlight Section Capture. This section Subscribe to the newsletter and code by tailwind CSS. This highlight section, Subscribe Newsletter, and attractive design in Tailwind CSS",
     url: "https://makecomponents.com/highlight/highlight-capture",
     siteName: "makecomponents.com",
     alternates: {
@@ -56,6 +56,7 @@ export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
+    "name":"Subscribe Newsletter",
     itemListElement: [
       {
         "@type": "ListItem",

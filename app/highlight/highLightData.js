@@ -11,7 +11,7 @@ const highlightData = [
           >
             <div class="relative">
               <img
-                src="../../Image/highlight/001/sideImage.webp"
+                src="https://makecomponents.com/Image/highlight/001/sideImage.webp"
                 alt="house"
                 class="mx-auto lg:-top-20 lge:-top-20 md:top-0 mdsm:top-0 sm:top-0 lg:h-[500px] lg:w-[500px] lge:h-[500px] lge:w-[500px] md:h-[500px] md:w-[500px] mdsm:h-[400px] mdsm:-[400px] sm:h-[400px] sm:w-[400px] h-[500px] w-[500px] absolute md:relative lg:absolute lge:absolute mdsm:relative sm:relative object-cover"
               />

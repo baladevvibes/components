@@ -132,8 +132,7 @@ export default function HighLightCapture() {
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Highlight Capture`}
-          des={`This component create on 19/July/2024 using CSS framework tailwindcss. It fully
-              responsive component.`}
+          des={`This section Subscribe to the newsletter and code by tailwind CSS. This highlight section, Subscribe Newsletter, and attractive design in Tailwind CSS`}
           section_name={`Subscribe Newsletter`}
           using_font="Varela round , dosis-font"
         />

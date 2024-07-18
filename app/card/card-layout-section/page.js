@@ -5,7 +5,7 @@ export const metadata = {
   keywords:
     "Tailwind responsive card grid,Tailwind responsive card grid css,Tailwind card grid, Tailwind card grid template, Tailwind card grid template html",
   description:
-    "Card layout section. Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design.",
+    "Card layout section. The layout of the card and make a design in Tailwind CSS. It is fully responsive and a template for the user.",
   icons: {
     icon: "../favicon.ico",
     shortcut: "../favicon.ico",
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Card layout section",
     description:
-      "Card layout section. Tailwind css free components and use the config file for responsive tailwind css. it will easy to work and give more idea for design you can make change the design. It is card section",
+      "Card layout section. The layout of the card and make a design in Tailwind CSS. It is fully responsive and a template for the user.",
     url: "https://makecomponents.com/card/card-layout-section",
     siteName: "makecomponents.com",
     alternates: {
