@@ -1,12 +1,12 @@
-const teamsData=[
-    {
-        _id:0,
-        name:"team-circle-hover-card",
-        title:"Team Circle Hover Card",
-        des:"This component create using CSS framework tailwindcss. It fully responsive component.",
-        section:"Teams",
-        slug:"team-circle-hover-card-preview",
-        htmlcode:`<div class="container mx-auto py-48">
+const teamsData = [
+  {
+    _id: 0,
+    name: "team-circle-hover-card",
+    title: "Team Circle Hover Card",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component.",
+    section: "Teams",
+    slug: "team-circle-hover-card-preview",
+    htmlcode: `<div class="container mx-auto py-48">
         <div class="grid lge:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-16 mdsm:gap-16 sm:gap-16 lg:px-2 lge:px-2 md:px-2 mdsm:px-2 sm:px-2">
   
           <div class="group relative">
@@ -76,16 +76,16 @@ const teamsData=[
           </div>
   
         </div>
-      </div>`
-    },
-    {
-      _id:1,
-      name:"team-hover-layer-card-section",
-      title:"Team hover layer card section",
-      des:"This component create using CSS framework tailwindcss. It fully responsive component.",
-      section:"Teams",
-      slug:"team-circle-hover-card-preview",
-      htmlcode:`   <section>
+      </div>`,
+  },
+  {
+    _id: 1,
+    name: "team-hover-layer-card-section",
+    title: "Team hover layer card section",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component.",
+    section: "Teams",
+    slug: "team-circle-hover-card-preview",
+    htmlcode: `   <section>
       <div class="container mx-auto py-16">
         <h1 class="text-[#101820] text-center w-full text-6xl pt-4 font-bold">
           Mentors
@@ -98,7 +98,8 @@ const teamsData=[
               class="h-[400px] group cursor-pointer relative overflow-hidden w-full"
             >
               <img
-                src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      src="https://makecomponents.com/Image/teams/Team002/person1.webp"
+                  alt="person1"
                 class="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px] w-full object-cover"
               />
 
@@ -129,7 +130,8 @@ const teamsData=[
               class="h-[400px] group cursor-pointer relative overflow-hidden w-full"
             >
               <img
-                src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://makecomponents.com/Image/teams/Team002/person2.webp"
+                  alt="person2"
                 class="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px] w-full object-cover"
               />
 
@@ -158,7 +160,8 @@ const teamsData=[
               class="h-[400px] group cursor-pointer relative overflow-hidden w-full"
             >
               <img
-                src="https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://makecomponents.com/Image/teams/Team002/person3.webp"
+                  alt="person3"
                 class="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px] w-full object-cover"
               />
 
@@ -186,7 +189,8 @@ const teamsData=[
               class="h-[400px] group cursor-pointer relative overflow-hidden w-full"
             >
               <img
-                src="https://images.pexels.com/photos/3460134/pexels-photo-3460134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://makecomponents.com/Image/teams/Team002/person4.webp"
+                  alt="person4"
                 class="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px] w-full object-cover"
               />
 
@@ -210,8 +214,8 @@ const teamsData=[
           </div>
         </div>
       </div>
-    </section>`
-  }
-]
+    </section>`,
+  },
+];
 
 export default teamsData;

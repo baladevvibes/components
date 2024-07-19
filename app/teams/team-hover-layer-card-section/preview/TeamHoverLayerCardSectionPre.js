@@ -19,7 +19,8 @@ export default function TeamHoverLayerCardSectionPre() {
                 className={` h-[400px] group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                     src={`../../Image/teams/Team002/person1.webp`}
+                  alt="person1"
                   className="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]  w-full object-cover "
                 />
 
@@ -48,7 +49,8 @@ export default function TeamHoverLayerCardSectionPre() {
                 className={` h-[400px] group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                     src={`../../Image/teams/Team002/person2.webp`}
+                  alt="person2"
                   className="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]  w-full object-cover "
                 />
 
@@ -78,7 +80,8 @@ export default function TeamHoverLayerCardSectionPre() {
                 className={` h-[400px] group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                   src={`../../Image/teams/Team002/person3.webp`}
+                  alt="person3"
                   className="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]  w-full object-cover "
                 />
 
@@ -107,7 +110,8 @@ export default function TeamHoverLayerCardSectionPre() {
                 className={` h-[400px] group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/3460134/pexels-photo-3460134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                   src={`../../Image/teams/Team002/person4.webp`}
+                  alt="person4"
                   className="lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]  w-full object-cover "
                 />
 

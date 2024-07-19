@@ -266,7 +266,7 @@ export default function TeamHoverLayerCardSection() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/partners/partners-hover-effects-scale/preview">
+                  <a href="/teams/team-hover-layer-card-section/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -470,7 +470,8 @@ export default function TeamHoverLayerCardSection() {
                 className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`} group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                  src={`../../Image/teams/Team002/person1.webp`}
+                  alt="person1"
                   className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`}   w-full object-cover `} 
                 />
 
@@ -499,7 +500,8 @@ export default function TeamHoverLayerCardSection() {
                 className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`} group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                 src={`../../Image/teams/Team002/person2.webp`}
+                  alt="person2"
                   className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`}   w-full object-cover `} 
                 />
 
@@ -529,7 +531,8 @@ export default function TeamHoverLayerCardSection() {
               className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`} group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                    src={`../../Image/teams/Team002/person3.webp`}
+                  alt="person3"
                   className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`}   w-full object-cover `} 
                 />
 
@@ -558,7 +561,8 @@ export default function TeamHoverLayerCardSection() {
                 className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`} group cursor-pointer relative overflow-hidden w-full`}
               >
                 <img
-                  src={`https://images.pexels.com/photos/3460134/pexels-photo-3460134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                    src={`../../Image/teams/Team002/person4.webp`}
+                  alt="person4"
                   className={` ${xlScreen ? `h-[400px]` : ``} ${lgScreen? `h-[400px]`: ``} ${mdScreen ? `h-[500px]`: ``} ${smScreen ? `h-[600px]` : ``} ${responsiveState ? `` : `lg:h-[400px] lge:h-[400px] md:h-[500px] mdsm:h-[500px] sm:h-[600px]`}   w-full object-cover `} 
                 />
 

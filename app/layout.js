@@ -1,6 +1,11 @@
 "use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
+import Script from "next/script";
+import { useEffect } from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,6 +27,7 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
         ></script>
+        <GoogleAnalytics gaId="G-5ES4FTLQ2V" />
       </head>
 
       <body className={inter.className}>{children}</body>
