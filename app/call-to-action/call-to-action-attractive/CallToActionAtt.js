@@ -532,19 +532,19 @@ export default function CallToActionAtt() {
                             </div>
                             <div className=" col-span-2 relative ">
                               <div className=" absolute bottom-0 py-10">
-                                <h3 className={` text-[#c7b130]  relative after:bg-[#fff] after:w-[10%] ${smScreen? `text-2xl`:``} ${responsiveState?``:`text-4xl`} font-semibold sedan-sc-font  pb-4`}>
+                                <h3 className={` text-[#c7b130]  relative after:bg-[#fff] after:w-[10%] ${xlScreen? `text-4xl`: ``} ${lgScreen? `text-4xl`: ``} ${mdScreen? `text-4xl`:``} ${smScreen? `text-2xl`:``} ${responsiveState?``:`text-4xl sm:text-2xl`} font-semibold sedan-sc-font  pb-4`}>
                                   Get a Free Quote
                                 </h3>
-                                <h4 className="merriweather text-[#fff]  text-[20px] ">
+                                <h4 className={`merriweather text-[#fff] ${xlScreen? `text-[20px]`: ``} ${lgScreen? `text-[20px]`: ``} ${mdScreen? `text-[20px]`:``}  ${smScreen? `text-sm`:``}  ${responsiveState?``: `text-[20px] sm:text-sm`} `}>
                                   Looking for reliable logistics solutions? Get
                                   a free, no-obligation quote today and discover
                                   how we can streamline your supply chain.{" "}
-                                  <span className=" text-[#c7b130] merriweather underline underline-[#fff] underline-offset-2 ">
+                                  <span className={` text-[#c7b130] merriweather underline underline-[#fff] underline-offset-2 ${xlScreen? `text-[20px]`: ``} ${lgScreen? `text-[20px]`: ``} ${mdScreen? `text-[20px]`:``}  ${smScreen? `text-sm`:``}  ${responsiveState?``: `text-[20px] sm:text-sm`} `}>
                                     {" "}
                                     Request your quote now!
                                   </span>
                                 </h4>
-                                <button className=" bg-[#c7b130]  rounded-lg merriweather  py-2 px-16 mt-4 hover:bg-[#fff] ">
+                                <button className=" bg-[#c7b130] text-sm rounded-lg merriweather  py-2 px-16 mt-4 hover:bg-[#fff] ">
                                   Call Now{" "}
                                 </button>
                               </div>
