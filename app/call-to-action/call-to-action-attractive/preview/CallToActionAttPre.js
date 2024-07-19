@@ -25,7 +25,7 @@ export default function CallToActionAttPre() {
                 </div>
                 <div className=" col-span-2 relative ">
                   <div className=" absolute bottom-0 py-10">
-                    <h3 className=" text-[#c7b130]  relative after:bg-[#fff] after:w-[10%] text-4xl font-semibold sedan-sc-font  pb-4">
+                    <h3 className=" text-[#c7b130] sm:text-2xl  relative after:bg-[#fff] after:w-[10%] text-4xl font-semibold sedan-sc-font  pb-4">
                       Get a Free Quote
                     </h3>
                     <h4 className="merriweather text-[#fff]  text-[20px] ">
