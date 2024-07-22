@@ -7,12 +7,12 @@ export const metadata = {
   description:
     "Many hero section in modern day. They are unique, give a separate template to read, and are attractive.",
   icons: {
-    icon: "../../favicon.ico",
-    shortcut: "../../favicon.ico",
-    apple: "../../favicon.ico",
+    icon: "../favicon.ico",
+    shortcut: "../favicon.ico",
+    apple: "../favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../../favicon.ico",
+      url: "../favicon.ico",
     },
   },
   openGraph: {
