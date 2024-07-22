@@ -43,7 +43,7 @@ export default function CurveCardDesignPre() {
             </div>
           </div>
         </div>
-
+        
         <div className=" grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 px-4 gap-10">
           <div>
             <div className=" h-[450px] overflow-hidden rounded-2xl relative">

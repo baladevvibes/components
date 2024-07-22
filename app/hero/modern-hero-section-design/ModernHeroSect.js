@@ -19,7 +19,8 @@ import { AiOutlineFontSize, AiOutlineMenuFold } from "react-icons/ai";
 import fontData from "../../components/Font";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
-import callData from "../../call-to-action/CallData";
+import heroData from "../heroData";
+import ThemeHeroData from "../ThemeHeroData";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -61,13 +62,13 @@ export default function ModernHeroSect() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: callData[0]?.htmlcode,
+      value: heroData[3]?.htmlcode,
     },
     "darkThemeCode.js": {
       _id: 1,
       name: "darkThemeCode.js",
       language: "javascript",
-      value: cardLightData[0]?.htmlcode,
+      value: ThemeHeroData[0]?.htmlcode,
     },
     "index.css": {
       _id: 2,
@@ -156,7 +157,7 @@ export default function ModernHeroSect() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "029";
+    var idSection = "030";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -178,7 +179,7 @@ export default function ModernHeroSect() {
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Modern hero section design`}
-          des={`Call to action section. It was create by the tailwind css. It fully responsive and easy for the developer and designer.`}
+          des={`Many hero section in modern day. They are unique, give a separate template to read, and are attractive.`}
           section_name={`Hero`}
           using_font=" Titillium, jost"
         />
@@ -454,7 +455,7 @@ export default function ModernHeroSect() {
                 >
                   index.html
                 </button>
-                {/* <button
+                <button
                   name="darkThemeCode"
                   className={` ${
                     fileName === "darkThemeCode.js"
@@ -465,7 +466,7 @@ export default function ModernHeroSect() {
                   onClick={() => setFileName("darkThemeCode.js")}
                 >
                   darkThemeCode.html
-                </button> */}
+                </button>
                 <button
                   name="index"
                   className={` ${
@@ -523,7 +524,17 @@ export default function ModernHeroSect() {
                       />
                       <div className=" absolute top-0 p-6 w-full ">
                         <div className=" flex justify-end ">
-                          <div className={`${xlScreen? `hidden`:``} ${lgScreen? `hidden`: ``} ${mdScreen? `block`: ``} ${smScreen? `block`:``} ${responsiveState ? ``:`lg:hidden lge:hidden md:hidden mdsm:block sm:block `} bg-[#fff] p-2 cursor-pointer group`}>
+                          <div
+                            className={`${xlScreen ? `hidden` : ``} ${
+                              lgScreen ? `hidden` : ``
+                            } ${mdScreen ? `block` : ``} ${
+                              smScreen ? `block` : ``
+                            } ${
+                              responsiveState
+                                ? ``
+                                : `lg:hidden lge:hidden md:hidden mdsm:block sm:block `
+                            } bg-[#fff] p-2 cursor-pointer group`}
+                          >
                             <svg
                               stroke="currentColor"
                               fill="currentColor"
@@ -538,7 +549,17 @@ export default function ModernHeroSect() {
                             </svg>
                           </div>
                         </div>
-                        <div className={` ${xlScreen? `block`:``} ${lgScreen? `block`: ``} ${mdScreen? `hidden`: ``} ${smScreen? `hidden`:``} ${responsiveState ? ``:`lg:block lge:block md:block  mdsm:hidden sm:hidden`}`}>
+                        <div
+                          className={` ${xlScreen ? `block` : ``} ${
+                            lgScreen ? `block` : ``
+                          } ${mdScreen ? `hidden` : ``} ${
+                            smScreen ? `hidden` : ``
+                          } ${
+                            responsiveState
+                              ? ``
+                              : `lg:block lge:block md:block  mdsm:hidden sm:hidden`
+                          }`}
+                        >
                           <div className=" grid  grid-cols-12 ">
                             <div className=" bg-[#fff] text-[#333] font-bold px-6 rounded-lg titillium text-center">
                               Logo
@@ -567,7 +588,17 @@ export default function ModernHeroSect() {
                       <h2 className=" text-[#333] dark:text-[#fff] font-bold text-[64px] titillium">
                         Bright City
                       </h2>
-                      <h4 className={`${xlScreen? `text-[24px]`: ``} ${lgScreen? `text-[24px]`: ``} ${mdScreen? `text-[22px]`: ``} ${smScreen? `text-[20px]`: ``} ${responsiveState? ``: `lg:text-[24px] lge:text-[24px] md:text-[24px] mdsm:text-[22px] sm:text-[20px] `}  font-normal  pt-2 text-[#898989] jost-font `}>
+                      <h4
+                        className={`${xlScreen ? `text-[24px]` : ``} ${
+                          lgScreen ? `text-[24px]` : ``
+                        } ${mdScreen ? `text-[22px]` : ``} ${
+                          smScreen ? `text-[20px]` : ``
+                        } ${
+                          responsiveState
+                            ? ``
+                            : `lg:text-[24px] lge:text-[24px] md:text-[24px] mdsm:text-[22px] sm:text-[20px] `
+                        }  font-normal  pt-2 text-[#898989] jost-font `}
+                      >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud

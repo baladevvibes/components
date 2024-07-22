@@ -1,9 +1,47 @@
-import React from 'react'
+"use client"
+import { CiDark } from "react-icons/ci";
+import { CiLight } from "react-icons/ci";
+import React, { useState } from 'react'
 import "../../../style.css"
 
 export default function ModernHeroSectPre() {
+  const [dark, setDark] = useState(false);
+
+  const darkModeHandler = () => {
+    setDark(!dark);
+    document.body.classList.toggle("dark");
+  };
   return (
     <div>
+           <div className=" sticky top-2 flex justify-end px-10 pb-10">
+          <div onClick={() => darkModeHandler()}>
+            <div className={` group`}>
+              <div
+                className={` ${
+                  dark ? `bg-secondary` : ``
+                } p-1.5 border  border-[#ccc] z-40 mx-4  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+              >
+                {dark ? (
+                  <>
+                    <CiLight
+                      className={` ${dark ? ` text-[#fff] text-[16px]` : ``}`}
+                    />
+                  </>
+                ) : (
+                  <>
+                    <CiDark
+                      className={`  group-hover:text-[#fff] text-[16px]`}
+                    />
+                  </>
+                )}
+              </div>
+
+              <p className={` text-sm text-center dark:text-[#fff]`}>
+                {dark ? "Da" : "Li"}
+              </p>
+            </div>
+          </div>
+        </div>
         
       <section className=" dark:bg-[#1e1e1e] container px-4 py-10  mx-auto">
         <div className=" relative rounded-2xl  overflow-hidden ">

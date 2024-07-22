@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "030",
+    image: "../Image/hero/hero004.webp",
+    title: "Modern hero section design",
+    tag: "hero",
+    link: "/hero/modern-hero-section-design",
+  },
+  {
     _id: "029",
     image: "../Image/call-to-action/call001.webp",
     title: "Attractive Call to action",
