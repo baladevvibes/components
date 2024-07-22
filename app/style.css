@@ -89,7 +89,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
 /* Titillium */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
+/* Kalnia */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
 /* Work Sans */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -108,6 +109,9 @@
 .work{
   font-family: "Work Sans", sans-serif;
 
+}
+.Kalnia{
+  font-family: "Kalnia Glaze", serif;
 }
 
 .cormorant{

@@ -15,7 +15,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Attrative Call to action",
+    title: "Attractive Call to action",
     description:
       "Call to action section. It was create by the tailwind css. It fully responsive and easy for the developer and designer.",
     url: "https://makecomponents.com/call-to-action/call-to-action-attractive",
@@ -43,7 +43,7 @@ export const metadata = {
     `https://makecomponents.com/call-to-action/call-to-action-attractive`
   ),
   title: {
-    default: `Attrative Call to action `,
+    default: `Attractive Call to action `,
   },
   alternates: {
     canonical:
@@ -72,7 +72,7 @@ export default function page() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "Attrative Call to action",
+        name: "Attractive Call to action",
         item: "https://makecomponents.com/call-to-action/call-to-action-attractive",
       },
     ],

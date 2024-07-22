@@ -17,7 +17,7 @@ const HomeComponents = [
   {
     _id: "029",
     image: "../Image/call-to-action/call001.webp",
-    title: "Attrative Call to action",
+    title: "Attractive Call to action",
     tag: "call-to-action",
     link: "/call-to-action/call-to-action-attractive",
   },

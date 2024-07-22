@@ -1,7 +1,7 @@
 const cardData = [
     {
         _id: 0,
-        name: "Attrative Call to action",
+        name: "Attractive Call to action",
         htmlcode: `<div class=" py-[300px] dark:bg-secondary">
       <section
         class="  relative py-10 bg-[url('https://makecomponents.com/Image/call-to-action/001/001.webp')] h-[300px] bg-no-repeat bg-cover bg-center "
