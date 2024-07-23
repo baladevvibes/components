@@ -45,7 +45,7 @@ const ThemeHeroData = [
         <h2 class=" text-[#333] dark:text-[#fff] font-bold text-[64px] ">
           Bright City
         </h2>
-        <h4 class=" lg:text-[24px] lge:text-[24px] md:text-[24px] mdsm:text-[22px] font-normal sm:text-[20px]  pt-2 text-[#898989]  ">
+        <h4 class=" lg:text-[22px] lge:text-[22px] md:text-[22px] mdsm:text-[20px] font-normal sm:text-[20px]  pt-2 text-[#898989]  ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

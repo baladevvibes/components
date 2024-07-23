@@ -589,14 +589,14 @@ export default function ModernHeroSect() {
                         Bright City
                       </h2>
                       <h4
-                        className={`${xlScreen ? `text-[24px]` : ``} ${
-                          lgScreen ? `text-[24px]` : ``
-                        } ${mdScreen ? `text-[22px]` : ``} ${
+                        className={`${xlScreen ? `text-[22px]` : ``} ${
+                          lgScreen ? `text-[22px]` : ``
+                        } ${mdScreen ? `text-[20px]` : ``} ${
                           smScreen ? `text-[20px]` : ``
                         } ${
                           responsiveState
                             ? ``
-                            : `lg:text-[24px] lge:text-[24px] md:text-[24px] mdsm:text-[22px] sm:text-[20px] `
+                            : `lg:text-[22px] lge:text-[22px] md:text-[22px] mdsm:text-[20px] sm:text-[20px] `
                         }  font-normal  pt-2 text-[#898989] jost-font `}
                       >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
