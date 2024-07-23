@@ -16,7 +16,7 @@ const HomeComponents = [
   // },
   {
     _id: "031",
-    image: "../Image/Footer/footer002.webp",
+    image: "../Image/footer/footer002.webp",
     title: "Dark theme footer design",
     tag: "Footer",
     link: "/footer/dark-theme-footer-design",
