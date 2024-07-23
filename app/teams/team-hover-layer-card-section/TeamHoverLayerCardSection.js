@@ -132,8 +132,7 @@ export default function TeamHoverLayerCardSection() {
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Team hover layer card section`}
-          des={`This component create on 05/June/2024 using CSS framework tailwindcss. It fully
-              responsive component.`}
+          des={`Card layer section. hover the card means content will display other wise it will be hidden.`}
           section_name={`Team`}
           using_font="Freeman"
         />

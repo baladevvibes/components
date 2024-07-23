@@ -18,7 +18,7 @@ const HomeComponents = [
     _id: "030",
     image: "../Image/hero/hero004.webp",
     title: "Modern hero section design",
-    tag: "hero",
+    tag: "Hero",
     link: "/hero/modern-hero-section-design",
   },
   {
