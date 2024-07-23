@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "031",
+    image: "../Image/Footer/footer002.webp",
+    title: "Dark theme footer design",
+    tag: "Footer",
+    link: "/footer/dark-theme-footer-design",
+  },
+  {
     _id: "030",
     image: "../Image/hero/hero004.webp",
     title: "Modern hero section design",

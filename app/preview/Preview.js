@@ -50,6 +50,15 @@ export default function Preview() {
         </div>
       </div>
 
+      <section className=" py-20 container mx-auto">
+        <div className=" grid grid-cols-3">
+          <div className="  relative cursor-pointer group overflow-hidden ">
+            <div className=" absolute group-hover:opacity-100 origin-center rotate-45 scale-150 group-hover:rotate-0 transition-5 duration-300  opacity-0 w-full bg-[#211e1e7a]	h-full"></div>
+            <img src="../Image/overall/building/building4.webp" className=""/>
+          </div>
+        </div>
+      </section>
+
       <section className=" bg-[#191919] py-20">
         <footer className=" container mx-auto px-4">
           <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
