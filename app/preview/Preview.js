@@ -8,6 +8,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import { LuInstagram } from "react-icons/lu";
+import { VscEye } from "react-icons/vsc";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -50,11 +51,53 @@ export default function Preview() {
         </div>
       </div>
 
-      <section className=" py-20 container mx-auto">
-        <div className=" grid grid-cols-3">
-          <div className="  relative cursor-pointer group overflow-hidden ">
-            <div className=" absolute group-hover:opacity-100 origin-center rotate-45 scale-150 group-hover:rotate-0 transition-5 duration-300  opacity-0 w-full bg-[#211e1e7a]	h-full"></div>
-            <img src="../Image/overall/building/building4.webp" className=""/>
+      <section className=" py-20 container mx-auto px-4">
+        <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
+        <div className="  relative group overflow-hidden ">
+            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1e7a] flex justify-center items-center	h-full">
+              <div className=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+                <VscEye className=" group-hover:opacity-100 text-[16px] " />
+              </div>
+            </div>
+            <img
+              src="../Image/overall/food/food1.webp"
+              className="h-[400px] object-cover w-full"
+            />
+          </div>
+          <div className="  relative group overflow-hidden ">
+            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1e7a] flex justify-center items-center	h-full">
+              <div className=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+                <VscEye className=" group-hover:opacity-100 text-[16px] " />
+              </div>
+            </div>
+            <img
+              src="../Image/overall/food/food2.webp"
+              className="h-[400px] object-cover w-full"
+            />
+          </div>
+
+          <div className="  relative group overflow-hidden ">
+            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1e7a] flex justify-center items-center	h-full">
+              <div className="  cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+                <VscEye className=" group-hover:opacity-100 text-[16px] " />
+              </div>
+            </div>
+            <img
+              src="../Image/overall/food/food3.webp"
+              className="h-[400px] object-cover w-full"
+            />
+          </div>
+
+          <div className="  relative  group overflow-hidden ">
+            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1e7a] flex justify-center items-center	h-full">
+              <div className=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+                <VscEye className=" group-hover:opacity-100 text-[16px] " />
+              </div>
+            </div>
+            <img
+              src="../Image/overall/food/food4.webp"
+              className="h-[400px] object-cover w-full"
+            />
           </div>
         </div>
       </section>
