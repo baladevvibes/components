@@ -18,7 +18,7 @@ const HomeComponents = [
     _id: "032",
     image: "../Image/card/card007.webp",
     title: "Recipe card template",
-    tag: "Card",
+    tag: "card",
     link: "/card/recipe-card-template",
   },
   {
