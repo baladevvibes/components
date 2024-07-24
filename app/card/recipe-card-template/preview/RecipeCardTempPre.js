@@ -1,10 +1,9 @@
 import React from "react";
-import { VscEye } from "react-icons/vsc";
 
 export default function RecipeCardTempPre() {
   return (
     <div>
-      <section className=" py-20 container mx-auto px-4">
+      <section className=" py-24 container mx-auto px-4">
         <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
           <div className="  relative group overflow-hidden ">
             <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">

@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "032",
+    image: "../Image/card/card007.webp",
+    title: "Recipe card template",
+    tag: "Card",
+    link: "/card/recipe-card-template",
+  },
+  {
     _id: "031",
     image: "../Image/footer/footer002.webp",
     title: "Dark theme footer design",

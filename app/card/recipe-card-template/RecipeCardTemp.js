@@ -61,13 +61,13 @@ export default function RecipeCardTemp() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: cardData[6]?.htmlcode,
+      value: cardData[7]?.htmlcode,
     },
     "darkThemeCode.js": {
       _id: 1,
       name: "darkThemeCode.js",
       language: "javascript",
-      value: cardLightData[0]?.htmlcode,
+      value: cardLightData[1]?.htmlcode,
     },
     "index.css": {
       _id: 2,
@@ -156,7 +156,7 @@ export default function RecipeCardTemp() {
   const FilterCard = () => {
     // id=1
     var arr = [];
-    var idSection = "028";
+    var idSection = "032";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
         console.log(el);
@@ -341,7 +341,7 @@ export default function RecipeCardTemp() {
                     </div>
                   </div>
 
-                  <a href={`/card/curve-card-design/preview`}>
+                  <a href={`/card/recipe-card-template/preview`}>
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
