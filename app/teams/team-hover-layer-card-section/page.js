@@ -3,7 +3,7 @@ import TeamHoverLayerCardSection from "./TeamHoverLayerCardSection";
 
 export const metadata = {
   keywords:
-    "hero section design template, Hero section design template word, Hero section design template free",
+    "Team card section template, Team card section example, team card section",
   description:
     "Card layer section. hover the card means content will display other wise it will be hidden.",
   icons: {

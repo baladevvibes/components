@@ -3,7 +3,7 @@ import TeamHoverLayerCardSectionPre from "./TeamHoverLayerCardSectionPre";
 
 export const metadata = {
   keywords:
-    "hero section design template, Hero section design template word, Hero section design template free",
+    "team card section tailwind css, Team card section tailwind css example, Tailwind css cards codepen",
   description:
     "Card layer section. hover the card means content will display other wise it will be hidden.",
   icons: {

@@ -454,7 +454,8 @@ export default function TeamHoverCard() {
                       <div className={`group  relative`}>
                         <div className={` -top-12 left-[34%]  absolute`}>
                           <img
-                            src={`https://images.pexels.com/photos/7444396/pexels-photo-7444396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                           src={`../../Image/teams/Team001/person1.webp`}
+                    alt="person1"
                             className={`rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]`}
                           />
                         </div>
@@ -480,7 +481,8 @@ export default function TeamHoverCard() {
                       <div className={`group  relative`}>
                         <div className={` -top-12 left-[34%]  absolute`}>
                           <img
-                            src={`https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                       src={`../../Image/teams/Team001/person2.webp`}
+                    alt="person2"
                             className={`rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]`}
                           />
                         </div>
@@ -506,7 +508,8 @@ export default function TeamHoverCard() {
                       <div className={`group  relative`}>
                         <div className={` -top-12 left-[34%]  absolute`}>
                           <img
-                            src={`https://images.pexels.com/photos/8297161/pexels-photo-8297161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                             src={`../../Image/teams/Team001/person3.webp`}
+                    alt="person3"
                             className={`rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]`}
                           />
                         </div>
@@ -532,7 +535,8 @@ export default function TeamHoverCard() {
                       <div className={`group  relative`}>
                         <div className={` -top-12 left-[34%]  absolute`}>
                           <img
-                            src={`https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                             src={`../../Image/teams/Team001/person4.webp`}
+                    alt="person4"
                             className={`rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]`}
                           />
                         </div>

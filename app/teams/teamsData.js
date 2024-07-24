@@ -11,7 +11,9 @@ const teamsData = [
   
           <div class="group relative">
             <div class="-top-12 left-[34%] absolute">
-              <img src="https://images.pexels.com/photos/7444396/pexels-photo-7444396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=" David Nguyen" class="rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] [100px]"/>
+              <img 
+             src={"https://makecomponents.com/Image/teams/Team001/person1.webp"}
+              alt=" David Nguyen" class="rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] [100px]"/>
             </div>
             <div class="group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4">
               <h2 class=" group-hover:text-white transition delay-200 text-[#001f2e] text-center text-2xl font-semibold">
@@ -27,7 +29,9 @@ const teamsData = [
   
           <div class="group relative">
             <div class="-top-12 left-[34%] absolute">
-              <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]"
+              <img 
+           src={"https://makecomponents.com/Image/teams/Team001/person2.webp"}
+            class="rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]"
              alt="Michael Thompson" />
             </div>
             <div class="group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4">
@@ -44,7 +48,7 @@ const teamsData = [
   
           <div class="group relative">
             <div class="-top-12 left-[34%] absolute">
-              <img src="https://images.pexels.com/photos/8297161/pexels-photo-8297161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]" alt="Emily Parker"/>
+              <img   src={"https://makecomponents.com/Image/teams/Team001/person1.webp"} class="rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]" alt="Emily Parker"/>
             </div>
             <div class="group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4">
               <h2 class=" group-hover:text-white transition delay-200 text-[#001f2e] text-center text-2xl font-semibold">
@@ -60,7 +64,7 @@ const teamsData = [
   
           <div class="group relative">
             <div class="-top-12 left-[34%] absolute">
-              <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              <img   src={"https://makecomponents.com/Image/teams/Team001/person1.webp"}
               alt=" James Anderson" class="rounded-full transition delay-200 group-hover:border-[#bde9ff] border-4 border-[#001f2e] object-cover h-[100px] w-[100px]"/>
             </div>
             <div class="group-hover:bg-[#001f2e] transition delay-200 bg-[#bde9ff] pt-16 px-4 pb-4">
