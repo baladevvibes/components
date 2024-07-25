@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "033",
+    image: "../Image/faq/faq001.webp",
+    title: "Simple faq sample design css",
+    tag: "faq",
+    link: "/faq/sample-faq-section",
+  },
+  {
     _id: "032",
     image: "../Image/card/card007.webp",
     title: "Recipe card template",
