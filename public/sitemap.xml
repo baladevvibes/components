@@ -13,8 +13,13 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>makecomponents.com/card/recipe-card-template</loc>
-  <lastmod>2024-07-25T04:34:47+00:00</lastmod>
+  <loc>https://makecomponents.com/faq/sample-faq-section</loc>
+  <lastmod>2024-07-24T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/card/recipe-card-template</loc>
+  <lastmod>2024-07-24T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -188,8 +193,13 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>makecomponents.com/card/recipe-card-template/preview</loc>
-  <lastmod>2024-07-25T04:34:47+00:00</lastmod>
+  <loc>https://makecomponents.com/faq/sample-faq-section/preview</loc>
+  <lastmod>2024-07-24T04:34:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/card/recipe-card-template/preview</loc>
+  <lastmod>2024-07-24T04:34:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
