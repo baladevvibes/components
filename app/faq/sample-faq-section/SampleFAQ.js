@@ -20,6 +20,8 @@ import fontData from "../../components/Font";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 import faqData from "../FaqData";
+import { TbBrandBootstrap } from "react-icons/tb";
+import { TbBrandTailwind } from "react-icons/tb";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -311,6 +313,9 @@ export default function SampleFAQ() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
+
+             
+
                   <div onClick={() => darkModeHandler()}>
                     <div className={` group`}>
                       <div
@@ -336,7 +341,7 @@ export default function SampleFAQ() {
                       </div>
 
                       <p className={` text-sm text-center `}>
-                        {dark ? "Da" : "Li"}
+                        {dark ? "da" : "li"}
                       </p>
                     </div>
                   </div>
@@ -434,6 +439,28 @@ export default function SampleFAQ() {
                     </div>
                     <p className={` text-sm text-center `}> code</p>
                   </div>
+
+                  {/* <div className=" border h-8 mt-[4px] border-[#e6e6e6]"></div>
+
+                  <div className={` group `}>
+                    <img
+                      src="../../Image/overall/icons/tailwind.png"
+                      alt="Bootstrap"
+                      className="h-[14px] mt-[10px] cursor-pointer "
+                    />
+                    <p className={` text-sm text-center mt-[6px]  font-semibold`}> tw</p>
+                  </div>
+
+
+                  <div className={` group pr-3 `}>
+                    <img
+                      src="../../Image/overall/icons/bootstrap.png"
+                      alt="Bootstrap"
+                      className="h-[20px] mt-[8px] cursor-pointer "
+                    />
+                    <p className={` text-sm text-center mt-[2px] `}> bs</p>
+                  </div> */}
+
                 </div>
               </div>
             </div>

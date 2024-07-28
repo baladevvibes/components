@@ -5,16 +5,43 @@ import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 
 export default function SampleFAQPre() {
-    const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(false);
 
-    const darkModeHandler = () => {
-      setDark(!dark);
-      document.body.classList.toggle("dark");
-    };
+  const darkModeHandler = () => {
+    setDark(!dark);
+    document.body.classList.toggle("dark");
+  };
   return (
     <div className="dark:bg-[#1E1E1E]">
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img
+              class="h-48 w-full object-cover md:h-full md:w-48"
+              src="../../Image/overall/food/food1.webp"
+              alt="Modern building architecture"
+            />
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+              Company retreats
+            </div>
+            <a
+              href="#"
+              class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+            >
+              Incredible accommodation for your team
+            </a>
+            <p class="mt-2 text-slate-500">
+              Looking to take your team away on a retreat to enjoy awesome food
+              and take in some sunshine? We have a list of places to do just
+              that.
+            </p>
+          </div>
+        </div>
+      </div>
       <section className=" container px-4 py-40   mx-auto">
-      <div className=" sticky top-2 flex justify-end px-10 pb-10">
+        <div className=" sticky top-2 flex justify-end px-10 pb-10">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div

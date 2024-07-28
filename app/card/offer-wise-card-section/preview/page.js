@@ -1,18 +1,29 @@
-import React from 'react'
-import OfferWiseCardSectionPre from './OfferWiseCardSectionPre'
+import React from "react";
+import OfferWiseCardSectionPre from "./OfferWiseCardSectionPre";
 
 export const metadata = {
-  title: "Offer wise card section Preview",
-  description:
-    "This component create using CSS framework tailwindcss. It full responsive component. This template used for Card section Preview",
   keywords:
-    "card section,free components,free code, make components, make component",
+    "Gradient card css, gradient card design, Gradient card design template",
+  description:
+    "This layout and hover mean gradient color will display. It has a different layout and grid design in this preview section.",
+  icons: {
+    icon: "../../favicon.ico",
+    shortcut: "../../favicon.ico",
+    apple: "../../favicon.ico",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "../../favicon.ico",
+    },
+  },
   openGraph: {
-    title: "Offer wise card section Preview",
+    title: "Gradient card css preview",
     description:
-      "This component create using CSS framework tailwindcss. It full responsive component. This template used for Card section Preview",
+      "This layout and hover mean gradient color will display. It has a different layout and grid design in this preview section.",
     url: "https://makecomponents.com/card/offer-wise-card-section/preview",
     siteName: "makecomponents.com",
+    alternates: {
+      canonical: `https://makecomponents.com/card/offer-wise-card-section/preview`,
+    },
     images: [
       {
         url: "https://makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
@@ -23,16 +34,62 @@ export const metadata = {
         url: "https://makecomponents.com/Image/card/card001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
-        alt: "Hero Banner With Searching Options",
+        alt: "Card components",
       },
     ],
     locale: "en_US",
     type: "website",
   },
+  metadataBase: new URL(
+    `https://makecomponents.com/card/offer-wise-card-section/preview`
+  ),
+  title: {
+    default: `Gradient card css preview`,
+  },
+  alternates: {
+    canonical:
+      "https://makecomponents.com/card/offer-wise-card-section/preview",
+  },
 };
 
 export default function page() {
+  const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://makecomponents.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Card components",
+        item: "https://makecomponents.com/card",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Gradient card css",
+        item: "https://makecomponents.com/card/offer-wise-card-section",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Gradient card css preview",
+        item: "https://makecomponents.com/card/offer-wise-card-section/preview",
+      },
+    ],
+  };
   return (
-    <div><OfferWiseCardSectionPre/></div>
-  )
+    <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <OfferWiseCardSectionPre />
+    </div>
+  );
 }

@@ -22,14 +22,14 @@ const cardData = [
                   </div>
                 </div>
               </div>
-              <img src="https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              <img src="https://makecomponents.com/Image/overall/wonders/new-york.webp"
                 class=" object-cover h-[400px] sm:w-full w-full"  alt="New York"/>
             </div>
           </div>
   
           <div class=" col-span-3 h-full gap-2 ">
   
-            <div class="lg:h-[40%] lge:h-[40%] md:h-[400px] mdsm:h-[400px] sm:h-[400px] relative group bg-[url('https://images.pexels.com/photos/1721747/pexels-photo-1721747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] overflow-hidden bg-primary  bg-hero bg-no-repeat bg-cover bg-center ">
+            <div class="lg:h-[40%] lge:h-[40%] md:h-[400px] mdsm:h-[400px] sm:h-[400px] relative group bg-[url('https://makecomponents.com//Image/overall/wonders/india.webp')] overflow-hidden bg-primary  bg-hero bg-no-repeat bg-cover bg-center ">
               <div class=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
                 <div class=" group-hover:block hidden">
                   <div class=" uppercase  transition delay-300  tracking-wide text-6xl text-[#fff]  ">
@@ -44,7 +44,7 @@ const cardData = [
               <div class=" grid grid-cols-2 gap-2  h-full ">
                 <div class="group relative h-full">
                   <img
-                    src="https://images.pexels.com/photos/2915957/pexels-photo-2915957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src="https://makecomponents.com/Image/overall/wonders/china.webp"
                     alt=" China"
                     class=" h-full object-cover"/>
                   <div class=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
@@ -58,7 +58,7 @@ const cardData = [
   
                 <div class=" group relative h-full ">
                   <img
-                    src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src="https://makecomponents.com/Image/overall/wonders/paris.webp"
                     alt=""
                     class=" h-full object-cover"
                   />
@@ -86,68 +86,90 @@ const cardData = [
     image: "../../Image/card/card002.webp",
     slug: "three-grid-card-template",
     link: "/card/three-grid-card-template",
-    htmlcode: `<section class="container mx-auto py-24">
-      <div class=" grid lg:grid-cols-5 lge:grid-cols-5 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-2 p-2">
-        <div class="col-span-2">
-          
-          <div class=" group relative ">
-            <div class=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
-              <div class=" group-hover:block hidden">
-                <div class=" transition delay-300  tracking-wide text-6xl text-[#fff]">
-                  New York
-                </div>
-              </div>
-            </div>
-            <img src="https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class=" object-cover h-[400px] sm:w-full w-full"  alt="New York"/>
+    htmlcode: `  <section class=" my-20">
+      <div class="">
+        <div
+          class=" grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1"
+        >
+          <div
+            class=" h-[400px] bg-[#f71418] flex justify-center items-center"
+          >
+            <h1
+              class=" text-5xl acme-font font-semibold  text-center text-white"
+            >
+              Our
+              <br /> Campus
+            </h1>
           </div>
-        </div>
-
-        <div class=" col-span-3 h-full gap-2 ">
-
-          <div class="lg:h-[40%] lge:h-[40%] md:h-[400px] mdsm:h-[400px] sm:h-[400px] relative group bg-[url('https://images.pexels.com/photos/1721747/pexels-photo-1721747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] overflow-hidden bg-primary  bg-hero bg-no-repeat bg-cover bg-center ">
-            <div class=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
-              <div class=" group-hover:block hidden">
-                <div class=" uppercase  transition delay-300  tracking-wide text-6xl text-[#fff]  ">
-                  INDIA
-                </div>
-              </div>
+          <div class=" h-[400px] relative">
+            <div
+              class="top-0 bg-[#080808cc]  flex justify-center items-center w-full h-full absolute p-5 "
+            >
+              <p class=" acme-font  font-semibold text-white text-5xl">
+                Library
+              </p>
             </div>
+            <img
+              src="https://makecomponents.com/Image/overall/places/Library.webp"
+              alt="library"
+              class=" object-cover h-[400px]"
+            />
           </div>
-
-          <div class=" h-[58%] mt-2 overflow-hidden ">
-
-            <div class=" grid grid-cols-2 gap-2  h-full ">
-              <div class="group relative h-full">
-                <img
-                  src="https://images.pexels.com/photos/2915957/pexels-photo-2915957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=" China"
-                  class=" h-full object-cover"/>
-                <div class=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
-                  <div class=" group-hover:block hidden">
-                    <div class=" uppercase transition delay-300  tracking-wide text-6xl text-[#fff]  ">
-                      China
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class=" group relative h-full ">
-                <img
-                  src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
-                  class=" h-full object-cover"
-                />
-                <div class=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
-                  <div class=" group-hover:block hidden">
-                    <div class=" uppercase  transition delay-300  tracking-wide text-6xl text-[#fff]  ">
-                      Paris
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+          <div class=" h-[400px] relative">
+            <div
+              class="top-0 bg-[#fbc02da8]  flex justify-center items-center w-full h-full absolute p-5 "
+            >
+              <p class=" acme-font  font-semibold text-white text-5xl">
+                Play ground
+              </p>
             </div>
+            <img
+              src="https://makecomponents.com/Image/overall/places/Play-ground.webp"
+              alt="playground"
+              class=" object-cover h-[400px]"
+            />
+          </div>
+          <div class=" h-[400px] relative">
+            <div
+              class="top-0 bg-[#080808cc]  flex justify-center items-center w-full h-full absolute p-5 "
+            >
+              <p class=" acme-font  font-semibold text-white text-5xl">
+                Higher Education
+              </p>
+            </div>
+            <img
+              src="https://makecomponents.com/Image/overall/places/Higher-Education.webp"
+              alt="college"
+              class=" object-cover h-[400px]"
+            />
+          </div>
+          <div class=" h-[400px] relative">
+            <div
+              class="top-0 bg-[#bf3503ba]  flex justify-center items-center w-full h-full absolute p-5 "
+            >
+              <p class=" acme-font  font-semibold text-white text-5xl">
+                Canteen
+              </p>
+            </div>
+            <img
+              src="https://makecomponents.com/Image/overall/places/Canteen.webp"
+              alt="canteen"
+              class=" object-cover h-[400px]"
+            />
+          </div>
+          <div class=" h-[400px] relative">
+            <div
+              class="top-0 bg-[#080808cc]  flex justify-center items-center w-full h-full absolute p-5 "
+            >
+              <p class=" acme-font  font-semibold text-white text-5xl">
+                Classroom
+              </p>
+            </div>
+            <img
+              src="https://makecomponents.com/Image/overall/places/Classroom.webp"
+              alt="classroom"
+              class=" object-cover h-[400px]"
+            />
           </div>
         </div>
       </div>

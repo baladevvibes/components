@@ -114,9 +114,8 @@ export default function OfferWiseCardSection() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Offer wise card section`}
-          des={`This component create using CSS framework tailwindcss. It fully
-              responsive component.`}
+          title={`Gradient card css`}
+          des={`This layout and hover mean gradient color will display. It has a different layout and grid design in this section.`}
           section_name={`Card`}
           using_font="Freeman"
         />
@@ -274,25 +273,28 @@ export default function OfferWiseCardSection() {
                     </div>
                   </a>
                   <div className={` group`}>
-                  <a href={`/File/card/OfferWiseCardSection.html`} download="OfferWiseCardSection.html"> 
-                    <div
-                      className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                    <a
+                      href={`/File/card/OfferWiseCardSection.html`}
+                      download="OfferWiseCardSection.html"
                     >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 16 16"
-                        class=" text-1xl  text-textcolor group-hover:text-white"
-                        height="1em"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <div
+                        className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
                       >
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
-                      </svg>
-                    </div>
-                    <p className={` text-sm text-center `}> dow</p>
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 16 16"
+                          class=" text-1xl  text-textcolor group-hover:text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
+                          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
+                        </svg>
+                      </div>
+                      <p className={` text-sm text-center `}> dow</p>
                     </a>
                   </div>
 
@@ -329,7 +331,13 @@ export default function OfferWiseCardSection() {
                           file?._id === 2 ? `-left-24` : `-left-10`
                         }  drop-css  rounded-md text-sm bg-[#82bd69] py-1 px-3 text-[#13250e]  `}
                       >
-                 <div>{file?.name ==="app.js" ? "index.html" : <>{file?.name}</>} </div>{" "}
+                        <div>
+                          {file?.name === "app.js" ? (
+                            "index.html"
+                          ) : (
+                            <>{file?.name}</>
+                          )}{" "}
+                        </div>{" "}
                         <div className={` px-1`}> Copied</div>{" "}
                       </div>
                     ) : null}
@@ -429,9 +437,21 @@ export default function OfferWiseCardSection() {
                   <div className={` container mx-auto py-20   overflow-auto `}>
                     <section>
                       <div
-                        className={` grid ${xlScreen ?  `grid-cols-5`:``}  ${lgScreen ?  `grid-cols-2`:``}  ${mdScreen ?  `grid-cols-2`:``} ${smScreen ? `sm:grid-cols-1` : ``}  ${responsiveState ? `` :`lg:grid-cols-5 lge:grid-cols-5 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1`}  gap-2 p-2`}
+                        className={` grid ${xlScreen ? `grid-cols-5` : ``}  ${
+                          lgScreen ? `grid-cols-2` : ``
+                        }  ${mdScreen ? `grid-cols-2` : ``} ${
+                          smScreen ? `sm:grid-cols-1` : ``
+                        }  ${
+                          responsiveState
+                            ? ``
+                            : `lg:grid-cols-5 lge:grid-cols-5 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1`
+                        }  gap-2 p-2`}
                       >
-                        <div className={` col-span-2  ${smScreen ? ` col-span-3` : ``}`}>
+                        <div
+                          className={` col-span-2  ${
+                            smScreen ? ` col-span-3` : ``
+                          }`}
+                        >
                           <div className={` group relative `}>
                             <div
                               className={` cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 `}
@@ -445,15 +465,25 @@ export default function OfferWiseCardSection() {
                               </div>
                             </div>
                             <img
-                              src={`https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                              className={` object-cover h-[400px] ${smScreen ? `w-full`: ``}  sm:w-full w-full`}
+                              src={`../../Image/overall/wonders/new-york.webp`}
+                              className={` object-cover h-[400px] ${
+                                smScreen ? `w-full` : ``
+                              }  sm:w-full w-full`}
                               alt="New York"
                             />
                           </div>
                         </div>
                         <div className={` col-span-3 h-full gap-2 `}>
                           <div
-                            className={` ${xlScreen ?  `h-[40%]` : ``} ${mdScreen ?  `h-[400px] ` : ``} ${lgScreen ? `h-[400px] ` : ``}  ${smScreen ? `h-[400px] ` :``} ${responsiveState ? `` : `lg:h-[40%] lge:h-[40%] md:h-[400px] mdsm:h-[400px] sm:h-[400px]`}  relative group bg-[url('https://images.pexels.com/photos/1721747/pexels-photo-1721747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] overflow-hidden bg-primary  bg-hero bg-no-repeat bg-cover bg-center `}
+                            className={` ${xlScreen ? `h-[40%]` : ``} ${
+                              mdScreen ? `h-[400px] ` : ``
+                            } ${lgScreen ? `h-[400px] ` : ``}  ${
+                              smScreen ? `h-[400px] ` : ``
+                            } ${
+                              responsiveState
+                                ? ``
+                                : `lg:h-[40%] lge:h-[40%] md:h-[400px] mdsm:h-[400px] sm:h-[400px]`
+                            }  relative group bg-[url('/Image/overall/wonders/india.webp')] overflow-hidden bg-primary  bg-hero bg-no-repeat bg-cover bg-center `}
                           >
                             <div className=" cursor-pointer transition delay-300  group-hover:from-[#ff8936b8] group-hover:to-[#0025ca] bg-gradient-to-t   flex justify-center items-center absolute top-0 h-full w-full p-10 ">
                               <div className={` group-hover:block hidden`}>
@@ -469,8 +499,8 @@ export default function OfferWiseCardSection() {
                             <div className={` grid grid-cols-2 gap-2  h-full `}>
                               <div className={`group relative h-full  `}>
                                 <img
-                                  src={`https://images.pexels.com/photos/2915957/pexels-photo-2915957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                                  alt=""
+                                  src={`../../Image/overall/wonders/china.webp`}
+                                  alt="china"
                                   className={` h-full object-cover`}
                                 />
                                 <div
@@ -488,8 +518,8 @@ export default function OfferWiseCardSection() {
 
                               <div className={` group relative h-full`}>
                                 <img
-                                  src={`https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                                  alt=""
+                                  src={`../../Image/overall/wonders/paris.webp`}
+                                  alt="paris"
                                   className={` h-full object-cover`}
                                 />
                                 <div

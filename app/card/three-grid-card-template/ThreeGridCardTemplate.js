@@ -148,8 +148,7 @@ export default function ThreeGridCardTemplate() {
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Three Grid card Template`}
-          des={`This component create using CSS framework tailwindcss. It fully
-              responsive component.`}
+          des={`Three grid card template, and it is fully responsive. It will give a separate and unique design, and it is also easy to understand the section.`}
           section_name={`Card`}
           using_font="Acme Font"
         />
@@ -506,7 +505,7 @@ export default function ThreeGridCardTemplate() {
                             </p>
                           </div>
                           <img
-                            src={` https://images.pexels.com/photos/186239/pexels-photo-186239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                          src={`../../Image/overall/places/Play-ground.webp`}
                             alt="playground"
                             className={` object-cover h-[400px]`}
                           />
@@ -522,7 +521,7 @@ export default function ThreeGridCardTemplate() {
                             </p>
                           </div>
                           <img
-                            src={`https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                                src={`../../Image/overall/places/Higher-Education.webp`}
                             alt="college"
                             className={` object-cover h-[400px]`}
                           />
@@ -538,7 +537,7 @@ export default function ThreeGridCardTemplate() {
                             </p>
                           </div>
                           <img
-                            src={` https://images.pexels.com/photos/933964/pexels-photo-933964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                            src={`../../Image/overall/places/Canteen.webp`}
                             alt="canteen"
                             className={` object-cover h-[400px]`}
                           />
@@ -554,7 +553,7 @@ export default function ThreeGridCardTemplate() {
                             </p>
                           </div>
                           <img
-                            src={`https://images.pexels.com/photos/356065/pexels-photo-356065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                          src={`../../Image/overall/places/Classroom.webp`}
                             alt="classroom"
                             className={` object-cover h-[400px]`}
                           />
