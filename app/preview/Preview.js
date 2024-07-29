@@ -31,19 +31,21 @@ export default function Preview() {
                 {dark ? (
                   <>
                     <CiLight
-                      className={` ${dark ? ` text-[#fff] text-[16px]` : ``}`}
+                      className={` ${
+                        dark ? ` text-[#f2f2f2] text-[16px]` : ``
+                      }`}
                     />
                   </>
                 ) : (
                   <>
                     <CiDark
-                      className={`  group-hover:text-[#fff] text-[16px]`}
+                      className={`  group-hover:text-[#f2f2f2] text-[16px]`}
                     />
                   </>
                 )}
               </div>
 
-              <p className={` text-sm text-center dark:text-[#fff]`}>
+              <p className={` text-sm text-left  dark:text-[#f2f2f2]`}>
                 {dark ? "Da" : "Li"}
               </p>
             </div>
@@ -51,8 +53,162 @@ export default function Preview() {
         </div>
       </div>
 
-      <section className=" container px-4  mx-auto">
-        <h3 className="text-[#434343] dark:text-[#f2f2f2] rowdies lg:text-4xl lge:text-4xl md:text-3xl mdsm:text-2xl  sm:text-2xl  text-center pb-10 ">
+      <section className=" container mx-auto my-20">
+        <div className=" sm:w-full overflow-auto px-4">
+        <table className=" md:w-[80%]  mdsm:w-full sm:w-full mx-auto">
+          <thead className=" bg-[#0349ff] text-left text-[#f2f2f2] ">
+            <tr>
+              <th className="px-4 py-2"> ID</th>
+              <th className="px-4 py-2">Product</th>
+              <th className="px-4 py-2">Name</th>
+              <th className="px-4 py-2">Shipping</th>
+              <th className=" text-center py-2">Status</th>
+            </tr>
+          </thead>
+          <tbody className="border-[#e6e6e6] dark:border-[#5a5a5a]  border-[1px] ">
+            <tr className=" border-b-[1px] group dark:border-[#5a5a5a]   dark:text-[#f2f2f2]  border-[#e6e6e6] group text-left  text-sm text-[#3b3b3b] py-2">
+              <td className=" py-2 dark:text-[#f2f2f2] text-[#3b3b3b] font-semibold  px-4">
+                RTDWQ052
+              </td>
+              <td className="  py-2  px-4">Apple Watch </td>
+              <td className=" py-2 px-4">Henry</td>
+              <td className=" py-2 px-4">Sydney</td>
+              <td className=" py-2  flex justify-center items-center ">
+                <div className=" rounded-3xl dark:bg-[#f2f2f2]  text-[#019f47] bg-[#33d57b52] px-4">
+                  Done
+                </div>
+              </td>
+            </tr>
+
+            <tr className=" group text-left dark:border-[#5a5a5a]  dark:text-[#f2f2f2] dark:bg-[#5a5a5a]  text-sm text-[#3b3b3b] py-2">
+              <td className="  odd:bg-[#ebf4fe] dark:bg-[#5a5a5a] dark:text-[#f2f2f2] py-2 text-[#3b3b3b] font-semibold px-4">
+                HDDBHS687
+              </td>
+              <td className=" px-4 even:bg-[#ebf4fe] dark:bg-[#5a5a5a] py-2">
+                Apple Watch
+              </td>
+              <td className="px-4 odd:bg-[#ebf4fe] dark:bg-[#5a5a5a] py-2">
+                Alexander
+              </td>
+              <td className="px-4 even:bg-[#ebf4fe] dark:bg-[#5a5a5a] py-2">
+                Berlin
+              </td>
+              <td className="px-4 odd:bg-[#ebf4fe]  dark:bg-[#5a5a5a] py-2 flex justify-center items-center ">
+                <div className=" rounded-3xl dark:bg-[#f2f2f2]  text-[#019f47] bg-[#33d57b52] px-4">
+                  Done
+                </div>
+              </td>
+            </tr>
+
+            <tr className=" border-b-[1px] group dark:border-[#5a5a5a]   border-[#e6e6e6] group text-left  dark:text-[#f2f2f2] text-sm text-[#3b3b3b] py-2">
+              <td className=" py-2 text-[#3b3b3b] font-semibold dark:text-[#f2f2f2]  px-4">
+                OJDE121UB
+              </td>
+              <td className="  py-2  px-4">Samsung Galaxy</td>
+              <td className="px-4 py-2 ">Olivia</td>
+              <td className="px-4 py-2 ">Paris</td>
+              <td className=" py-2  flex justify-center items-center ">
+                <div className=" rounded-3xl  dark:bg-[#f2f2f2] text-[#a51f1fd6] bg-[#f70a0a69] px-4">
+                  Cancel
+                </div>
+              </td>
+            </tr>
+
+            <tr className="group text-left dark:border-[#5a5a5a]  dark:text-[#f2f2f2] dark:bg-[#5a5a5a]  text-sm text-[#3b3b3b] py-2">
+              <td className="dark:text-[#f2f2f2]  dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2 text-[#3b3b3b] font-semibold px-4">
+                JKSL0945
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] even:bg-[#ebf4fe] py-2">
+                Vacuum Cleaner
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2">
+                Benjamin
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] even:bg-[#ebf4fe] py-2">
+                New York
+              </td>
+              <td className=" odd:bg-[#ebf4fe] dark:bg-[#5a5a5a] py-2 flex justify-center items-center ">
+                <div className=" rounded-3xl dark:bg-[#f2f2f2] text-[#9f9300] bg-[#e3d20863] px-4">
+                  Pending
+                </div>
+              </td>
+            </tr>
+
+            <tr className=" dark:text-[#f2f2f2]  dark:border-[#5a5a5a] border-b-[1px] group   border-[#e6e6e6] group text-left  text-sm text-[#3b3b3b] py-2">
+              <td className="dark:text-[#f2f2f2]  py-2 text-[#3b3b3b] font-semibold  px-4">
+                JHDDC021
+              </td>
+              <td className="  py-2  px-4">PlayStation</td>
+              <td className="px-4 py-2 ">Emma</td>
+              <td className="px-4 py-2 ">Barcelona</td>
+              <td className=" py-2  flex justify-center items-center ">
+                <div className=" rounded-3xl dark:bg-[#f2f2f2]  text-[#019f47] bg-[#33d57b52] px-4">
+                  Done
+                </div>
+              </td>
+            </tr>
+
+            <tr className=" group text-left dark:border-[#5a5a5a]  dark:text-[#f2f2f2] dark:bg-[#5a5a5a]  text-sm text-[#3b3b3b] py-2">
+              <td className="dark:text-[#f2f2f2]  dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2 text-[#3b3b3b] font-semibold px-4">
+                POIBVV021
+              </td>
+              <td className="dark:bg-[#5a5a5a] px-4 even:bg-[#ebf4fe] py-2">
+                Coffee Machine
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2">
+                William
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] even:bg-[#ebf4fe] py-2">
+                Rio 
+              </td>
+              <td className="dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2 flex justify-center items-center ">
+                <div className=" rounded-3xl dark:bg-[#f2f2f2] text-[#a51f1fd6] bg-[#f70a0a69] px-4">
+                  Cancel
+                </div>
+              </td>
+            </tr>
+
+            <tr className=" dark:text-[#f2f2f2] dark:border-[#5a5a5a] border-b-[1px] group   border-[#e6e6e6] group text-left  text-sm text-[#3b3b3b] py-2">
+              <td className="dark:text-[#f2f2f2]  py-2 text-[#3b3b3b] font-semibold  px-4">
+                ZSDFCV201
+              </td>
+              <td className="  py-2  px-4">Nike Air Max</td>
+              <td className="px-4 py-2 ">Sophia</td>
+              <td className="px-4 py-2 ">Dubai</td>
+              <td className=" py-2  flex justify-center items-center ">
+                <div className=" rounded-3xl dark:bg-[#f2f2f2]  text-[#019f47] bg-[#33d57b52] px-4">
+                  Done
+                </div>
+              </td>
+            </tr>
+
+            <tr className=" group text-left dark:border-[#5a5a5a]  dark:text-[#f2f2f2] dark:bg-[#5a5a5a]  text-sm text-[#3b3b3b] py-2">
+              <td className="dark:text-[#f2f2f2]  dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2 text-[#3b3b3b] font-semibold px-4">
+                MLYTRV01
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] even:bg-[#ebf4fe] py-2">
+                GoPro Camera
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2">
+                James
+              </td>
+              <td className="px-4 dark:bg-[#5a5a5a] even:bg-[#ebf4fe] py-2">
+                London
+              </td>
+              <td className="dark:bg-[#5a5a5a] odd:bg-[#ebf4fe] py-2 flex justify-center items-center ">
+                <div className=" rounded-3xl dark:bg-[#f2f2f2] text-[#9f9300] bg-[#e3d20863] px-4">
+                  Pending
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      
+      </section>
+
+      <section className=" container   mx-auto">
+        <h3 className="text-[#434343] dark:text-[#f2f2f2] rowdies lg:text-4xl lge:text-4xl md:text-3xl mdsm:text-2xl  sm:text-2xl  text-left  pb-10 ">
           Frequently Asked Questions
         </h3>
         <div className="lg:w-[50%] lge:w-[50%] md:w-[80%] mdsm:w-[80%] sm:w-[100%] mx-auto">
@@ -64,7 +220,7 @@ export default function Preview() {
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                className=" dark:text-[#c0c0c0]"
+                  className=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -92,7 +248,7 @@ export default function Preview() {
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                    className=" dark:text-[#c0c0c0]"
+                  className=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -114,13 +270,13 @@ export default function Preview() {
 
           <details class="group  border-b-[1px] border-b-[#ccc] pb-2">
             <summary class="flex mt-4  cursor-pointer list-none items-center justify-between font-medium">
-              <span className="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7" >
+              <span className="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7">
                 {" "}
                 When is the best time to visit?
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                    className=" dark:text-[#c0c0c0]"
+                  className=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -143,13 +299,13 @@ export default function Preview() {
 
           <details class="group  border-b-[1px] border-b-[#ccc] pb-2">
             <summary class="flex mt-4  cursor-pointer list-none items-center justify-between font-medium">
-              <span className="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7" >
+              <span className="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7">
                 {" "}
                 Are there any local customs or etiquette I should be aware of?
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                    className=" dark:text-[#c0c0c0]"
+                  className=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -171,7 +327,7 @@ export default function Preview() {
         </div>
       </section>
 
-      <section className=" py-20 container mx-auto px-4">
+      <section className=" py-20 container mx-auto ">
         <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
           <div className="  relative group overflow-hidden ">
             <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1e7a] flex justify-center items-center	h-full">
@@ -223,30 +379,30 @@ export default function Preview() {
       </section>
 
       <section className=" bg-[#191919] py-20">
-        <footer className=" container mx-auto px-4">
+        <footer className=" container mx-auto ">
           <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
             <div>
-              <h3 className=" text-[#fff] sedan-sc-font text-4xl">Logo</h3>
+              <h3 className=" text-[#f2f2f2] sedan-sc-font text-4xl">Logo</h3>
 
               <h5 className=" text-[#d0d0d0] font-semibold raleway-font  tracking-wide text-[14px] mt-6">
                 Follow us
               </h5>
               <div className="mt-2 flex space-x-2">
                 <div className="group cursor-pointer ">
-                  <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#fff] border border-[#fff]">
-                    <TiSocialFacebook className=" text-[20px] text-[#fff] group-hover:text-[#191919]" />
+                  <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#f2f2f2] border border-[#f2f2f2]">
+                    <TiSocialFacebook className=" text-[20px] text-[#f2f2f2] group-hover:text-[#191919]" />
                   </div>
                 </div>
 
                 <div className="group cursor-pointer ">
-                  <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#fff] border border-[#fff]">
-                    <RiTwitterXFill className=" text-[16px] text-[#fff] group-hover:text-[#191919]" />
+                  <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#f2f2f2] border border-[#f2f2f2]">
+                    <RiTwitterXFill className=" text-[16px] text-[#f2f2f2] group-hover:text-[#191919]" />
                   </div>
                 </div>
 
                 <div className="group cursor-pointer ">
-                  <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#fff] border border-[#fff]">
-                    <LuInstagram className=" text-[16px] text-[#fff] group-hover:text-[#191919]" />
+                  <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#f2f2f2] border border-[#f2f2f2]">
+                    <LuInstagram className=" text-[16px] text-[#f2f2f2] group-hover:text-[#191919]" />
                   </div>
                 </div>
               </div>
@@ -254,23 +410,23 @@ export default function Preview() {
             <div></div>
             <div className=" lg:pt-0 lge:pt-0 md:pt-6 mdsm:pt-6 sm:pt-6">
               <ul className=" mt-4">
-                <li className="group raleway-font  tracking-wide text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
+                <li className="group raleway-font  tracking-wide text-[#f2f2f2] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
                   {" "}
                   About{" "}
                 </li>
-                <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
+                <li className="group raleway-font  tracking-wide mt-2 text-[#f2f2f2] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
                   {" "}
                   Services{" "}
                 </li>
-                <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
+                <li className="group raleway-font  tracking-wide mt-2 text-[#f2f2f2] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
                   {" "}
                   project
                 </li>
-                <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
+                <li className="group raleway-font  tracking-wide mt-2 text-[#f2f2f2] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
                   {" "}
                   Contant
                 </li>
-                <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
+                <li className="group raleway-font  tracking-wide mt-2 text-[#f2f2f2] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
                   {" "}
                   Blog
                 </li>
@@ -280,14 +436,14 @@ export default function Preview() {
               <h5 className=" text-[#d0d0d0] font-semibold   raleway-font  tracking-wide text-[14px] mt-4">
                 Call us
               </h5>
-              <div className=" text-[#fff] pt-2 raleway-font hover:underline hover:underline-offset-4">
+              <div className=" text-[#f2f2f2] pt-2 raleway-font hover:underline hover:underline-offset-4">
                 <a href="telto:+0090123456789">+00 090123456789 </a>
               </div>
 
               <h5 className="text-[#d0d0d0] font-semibold  raleway-font  tracking-wide text-[14px] mt-4">
                 Address
               </h5>
-              <div className=" text-[#fff] pt-2 raleway-font">
+              <div className=" text-[#f2f2f2] pt-2 raleway-font">
                 960 Blanche Terrace, Lake Judeside, <br />
                 WA 93970-1195
               </div>
@@ -296,7 +452,7 @@ export default function Preview() {
         </footer>
       </section>
 
-      <section className=" dark:bg-[#1e1e1e] container px-4 py-10  mx-auto">
+      <section className=" dark:bg-[#1e1e1e] container  py-10  mx-auto">
         <div className=" relative rounded-2xl  overflow-hidden ">
           <img
             src={`../Image/overall/building/uilding4.webp`}
@@ -305,26 +461,26 @@ export default function Preview() {
           />
           <div className=" absolute top-0 p-6 w-full ">
             <div className=" flex justify-end ">
-              <div className=" bg-[#fff] p-2 lg:hidden lge:hidden md:hidden mdsm:block sm:block cursor-pointer group">
+              <div className=" bg-[#f2f2f2] p-2 lg:hidden lge:hidden md:hidden mdsm:block sm:block cursor-pointer group">
                 <AiOutlineMenuFold className=" text-[#333] group-hover:text-[#000]" />
               </div>
             </div>
             <div className=" lg:block lge:block md:block  mdsm:hidden sm:hidden">
               <div className=" grid  grid-cols-12 ">
-                <div className=" bg-[#fff] text-[#333] font-bold px-6 rounded-lg titillium text-center">
+                <div className=" bg-[#f2f2f2] text-[#333] font-bold  rounded-lg titillium text-left ">
                   Logo
                 </div>
                 <div className=" col-span-6"></div>
                 <div className="rounded-lg col-span-5">
                   <div className=" rounded-lg text-[#333]   font-bold  flex justify-end space-x-10">
-                    <div className="bg-[#fff] dark:bg-[#1e1e1e]  dark:text-[#d1d1d1] dark:hover:text-[#fff]  hover:text-[#898989] cursor-pointer  rounded-lg titillium px-6 text-center">
+                    <div className="bg-[#f2f2f2] dark:bg-[#1e1e1e]  dark:text-[#d1d1d1] dark:hover:text-[#f2f2f2]  hover:text-[#898989] cursor-pointer  rounded-lg titillium  text-left ">
                       About
                     </div>
-                    <div className="bg-[#fff] dark:bg-[#1e1e1e]  dark:text-[#d1d1d1] dark:hover:text-[#fff]  hover:text-[#898989] cursor-pointer  rounded-lg titillium px-6 text-center">
+                    <div className="bg-[#f2f2f2] dark:bg-[#1e1e1e]  dark:text-[#d1d1d1] dark:hover:text-[#f2f2f2]  hover:text-[#898989] cursor-pointer  rounded-lg titillium  text-left ">
                       Services
                     </div>
 
-                    <div className="bg-[#fff]  dark:bg-[#1e1e1e]  dark:text-[#d1d1d1]  dark:hover:text-[#fff] hover:text-[#898989] cursor-pointer  rounded-lg titillium px-6 text-center">
+                    <div className="bg-[#f2f2f2]  dark:bg-[#1e1e1e]  dark:text-[#d1d1d1]  dark:hover:text-[#f2f2f2] hover:text-[#898989] cursor-pointer  rounded-lg titillium  text-left ">
                       Contact
                     </div>
                   </div>
@@ -334,8 +490,8 @@ export default function Preview() {
           </div>
         </div>
 
-        <div className="rounded-2xl px-6 py-2 sm:px-0 mt-6">
-          <h2 className=" text-[#333] dark:text-[#fff] font-bold text-[64px] titillium">
+        <div className="rounded-2xl  py-2  px-4sm:px-0 mt-6">
+          <h2 className=" text-[#333] dark:text-[#f2f2f2] font-bold text-[64px] titillium">
             Bright City
           </h2>
           <h4 className=" lg:text-[24px] lge:text-[24px] md:text-[24px] mdsm:text-[22px] font-normal sm:text-[20px]  pt-2 text-[#898989] jost-font ">

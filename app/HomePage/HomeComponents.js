@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "034",
+    image: "../Image/table/table002.webp",
+    title: "Tailwind table responsive",
+    tag: "table",
+    link: "/table/responsive-table",
+  },
+  {
     _id: "033",
     image: "../Image/faq/faq001.webp",
     title: "Simple faq sample design css",
