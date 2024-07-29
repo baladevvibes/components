@@ -78,12 +78,12 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://makecomponents.com/login-in/sample-login-page</loc>
+  <loc>https://makecomponents.com/login/sample-login-page</loc>
   <lastmod>2024-07-07T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://makecomponents.com/login-in/standard-login-page</loc>
+  <loc>https://makecomponents.com/login/standard-login-page</loc>
   <lastmod>2024-07-07T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -263,12 +263,12 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://makecomponents.com/login-in/sample-login-page/preview</loc>
+  <loc>https://makecomponents.com/login/sample-login-page/preview</loc>
   <lastmod>2024-07-07T04:34:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://makecomponents.com/login-in/standard-login-page/preview</loc>
+  <loc>https://makecomponents.com/login/standard-login-page/preview</loc>
   <lastmod>2024-07-07T04:34:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>

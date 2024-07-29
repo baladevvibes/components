@@ -132,9 +132,8 @@ export default function SampleLoginPage() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Sample Login Page`}
-          des={`This component create on 26/June/2024 using CSS framework tailwindcss. It fully
-              responsive component.`}
+          title={`Sample login page`}
+          des={`Sample login page for user-friendly. It's very simple and makes the user's attraction, and it's professional.`}
           section_name={`Login in`}
           using_font=" DM Sans,sans-serif  "
         />
@@ -267,7 +266,7 @@ export default function SampleLoginPage() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/login-in/sample-login-page/preview">
+                  <a href="/login/sample-login-page/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}

@@ -14,10 +14,10 @@ export const metadata = {
       title: "tailwind css login page template free",
       description:
         "This component create using CSS framework tailwindcss. It full responsive component. This template used for Login section preview",
-      url: "https://makecomponents.com/login-in/standard-login-page",
+      url: "https://makecomponents.com/login/standard-login-page",
       siteName: "makecomponents.com",
       alternates: {
-        canonical: `https://makecomponents.com/login-in/standard-login-page`,
+        canonical: `https://makecomponents.com/login/standard-login-page`,
       },
       images: [
         {
@@ -35,13 +35,13 @@ export const metadata = {
       locale: "en_US",
       type: "website",
     },
-  metadataBase: new URL(`https://makecomponents.com/login-in/standard-login-page`),
+  metadataBase: new URL(`https://makecomponents.com/login/standard-login-page`),
     title: {
         template: '%s | My Website',
         default: ` My Website`,
     },
     alternates: {
-        canonical: 'https://makecomponents.com/login-in/standard-login-page',
+        canonical: 'https://makecomponents.com/login/standard-login-page',
     }
 }
 
@@ -55,10 +55,10 @@ export const metadata = {
 //     title: "tailwind css login page template free",
 //     description:
 //       "This component create using CSS framework tailwindcss. It full responsive component. This template used for Login section preview",
-//     url: "https://makecomponents.com/login-in/standard-login-page",
+//     url: "https://makecomponents.com/login/standard-login-page",
 //     siteName: "makecomponents.com",
 //     alternates: {
-//       canonical: `https://makecomponents.com/login-in/standard-login-page`,
+//       canonical: `https://makecomponents.com/login/standard-login-page`,
 //     },
 //     images: [
 //       {

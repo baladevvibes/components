@@ -267,7 +267,7 @@ export default function StandardLoginPage() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/login-in/standard-login-page/preview">
+                  <a href="/login/standard-login-page/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}

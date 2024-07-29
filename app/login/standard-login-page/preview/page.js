@@ -11,10 +11,10 @@ export const metadata = {
     title: "tailwind css login page template free",
     description:
       "This component create using CSS framework tailwindcss. It full responsive component. This template used for Login section preview",
-    url: "https://makecomponents.com/login-in/standard-login-page/preview",
+    url: "https://makecomponents.com/login/standard-login-page/preview",
     siteName: "makecomponents.com",
     alternates: {
-      canonical: `https://makecomponents.com/login-in/standard-login-page`,
+      canonical: `https://makecomponents.com/login/standard-login-page`,
     },
     images: [
       {

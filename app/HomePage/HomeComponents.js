@@ -113,7 +113,7 @@ const HomeComponents = [
     image: "../Image/login/login002.webp",
     title: "Sample Login Page",
     tag: "Login in",
-    link: "/login-in/sample-login-page",
+    link: "/login/sample-login-page",
   },
 
   {
@@ -121,7 +121,7 @@ const HomeComponents = [
     image: "../Image/login/login001.webp",
     title: "Standard Login Page",
     tag: "Login in",
-    link: "/login-in/standard-login-page",
+    link: "/login/standard-login-page",
   },
 
   {
