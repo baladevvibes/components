@@ -27,12 +27,12 @@ export const metadata = {
     },
     images: [
       {
-        url: "https://makecomponents.com/Image/login/login001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/login/login002.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://makecomponents.com/Image/login/login001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/login/login002.webp", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: "card components",
