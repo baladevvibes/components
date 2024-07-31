@@ -97,7 +97,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap');
 /* Volkhov */
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+/* Anton */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
 
 * {
@@ -111,6 +112,9 @@
 }
 .Cambay{
   font-family: "Cambay", sans-serif;
+}
+.Anton{
+  font-family: "Anton SC", sans-serif;
 }
 
 .Volkhov{
