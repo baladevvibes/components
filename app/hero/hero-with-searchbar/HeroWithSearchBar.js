@@ -247,7 +247,7 @@ export default function HeroWithSearchBar() {
 
               <div className={` flex justify-end`}>
                 <div className={` flex space-x-5`}>
-                  <a href="/hero/hero-with-searchbar/preview" >
+                  <a href="/hero/hero-with-searchbar/preview">
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -272,25 +272,28 @@ export default function HeroWithSearchBar() {
                     </div>
                   </a>
                   <div className={` group`}>
-                  <a href={`/File/hero/CardInfoSectionEightGrid.html`} download="CardInfoSectionEightGrid.html"> 
-                    <div
-                      className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                    <a
+                      href={`/File/hero/CardInfoSectionEightGrid.html`}
+                      download="CardInfoSectionEightGrid.html"
                     >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 16 16"
-                        class=" text-1xl  text-textcolor group-hover:text-white"
-                        height="1em"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <div
+                        className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
                       >
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
-                      </svg>
-                    </div>
-                    <p className={` text-sm text-center `}> dow</p>
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 16 16"
+                          class=" text-1xl  text-textcolor group-hover:text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
+                          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"></path>
+                        </svg>
+                      </div>
+                      <p className={` text-sm text-center `}> dow</p>
                     </a>
                   </div>
 
@@ -327,7 +330,13 @@ export default function HeroWithSearchBar() {
                           file?._id === 2 ? `-left-24` : `-left-10`
                         }  drop-css  rounded-md text-sm bg-[#82bd69] py-1 px-3 text-[#13250e]  `}
                       >
-                      <div>{file?.name ==="app.js" ? "index.html" : <>{file?.name}</>} </div>{" "}
+                        <div>
+                          {file?.name === "app.js" ? (
+                            "index.html"
+                          ) : (
+                            <>{file?.name}</>
+                          )}{" "}
+                        </div>{" "}
                         <div className={` px-1`}> Copied</div>{" "}
                       </div>
                     ) : null}
@@ -425,185 +434,185 @@ export default function HeroWithSearchBar() {
                   } `}
                 >
                   <div className={` `}>
-
-              
-                  <div className='bg-no-repeat relative w-full bg-[url("https://images.pexels.com/photos/176400/pexels-photo-176400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-[100vh] bg-cover bg-center'>
-                    <section>
-                      <header className="w-full">
-                        <div
-                          className={` absolute h-[100vh] bg-[#060505cf] top-0  w-full  `}
-                        >
-                          <div className={`py-4 px-4 w-full absolute top-0 `}>
-                            <div className={` container mx-auto`}>
-                              <div className={`grid   grid-cols-12`}>
-                                <div className={` col-span-6 	`}>
-                                  <h1
-                                    className={`acme-font text-white text-3xl font-semibold`}
+                    <div className='bg-no-repeat relative w-full bg-[url("/Image/hero/hero001/hero001.webp")] h-[100vh] bg-cover bg-center'>
+                      <section>
+                        <header className="w-full">
+                          <div
+                            className={` absolute h-[100vh] bg-[#060505cf] top-0  w-full  `}
+                          >
+                            <div className={`py-4 px-4 w-full absolute top-0 `}>
+                              <div className={` container mx-auto`}>
+                                <div className={`grid   grid-cols-12`}>
+                                  <div className={` col-span-6 	`}>
+                                    <h1
+                                      className={`acme-font text-white text-3xl font-semibold`}
+                                    >
+                                      Logo
+                                    </h1>
+                                  </div>
+                                  <div
+                                    className={`col-span-6  flex justify-end px-0`}
                                   >
-                                    Logo
-                                  </h1>
-                                </div>
-                                <div
-                                  className={`col-span-6  flex justify-end px-0`}
-                                >
-                                  <div className={``}>
-                                    <div
-                                      className={`  ${
-                                        mdScreen ? `block  ` : ``
-                                      } ${smScreen ? `block` : ``}  ${
-                                        lgScreen ? `hidden` : ``
-                                      } ${xlScreen ? `hidden` : ``} `}
-                                    >
+                                    <div className={``}>
                                       <div
-                                        className={`py-2 flex justify-end  `}
+                                        className={`  ${
+                                          mdScreen ? `block  ` : ``
+                                        } ${smScreen ? `block` : ``}  ${
+                                          lgScreen ? `hidden` : ``
+                                        } ${xlScreen ? `hidden` : ``} `}
                                       >
-                                        <svg
-                                          stroke="currentColor"
-                                          fill="currentColor"
-                                          stroke-width="0"
-                                          viewBox="0 0 16 16"
-                                          class="text-white text-3xl"
-                                          height="1em"
-                                          width="1em"
-                                          xmlns="http://www.w3.org/2000/svg"
+                                        <div
+                                          className={`py-2 flex justify-end  `}
                                         >
-                                          <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"></path>
-                                        </svg>
+                                          <svg
+                                            stroke="currentColor"
+                                            fill="currentColor"
+                                            stroke-width="0"
+                                            viewBox="0 0 16 16"
+                                            class="text-white text-3xl"
+                                            height="1em"
+                                            width="1em"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5m0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5"></path>
+                                          </svg>
+                                        </div>
                                       </div>
+
+                                      <ul
+                                        className={`  ${
+                                          mdScreen ? `hidden  ` : ``
+                                        } ${
+                                          smScreen ? `hidden` : ``
+                                        }  flex gap-16 py-2`}
+                                      >
+                                        <li
+                                          className={` jost  text-lg	text-white`}
+                                        >
+                                          Home
+                                        </li>
+                                        <li
+                                          className={` jost  text-lg	text-white`}
+                                        >
+                                          About us
+                                        </li>
+                                        <li
+                                          className={` jost  text-lg	text-white`}
+                                        >
+                                          Places
+                                        </li>
+
+                                        <li
+                                          className={` jost  text-lg	text-white`}
+                                        >
+                                          Contact
+                                        </li>
+                                      </ul>
                                     </div>
-
-                                    <ul
-                                      className={`  ${
-                                        mdScreen ? `hidden  ` : ``
-                                      } ${
-                                        smScreen ? `hidden` : ``
-                                      }  flex gap-16 py-2`}
-                                    >
-                                      <li
-                                        className={` jost  text-lg	text-white`}
-                                      >
-                                        Home
-                                      </li>
-                                      <li
-                                        className={` jost  text-lg	text-white`}
-                                      >
-                                        About us
-                                      </li>
-                                      <li
-                                        className={` jost  text-lg	text-white`}
-                                      >
-                                        Places
-                                      </li>
-
-                                      <li
-                                        className={` jost  text-lg	text-white`}
-                                      >
-                                        Contact
-                                      </li>
-                                    </ul>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div
-                            className={`flex  justify-center   items-center lge:w-full lg:w-full md:w-auto mdsm:w-auto sm:w-auto h-full 	`}
-                          >
-                            <div className={` mt-16	 block`}>
-                              <div
-                                className={`text-white acme-font lge:text-9xl lg:text-9xl md:text-7xl mdsm:text-7xl sm:text-6xl`}
-                              >
-                                Trip Days
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            className={`${
-                              lgScreen ? `absolute -bottom-12` : ``
-                            }  ${xlScreen ? ` absolute -bottom-12` : ``}  ${
-                              mdScreen ? ` relative bottom-0 ` : ``
-                            }  ${
-                              smScreen ? ` relative bottom-0` : ``
-                            } absolute w-full lge:p-0 lg:p-0 md:p-2 mdsm:p-2 sm:p-6`}
-                          >
-                            <div className={` container mx-auto `}>
-                              <div
-                                className={`  bg-white grid ${
-                                  smScreen ? ` grid-cols-1` : ``
-                                }  ${mdScreen ? ` grid grid-cols-2 ` : ``}  ${
-                                  xlScreen ? `grid-cols-4` : ``
-                                }  ${lgScreen ? ` grid-cols-4 ` : ``} `}
-                              >
-                                <div className={`p-6`}>
-                                  <div>
-                                    <div className={` mb-3`}>
-                                      <label
-                                        className={`text-[#272525] leading-4	 text-2xl jost`}
-                                        for={`where`}
-                                      >
-                                        Where
-                                      </label>
-                                    </div>
-                                    <input
-                                      type={`text`}
-                                      placeholder={`New York`}
-                                      className={`outline-none w-full border border-[#ccc] border-neutral-300	focus:border-[#fab700]	 border-t-0 border-l-0 border-r-0 border-b-1`}
-                                    />
-                                  </div>
-                                </div>
+                            <div
+                              className={`flex  justify-center   items-center lge:w-full lg:w-full md:w-auto mdsm:w-auto sm:w-auto h-full 	`}
+                            >
+                              <div className={` mt-16	 block`}>
                                 <div
-                                  className={`p-6  ${smScreen ? `px-6` : ``} ${
-                                    lgScreen ? `px-0` : ``
-                                  } ${mdScreen ? `px-0` : ``} `}
+                                  className={`text-white acme-font lge:text-9xl lg:text-9xl md:text-7xl mdsm:text-7xl sm:text-6xl`}
                                 >
-                                  <div>
-                                    <div className={` mb-3`}>
-                                      <label
-                                        className={`text-[#272525] leading-4	 text-2xl jost`}
-                                        for={`Date`}
-                                      >
-                                        Date
-                                      </label>
-                                    </div>
-                                    <input
-                                      type={`text`}
-                                      placeholder={`25-Dec-2024`}
-                                      className={`outline-none w-full border border-[#ccc] jost border-neutral-300	focus:border-[#fab700]	 border-t-0 border-l-0 border-r-0 border-b-1`}
-                                    />
-                                  </div>
+                                  Trip Days
                                 </div>
-                                <div className={`p-6 `}>
-                                  <div>
-                                    <div className={` mb-3`}>
-                                      <label
-                                        className={`text-[#272525] leading-4	 text-2xl jost`}
-                                        for={`Price`}
-                                      >
-                                        Price
-                                      </label>
-                                    </div>
-                                    <input
-                                      type={`text`}
-                                      placeholder={`$4000`}
-                                      className={`outline-none  w-full border border-[#ccc] jost border-neutral-300	focus:border-[#fab700]	 border-t-0 border-l-0 border-r-0 border-b-1`}
-                                    />
-                                  </div>
-                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              className={`${
+                                lgScreen ? `absolute -bottom-12` : ``
+                              }  ${xlScreen ? ` absolute -bottom-12` : ``}  ${
+                                mdScreen ? ` relative bottom-0 ` : ``
+                              }  ${
+                                smScreen ? ` relative bottom-0` : ``
+                              } absolute w-full lge:p-0 lg:p-0 md:p-2 mdsm:p-2 sm:p-6`}
+                            >
+                              <div className={` container mx-auto `}>
                                 <div
-                                  className={`bg-[#fab700] ${
-                                    smScreen ? `py-2 mx-6` : ``
-                                  } flex sm:py-2 justify-center text-2xl  sm:1xl  items-center  jost`}
+                                  className={`  bg-white grid ${
+                                    smScreen ? ` grid-cols-1` : ``
+                                  }  ${mdScreen ? ` grid grid-cols-2 ` : ``}  ${
+                                    xlScreen ? `grid-cols-4` : ``
+                                  }  ${lgScreen ? ` grid-cols-4 ` : ``} `}
                                 >
-                                  Search
+                                  <div className={`p-6`}>
+                                    <div>
+                                      <div className={` mb-3`}>
+                                        <label
+                                          className={`text-[#272525] leading-4	 text-2xl jost`}
+                                          for={`where`}
+                                        >
+                                          Where
+                                        </label>
+                                      </div>
+                                      <input
+                                        type={`text`}
+                                        placeholder={`New York`}
+                                        className={`outline-none w-full border border-[#ccc] border-neutral-300	focus:border-[#fab700]	 border-t-0 border-l-0 border-r-0 border-b-1`}
+                                      />
+                                    </div>
+                                  </div>
+                                  <div
+                                    className={`p-6  ${
+                                      smScreen ? `px-6` : ``
+                                    } ${lgScreen ? `px-0` : ``} ${
+                                      mdScreen ? `px-0` : ``
+                                    } `}
+                                  >
+                                    <div>
+                                      <div className={` mb-3`}>
+                                        <label
+                                          className={`text-[#272525] leading-4	 text-2xl jost`}
+                                          for={`Date`}
+                                        >
+                                          Date
+                                        </label>
+                                      </div>
+                                      <input
+                                        type={`text`}
+                                        placeholder={`25-Dec-2024`}
+                                        className={`outline-none w-full border border-[#ccc] jost border-neutral-300	focus:border-[#fab700]	 border-t-0 border-l-0 border-r-0 border-b-1`}
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className={`p-6 `}>
+                                    <div>
+                                      <div className={` mb-3`}>
+                                        <label
+                                          className={`text-[#272525] leading-4	 text-2xl jost`}
+                                          for={`Price`}
+                                        >
+                                          Price
+                                        </label>
+                                      </div>
+                                      <input
+                                        type={`text`}
+                                        placeholder={`$4000`}
+                                        className={`outline-none  w-full border border-[#ccc] jost border-neutral-300	focus:border-[#fab700]	 border-t-0 border-l-0 border-r-0 border-b-1`}
+                                      />
+                                    </div>
+                                  </div>
+                                  <div
+                                    className={`bg-[#fab700] ${
+                                      smScreen ? `py-2 mx-6` : ``
+                                    } flex sm:py-2 justify-center text-2xl  sm:1xl  items-center  jost`}
+                                  >
+                                    Search
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </header>
-                    </section>
-                  </div>
+                        </header>
+                      </section>
+                    </div>
                   </div>
                 </div>
               </>

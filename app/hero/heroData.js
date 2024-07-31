@@ -6,7 +6,7 @@ const heroData = [
     des: "This component create using CSS framework tailwindcss. It fully responsive component. Added Seacrh bar.",
     section: "Hero",
     slug: "hero-with-searchbar-preview",
-    htmlcode: `<div class='bg-no-repeat relative w-full bg-[url("https://images.pexels.com/photos/176400/pexels-photo-176400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-[100vh] bg-cover bg-center'>
+    htmlcode: `<div class='bg-no-repeat relative w-full bg-[url("https://makecomponents.com/Image/hero/hero001/hero001.webp")] h-[100vh] bg-cover bg-center'>
         <section>
           <header className="w-full">
             <div class="absolute h-[100vh] bg-[#060505cf] top-0 w-full">

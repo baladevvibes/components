@@ -34,7 +34,7 @@ export const metadata = {
         url: "https://makecomponents.com/Image/login/login001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
-        alt: "card components",
+        alt: "login components",
       },
     ],
     locale: "en_US",

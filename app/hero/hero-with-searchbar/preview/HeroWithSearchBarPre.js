@@ -12,7 +12,7 @@ export default function HeroWithSearchBarPre() {
       }, []);
   return (
     <div className='pb-[100px]'>
-        <div class='bg-no-repeat relative w-full bg-[url("https://images.pexels.com/photos/176400/pexels-photo-176400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-[90vh] bg-cover bg-center'>
+        <div class='bg-no-repeat relative w-full bg-[url("/Image/hero/hero001/hero001.webp")] h-[90vh] bg-cover bg-center'>
         <section>
           <header className="w-full">
             <div class="absolute h-[90vh] bg-[#060505cf] top-0 w-full">

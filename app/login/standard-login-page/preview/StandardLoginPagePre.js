@@ -13,6 +13,7 @@ export default function StandardLoginPagePre() {
             <img
               src="../../Image/login/001/login001.webp"
               className=" h-[100vh] object-cover"
+              alt="standard login page"
             />
           </div>
           <div
