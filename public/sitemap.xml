@@ -5,12 +5,15 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
   <loc>https://makecomponents.com/</loc>
   <lastmod>2024-07-07T04:34:47+00:00</lastmod>
   <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/product/ecommerce-product</loc>
+  <lastmod>2024-08-01T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/table/responsive-table</loc>
@@ -206,6 +209,16 @@
   <loc>https://makecomponents.com/hero</loc>
   <lastmod>2024-07-31T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/product</loc>
+  <lastmod>2024-08-01T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/product/ecommerce-product/preview</loc>
+  <lastmod>2024-08-01T04:34:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/table/responsive-table/preview</loc>
