@@ -57,6 +57,47 @@ const ThemeHeroData = [
       </div>
     </section>`,
     },
+    {
+      _id: 1,
+      title: "Tailwind background section",
+      htmlcode: `<div className=" dark:bg-[#1e1e1e]">
+        <section className=" relative">
+        <div className=" absolute z-10 w-full top-0">
+          <div className="h-full container px-4 mx-auto w-full ">
+            <div className="  w-[100%]">
+              <div className=" min-h-[100vh]   text-center flex justify-center items-center">
+                <div className=" block">
+                  <h2 className="dark:text-[#f2f2f2] text-5xl sm:text-4xl Archivo">
+                    {" "}
+                    Innovate{" "}
+                    <span className="text-5xl  sm:text-4xl Archivo font-normal">
+                      with Us
+                    </span>{" "}
+                  </h2>
+
+                  <h3 className=" text-2xl sm:text-[20px] dark:text-[#f2f2f2] text-[#434343] md:w-[60%] mdsm:w-[80%] sm:w-full mx-auto work pt-4">
+                    The Future of Technology Starts Here.Leading the Way in{" "}
+                    <span className=" font-semibold dark:text-[#f2f2f2] text-[#000]">
+                      Technological Advancements
+                    </span>{" "}
+                  </h3>
+                  <div className= "  relative z-10 mt-8">
+                    <button className="bg-[#000] hover:bg-[#434343] text-[#f2f2f2] px-16 py-3 rounded-full">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" min-h-[100vh] relative">
+          <div className=" absolute top-10  left-20 bg-[#c7295e] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
+          <div className=" absolute right-40  bg-[#4b91e2] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
+        </div>
+      </section>
+    </div>`,
+    },
    
   ];
   

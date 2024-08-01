@@ -58,7 +58,7 @@ export default function Preview() {
         </div>
       </div>
 
-      <section>
+      {/* <section>
         <div className=" grid py-40 lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1">
           <div className=" bg-[#8fa8ae] dark:bg-[#151515] py-20 px-10 overflow-hidden relative ">
             <img
@@ -258,23 +258,47 @@ export default function Preview() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className=" relative">
-        <div className=" absolute w-full top-0">
+        <div className=" absolute z-10 w-full top-0">
           <div className="h-full container mx-auto w-full ">
             <div className="  w-[100%]">
-              <h2 className=" min-h-[100vh] text-5xl Volkhov text-center flex justify-center items-center">
-                Poppins Geometric sans serif typefaces
-              </h2>
+              <div className=" min-h-[100vh]   text-center flex justify-center items-center">
+                <div className=" block">
+                  <h2 className="dark:text-[#f2f2f2] text-5xl Archivo">
+                    {" "}
+                    Innovate{" "}
+                    <span className="text-5xl Archivo font-normal">
+                      with Us
+                    </span>{" "}
+                  </h2>
+
+                  <h3 className=" text-2xl dark:text-[#f2f2f2] text-[#434343] w-[60%] mx-auto work pt-4">
+                    The Future of Technology Starts Here.Leading the Way in{" "}
+                    <span className=" font-semibold dark:text-[#f2f2f2] text-[#000]">
+                      Technological Advancements
+                    </span>{" "}
+                  </h3>
+                  <div className=" relative z-10 mt-8">
+                    <button className="bg-[#000] hover:bg-[#434343] text-[#f2f2f2] px-16 py-3 rounded-full">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <img
+        <div className=" min-h-[100vh] relative">
+          <div className=" absolute top-10  left-20 bg-[#c7295e] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
+          <div className=" absolute right-40  bg-[#4b91e2] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
+        </div>
+        {/* <img
           src={`../Image/overall/mesh/mesh1.png`}
-          className=" w-full min-h-[100vh]"
+          className=" w-full h-[100vh]"
           alt="mesh"
-        />
+        /> */}
       </section>
 
       <section className=" container mx-auto my-20">

@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "036",
+    image: "../Image/hero/hero005.webp",
+    title: "Tailwind background section",
+    tag: "hero",
+    link: "/hero/tailwind-background-section",
+  },
+  {
     _id: "035",
     image: "../Image/product/product001.webp",
     title: "Ecommerce product design tailwind",
