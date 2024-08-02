@@ -18,7 +18,7 @@ const HomeComponents = [
     _id: "036",
     image: "../Image/hero/hero005.webp",
     title: "Tailwind background section",
-    tag: "hero",
+    tag: "Hero",
     link: "/hero/tailwind-background-section",
   },
   {
