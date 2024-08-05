@@ -15,7 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charset="utf-8" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           name="google-site-verification"
@@ -27,11 +30,17 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
           crossorigin="anonymous"
         ></script>
+        <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+  
+        {/* <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
+          crossorigin="anonymous"
+        ></script> */}
         <GoogleAnalytics gaId="G-5ES4FTLQ2V" />
       </head>
 
       <body className={inter.className}>{children}</body>
-      
     </html>
   );
 }

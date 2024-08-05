@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -6,22 +6,31 @@ import HomeComponents from "../HomePage/HomeComponents";
 import HomeCard from "../HomePage/HomeCard";
 
 export default function HeroCard() {
-    const [data,setData] = useState(HomeComponents)
-    var keyword= "Hero"
+  const [data, setData] = useState(HomeComponents);
+  var keyword = "Hero";
 
- 
-    useEffect(()=>{
-        let localData= []
-        HomeComponents?.forEach((el)=>{
-            if(el?.tag===keyword){
-                localData.push(el)
-            }
+  useEffect(() => {
+    let localData = [];
+    HomeComponents?.forEach((el) => {
+      if (el?.tag === keyword) {
+        localData.push(el);
+      }
+    });
+    setData(localData);
+  }, []);
 
-        })
-        setData(localData)
-    },[])
+  useEffect(() => {
+    var ads = document.getElementsByClassName("adsbygoogle").length;
+    for (var i = 0; i < ads; i++) {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
+    }
+  }, []);
   return (
     <div>
+   
+      {/* <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
       <div className={` `}>
         {/* <DatasetJsonLd
       description="The description needs to be at least 50 characters long"
@@ -38,11 +47,10 @@ export default function HeroCard() {
           data-full-width-responsive="true"
         ></ins>
 
-  
-
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
-
-        <h2 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">Hero Components</h2>
+          <h2 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
+            Hero Components
+          </h2>
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
           >

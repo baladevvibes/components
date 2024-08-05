@@ -52,8 +52,7 @@
 /* Cinzel */
 
 /* REM */
-@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
 /* Alegreya */
@@ -76,90 +75,89 @@
 /* Varela */
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 /* Merriweather */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /* Monoton */
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 /* Rowdies */
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 /* Concert */
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 /* Catamaran */
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 /* Signika */
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
 /* Titillium */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 /* Kalnia */
-@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap");
 /* Work Sans */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* Cambay */
-@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap");
 /* Volkhov */
-@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* Anton */
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
 /* Archivo */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+/* Anek-Tamil */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap");
 
 * {
   font-family: "DM Sans", sans-serif;
   /* background-color: #f7f9fb; */
 }
-
-
-.merriweather{
+.Anek-Tamil{
+  font-family: "Anek Tamil", sans-serif;
+}
+.merriweather {
   font-family: "Merriweather Sans", sans-serif;
 }
-.Cambay{
+.Cambay {
   font-family: "Cambay", sans-serif;
 }
-.Anton{
+.Anton {
   font-family: "Anton SC", sans-serif;
 }
-.Archivo{
+.Archivo {
   font-family: "Archivo Black", sans-serif;
 }
 
-.Volkhov{
+.Volkhov {
   font-family: "Volkhov", serif;
 }
 
-.work{
+.work {
   font-family: "Work Sans", sans-serif;
-
 }
-.Kalnia{
+.Kalnia {
   font-family: "Kalnia Glaze", serif;
 }
 
-.cormorant{
+.cormorant {
   font-family: "Cormorant Garamond", serif;
 }
-.catamaran{
+.catamaran {
   font-family: "Catamaran", sans-serif;
 }
-.titillium{
+.titillium {
   font-family: "Titillium Web", sans-serif;
-
 }
-.signika{
+.signika {
   font-family: "Signika", sans-serif;
 }
-.concert{
+.concert {
   font-family: "Concert One", sans-serif;
 }
-.rowdies{
+.rowdies {
   font-family: "Rowdies", sans-serif;
-
 }
-.monoton-font{
+.monoton-font {
   font-family: "Monoton", sans-serif !important;
 }
-.playwrite{
+.playwrite {
   font-family: "Playwrite AU SA", cursive;
-
 }
 .varela-font {
   font-family: "Varela Round", sans-serif;
@@ -170,9 +168,8 @@
 .cormorant-garamond-light {
   font-family: "Cormorant Garamond", serif;
 }
-.REM-font{
+.REM-font {
   font-family: "REM", sans-serif;
-
 }
 .roboto {
   font-family: "Roboto Slab", serif;
@@ -284,9 +281,54 @@
   display: none;
 }
 .rcp-field:nth-child(2) {
-  display: none!important;
+  display: none !important;
 }
 
 .rcp-field:nth-child(0) {
-  display: none!important;
+  display: none !important;
+}
+.tags a {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  padding: 0 10px 0 12px;
+  background: #f19c1c;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  /* font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif; */
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.tags a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-color: transparent #f19c1c transparent transparent;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+}
+
+.tags a:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  float: left;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
 }

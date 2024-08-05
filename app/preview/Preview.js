@@ -14,6 +14,7 @@ import { RiAndroidLine } from "react-icons/ri";
 import { MdOutlineSdStorage } from "react-icons/md";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { TbBrandApple } from "react-icons/tb";
+import { RxDoubleArrowRight } from "react-icons/rx";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -57,6 +58,58 @@ export default function Preview() {
           </div>
         </div>
       </div>
+
+      <section className="  container mx-auto px-4">
+        <div className=" grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1  mdsm:grid-cols-1 sm:grid-cols-1 gap-4">
+          <div className=" border border-[#e2e2e2] dark:border-[#454545] rounded-lg ">
+            <div className="group grid  md:grid-cols-3  mdsm:grid-cols-1 sm:grid-cols-1">
+              <div className=" overflow-hidden  md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none mdsm:rounded-tl-lg mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg ">
+                <img
+                  src="../Image/blog/001/satellite.webp"
+                  alt="satellites "
+                  className=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-full object-cover group-hover:scale-125  duration-700"
+                />
+              </div>
+              <div className=" col-span-2 px-4 py-4">
+                <h2 className=" text-2xl text-[#1e1e1e] leading-6 Anek-Tamil font-semibold">
+                  Own satellites against US
+                </h2>
+                <p className="pt-2 varela-round-font  dark:text-[#f2f2f2] leading-6  text-[#424242]">
+                  They're using our own satellites against us. And the clock is
+                  ticking. This thing comes fully loaded. AM/FM radio.
+                </p>
+                <button className="varela-round-font group hover:underline hover:underline-offset-2 flex pt-3 text-[#0064b0] hover:text-[#003b80]  duration-700 ">
+                  Read more...{" "}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className=" border border-[#e2e2e2] dark:border-[#454545] rounded-lg ">
+            <div className="group grid  md:grid-cols-3  mdsm:grid-cols-1 sm:grid-cols-1">
+              <div className=" overflow-hidden  md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none mdsm:rounded-tl-lg mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg ">
+                <img
+                  src="../Image/blog/001/dinosaurs.webp"
+                  alt="dinosaurs"
+                  className=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-full object-cover group-hover:scale-125  duration-700"
+                />
+              </div>
+              <div className=" col-span-2 px-4 py-4">
+                <h2 className=" text-2xl text-[#1e1e1e] leading-6 Anek-Tamil font-semibold">
+                  God destroys dinosaurs
+                </h2>
+                <p className="pt-2 varela-round-font  leading-6 dark:text-[#f2f2f2]  text-[#424242]">
+                  God creates dinosaurs. God destroys dinosaurs. God creates
+                  Man. Man destroys God. Man creates Dinosaurs.
+                </p>
+                <button className="varela-round-font group hover:underline hover:underline-offset-2 flex pt-3 text-[#0064b0] hover:text-[#003b80]  duration-700 ">
+                  Read more...{" "}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* <section>
         <div className=" grid py-40 lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1">
@@ -260,7 +313,7 @@ export default function Preview() {
         </div>
       </section> */}
 
-      <section className=" relative">
+      {/* <section className=" relative">
         <div className=" absolute z-10 w-full top-0">
           <div className="h-full container mx-auto w-full ">
             <div className="  w-[100%]">
@@ -294,12 +347,7 @@ export default function Preview() {
           <div className=" absolute top-10  left-20 bg-[#c7295e] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
           <div className=" absolute right-40  bg-[#4b91e2] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
         </div>
-        {/* <img
-          src={`../Image/overall/mesh/mesh1.png`}
-          className=" w-full h-[100vh]"
-          alt="mesh"
-        /> */}
-      </section>
+      </section> */}
 
       <section className=" container mx-auto my-20">
         <div className=" sm:w-full overflow-auto px-4">

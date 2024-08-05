@@ -10,7 +10,7 @@ import Head from "next/head";
 import { BsDisplay } from "react-icons/bs";
 import { useEffect } from "react";
 import { DatasetJsonLd } from "next-seo";
-
+import { BiAlignLeft } from "react-icons/bi";
 export default function HomeRender() {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -23,13 +23,44 @@ export default function HomeRender() {
   }, []);
   return (
     <div>
-      <div className={` `}>
-        {/* <DatasetJsonLd
-      description="The description needs to be at least 50 characters long"
-      name="name of the dataset"
-      license="https//www.example.com"
-    /> */}
-        <Header />
+      <div className={` relative `}>
+        {/* <div className=" absolute top-0 h-full bg-[#0000009e] w-[100%] z-50">
+          Hello
+        </div> */}
+        <div
+          data-aos="fade-down"
+          className={`z-10 fixed top-0 w-full bg-[#fff] py-2`}
+        >
+          <div className={` container mx-auto `}>
+            <div className={` grid grid-cols-2 sm:grid-cols-1`}>
+              <div>
+                <div className=" flex">
+                  <a href="/">
+                    <img
+                      src={`https://makecomponents.com/Image/logo.png`}
+                      alt="make components"
+                      className={`h-[60px]`}
+                    />
+                  </a>
+                  <a href="/">
+                    <h2
+                      className={`title-font text-secondary font-semibold text-2xl px-2 mt-5 `}
+                    >
+                      Make Components
+                    </h2>
+                  </a>
+                </div>
+              </div>
+              <div className={`pt-7 sm:block flex justify-end space-x-6`}></div>
+            </div>
+            {/* <div className=" absolute top-6 right-6">
+              <BiAlignLeft className=" text-2xl" />
+            </div> */}
+          </div>
+          <div className={`bg-primary`}>
+            <div className={` container mx-auto px-2 py-1`}></div>
+          </div>
+        </div>
         <ins
           className="adsbygoogle"
           style={{ display: "block" }}
@@ -38,35 +69,17 @@ export default function HomeRender() {
           data-ad-format="auto"
           data-full-width-responsive="true"
         ></ins>
-
-        {/* <ins
-        className="adsbygoogle"
-        style={{ width: 500, height: 300, float: 'left' }}
-        data-ad-client="ca-pub-7292810486004926"
-        data-ad-slot="7806394673"
-        data-ad-format="auto"
-      ></ins> */}
-        {/* <AdSense.Google
-  client='ca-pub-7292810486004926'
-  slot='7806394673'
-  style={{ width: 500, height: 300, float: 'left' }}
-  format=''
-/> */}
-
-        {/* <Adsense client_id="2500160320143617"/>
-      <AdUnit className="adsbygoogle block"
-          //  style="display:block"
-                data-ad-client="ca-pub-2500160320143617"
-                data-ad-slot="7792904426"
-                data-ad-format="auto"
-                data-full-width-responsive="true"/> */}
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
-        <h1
+          <div className="px-6 tags space-x-10">
+            <a href="/hero">Hero</a>
+            <a href="/card">Card</a>
+          </div>
+          <h1
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
           >
-            Make Components 
+            Make Components
           </h1>
-          
+
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
           >
@@ -90,7 +103,6 @@ export default function HomeRender() {
           data-ad-format="auto"
           data-full-width-responsive="true"
         ></ins>
-
         <Footer />
       </div>
     </div>

@@ -4,6 +4,7 @@ import "../globals.css";
 import "../style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BiAlignLeft } from "react-icons/bi";
 
 export default function Header() {
   useEffect(() => {
@@ -16,7 +17,7 @@ export default function Header() {
         data-aos="fade-down"
         className={`z-10 fixed top-0 w-full bg-[#fff] py-2`}
       >
-        <div className={` container mx-auto`}>
+        <div className={` container mx-auto `}>
           <div className={` grid grid-cols-2 sm:grid-cols-1`}>
             <div>
               <div className=" flex">
@@ -35,23 +36,19 @@ export default function Header() {
                   </h2>
                 </a>
               </div>
-
             </div>
-            <div className={`pt-7 sm:hidden flex justify-end space-x-6`}>
+            <div className={`pt-7 sm:block flex justify-end space-x-6`}>
               {/* <div
                 className={`text-base cursor-pointer hover:text-primary text-secondary font-semibold`}
               >
                 {" "}
                 Join Commiunty
-              </div>
-              <div
-                className={`text-base cursor-pointer hover:text-primary text-secondary font-semibold`}
-              >
-                {" "}
-                Contact
               </div> */}
             </div>
           </div>
+          {/* <div className=" absolute top-6 right-6">
+            <BiAlignLeft className=" text-2xl" />
+          </div> */}
         </div>
         <div className={`bg-primary`}>
           <div className={` container mx-auto px-2 py-1`}>
