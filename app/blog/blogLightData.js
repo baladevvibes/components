@@ -11,14 +11,14 @@ const blogLightData = [
                   <img
                     src="https://makecomponents.com/Image/blog/001/satellite.webp"
                     alt="satellites "
-                    className=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-full object-cover group-hover:scale-125  duration-700"
+                    className=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-[200px] w-full object-cover group-hover:scale-125  duration-700"
                   />
                 </div>
                 <div className=" col-span-2 px-4 py-4">
-                  <h2 className=" text-2xl text-[#1e1e1e] leading-6  font-semibold">
+                  <h2 className=" text-2xl text-[#1e1e1e] leading-6  dark:text-[#f2f2f2] font-semibold">
                     Own satellites against US
                   </h2>
-                  <p className="pt-2   dark:text-[#f2f2f2] leading-6  text-[#424242]">
+                  <p className="pt-2  dark:text-[#9b9b9b]  leading-6  text-[#424242]">
                     They're using our own satellites against us. And the clock
                     is ticking. This thing comes fully loaded. AM/FM radio.
                   </p>
@@ -35,14 +35,14 @@ const blogLightData = [
                   <img
                     src="https://makecomponents.com/Image/blog/001/dinosaurs.webp"
                     alt="dinosaurs"
-                    className=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-full object-cover group-hover:scale-125  duration-700"
+                    className=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-[200px] w-full object-cover group-hover:scale-125  duration-700"
                   />
                 </div>
                 <div className=" col-span-2 px-4 py-4">
-                  <h2 className=" text-2xl text-[#1e1e1e] leading-6  font-semibold">
+                  <h2 className=" text-2xl text-[#1e1e1e] leading-6 dark:text-[#f2f2f2] font-semibold">
                     God destroys dinosaurs
                   </h2>
-                  <p className="pt-2   leading-6 dark:text-[#f2f2f2]  text-[#424242]">
+                  <p className="pt-2   leading-6 dark:text-[#9b9b9b] text-[#424242]">
                     God creates dinosaurs. God destroys dinosaurs. God creates
                     Man. Man destroys God. Man creates Dinosaurs.
                   </p>

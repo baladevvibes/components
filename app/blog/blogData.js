@@ -10,7 +10,7 @@ const blogData = [
                  <img
                    src="https://makecomponents.com/Image/blog/001/satellite.webp"
                    alt="satellites "
-                   class=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-full object-cover group-hover:scale-125  duration-700"
+                   class=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg object-cover group-hover:scale-125 h-[200px] w-full    duration-700"
                  />
                </div>
                <div class=" col-span-2 px-4 py-4">
@@ -34,7 +34,7 @@ const blogData = [
                  <img
                    src="https://makecomponents.com/Image/blog/001/dinosaurs.webp"
                    alt="dinosaurs"
-                   class=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg h-full object-cover group-hover:scale-125  duration-700"
+                   class=" md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none  mdsm:rounded-tl-lg  mdsm:rounded-tr-lg sm:rounded-tl-lg sm:rounded-tr-lg object-cover group-hover:scale-125 h-[200px] w-full  duration-700"
                  />
                </div>
                <div class=" col-span-2 px-4 py-4">
