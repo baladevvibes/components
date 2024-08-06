@@ -1,6 +1,7 @@
 import React from "react";
 import TailwindBackground from "./TailwindBackground";
 
+
 export const metadata = {
   keywords:
     "Tailwind background section,Tailwind background gradient, Tailwind gradient generator",

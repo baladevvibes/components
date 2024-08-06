@@ -59,6 +59,56 @@ export default function Preview() {
         </div>
       </div>
 
+      <section className="py-40 container mx-auto px-4">
+        <div className=" grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
+          <div>
+            <h3 className="pt-14 text-5xl text-[#333533] font-semibold REM-font sm:text-4xl dark:text-[#F5CB5C] ">
+              About us
+            </h3>
+            <p className="pt-6 text-[#333] merriweather lg:w-[80%] lge:w-[80%] md:w-full  dark:text-[#e6e6e6] mdsm:w-full sm:w-full text-[16px] leading-7 text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p className="pt-2 text-[#333] merriweather lg:w-[80%] lge:w-[80%] md:w-full   mdsm:w-full sm:w-full dark:text-[#e6e6e6] text-[16px] leading-7 text-justify">
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.{" "}
+            </p>
+          </div>
+          <div className=" flex justify-end relative">
+            <div className=" h-[80px] w-[80px]  bg-[#F5CB5C] text-4xl flex justify-center items-center  rounded-full absolute top-6 left-28 text-[#333533] font-semibold milonga-font">
+              25<sup className=" text-[16px] mb-6 milonga-font">+</sup>
+            </div>
+            <div className=" absolute left-1 z-10 bottom-6 ">
+              <div className=" relative">
+                <div className=" absolute -top-10 -left-16 -z-20 ">
+                  <img
+                    src={`../Image/about/about005/vector.png`}
+                    className=" "
+                  />
+                </div>
+
+                <img
+                  src={`../Image/about/about005/table.webp`}
+                  alt="table"
+                  className=" w-[100%] h-[250px]  object-cover p-4 rounded-lg bg-[#fff] "
+                />
+              </div>
+            </div>
+            <img
+              src={`../Image/about/about005/tea-shop.webp`}
+              alt="tea-shop"
+              className=" w-[60%] sm:w-[80%] h-[450px]  object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="  container mx-auto px-4">
         <div className=" grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1  mdsm:grid-cols-1 sm:grid-cols-1 gap-4">
           <div className=" border border-[#e2e2e2] dark:border-[#454545] rounded-lg ">

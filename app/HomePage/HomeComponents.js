@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "038",
+    image: "../Image/about/about005.webp",
+    title: "About us page template",
+    tag: "about",
+    link: "/about/about-us-page-template",
+  },
+  {
     _id: "037",
     image: "../Image/blog/blog001.webp",
     title: "blog card design tailwind css",
@@ -212,7 +219,7 @@ const HomeComponents = [
     _id: "012",
     image: "../Image/about/about003.webp",
     title: "Side Half Grid About Section",
-    tag: "About ",
+    tag: "about",
     link: "/about/side-half-grid-about-section",
   },
 
@@ -244,7 +251,7 @@ const HomeComponents = [
     _id: "008",
     image: "../Image/about/about002.webp",
     title: "Formal About Section",
-    tag: "About us",
+    tag: "about",
     link: "/about/formal-about-section",
   },
   {
@@ -274,7 +281,7 @@ const HomeComponents = [
     _id: "003",
     image: "../Image/about/about001.webp",
     title: "Gallery frame Aboutus",
-    tag: "About",
+    tag: "about",
     link: "/about/gallery-frame-aboutus",
   },
   {
