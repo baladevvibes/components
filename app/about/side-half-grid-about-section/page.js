@@ -25,13 +25,10 @@ export const metadata = {
     images: [
       {
         url: "https://makecomponents.com/Image/about/about003.webp", // Must be an absolute URL
-        width: 800,
-        height: 600,
+        alt: "about components",
       },
       {
         url: "https://makecomponents.com/Image/about/about003.webp", // Must be an absolute URL
-        width: 800,
-        height: 600,
         alt: "about components",
       },
     ],
