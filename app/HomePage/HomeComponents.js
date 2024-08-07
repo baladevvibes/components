@@ -247,13 +247,13 @@ const HomeComponents = [
     link: "/partners/partners-hover-effects-scale",
   },
 
-  {
-    _id: "008",
-    image: "../Image/about/about002.webp",
-    title: "Formal About Section",
-    tag: "about",
-    link: "/about/formal-about-section",
-  },
+  // {
+  //   _id: "008",
+  //   image: "../Image/about/about002.webp",
+  //   title: "Formal About Section",
+  //   tag: "about",
+  //   link: "/about/formal-about-section",
+  // },
   {
     _id: "007",
     image: "../Image/table/table001.webp",

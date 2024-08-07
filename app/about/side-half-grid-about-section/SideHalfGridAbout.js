@@ -132,8 +132,7 @@ export default function SideHalfGridAbout() {
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
           title={`Side Half Grid About Section`}
-          des={`This component create using CSS framework tailwindcss. It fully
-              responsive component.`}
+          des={`Side-half grid about section. It's a new design and professional for the building base website.`}
           section_name={`About`}
           using_font="inter-font , Exo 2, sans-serif"
         />
