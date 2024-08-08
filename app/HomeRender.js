@@ -73,7 +73,7 @@ export default function HomeRender() {
           <div className="px-6 tags space-x-10">
             <a href="/hero" className=" hover:brightness-125 tracking-wide">Hero</a>
             <a href="/card" className=" hover:brightness-125 tracking-wide">Card</a>
-            {/* <a href="/card" className=" hover:brightness-125 tracking-wide">Card</a> */}
+            <a href="/about" className=" hover:brightness-125 tracking-wide">About</a>
           </div>
           <h1
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}

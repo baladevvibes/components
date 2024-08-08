@@ -47,7 +47,8 @@ export default function GalleryFrameAboutUsPre() {
             ></div>
 
             <img
-              src={`https://images.pexels.com/photos/840719/pexels-photo-840719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+              src={`../../Image/about/about004/004.webp`}
+              alt="traveller"
               className="lg:h-[300px] lge:h-[300px]  md:h-[450px] mdsm:h-[400px] sm:h-[350px] sm:w-full w-full object-cover"
             />
           </div>

@@ -12,7 +12,7 @@ const aboutData = [
             <div class="lg:col-span-5 lge:col-span-5 md:col-span-12 mdsm:col-span-12 sm:col-span-12 p-10 sm:p-6 relative">
               <div class="absolute h-36 w-36 sm:top-0 sm:left-0 -z-10 top-4 left-4 bg-[#009e4f]"></div>
               <div class="absolute h-36 w-36 sm:right-0 sm:bottom-0 -z-10 bottom-4 right-4 bg-[#009e4f]"></div>
-              <img src="https://images.pexels.com/photos/840719/pexels-photo-840719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              <img src="https://makecomponents.com/Image/about/about004/004.webp"
                 class="lg:h-[300px] lge:h-[300px] md:h-[450px] mdsm:h-[400px] sm:h-[350px] sm:w-full w-full object-cover"/>
             </div>
             <div class="lg:col-span-7 lge:col-span-7 md:col-span-12 mdsm:col-span-12 sm:col-span-12 px-0 md:px-2 mdsm:px-2">
@@ -82,7 +82,7 @@ const aboutData = [
             <div class="  absolute top-0 h-full my-auto w-[100%]">
               <div class=" h-[70%] bg-[#333] ">
                 <img
-                  src="https://images.pexels.com/photos/1707823/pexels-photo-1707823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://makecomponents.com/Image/about/about003/003.webp"
                   alt="building"
                   class=" h-[140%] w-[86%] object-cover"
                 />

@@ -481,7 +481,7 @@ export default function SideHalfGridAbout() {
                             <div className="  absolute top-0 h-full my-auto w-[100%]">
                               <div className={` h-[70%] bg-[#333] `}>
                                 <img
-                                  src={`https://images.pexels.com/photos/1707823/pexels-photo-1707823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                                  src={`../../Image/about/about003/003.webp`}
                                   alt="building"
                                   className=" h-[140%] w-[86%] object-cover"
                                 />

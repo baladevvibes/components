@@ -114,7 +114,7 @@ export default function GalleryFrameAboutUs() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Gallery frame About us`}
+          title={`Gallery frame about us tailwind css example html`}
           des={`This component create using CSS framework tailwindcss. It fully
               responsive component.`}
           section_name={`Hero`}
@@ -441,7 +441,7 @@ export default function GalleryFrameAboutUs() {
             ></div>
 
             <img
-              src={`https://images.pexels.com/photos/840719/pexels-photo-840719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+              src={`../../Image/about/about004/004.webp`}
               className={` ${xlScreen ? `h-[300px]` : ``} ${lgScreen ? `h-[450px] w-full` :``} ${mdScreen ? `h-[450px]`: ``} ${smScreen ? `h-[350px]` : ``}  ${responsiveState ?  `` : `lg:h-[300px] lge:h-[300px]  md:h-[450px] mdsm:h-[400px] sm:h-[350px] sm:w-full w-full`}  object-cover`}
             />
           </div>
