@@ -6,7 +6,6 @@ import "../../../style.css"
 
 export default function ModernHeroSectPre() {
   const [dark, setDark] = useState(false);
-
   const darkModeHandler = () => {
     setDark(!dark);
     document.body.classList.toggle("dark");

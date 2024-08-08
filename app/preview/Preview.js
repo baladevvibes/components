@@ -15,6 +15,10 @@ import { MdOutlineSdStorage } from "react-icons/md";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { TbBrandApple } from "react-icons/tb";
 import { RxDoubleArrowRight } from "react-icons/rx";
+import { GoKey } from "react-icons/go";
+import { FaKey } from "react-icons/fa";
+import { MdSecurity } from "react-icons/md";
+import { FaCloudArrowDown } from "react-icons/fa6";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -57,6 +61,56 @@ export default function Preview() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className=" container mx-auto">
+        <section>
+          <div className=" grid grid-cols-3">
+            <div className=" grid grid-cols-5 gap-5 ">
+              <div className=" flex justify-end">
+                <FaKey className=" text-4xl text-[#C42021]" />
+              </div>
+              <div className=" col-span-4">
+                <h3 className="bakbak-one-font text-3xl text-[#C42021]">Key</h3>
+                <p className=" pt-3 Fira text-[#374B4A] leading-7 dark:text-[#f2f2f2]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+
+            <div className=" grid grid-cols-5 gap-5 ">
+              <div className=" flex justify-end">
+              <MdSecurity className=" text-4xl text-[#C42021]" />
+              </div>
+              <div className=" col-span-4">
+              <h3 className="bakbak-one-font text-3xl text-[#C42021]">Secure</h3>
+                <p className=" pt-3 Fira text-[#374B4A] leading-7 dark:text-[#f2f2f2]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+
+            <div className=" grid grid-cols-5 gap-5 ">
+              <div className=" flex justify-end">
+                <FaCloudArrowDown className=" text-4xl text-[#C42021]" />
+              </div>
+              <div className=" col-span-4">
+                <h3 className="bakbak-one-font text-3xl text-[#C42021]">
+                  Cloud
+                </h3> 
+                <p className=" pt-3 Fira text-[#374B4A] leading-7 dark:text-[#f2f2f2]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <section className="py-40 container mx-auto px-4">

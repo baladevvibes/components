@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "039",
+    image: "../Image/services/services004.webp",
+    title: "Our Services tailwind css",
+    tag: "services",
+    link: "/services/our-services-tailwind-css",
+  },
+  {
     _id: "038",
     image: "../Image/about/about005.webp",
     title: "About us page template",
@@ -124,7 +131,7 @@ const HomeComponents = [
     _id: "024",
     image: "../Image/services/services003.webp",
     title: "Icon Services Section",
-    tag: "Services",
+    tag: "services",
     link: "/services/icon-services-section",
   },
 
@@ -132,7 +139,7 @@ const HomeComponents = [
     _id: "023",
     image: "../Image/services/services002.webp",
     title: "Services section template",
-    tag: "Services",
+    tag: "services",
     link: "/services/icon-side-alignment",
   },
 
@@ -227,7 +234,7 @@ const HomeComponents = [
     _id: "011",
     image: "../Image/services/services001.webp",
     title: "Half Background layer services sections",
-    tag: "Services ",
+    tag: "services",
     link: "/card/half-background-layer-card",
   },
 
