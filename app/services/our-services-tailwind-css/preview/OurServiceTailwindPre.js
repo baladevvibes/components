@@ -17,46 +17,8 @@ export default function OurServiceTailwindPre() {
   };
   return (
     <div className="dark:bg-[#1e1e1e]">
-        <div className=" sticky top-2 grid grid-cols-2   justify-end px-20 pb-10">
-          <div className=" ">
-            <a href="/services/our-services-tailwind-css">
-            <div className=" group flex  ">
-              <IoReturnDownBackSharp className="mt-1 cursor-pointer mr-4 dark:text-primary group-hover:text-primary" />{" "}
-              <span className="font-normal cursor-pointer dark:text-primary group-hover:text-primary">Back to</span>
-            </div>
-            </a>
-          </div>
-          <div className=" flex justify-end">
-            <div onClick={() => darkModeHandler()}>
-              <div className={` group`}>
-                <div
-                  className={` ${
-                    dark ? `bg-secondary` : ``
-                  } p-1.5 border  border-[#ccc] z-40 mx-4  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                >
-                  {dark ? (
-                    <>
-                      <CiLight
-                        className={` ${dark ? ` text-[#fff] text-[16px]` : ``}`}
-                      />
-                    </>
-                  ) : (
-                    <>
-                      <CiDark
-                        className={`  group-hover:text-[#fff] text-[16px]`}
-                      />
-                    </>
-                  )}
-                </div>
-
-                <p className={` text-sm text-center dark:text-[#fff]`}>
-                  {dark ? "Da" : "Li"}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div className=" container mx-auto py-[250px] px-4">
+     
+      <div className=" container mx-auto py-[200px] px-4">
         
 
         <section>

@@ -26,10 +26,11 @@ export const metadata = {
     },
     images: [
       {
-        url: "https://makecomponents.com/Image/hero/hero004.webp",
+        url: "https://makecomponents.com/Image/services/services004/services004.webp",
         secure_url:
           "https://makecomponents.com/Image/services/services004/services004.webp",
-        alt: "hero components",
+        alt: "services components",
+        type:"image/webp"
       },
     ],
     locale: "en_US",

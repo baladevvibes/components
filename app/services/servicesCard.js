@@ -29,7 +29,6 @@ export default function ServicesCard() {
   }, []);
   return (
     <div>
-   
       {/* <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
       <div className={` `}>
         {/* <DatasetJsonLd
@@ -49,7 +48,7 @@ export default function ServicesCard() {
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <h2 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
-            Hero Components
+          Services component tailwind css
           </h2>
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
