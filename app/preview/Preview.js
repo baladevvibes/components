@@ -19,6 +19,11 @@ import { GoKey } from "react-icons/go";
 import { FaKey } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import { FaCloudArrowDown } from "react-icons/fa6";
+import { HiOutlineDotsVertical } from "react-icons/hi";
+import { PiEye } from "react-icons/pi";
+import { RiDeleteBinLine } from "react-icons/ri";
+import { RiGlobeLine } from "react-icons/ri";
+import { RiHandCoinLine } from "react-icons/ri";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -63,6 +68,271 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className="py-40 container mx-auto">
+        <section>
+          <div className=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1">
+            <div className=" bg-[#5700c9] w-56  mx-auto  p-8 px-4 rounded-lg">
+              <div className=" flex justify-end">
+                <RiGlobeLine className=" text-[60px] text-[#7812ff]" />
+              </div>
+              <p className="pt-16 text-[#f2f2f2]">
+                Lorem Ipsum is simply dummy text of the printing.
+              </p>
+            </div>
+            <div className=" bg-[#1f4200] w-56 mx-auto  p-8 px-4 rounded-lg">
+              <div className=" flex justify-end">
+                <RiHandCoinLine className=" text-[60px] text-[#3d6d13]" />
+              </div>
+              <p className="pt-16 text-[#f2f2f2]">
+                Lorem Ipsum is simply dummy text of the printing.
+              </p>
+            </div>
+        
+          </div>
+        </section>
+      </div>
+
+      <div className=" container mx-auto">
+        <div className=" overflow-auto">
+        <div role="table" className="animate-pulse">
+          <table className=" w-full">
+            <thead className=" bg-[#f2f2f2] dark:bg-[#6277993b]">
+              <tr className=" border-[1px] border-[#ccc]">
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-48 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-48 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+              </tr>
+              <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+              </tr>
+
+              <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+              </tr>
+
+              <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+                <td>
+                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+
+        {/* <div role="status" class="max-w-sm animate-pulse">
+          <div class="h-2.5 bg-[#cccccc]  rounded-full dark:bg-[#374151] w-48 mb-4"></div>
+          <div class="h-2 bg-[#cccccc] rounded-full dark:bg-[#374151] max-w-[360px] mb-2.5"></div>
+          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] mb-2.5"></div>
+          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[330px] mb-2.5"></div>
+          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[300px] mb-2.5"></div>
+          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[360px]"></div>
+          <span class="sr-only">Loading...</span>
+        </div> */}
+      </div>
+
+      <div className=" py-[150px] container mx-auto">
+        <section className=" w-[80%] mx-auto">
+          <details class="group  relative pb-2">
+            <summary class="flex relative mt-4 border-[1px] border-[#ccc] dark:border-[#5a5a5a] py-3 px-3 cursor-pointer list-none font-medium">
+              <span class="transition flex justify-center items-center group-open:rotate-90">
+                <RxDoubleArrowRight className="text-[#5a5a5a] dark:text-[#cecece] " />
+              </span>
+              <span class="text-[#5a5a5a] dark:text-[#cecece] px-4 font-semibold  leading-7 ">
+                Apple
+              </span>
+            </summary>
+            <span className=" absolute w-auto top-3 right-5 flex justify-end">
+              <div className=" group">
+                <RiDeleteBinLine className="text-[#5a5a5a] dark:text-[#cecece] cursor-pointer dark:hover:text-[#e5051f] hover:text-[#e5051f] text-[22px] mt-[2px]" />
+              </div>
+            </span>
+            <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-10 ">
+              <table className="border-[1px] border-[#ccc] w-full">
+                <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      Product
+                    </td>
+                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      Price
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      MacBook Pro 14” and 16” M3, M3 Pro or M3 Max chip
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      ₹169900.00
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      iPad Pro
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹99900.00
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      iPhone 15 Pro
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹129800.00
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      Apple Watch SE
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹29900.00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <details class="group  relative pb-2">
+            <summary class="flex relative  border-[1px] border-[#ccc] dark:border-[#5a5a5a] py-3 px-3 cursor-pointer list-none font-medium">
+              <span class="transition flex justify-center items-center group-open:rotate-90">
+                <RxDoubleArrowRight className="text-[#5a5a5a] dark:text-[#cecece] " />
+              </span>
+              <span class="text-[#5a5a5a] dark:text-[#cecece] px-4 font-semibold  leading-7 ">
+                Apple
+              </span>
+            </summary>
+            <span className=" absolute w-auto top-3 right-5 flex justify-end">
+              <div className=" group">
+                <RiDeleteBinLine className="text-[#5a5a5a] dark:text-[#cecece] cursor-pointer dark:hover:text-[#e5051f] hover:text-[#e5051f] text-[22px] mt-[2px]" />
+              </div>
+            </span>
+            <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-10 ">
+              <table className="border-[1px] border-[#ccc] w-full">
+                <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      Product
+                    </td>
+                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      Price
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      MacBook Pro 14” and 16” M3, M3 Pro or M3 Max chip
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      ₹169900.00
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      iPad Pro
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹99900.00
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      iPhone 15 Pro
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹129800.00
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      Apple Watch SE
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹29900.00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+        </section>
+      </div>
+
       <div className=" container mx-auto">
         <section>
           <div className=" grid grid-cols-3">
@@ -82,10 +352,12 @@ export default function Preview() {
 
             <div className=" grid grid-cols-5 gap-5 ">
               <div className=" flex justify-end">
-              <MdSecurity className=" text-4xl text-[#C42021]" />
+                <MdSecurity className=" text-4xl text-[#C42021]" />
               </div>
               <div className=" col-span-4">
-              <h3 className="bakbak-one-font text-3xl text-[#C42021]">Secure</h3>
+                <h3 className="bakbak-one-font text-3xl text-[#C42021]">
+                  Secure
+                </h3>
                 <p className=" pt-3 Fira text-[#374B4A] leading-7 dark:text-[#f2f2f2]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -101,7 +373,7 @@ export default function Preview() {
               <div className=" col-span-4">
                 <h3 className="bakbak-one-font text-3xl text-[#C42021]">
                   Cloud
-                </h3> 
+                </h3>
                 <p className=" pt-3 Fira text-[#374B4A] leading-7 dark:text-[#f2f2f2]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -131,7 +403,7 @@ export default function Preview() {
 
             <p className="pt-2 text-[#333] merriweather lg:w-[80%] lge:w-[80%] md:w-full   mdsm:w-full sm:w-full dark:text-[#e6e6e6] text-[16px] leading-7 text-justify">
               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.{" "}
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
           </div>
           <div className=" flex justify-end relative">
@@ -183,7 +455,7 @@ export default function Preview() {
                   ticking. This thing comes fully loaded. AM/FM radio.
                 </p>
                 <button className="varela-round-font group hover:underline hover:underline-offset-2 flex pt-3 text-[#0064b0] hover:text-[#003b80]  duration-700 ">
-                  Read more...{" "}
+                  Read more...
                 </button>
               </div>
             </div>
@@ -207,7 +479,7 @@ export default function Preview() {
                   Man. Man destroys God. Man creates Dinosaurs.
                 </p>
                 <button className="varela-round-font group hover:underline hover:underline-offset-2 flex pt-3 text-[#0064b0] hover:text-[#003b80]  duration-700 ">
-                  Read more...{" "}
+                  Read more...
                 </button>
               </div>
             </div>
@@ -424,18 +696,18 @@ export default function Preview() {
               <div className=" min-h-[100vh]   text-center flex justify-center items-center">
                 <div className=" block">
                   <h2 className="dark:text-[#f2f2f2] text-5xl Archivo">
-                    {" "}
-                    Innovate{" "}
+                    
+                    Innovate
                     <span className="text-5xl Archivo font-normal">
                       with Us
-                    </span>{" "}
+                    </span>
                   </h2>
 
                   <h3 className=" text-2xl dark:text-[#f2f2f2] text-[#434343] w-[60%] mx-auto work pt-4">
-                    The Future of Technology Starts Here.Leading the Way in{" "}
+                    The Future of Technology Starts Here.Leading the Way in
                     <span className=" font-semibold dark:text-[#f2f2f2] text-[#000]">
                       Technological Advancements
-                    </span>{" "}
+                    </span>
                   </h3>
                   <div className=" relative z-10 mt-8">
                     <button className="bg-[#000] hover:bg-[#434343] text-[#f2f2f2] px-16 py-3 rounded-full">
