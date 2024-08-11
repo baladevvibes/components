@@ -8,10 +8,44 @@ import HomeCard from "./HomePage/HomeCard";
 import Footer from "./components/Footer";
 import Head from "next/head";
 import { BsDisplay } from "react-icons/bs";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { DatasetJsonLd } from "next-seo";
 import { BiAlignLeft } from "react-icons/bi";
 export default function HomeRender() {
+  const [buttonData, setButtonData] = useState();
+  const [buttonNum, setButtonNum] = useState(1);
+  const [calculator, setCalculator] = useState();
+  const [buttonState,setButtonState]=useState(false)
+
+  const handleMore = () => {
+    setButtonNum(buttonNum + 1);
+    let cal = 11 * buttonNum +11;
+    let arr = [];
+    HomeComponents?.forEach((el, i) => {
+      if (cal >= i) {
+        arr.push(el);
+      }
+    });
+    if(buttonData.length===HomeComponents.length){
+      setButtonState(true)
+    }
+    setCalculator(cal);
+    setButtonData(arr);
+  };
+  useEffect(() => {
+    let arr = [];
+    let cal = 11 * buttonNum;
+    setCalculator(cal);
+    setButtonData(2);
+    HomeComponents?.forEach((el, i) => {
+      if (buttonNum === 1) {
+        if (cal >= i) {
+          arr.push(el);
+        }
+      }
+    });
+    setButtonData(arr);
+  }, []);
   useEffect(() => {
     if (typeof window !== "undefined") {
       try {
@@ -71,9 +105,15 @@ export default function HomeRender() {
         ></ins>
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <div className="px-6 tags space-x-10">
-            <a href="/hero" className=" hover:brightness-125 tracking-wide">Hero</a>
-            <a href="/card" className=" hover:brightness-125 tracking-wide">Card</a>
-            <a href="/about" className=" hover:brightness-125 tracking-wide">About</a>
+            <a href="/hero" className=" hover:brightness-125 tracking-wide">
+              Hero
+            </a>
+            <a href="/card" className=" hover:brightness-125 tracking-wide">
+              Card
+            </a>
+            <a href="/about" className=" hover:brightness-125 tracking-wide">
+              About
+            </a>
           </div>
           <h1
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
@@ -84,7 +124,7 @@ export default function HomeRender() {
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
           >
-            {HomeComponents?.map((v, i) => {
+            {buttonData?.map((v, i) => {
               return (
                 <HomeCard
                   title={v?.title}
@@ -95,6 +135,17 @@ export default function HomeRender() {
               );
             })}
           </div>
+          {buttonState? null :<>
+            <div className="my-6 flex justify-center">
+            <button
+              className=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
+              onClick={() => handleMore()}
+            >
+              More Components
+            </button>
+          </div>
+          </>}
+         
         </div>
         <ins
           className="adsbygoogle"

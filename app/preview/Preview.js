@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style.css";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
@@ -27,11 +27,56 @@ import { RiHandCoinLine } from "react-icons/ri";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
-
+  const [data, setData] = useState([
+    { id: 0, name: "0" },
+    { id: 1, name: "1" },
+    { id: 2, name: "2" },
+    { id: 3, name: "3" },
+    { id: 4, name: "4" },
+    { id: 5, name: "5" },
+    { id: 6, name: "6" },
+    { id: 7, name: "7" },
+    { id: 8, name: "8" },
+    { id: 9, name: "9" },
+    { id: 10, name: "10" },
+    { id: 11, name: "11" },
+  ]);
+ 
   const darkModeHandler = () => {
     setDark(!dark);
     document.body.classList.toggle("dark");
   };
+  const [buttonData, setButtonData] = useState();
+  const [buttonNum, setButtonNum] = useState(1);
+  const [calculator, setCalculator] = useState();
+
+  const handleMore = () => {
+    setButtonNum(buttonNum + 1);
+    let cal = 4 * buttonNum +2;
+    let arr = [];
+    data?.forEach((el, i) => {
+      if (cal >= i) {
+        arr.push(el);
+        console.log(el);
+      }
+    });
+    setCalculator(cal);
+    setButtonData(arr);
+  };
+  useEffect(() => {
+    let arr = [];
+    let cal = 2 * buttonNum;
+    setCalculator(cal);
+    setButtonData(2);
+    data?.forEach((el, i) => {
+      if (buttonNum === 1) {
+        if (cal >= i) {
+          arr.push(el);
+        }
+      }
+    });
+    setButtonData(arr);
+  }, []);
   return (
     <div className=" relative dark:bg-secondary">
       <div className=" container mx-auto">
@@ -67,7 +112,16 @@ export default function Preview() {
           </div>
         </div>
       </div>
-
+      <div className="text-center container mx-auto">
+        {buttonData?.map((v, i) => {
+          return (
+            <>
+              <div>{v?.name}</div>
+            </>
+          );
+        })}
+        <button onClick={() => handleMore()}>more </button>
+      </div>
       <div className="py-40 container mx-auto">
         <section>
           <div className=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1">
@@ -87,108 +141,107 @@ export default function Preview() {
                 Lorem Ipsum is simply dummy text of the printing.
               </p>
             </div>
-        
           </div>
         </section>
       </div>
 
       <div className=" container mx-auto">
         <div className=" overflow-auto">
-        <div role="table" className="animate-pulse">
-          <table className=" w-full">
-            <thead className=" bg-[#f2f2f2] dark:bg-[#6277993b]">
-              <tr className=" border-[1px] border-[#ccc]">
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-48 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-48 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
-                </td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className=" border-[1px] border-t-0 border-[#ccc]">
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-              </tr>
-              <tr className=" border-[1px] border-t-0 border-[#ccc]">
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-              </tr>
+          <div role="table" className="animate-pulse">
+            <table className=" w-full">
+              <thead className=" bg-[#f2f2f2] dark:bg-[#6277993b]">
+                <tr className=" border-[1px] border-[#ccc]">
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-48 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-48 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-24 mb-4"></div>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                </tr>
+                <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                </tr>
 
-              <tr className=" border-[1px] border-t-0 border-[#ccc]">
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-              </tr>
+                <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                </tr>
 
-              <tr className=" border-[1px] border-t-0 border-[#ccc]">
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-                <td>
-                  <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                <tr className=" border-[1px] border-t-0 border-[#ccc]">
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-10 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-32 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                  <td>
+                    <div class="h-2.5 bg-[#cccccc] mx-4  rounded-full mt-4 dark:bg-[#374151] w-14 mb-4"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* <div role="status" class="max-w-sm animate-pulse">

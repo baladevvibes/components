@@ -52,7 +52,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className=" relative">
+    <main className=" relative overflow-hidden">
       <HomeRender />
     </main>
   );
