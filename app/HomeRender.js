@@ -11,23 +11,28 @@ import { BsDisplay } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { DatasetJsonLd } from "next-seo";
 import { BiAlignLeft } from "react-icons/bi";
+import { MdOutlineCancelPresentation } from "react-icons/md";
+
+
 export default function HomeRender() {
   const [buttonData, setButtonData] = useState();
   const [buttonNum, setButtonNum] = useState(1);
   const [calculator, setCalculator] = useState();
-  const [buttonState,setButtonState]=useState(false)
+  const [buttonState, setButtonState] = useState(false);
+  const [forceRender,setForceRender] =useState(false)
+  const [smDevice,setSmDevice]=useState(false)
 
   const handleMore = () => {
     setButtonNum(buttonNum + 1);
-    let cal = 11 * buttonNum +11;
+    let cal = 11 * buttonNum + 11;
     let arr = [];
     HomeComponents?.forEach((el, i) => {
       if (cal >= i) {
         arr.push(el);
       }
     });
-    if(buttonData.length===HomeComponents.length){
-      setButtonState(true)
+    if (buttonData.length === HomeComponents.length) {
+      setButtonState(true);
     }
     setCalculator(cal);
     setButtonData(arr);
@@ -55,12 +60,42 @@ export default function HomeRender() {
       }
     }
   }, []);
+
+const handleSmDevices = () =>{
+  setSmDevice(!smDevice)
+  setForceRender(!forceRender)
+}
   return (
     <div>
       <div className={` relative `}>
-        {/* <div className=" absolute top-0 h-full bg-[#0000009e] w-[100%] z-50">
-          Hello
-        </div> */}
+        {smDevice? <>
+          <div className="  fixed top-0 h-full bg-[#0000009e] w-[100%] z-50">
+          <div className=" flex h-full overflow-auto">
+            <div className=" h-full  w-[90%] bg-primary">
+              <h3
+                className={`title-font px-4 pt-6 text-secondary font-semibold text-2xl`}
+              >
+                Make Components
+              </h3>
+
+              <ul className="pt-6 px-4">
+                <li><a href="/terms-and-condition">terms and conditions</a></li>
+                <li><a href="/legal">legal</a></li>
+                <li><a href="mailto:makecomponents7202@gmail.com">contact</a></li>
+              </ul>
+            </div>
+            <div className=" w-[10%]">
+              <div className="w-full flex justify-center " onClick={()=>{
+            handleSmDevices()
+            }}>
+              <MdOutlineCancelPresentation className=" mt-6 hover:text-primary cursor-pointer  text-[30px]"/>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        </> :null}
+       
         <div
           data-aos="fade-down"
           className={`z-10 fixed top-0 w-full bg-[#fff] py-2`}
@@ -85,11 +120,16 @@ export default function HomeRender() {
                   </a>
                 </div>
               </div>
-              <div className={`pt-7 sm:block flex justify-end space-x-6`}></div>
+              <div className={`pt-7 sm:hidden flex justify-end space-x-6`}></div>
             </div>
-            {/* <div className=" absolute top-6 right-6">
-              <BiAlignLeft className=" text-2xl" />
-            </div> */}
+            {smDevice? null :<>
+              <div onClick={()=>{
+            handleSmDevices()
+            }} className=" absolute lg:hidden lge:hidden md:hidden mdsm:block sm:block top-8 right-6">
+              <BiAlignLeft className=" cursor-pointer text-2xl" />
+            </div>
+            </>}
+          
           </div>
           <div className={`bg-primary`}>
             <div className={` container mx-auto px-2 py-1`}></div>
@@ -135,17 +175,18 @@ export default function HomeRender() {
               );
             })}
           </div>
-          {buttonState? null :<>
-            <div className="my-6 flex justify-center">
-            <button
-              className=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
-              onClick={() => handleMore()}
-            >
-              More Components
-            </button>
-          </div>
-          </>}
-         
+          {buttonState ? null : (
+            <>
+              <div className="my-6 flex justify-center">
+                <button
+                  className=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
+                  onClick={() => handleMore()}
+                >
+                  More Components
+                </button>
+              </div>
+            </>
+          )}
         </div>
         <ins
           className="adsbygoogle"
