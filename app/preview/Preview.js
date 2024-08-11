@@ -41,7 +41,7 @@ export default function Preview() {
     { id: 10, name: "10" },
     { id: 11, name: "11" },
   ]);
- 
+
   const darkModeHandler = () => {
     setDark(!dark);
     document.body.classList.toggle("dark");
@@ -52,7 +52,7 @@ export default function Preview() {
 
   const handleMore = () => {
     setButtonNum(buttonNum + 1);
-    let cal = 4 * buttonNum +2;
+    let cal = 4 * buttonNum + 2;
     let arr = [];
     data?.forEach((el, i) => {
       if (cal >= i) {
@@ -271,7 +271,7 @@ export default function Preview() {
                 <RiDeleteBinLine className="text-[#5a5a5a] dark:text-[#cecece] cursor-pointer dark:hover:text-[#e5051f] hover:text-[#e5051f] text-[22px] mt-[2px]" />
               </div>
             </span>
-            <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-10 ">
+            <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-4">
               <table className="border-[1px] border-[#ccc] w-full">
                 <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
                   <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
@@ -326,7 +326,7 @@ export default function Preview() {
                 <RxDoubleArrowRight className="text-[#5a5a5a] dark:text-[#cecece] " />
               </span>
               <span class="text-[#5a5a5a] dark:text-[#cecece] px-4 font-semibold  leading-7 ">
-                Apple
+                Redmi
               </span>
             </summary>
             <span className=" absolute w-auto top-3 right-5 flex justify-end">
@@ -334,7 +334,7 @@ export default function Preview() {
                 <RiDeleteBinLine className="text-[#5a5a5a] dark:text-[#cecece] cursor-pointer dark:hover:text-[#e5051f] hover:text-[#e5051f] text-[22px] mt-[2px]" />
               </div>
             </span>
-            <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-10 ">
+            <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-4">
               <table className="border-[1px] border-[#ccc] w-full">
                 <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
                   <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
@@ -349,34 +349,97 @@ export default function Preview() {
                 <tbody>
                   <tr className="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
                     <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
-                      MacBook Pro 14” and 16” M3, M3 Pro or M3 Max chip
+                      Xiaomi 14 Ultra
                     </td>
                     <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
-                      ₹169900.00
+                      ₹99,999
                     </td>
                   </tr>
                   <tr className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
                     <td className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
-                      iPad Pro
+                      Redmi Note 13 Pro+ 5G
                     </td>
                     <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
-                      ₹99900.00
-                    </td>
-                  </tr>
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
-                      iPhone 15 Pro
-                    </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
-                      ₹129800.00
+                      ₹29,999
                     </td>
                   </tr>
                   <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
                     <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
-                      Apple Watch SE
+                      Redmi Note 13 Pro
                     </td>
                     <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
-                      ₹29900.00
+                      ₹24,999
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      Redmi Note 13 5G
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹16,999
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <details class="group  relative pb-2">
+            <summary class="flex relative  border-[1px] border-[#ccc] dark:border-[#5a5a5a] py-3 px-3 cursor-pointer list-none font-medium">
+              <span class="transition flex justify-center items-center group-open:rotate-90">
+                <RxDoubleArrowRight className="text-[#5a5a5a] dark:text-[#cecece] " />
+              </span>
+              <span class="text-[#5a5a5a] dark:text-[#cecece] px-4 font-semibold  leading-7 ">
+                Samsung
+              </span>
+            </summary>
+            <span className=" absolute w-auto top-3 right-5 flex justify-end">
+              <div className=" group">
+                <RiDeleteBinLine className="text-[#5a5a5a] dark:text-[#cecece] cursor-pointer dark:hover:text-[#e5051f] hover:text-[#e5051f] text-[22px] mt-[2px]" />
+              </div>
+            </span>
+            <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-4">
+              <table className="border-[1px] border-[#ccc] w-full">
+                <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      Product
+                    </td>
+                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      Price
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      Samsung Galaxy M35 5G
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                      ₹19,999
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      Samsung Galaxy S24 Ultra
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹107,298
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      Samsung Galaxy A35 5G
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹23,765
+                    </td>
+                  </tr>
+                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      Samsung Galaxy M34
+                    </td>
+                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                      ₹34,280
                     </td>
                   </tr>
                 </tbody>
