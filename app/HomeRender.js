@@ -129,7 +129,6 @@ const handleSmDevices = () =>{
               <BiAlignLeft className=" cursor-pointer text-2xl" />
             </div>
             </>}
-          
           </div>
           <div className={`bg-primary`}>
             <div className={` container mx-auto px-2 py-1`}></div>
