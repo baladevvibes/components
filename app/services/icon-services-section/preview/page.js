@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "This component was created by tailwind CSS. It is fully responsive and gives a good-looking icon services section.",
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "../../favicon.ico",
+    shortcut: "../../favicon.ico",
+    apple: "../../favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "../../favicon.ico",
     },
   },
   openGraph: {
