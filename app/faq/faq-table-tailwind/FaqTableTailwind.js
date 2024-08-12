@@ -218,6 +218,7 @@ export default function FaqTableTailwind() {
           arr.push(el);
         }
       }
+      
     });
     setButtonData(arr);
   }, []);

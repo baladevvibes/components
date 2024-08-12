@@ -1,9 +1,22 @@
 import React from "react";
-
+import { IoReturnDownBackSharp } from "react-icons/io5";
 export default function IconServicesSectionPre() {
   return (
     <div>
       <div className=" container mx-auto my-32">
+        <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+          <div className=" ">
+            <a href="/services/icon-services-section">
+              <div className=" group flex">
+                <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+                <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                  Back
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className=" flex justify-end"></div>
+        </div>
         <div className=" grid lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 lg:gap-10 lge:gap-10 md:gap-4 mdsm:gap-4 sm:gap-4 px-4">
           <div class="bg-white sm:px-4 px-7 py-5 border-[1px]  border-[#e8e8e8]  rounded-lg ">
             <div class=" ml-2 my-2 h-[70px] relative w-[70px] bg-[#00bc9538]  opacity-50 rounded-full">

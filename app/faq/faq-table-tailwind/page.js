@@ -49,6 +49,7 @@ export const metadata = {
     },
   };
 
+
 export default function page() {
     const jsonLd = {
         "@context": "https://schema.org/",
@@ -70,7 +71,7 @@ export default function page() {
           {
             "@type": "ListItem",
             position: 3,
-            name: "Curve card design section",
+            name: "Faq table tailwind css",
             item: "https://makecomponents.com/faq/faq-table-tailwind",
           },
         ],

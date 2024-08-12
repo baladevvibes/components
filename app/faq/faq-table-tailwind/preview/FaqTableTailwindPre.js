@@ -15,6 +15,7 @@ export default function FaqTableTailwindPre() {
   };
   return (
     <div className="  dark:bg-[#1e1e1e]">
+      
       <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
         <div className=" ">
           <a href="/faq/faq-table-tailwind">

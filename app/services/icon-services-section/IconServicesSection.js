@@ -47,6 +47,12 @@ export default function IconServicesSection() {
   const [colorCode, setColorCode] = useState(false);
   const [fontFlag, setFontFlag] = useState(false);
   const [fontT1Data, setFontt1Data] = useState("cormorant");
+  const [buttonData, setButtonData] = useState();
+  const [buttonNum, setButtonNum] = useState(1);
+  const [calculator, setCalculator] = useState();
+  const [buttonState, setButtonState] = useState(false);
+//   const [forceRender,setForceRender] =useState(false)
+  const [smDevice,setSmDevice]=useState(false)
   const files = {
     "app.js": {
       _id: 0,
@@ -164,6 +170,35 @@ export default function IconServicesSection() {
     const finalData = arrData.concat(shuffledArray)
     setRelatedComponents(finalData);
   };
+  const handleMore = () => {
+    setButtonNum(buttonNum + 1);
+    let cal = 11 * buttonNum + 11;
+    let arr = [];
+    HomeComponents?.forEach((el, i) => {
+      if (cal >= i) {
+        arr.push(el);
+      }
+    });
+    if (buttonData.length === HomeComponents.length) {
+      setButtonState(true);
+    }
+    setCalculator(cal);
+    setButtonData(arr);
+  };
+  useEffect(() => {
+    let arr = [];
+    let cal = 11 * buttonNum;
+    setCalculator(cal);
+    setButtonData(2);
+    HomeComponents?.forEach((el, i) => {
+      if (buttonNum === 1) {
+        if (cal >= i) {
+          arr.push(el);
+        }
+      }
+    });
+    setButtonData(arr);
+  }, []);
 
   useEffect(() => {
     AOS.init();
@@ -175,9 +210,8 @@ export default function IconServicesSection() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Icon Services Section`}
-          des={`This component create on 01/July/2024 using CSS framework tailwindcss. It fully
-              responsive component.`}
+          title={`Icon services section`}
+          des={`This component was created by tailwind CSS. It is fully responsive and gives a good-looking icon services section.`}
           section_name={`Services`}
           using_font=" Quicksand "
         />
@@ -674,7 +708,7 @@ export default function IconServicesSection() {
         <div
           className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
         >
-          {reelatedComp?.map((v, i) => {
+          {buttonData?.map((v, i) => {
             return (
               <HomeCard
                 title={v?.title}
@@ -685,6 +719,19 @@ export default function IconServicesSection() {
             );
           })}
         </div>
+
+        {buttonState ? null : (
+            <>
+              <div className="my-6 flex justify-center">
+                <button
+                  className=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
+                  onClick={() => handleMore()}
+                >
+                  More Components
+                </button>
+              </div>
+            </>
+          )}
       </div>
       <Footer />
     </div>
