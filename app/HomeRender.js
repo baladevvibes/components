@@ -143,6 +143,11 @@ const handleSmDevices = () =>{
           data-full-width-responsive="true"
         ></ins>
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
+        <h1
+            className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
+          >
+            Make Components
+          </h1>
           <div className="px-6 tags space-x-10">
             <a href="/hero" className=" hover:brightness-125 tracking-wide">
               Hero
@@ -154,12 +159,12 @@ const handleSmDevices = () =>{
               About
             </a>
           </div>
-          <h1
+       
+          <h2
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
           >
-            Make Components
-          </h1>
-
+            Tailwind css free components
+          </h2>
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
           >

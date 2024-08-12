@@ -24,6 +24,9 @@ import { PiEye } from "react-icons/pi";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { RiGlobeLine } from "react-icons/ri";
 import { RiHandCoinLine } from "react-icons/ri";
+import { BiBroadcast } from "react-icons/bi";
+import { BsBinoculars } from "react-icons/bs";
+import { LuQuote } from "react-icons/lu";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -112,6 +115,27 @@ export default function Preview() {
           </div>
         </div>
       </div>
+
+      <div className="py-[100px] bg-[#07172a]  bg-[url('/Image/overall/product/background.svg')]">
+        <section className="container mx-auto">
+          <div className=" grid grid-cols-3 gap-10">
+            <div>
+              <div>
+                <LuQuote className=" text-5xl  text-[#fff]" />
+              </div>
+              <div className=" italic text-[18px] pt-6  text-[#fff]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <div className="text-center container mx-auto">
         {buttonData?.map((v, i) => {
           return (
@@ -122,22 +146,39 @@ export default function Preview() {
         })}
         <button onClick={() => handleMore()}>more </button>
       </div>
+
       <div className="py-40 container mx-auto">
         <section>
-          <div className=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1">
+          <div className=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1 gap-10 ">
             <div className=" bg-[#5700c9] w-56  mx-auto  p-8 px-4 rounded-lg">
               <div className=" flex justify-end">
                 <RiGlobeLine className=" text-[60px] text-[#7812ff]" />
               </div>
-              <p className="pt-16 text-[#f2f2f2]">
+              <p className="pt-16 NewsCycle text-2xl text-[#f2f2f2]">
                 Lorem Ipsum is simply dummy text of the printing.
               </p>
             </div>
-            <div className=" bg-[#1f4200] w-56 mx-auto  p-8 px-4 rounded-lg">
+            <div className=" bg-[#6C0345] w-56 mx-auto  p-8 px-4 rounded-lg">
               <div className=" flex justify-end">
-                <RiHandCoinLine className=" text-[60px] text-[#3d6d13]" />
+                <MdSecurity className=" text-[60px] text-[#ffedc57a]" />
               </div>
-              <p className="pt-16 text-[#f2f2f2]">
+              <p className="pt-16 NewsCycle text-2xl text-[#f2f2f2]">
+                Lorem Ipsum is simply dummy text of the printing.
+              </p>
+            </div>
+            <div className=" bg-[#cf021a] w-56  mx-auto  p-8 px-4 rounded-lg">
+              <div className=" flex justify-end">
+                <BiBroadcast className=" text-[60px] text-[#f569797a]" />
+              </div>
+              <p className="pt-16 NewsCycle text-2xl text-[#f2f2f2]">
+                Lorem Ipsum is simply dummy text of the printing.
+              </p>
+            </div>
+            <div className=" bg-[#5a5a5a] w-56 mx-auto  p-8 px-4 rounded-lg">
+              <div className=" flex justify-end">
+                <BsBinoculars className=" text-[60px] text-[#a9a8a857]" />
+              </div>
+              <p className="pt-16 NewsCycle text-2xl text-[#f2f2f2]">
                 Lorem Ipsum is simply dummy text of the printing.
               </p>
             </div>

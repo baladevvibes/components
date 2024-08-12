@@ -13,6 +13,7 @@ export const metadata = {
       url: "../../favicon.ico",
     },
   },
+  
   openGraph: {
     title: "Icon services section perview",
     description:
