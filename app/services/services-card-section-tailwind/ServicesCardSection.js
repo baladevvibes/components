@@ -101,7 +101,7 @@ export default function ServicesCardSection() {
   };
 
   const handleChnage = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     fontData?.forEach((el) => {
       if (el.name === e.target.value) {
         setFontt1Data(el.class);
@@ -109,7 +109,7 @@ export default function ServicesCardSection() {
     });
     setForceRender(!forceRender);
 
-    console.log(fontT1Data);
+    // console.log(fontT1Data);
   };
 
   const handleClickFont = () => {
@@ -161,6 +161,8 @@ export default function ServicesCardSection() {
   const [buttonState, setButtonState] = useState(false);
   //   const [forceRender,setForceRender] =useState(false)
   const [smDevice, setSmDevice] = useState(false);
+  const [FinalData, setFinalData] = useState();
+  
 
   const FilterCard = () => {
     // id=1
@@ -168,18 +170,18 @@ export default function ServicesCardSection() {
     var idSection = "042";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
-        console.log(el);
+        // console.log(el);
         arr.push(el);
       }
     });
     var arrSort = arr.sort(function (a, b) {
-      return a.tag.indexOf("faq") - b.tag.indexOf("faq");
+      return a.tag.indexOf("services") - b.tag.indexOf("services");
     });
     var reve = arrSort.reverse();
     var arrData = [];
     var anotherData = [];
     reve.forEach((el) => {
-      if (el.tag == "faq") {
+      if (el.tag == "services") {
         arrData.push(el);
       } else {
         anotherData.push(el);
@@ -188,14 +190,33 @@ export default function ServicesCardSection() {
     const shuffledArray = anotherData.sort((a, b) => 0.5 - Math.random());
     const finalData = arrData.concat(shuffledArray);
 
-    setRelatedComponents(finalData);
+   
+   let arrButtonData = [];
+    let cal = 11 * buttonNum;
+    setCalculator(cal);
+    setButtonData(2);
+    finalData?.forEach((el, i) => {
+      if (buttonNum === 1) {
+        if (cal >= i) {
+          arrButtonData.push(el);
+        }
+      }
+    });
+    setButtonData(arrButtonData);
+    setRelatedComponents(arrButtonData);
+    setFinalData(arrButtonData)
+    // console.log(arrButtonData)
+
+  
   };
 
   const handleMore = () => {
     setButtonNum(buttonNum + 1);
+    console.log(data )
     let cal = 11 * buttonNum + 11;
     let arr = [];
     HomeComponents?.forEach((el, i) => {
+      console.log(el)
       if (cal >= i) {
         arr.push(el);
       }
@@ -208,18 +229,19 @@ export default function ServicesCardSection() {
   };
 
   useEffect(() => {
-    let arr = [];
-    let cal = 11 * buttonNum;
-    setCalculator(cal);
-    setButtonData(2);
-    HomeComponents?.forEach((el, i) => {
-      if (buttonNum === 1) {
-        if (cal >= i) {
-          arr.push(el);
-        }
-      }
-    });
-    setButtonData(arr);
+    // let arrButtonData = [];
+    // let cal = 11 * buttonNum;
+    // setCalculator(cal);
+    // setButtonData(2);
+    // HomeComponents?.forEach((el, i) => {
+    //   if (buttonNum === 1) {
+    //     if (cal >= i) {
+    //       arrButtonData.push(el);
+    //     }
+    //   }
+    // });
+    // setButtonData(arrButtonData);
+    // console.log(arrButtonData)
   }, []);
   useEffect(() => {
     AOS.init();
@@ -234,7 +256,7 @@ export default function ServicesCardSection() {
           title={`Services color card section tailwind css`}
           des={`Services section with professional card. Info will take throw the visitor. The design is nice, and it is also responsive.`}
           section_name={`services`}
-          using_font="DM Sans, sans-serif"
+          using_font="News Cycle"
         />
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-lg pb-4   px-4">
@@ -592,7 +614,7 @@ export default function ServicesCardSection() {
                   <div className="  dark:bg-[#1e1e1e]">
                     <div className="py-40 px-4 container mx-auto">
                       <section>
-                        <div className=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1 gap-10 ">
+                        <div className={` grid ${xlScreen?`grid-cols-4`:``} ${lgScreen?`grid-cols-3`:``} ${mdScreen? `grid-cols-2`: ``} ${smScreen? `grid-cols-1`: ``} ${responsiveState? ``:`lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1 `} gap-10 `}>
                           <div className=" group bg-[#5700c9] w-56  mx-auto  p-8 px-4 rounded-lg">
                             <div className=" flex justify-end">
                               <svg
