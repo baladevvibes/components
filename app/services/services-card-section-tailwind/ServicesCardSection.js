@@ -101,7 +101,7 @@ export default function ServicesCardSection() {
   };
 
   const handleChnage = (e) => {
-    // console.log(e.target.value);
+    console.log(e.target.value);
     fontData?.forEach((el) => {
       if (el.name === e.target.value) {
         setFontt1Data(el.class);
@@ -109,7 +109,7 @@ export default function ServicesCardSection() {
     });
     setForceRender(!forceRender);
 
-    // console.log(fontT1Data);
+    console.log(fontT1Data);
   };
 
   const handleClickFont = () => {
@@ -161,8 +161,6 @@ export default function ServicesCardSection() {
   const [buttonState, setButtonState] = useState(false);
   //   const [forceRender,setForceRender] =useState(false)
   const [smDevice, setSmDevice] = useState(false);
-  const [FinalData, setFinalData] = useState();
-  
 
   const FilterCard = () => {
     // id=1
@@ -170,18 +168,18 @@ export default function ServicesCardSection() {
     var idSection = "042";
     HomeComponents?.forEach((el) => {
       if (el._id !== idSection) {
-        // console.log(el);
+        console.log(el);
         arr.push(el);
       }
     });
     var arrSort = arr.sort(function (a, b) {
-      return a.tag.indexOf("services") - b.tag.indexOf("services");
+      return a.tag.indexOf("faq") - b.tag.indexOf("faq");
     });
     var reve = arrSort.reverse();
     var arrData = [];
     var anotherData = [];
     reve.forEach((el) => {
-      if (el.tag == "services") {
+      if (el.tag == "faq") {
         arrData.push(el);
       } else {
         anotherData.push(el);
@@ -190,33 +188,14 @@ export default function ServicesCardSection() {
     const shuffledArray = anotherData.sort((a, b) => 0.5 - Math.random());
     const finalData = arrData.concat(shuffledArray);
 
-   
-   let arrButtonData = [];
-    let cal = 11 * buttonNum;
-    setCalculator(cal);
-    setButtonData(2);
-    finalData?.forEach((el, i) => {
-      if (buttonNum === 1) {
-        if (cal >= i) {
-          arrButtonData.push(el);
-        }
-      }
-    });
-    setButtonData(arrButtonData);
-    setRelatedComponents(arrButtonData);
-    setFinalData(arrButtonData)
-    // console.log(arrButtonData)
-
-  
+    setRelatedComponents(finalData);
   };
 
   const handleMore = () => {
     setButtonNum(buttonNum + 1);
-    console.log(data )
     let cal = 11 * buttonNum + 11;
     let arr = [];
     HomeComponents?.forEach((el, i) => {
-      console.log(el)
       if (cal >= i) {
         arr.push(el);
       }
@@ -229,19 +208,18 @@ export default function ServicesCardSection() {
   };
 
   useEffect(() => {
-    // let arrButtonData = [];
-    // let cal = 11 * buttonNum;
-    // setCalculator(cal);
-    // setButtonData(2);
-    // HomeComponents?.forEach((el, i) => {
-    //   if (buttonNum === 1) {
-    //     if (cal >= i) {
-    //       arrButtonData.push(el);
-    //     }
-    //   }
-    // });
-    // setButtonData(arrButtonData);
-    // console.log(arrButtonData)
+    let arr = [];
+    let cal = 11 * buttonNum;
+    setCalculator(cal);
+    setButtonData(2);
+    HomeComponents?.forEach((el, i) => {
+      if (buttonNum === 1) {
+        if (cal >= i) {
+          arr.push(el);
+        }
+      }
+    });
+    setButtonData(arr);
   }, []);
   useEffect(() => {
     AOS.init();
