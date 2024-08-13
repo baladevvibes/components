@@ -80,6 +80,7 @@ export default function page() {
   };
   return (
     <div>
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "043",
+    image: "../Image/testimonials/testimonials001.webp",
+    title: "Testimonials Design Example",
+    tag: "testimonials",
+    link: "/testimonials/testimonials-design-examples",
+  },
+  {
     _id: "042",
     image: "../Image/services/services005.webp",
     title: "Services color card section tailwind css",
