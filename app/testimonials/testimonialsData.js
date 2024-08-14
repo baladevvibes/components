@@ -3,7 +3,7 @@ const testimonialsData = [
       _id: 0,
       name: "Testimonials Design Example",
       title:"Testimonials Design Example",
-      htmlcode: `<section class="container mx-auto py-[100px]">
+      htmlcode: `<section class="container mx-auto py-[100px] px-4">
       <div class=" grid lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
         <div class="bg-[#f2f2f2]  relative p-4 border-[#fff]  border">
           <div class=" grid grid-cols-2">

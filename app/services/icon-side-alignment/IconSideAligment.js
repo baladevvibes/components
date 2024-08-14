@@ -162,7 +162,7 @@ export default function IconSideAligment() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Services  section template`}
+          title={`Icon services section tailwind css`}
           des={`This component create on 28/June/2024 using CSS framework tailwindcss. It fully
               responsive component.`}
           section_name={`Services`}

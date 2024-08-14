@@ -592,7 +592,7 @@ export default function TestimonialsDesign() {
                 >
                   <div className="  dark:bg-[#1e1e1e]">
                     <div className="py-[100px]   w-full">
-                      <section className="container mx-auto">
+                      <section className="container mx-auto px-4">
                         <div className={`grid ${xlScreen? `grid-cols-4`: ``} ${lgScreen? `grid-cols-2`: ``} ${mdScreen? `grid-cols-2`: ``} ${smScreen? `grid-cols-1`: ``} ${responsiveState? ``: `lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1`}  gap-10 `}>
                           <div className="bg-[#f2f2f2] dark:bg-[#313131] relative p-4 border-[#fff] dark:border-[#313131] border">
                             <div className=" grid grid-cols-2">

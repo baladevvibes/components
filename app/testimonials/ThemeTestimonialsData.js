@@ -3,7 +3,7 @@ const ThemeTestimonialsData = [
     _id: 0,
     name: "Testimonials Design Example",
     title: "Testimonials Design Example",
-    htmlcode: `  <section className="container mx-auto">
+    htmlcode: `  <section className="container mx-auto py-[100px] px-4">
           <div className=" grid lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
             <div className="bg-[#f2f2f2] dark:bg-[#313131] relative p-4 border-[#fff] dark:border-[#313131] border">
               <div className=" grid grid-cols-2">
