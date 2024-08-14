@@ -27,6 +27,12 @@ import { RiHandCoinLine } from "react-icons/ri";
 import { BiBroadcast } from "react-icons/bi";
 import { BsBinoculars } from "react-icons/bs";
 import { LuQuote } from "react-icons/lu";
+import { RiAirplayLine } from "react-icons/ri";
+import { RiBarChartGroupedLine } from "react-icons/ri";
+import { RiUserFollowLine } from "react-icons/ri";
+import { RiBillLine } from "react-icons/ri";
+
+import { RiBriefcase2Line } from "react-icons/ri";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -116,13 +122,68 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className=" relative bg-[url(/Image/overall/building/building4.webp)] bg-hero bg-no-repeat bg-cover bg-center bg-fixed">
+        <div className=" py-[70px] bg-[#ff0014c9]">
+          <div className=" container  mx-auto">
+            <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
+              <div>
+                <div className=" h-[100px] bg-[#fff] flex mx-auto justify-center items-center	 w-[100px] rounded-full   ">
+                  <RiAirplayLine className=" text-[40px] text-[#ff0014c9]" />
+                </div>
+                <h4 className=" text-center pt-6 Fira text-[#fff] text-3xl">
+                  Design
+                </h4>
+              </div>
+              <div>
+                <div className=" h-[100px] bg-[#fff] flex mx-auto justify-center items-center	 w-[100px] rounded-full   ">
+                  <RiBarChartGroupedLine className=" text-[40px] text-[#ff0014c9]" />
+                </div>
+                <h4 className=" text-center pt-6 Fira text-[#fff] text-3xl">
+                  Chart
+                </h4>
+              </div>
+              <div>
+                <div className="  h-[100px] bg-[#fff] flex mx-auto justify-center items-center	 w-[100px] rounded-full   ">
+                  <RiBillLine className=" text-[40px] text-[#ff0014c9]" />
+                </div>
+                <h4 className=" text-center pt-6 Fira text-[#fff] text-3xl">
+                  Readability
+                </h4>
+              </div>
+              <div>
+                <div className=" h-[100px] bg-[#fff] flex mx-auto justify-center items-center	 w-[100px] rounded-full   ">
+                  <RiUserFollowLine className=" text-[40px] text-[#ff0014c9]" />
+                </div>
+                <h4 className=" text-center pt-6 Fira text-[#fff] text-3xl">
+                  User
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="py-[100px]   w-full">
         <section className="container mx-auto">
           <div className=" grid lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
             <div className="bg-[#f2f2f2] dark:bg-[#313131] relative p-4 border-[#fff] dark:border-[#313131] border">
               <div className=" grid grid-cols-2">
                 <div className=" pt-6">
-                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class=" text-5xl  text-[#294f7f]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=" text-5xl  text-[#294f7f]"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                    <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                  </svg>
                 </div>
               </div>
               <div className=" italic Mulish dark:text-[#f2f2f2] text-[18px] pt-6  text-[#07172a]">
@@ -151,7 +212,21 @@ export default function Preview() {
             <div className="bg-[#f2f2f2] dark:bg-[#313131] relative p-4 border-[#fff] dark:border-[#313131] border">
               <div className=" grid grid-cols-2">
                 <div className=" pt-6">
-                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class=" text-5xl  text-[#940027]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=" text-5xl  text-[#940027]"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                    <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                  </svg>
                 </div>
               </div>
               <div className=" italic Mulish dark:text-[#f2f2f2] text-[18px] pt-6  text-[#07172a]">
@@ -180,7 +255,21 @@ export default function Preview() {
             <div className="bg-[#f2f2f2] dark:bg-[#313131] relative p-4 border-[#fff] dark:border-[#313131] border">
               <div className=" grid grid-cols-2">
                 <div className=" pt-6">
-                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class=" text-5xl  text-[#294f7f]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=" text-5xl  text-[#294f7f]"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                    <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                  </svg>
                 </div>
               </div>
               <div className=" italic Mulish  dark:text-[#f2f2f2] text-[18px] pt-6  text-[#07172a]">
