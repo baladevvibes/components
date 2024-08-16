@@ -50,7 +50,6 @@ export const metadata = {
       "https://makecomponents.com/skeleton/skeleton-table-tailwind",
   },
 };
-
 export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",

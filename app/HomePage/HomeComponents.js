@@ -16,6 +16,13 @@ const HomeComponents = [
   // },
   {
     _id: "045",
+    image: "../Image/skeleton/skeleton002.webp",
+    title: "Blog Skeleton tailwind css",
+    tag: "blog",
+    link: "/skeleton/blog-skeleton-tailwind",
+  },
+  {
+    _id: "045",
     image: "../Image/blog/blog002.webp",
     title: "News and events section",
     tag: "blog",

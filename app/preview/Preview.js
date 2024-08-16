@@ -31,8 +31,10 @@ import { RiAirplayLine } from "react-icons/ri";
 import { RiBarChartGroupedLine } from "react-icons/ri";
 import { RiUserFollowLine } from "react-icons/ri";
 import { RiBillLine } from "react-icons/ri";
+import { BsImageFill } from "react-icons/bs";
 
 import { RiBriefcase2Line } from "react-icons/ri";
+import { IoImagesOutline } from "react-icons/io5";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -121,6 +123,100 @@ export default function Preview() {
           </div>
         </div>
       </div>
+
+      <div className=" container mx-auto">
+        <section>
+          <div className=" lg:grid grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-4">
+            <div role="card" class=" animate-pulse">
+              <div class="h-48 w-full bg-[#cccccc] dark:bg-[#374151] flex justify-center items-center  rounded-lg mb-4">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class=" text-5xl text-[#fcfcfc]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"></path>
+                </svg>
+              </div>
+
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+            </div>
+            <div role="card" class=" animate-pulse">
+              <div class="h-48 w-full bg-[#cccccc] dark:bg-[#374151] flex justify-center items-center  rounded-lg mb-4">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class=" text-5xl text-[#fcfcfc]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"></path>
+                </svg>
+              </div>
+              <div class="h-2.5 bg-[#cccccc] mt-2 rounded-full dark:bg-[#374151] w-48 mb-4"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+            </div>
+            <div role="card" class=" animate-pulse">
+              <div class="h-48 w-full bg-[#cccccc] dark:bg-[#374151] flex justify-center items-center  rounded-lg mb-4">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class=" text-5xl text-[#fcfcfc]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"></path>
+                </svg>
+              </div>
+              <div class="h-2.5 bg-[#cccccc] mt-2 rounded-full dark:bg-[#374151] w-48 mb-4"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+            </div>
+            <div role="card" class=" animate-pulse">
+              <div class="h-48 w-full bg-[#cccccc] dark:bg-[#374151] flex justify-center items-center  rounded-lg mb-4">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  class=" text-5xl text-[#fcfcfc]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"></path>
+                </svg>
+              </div>
+              <div class="h-2.5 bg-[#cccccc] mt-2 rounded-full dark:bg-[#374151] w-48 mb-4"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+              <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-full mb-2.5"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* <div role="status" class="max-w-sm animate-pulse">
+        <div class="h-2.5 bg-[#cccccc]  rounded-full dark:bg-[#374151] w-48 mb-4"></div>
+        <div class="h-2 bg-[#cccccc] rounded-full dark:bg-[#374151] max-w-[360px] mb-2.5"></div>
+        <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] mb-2.5"></div>
+        <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[330px] mb-2.5"></div>
+        <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[300px] mb-2.5"></div>
+        <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[360px]"></div>
+        <span class="sr-only">Loading...</span>
+      </div> */}
 
       <div className="py-32">
         <section className=" container mx-auto">
