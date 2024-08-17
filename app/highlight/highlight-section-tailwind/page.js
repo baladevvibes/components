@@ -51,7 +51,6 @@ export const metadata = {
       "https://makecomponents.com/highlight/highlight-section-tailwind",
   },
 };
-
 export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",

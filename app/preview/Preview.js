@@ -19,22 +19,15 @@ import { GoKey } from "react-icons/go";
 import { FaKey } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import { FaCloudArrowDown } from "react-icons/fa6";
-import { HiOutlineDotsVertical } from "react-icons/hi";
-import { PiEye } from "react-icons/pi";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { RiGlobeLine } from "react-icons/ri";
-import { RiHandCoinLine } from "react-icons/ri";
 import { BiBroadcast } from "react-icons/bi";
 import { BsBinoculars } from "react-icons/bs";
-import { LuQuote } from "react-icons/lu";
 import { RiAirplayLine } from "react-icons/ri";
 import { RiBarChartGroupedLine } from "react-icons/ri";
 import { RiUserFollowLine } from "react-icons/ri";
 import { RiBillLine } from "react-icons/ri";
-import { BsImageFill } from "react-icons/bs";
-
-import { RiBriefcase2Line } from "react-icons/ri";
-import { IoImagesOutline } from "react-icons/io5";
+import { MdArrowOutward } from "react-icons/md";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -123,6 +116,251 @@ export default function Preview() {
           </div>
         </div>
       </div>
+
+      <section className=" lg:block lge:block md:hidden mdsm:hidden sm:hidden py-32">
+        <div className=" bg-[#f2f2f2]">
+          <div className=" container mx-auto">
+            <div className="group grid grid-cols-12 py-10">
+              <div className=" col-span-9 cursor-pointer flex space-x-6 ">
+                <h4 className=" text-4xl text-[#444]  group-hover:text-[#222] title-font">
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div className=" relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/hero/hero001/hero001.webp"
+                  alt="imgaes"
+                  className=" absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-[#f2f2f2]">
+          <div className=" container mx-auto">
+            <div className="group grid grid-cols-12 py-10">
+              <div className=" col-span-9 cursor-pointer flex space-x-6 ">
+                <h4 className=" text-4xl text-[#444]  group-hover:text-[#222] title-font">
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div className=" relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/about/about004/004.webp"
+                  alt="imgaes"
+                  className=" absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-[#f2f2f2]">
+          <div className=" container mx-auto">
+            <div className="group grid grid-cols-12 py-10">
+              <div className=" col-span-9 cursor-pointer flex space-x-6 ">
+                <h4 className=" text-4xl text-[#444]  group-hover:text-[#222] title-font">
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div className=" relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/hero/hero003/hero.webp"
+                  alt="imgaes"
+                  className=" absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-[#f2f2f2]">
+          <div className=" container mx-auto">
+            <div className="group grid grid-cols-12 py-10">
+              <div className=" col-span-9 cursor-pointer flex space-x-6 ">
+                <h4 className=" text-4xl text-[#444]  group-hover:text-[#222] title-font">
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div className=" relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/card/card004/Succulent.webp"
+                  alt="imgaes"
+                  className=" absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className=" lg:hidden lge:hidden md:block mdsm:block sm:block py-32">
+        <div className=" container px-4 mx-auto">
+          <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
+            <div className="cursor-pointer  group">
+              <img
+                src="https://makecomponents.com/Image/hero/hero001/hero001.webp"
+                alt="Images"
+                className=" rounded-t-lg h-[250px] w-full  object-cover"
+              />
+              <div>
+                <div className=" py-4 bg-[#f2f2f2] rounded-b-lg ">
+                  <h4 className="  px-4 text-[#444] flex group-hover:text-[#222] title-font">
+                    Lorem ipsum is placeholder text commonly{" "}
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="cursor-pointer  group">
+              <img
+                src="https://makecomponents.com/Image/about/about004/004.webp"
+                alt="Images"
+                className=" rounded-t-lg h-[250px] w-full  object-cover"
+              />
+              <div>
+                <div className=" py-4 bg-[#f2f2f2] rounded-b-lg ">
+                  <h4 className="  px-4 text-[#444] flex group-hover:text-[#222] title-font">
+                    Lorem ipsum is placeholder text commonly{" "}
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="cursor-pointer  group">
+              <img
+                src="https://makecomponents.com/Image/hero/hero003/hero.webp"
+                alt="Images"
+                className=" rounded-t-lg h-[250px] w-full  object-cover"
+              />
+              <div>
+                <div className=" py-4 bg-[#f2f2f2] rounded-b-lg ">
+                  <h4 className="  px-4 text-[#444] flex group-hover:text-[#222] title-font">
+                    Lorem ipsum is placeholder text commonly{" "}
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="cursor-pointer  group">
+              <img
+                src="https://makecomponents.com/Image/card/card004/Succulent.webp"
+                alt="Images"
+                className=" rounded-t-lg h-[250px] w-full  object-cover"
+              />
+              <div>
+                <div className=" py-4 bg-[#f2f2f2] rounded-b-lg ">
+                  <h4 className="  px-4 text-[#444] flex group-hover:text-[#222] title-font">
+                    Lorem ipsum is placeholder text commonly{" "}
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className=" container mx-auto">
         <section>

@@ -131,5 +131,279 @@ const highlightData = [
       </div>
     </div>`
   },
+  {
+    _id:2,
+    title:"Hide and show design tailwind css",
+    htmlcode:` <section class="lg:block lge:block md:hidden mdsm:hidden sm:hidden py-32">
+        <div class="bg-[#f2f2f2]">
+          <div class="container mx-auto">
+            <div class="group grid grid-cols-12 py-10">
+              <div class="col-span-9 cursor-pointer flex space-x-6">
+                <h4
+                  class="text-4xl text-[#444] group-hover:text-[#222] title-font"
+                >
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div class="relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/hero/hero001/hero001.webp"
+                  alt="imgaes"
+                  class="absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f2f2f2]">
+          <div class="container mx-auto">
+            <div class="group grid grid-cols-12 py-10">
+              <div class="col-span-9 cursor-pointer flex space-x-6">
+                <h4
+                  class="text-4xl text-[#444] group-hover:text-[#222] title-font"
+                >
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div class="relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/about/about004/004.webp"
+                  alt="imgaes"
+                  class="absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f2f2f2]">
+          <div class="container mx-auto">
+            <div class="group grid grid-cols-12 py-10">
+              <div class="col-span-9 cursor-pointer flex space-x-6">
+                <h4
+                  class="text-4xl text-[#444] group-hover:text-[#222] title-font"
+                >
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div class="relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/hero/hero003/hero.webp"
+                  alt="imgaes"
+                  class="absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#f2f2f2]">
+          <div class="container mx-auto">
+            <div class="group grid grid-cols-12 py-10">
+              <div class="col-span-9 cursor-pointer flex space-x-6">
+                <h4
+                  class="text-4xl text-[#444] group-hover:text-[#222] title-font"
+                >
+                  Lorem ipsum is placeholder text commonly
+                </h4>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-[#444] group-hover:text-[#222] text-5xl"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                </svg>
+              </div>
+              <div class="relative col-span-3">
+                <img
+                  src="https://makecomponents.com/Image/card/card004/Succulent.webp"
+                  alt="imgaes"
+                  class="absolute hidden group-hover:block duration-200 -top-20 h-[200px] rounded-2xl w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lg:hidden lge:hidden md:block mdsm:block sm:block py-32">
+        <div class="container px-4 mx-auto">
+          <div
+            class="grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10"
+          >
+            <div class="cursor-pointer group">
+              <img
+                src="https://makecomponents.com/Image/hero/hero001/hero001.webp"
+                alt="Images"
+                class="rounded-t-lg h-[250px] w-full object-cover"
+              />
+              <div>
+                <div class="py-4 bg-[#f2f2f2] rounded-b-lg">
+                  <h4
+                    class="px-4 text-[#444] flex group-hover:text-[#222] title-font"
+                  >
+                    Lorem ipsum is placeholder text commonly
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                      ></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="cursor-pointer group">
+              <img
+                src="https://makecomponents.com/Image/about/about004/004.webp"
+                alt="Images"
+                class="rounded-t-lg h-[250px] w-full object-cover"
+              />
+              <div>
+                <div class="py-4 bg-[#f2f2f2] rounded-b-lg">
+                  <h4
+                    class="px-4 text-[#444] flex group-hover:text-[#222] title-font"
+                  >
+                    Lorem ipsum is placeholder text commonly
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                      ></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="cursor-pointer group">
+              <img
+                src="https://makecomponents.com/Image/hero/hero003/hero.webp"
+                alt="Images"
+                class="rounded-t-lg h-[250px] w-full object-cover"
+              />
+              <div>
+                <div class="py-4 bg-[#f2f2f2] rounded-b-lg">
+                  <h4
+                    class="px-4 text-[#444] flex group-hover:text-[#222] title-font"
+                  >
+                    Lorem ipsum is placeholder text commonly
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                      ></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="cursor-pointer group">
+              <img
+                src="https://makecomponents.com/Image/card/card004/Succulent.webp"
+                alt="Images"
+                class="rounded-t-lg h-[250px] w-full object-cover"
+              />
+              <div>
+                <div class="py-4 bg-[#f2f2f2] rounded-b-lg">
+                  <h4
+                    class="px-4 text-[#444] flex group-hover:text-[#222] title-font"
+                  >
+                    Lorem ipsum is placeholder text commonly
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      class="text-[#444] ml-2 group-hover:text-[#222] text-4xl"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                      ></path>
+                    </svg>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>`
+},
 ]
 export default highlightData
