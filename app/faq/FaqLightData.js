@@ -2,22 +2,22 @@ const faqLightData = [
     {
         _id: 0,
         name: "Simple faq sample design css",
-        htmlcode: ` <div className="dark:bg-[#1E1E1E]">
-      <section className=" container px-4 py-40   mx-auto">
+        htmlcode: ` <div class="dark:bg-[#1E1E1E]">
+      <section class=" container px-4 py-40   mx-auto">
     
-        <h3 className="text-[#434343] dark:text-[#f2f2f2] rowdies lg:text-4xl lge:text-4xl md:text-3xl mdsm:text-2xl  sm:text-2xl  text-center pb-10 ">
+        <h3 class="text-[#434343] dark:text-[#f2f2f2] rowdies lg:text-4xl lge:text-4xl md:text-3xl mdsm:text-2xl  sm:text-2xl  text-center pb-10 ">
           Frequently Asked Questions
         </h3>
-        <div className="lg:w-[50%] lge:w-[50%] md:w-[80%] mdsm:w-[80%] sm:w-[100%] mx-auto">
+        <div class="lg:w-[50%] lge:w-[50%] md:w-[80%] mdsm:w-[80%] sm:w-[100%] mx-auto">
           <details class="group  border-b-[1px] border-b-[#ccc] pb-2">
             <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-              <span className="dark:text-[#c0c0c0] leading-7 dark:font-normal text-[#434343] font-semibold">
+              <span class="dark:text-[#c0c0c0] leading-7 dark:font-normal text-[#434343] font-semibold">
                 {" "}
                 What are the top attractions in the city?
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                  className=" dark:text-[#c0c0c0]"
+                  class=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -39,13 +39,13 @@ const faqLightData = [
 
           <details class="group  border-b-[1px] border-b-[#ccc] pb-2">
             <summary class="flex mt-4  cursor-pointer list-none items-center justify-between font-medium">
-              <span className="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7 ">
+              <span class="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7 ">
                 {" "}
                 What is the best way to get around the city?
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                  className=" dark:text-[#c0c0c0]"
+                  class=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -67,13 +67,13 @@ const faqLightData = [
 
           <details class="group  border-b-[1px] border-b-[#ccc] pb-2">
             <summary class="flex mt-4  cursor-pointer list-none items-center justify-between font-medium">
-              <span className="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7">
+              <span class="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7">
                 {" "}
                 When is the best time to visit?
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                  className=" dark:text-[#c0c0c0]"
+                  class=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -96,13 +96,13 @@ const faqLightData = [
 
           <details class="group  border-b-[1px] border-b-[#ccc] pb-2">
             <summary class="flex mt-4  cursor-pointer list-none items-center justify-between font-medium">
-              <span className="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7">
+              <span class="text-[#434343] font-semibold dark:font-normal dark:text-[#c0c0c0] leading-7">
                 {" "}
                 Are there any local customs or etiquette I should be aware of?
               </span>
               <span class="transition group-open:rotate-180">
                 <svg
-                  className=" dark:text-[#c0c0c0]"
+                  class=" dark:text-[#c0c0c0]"
                   fill="none"
                   height="24"
                   shape-rendering="geometricPrecision"
@@ -128,8 +128,8 @@ const faqLightData = [
       {
         _id: 0,
         name: "faq table tailwind css",
-        htmlcode: `   <div className=" py-[150px] container mx-auto">
-        <section className=" w-[96%] mx-auto ">
+        htmlcode: `   <div class=" py-[150px] container mx-auto">
+        <section class=" w-[96%] mx-auto ">
           <details class="group overflow-auto  relative pb-2">
             <summary class="flex relative mt-4 border-[1px] border-[#ccc] dark:border-[#5a5a5a] py-3 px-3 cursor-pointer list-none font-medium">
               <span class="transition flex justify-center items-center group-open:rotate-90">
@@ -155,8 +155,8 @@ const faqLightData = [
                 Apple
               </span>
             </summary>
-            <span className=" absolute w-auto top-7 right-5 flex justify-end">
-              <div className=" group">
+            <span class=" absolute w-auto top-7 right-5 flex justify-end">
+              <div class=" group">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -172,47 +172,47 @@ const faqLightData = [
               </div>
             </span>
             <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-4 ">
-              <table className="border-[1px] border-[#ccc] w-full">
-                <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+              <table class="border-[1px] border-[#ccc] w-full">
+                <thead class="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Product
                     </td>
-                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Price
                     </td>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       MacBook Pro 14” and 16” M3, M3 Pro or M3 Max chip
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       ₹169900.00
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       iPad Pro
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹99900.00
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       iPhone 15 Pro
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹129800.00
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       Apple Watch SE
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹29900.00
                     </td>
                   </tr>
@@ -245,8 +245,8 @@ const faqLightData = [
                 Redmi
               </span>
             </summary>
-            <span className=" absolute w-auto top-3 right-5 flex justify-end">
-              <div className=" group">
+            <span class=" absolute w-auto top-3 right-5 flex justify-end">
+              <div class=" group">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -262,47 +262,47 @@ const faqLightData = [
               </div>
             </span>
             <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-4">
-              <table className="border-[1px] border-[#ccc] w-full">
-                <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+              <table class="border-[1px] border-[#ccc] w-full">
+                <thead class="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Product
                     </td>
-                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Price
                     </td>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Xiaomi 14 Ultra
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       ₹99,999
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       Redmi Note 13 Pro+ 5G
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹29,999
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       Redmi Note 13 Pro
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹24,999
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       Redmi Note 13 5G
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹16,999
                     </td>
                   </tr>
@@ -335,8 +335,8 @@ const faqLightData = [
                 Samsung
               </span>
             </summary>
-            <span className=" absolute w-auto top-3 right-5 flex justify-end">
-              <div className=" group">
+            <span class=" absolute w-auto top-3 right-5 flex justify-end">
+              <div class=" group">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -352,47 +352,47 @@ const faqLightData = [
               </div>
             </span>
             <div class=" border-[1px] border-t-0 border-[#ccc] dark:border-[#5a5a5a] py-3 px-4">
-              <table className="border-[1px] border-[#ccc] w-full">
-                <thead className="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+              <table class="border-[1px] border-[#ccc] w-full">
+                <thead class="dark:bg-[#9b9b9b] bg-[#f2f2f2]">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Product
                     </td>
-                    <td className="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] font-semibold  border-[#ccc] dark:text-[#242424] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Price
                     </td>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] relative border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       Samsung Galaxy M35 5G
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:text-[#cecece] dark:border-[#5a5a5a] text-[#5a5a5a] px-6 py-2">
                       ₹19,999
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc]  dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc]  dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       Samsung Galaxy S24 Ultra
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹107,298
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       Samsung Galaxy A35 5G
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹23,765
                     </td>
                   </tr>
-                  <tr className="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                  <tr class="border-[1px] border-[#ccc] dark:border-[#5a5a5a]">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       Samsung Galaxy M34
                     </td>
-                    <td className="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
+                    <td class="border-[1px] border-[#ccc] dark:border-[#5a5a5a] dark:text-[#cecece] text-[#5a5a5a] px-6 py-2">
                       ₹34,280
                     </td>
                   </tr>

@@ -2,15 +2,15 @@ const aboutLightData = [
   {
     _id: 0,
     title: "About us page template",
-    htmlcode: `<div className="  dark:bg-[#1e1e1e]">
-      <section className="container  mx-auto px-4 py-20">
+    htmlcode: `<div class="  dark:bg-[#1e1e1e]">
+      <section class="container  mx-auto px-4 py-20">
       
-        <div className="py-20  grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
+        <div class="py-20  grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
           <div>
-            <h3 className="pt-14 text-5xl text-[#333533] font-semibold sm:text-4xl dark:text-[#F5CB5C] ">
+            <h3 class="pt-14 text-5xl text-[#333533] font-semibold sm:text-4xl dark:text-[#F5CB5C] ">
               About us
             </h3>
-            <p className="pt-6 text-[#333]  lg:w-[80%] lge:w-[80%] md:w-full  dark:text-[#e6e6e6] mdsm:w-full sm:w-full text-[18px] leading-7 text-justify">
+            <p class="pt-6 text-[#333]  lg:w-[80%] lge:w-[80%] md:w-full  dark:text-[#e6e6e6] mdsm:w-full sm:w-full text-[18px] leading-7 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -20,21 +20,21 @@ const aboutLightData = [
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
 
-            <p className="pt-2 text-[#333]  lg:w-[80%] lge:w-[80%] md:w-full   mdsm:w-full sm:w-full dark:text-[#e6e6e6] text-[18px] leading-7 text-justify">
+            <p class="pt-2 text-[#333]  lg:w-[80%] lge:w-[80%] md:w-full   mdsm:w-full sm:w-full dark:text-[#e6e6e6] text-[18px] leading-7 text-justify">
               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur.{" "}
             </p>
           </div>
-          <div className=" flex justify-end relative">
-            <div className=" h-[80px] w-[80px]  bg-[#F5CB5C] text-4xl flex justify-center items-center  rounded-full absolute top-6 left-28 text-[#333533] font-semibold milonga-font">
-              25<sup className=" text-[16px] mb-6 milonga-font">+</sup>
+          <div class=" flex justify-end relative">
+            <div class=" h-[80px] w-[80px]  bg-[#F5CB5C] text-4xl flex justify-center items-center  rounded-full absolute top-6 left-28 text-[#333533] font-semibold milonga-font">
+              25<sup class=" text-[16px] mb-6 milonga-font">+</sup>
             </div>
-            <div className=" absolute left-1 z-10 bottom-6 ">
-              <div className=" relative">
-                <div className=" absolute -top-10 -left-16 -z-20 ">
+            <div class=" absolute left-1 z-10 bottom-6 ">
+              <div class=" relative">
+                <div class=" absolute -top-10 -left-16 -z-20 ">
                   <img
                     src="https://makecomponents.com/Image/about/about005/vector.png"
-                    className=" "
+                    class=" "
                     alt="vector"
                   />
                 </div>
@@ -42,14 +42,14 @@ const aboutLightData = [
                 <img
                   src="https://makecomponents.com/Image/about/about005/table.webp"
                   alt="table"
-                  className=" w-[100%] h-[250px]  object-cover p-4 rounded-lg bg-[#fff] "
+                  class=" w-[100%] h-[250px]  object-cover p-4 rounded-lg bg-[#fff] "
                 />
               </div>
             </div>
             <img
               src="https://makecomponents.com/Image/about/about005/tea-shop.webp"
               alt="tea-shop"
-              className=" w-[60%] sm:w-[80%] h-[450px]  object-cover"
+              class=" w-[60%] sm:w-[80%] h-[450px]  object-cover"
             />
           </div>
         </div>

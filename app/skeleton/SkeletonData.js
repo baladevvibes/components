@@ -183,9 +183,9 @@ const SkeletonData = [
     _id: 1,
     title: "Blog Skeleton tailwind css",
     htmlcode: ` <div class="">
-       <div className="px-4 container mx-auto py-32">
+       <div class="px-4 container mx-auto py-32">
         <section>
-          <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-4">
+          <div class=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-4">
             <div role="card" class=" animate-pulse">
               <div class="h-48 w-full bg-[#cccccc]  flex justify-center items-center  rounded-lg mb-4">
                 <svg

@@ -26,8 +26,8 @@ const NewsLetterData = [
                     class="w-full  py-2 text-[#434343] px-3  catamaran outline-none border border-[#fff]"
                     required
                   />
-                  <div className=" sm:relative sm:w-full sm:mt-4 absolute z-20 group bottom-0 right-0 ">
-                      <button className=" w-full justify-center group-hover:bg-[#fff] group-hover:text-[#0f67f5] group-hover:border-[#0f67f5] flex space-x-1 text-[#fff] bg-[#0f67f5] border border-[#fff] catamaran px-10 py-2">
+                  <div class=" sm:relative sm:w-full sm:mt-4 absolute z-20 group bottom-0 right-0 ">
+                      <button class=" w-full justify-center group-hover:bg-[#fff] group-hover:text-[#0f67f5] group-hover:border-[#0f67f5] flex space-x-1 text-[#fff] bg-[#0f67f5] border border-[#fff] catamaran px-10 py-2">
                         Subscribe{" "}
                         <svg
                           stroke="currentColor"

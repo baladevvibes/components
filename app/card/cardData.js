@@ -661,11 +661,11 @@ const cardData = [
   {
     _id: 7,
     name: "Recipe card template",
-    htmlcode: `<section className=" py-20 container mx-auto px-4">
-        <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
-          <div className="  relative group overflow-hidden ">
-            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
-              <div className=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+    htmlcode: `<section class=" py-20 container mx-auto px-4">
+        <div class=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
+          <div class="  relative group overflow-hidden ">
+            <div class=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
+              <div class=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -683,12 +683,12 @@ const cardData = [
             <img
               src="https://makecomponents.com/Image/overall/food/food1.webp"
               alt="evening snack"
-              className="h-[400px] object-cover w-full"
+              class="h-[400px] object-cover w-full"
             />
           </div>
-          <div className="  relative group overflow-hidden ">
-            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
-              <div className=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+          <div class="  relative group overflow-hidden ">
+            <div class=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
+              <div class=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -705,14 +705,14 @@ const cardData = [
             </div>
             <img
               src="https://makecomponents.com/Image/overall/food/food2.webp"
-              className="h-[400px] object-cover w-full"
+              class="h-[400px] object-cover w-full"
               alt="chicken"
             />
           </div>
 
-          <div className="  relative group overflow-hidden ">
-            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
-              <div className="  cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+          <div class="  relative group overflow-hidden ">
+            <div class=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
+              <div class="  cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -730,13 +730,13 @@ const cardData = [
             <img
               src="https://makecomponents.com/Image/overall/food/food3.webp"
               alt="indian food"
-              className="h-[400px] object-cover w-full"
+              class="h-[400px] object-cover w-full"
             />
           </div>
 
-          <div className="  relative  group overflow-hidden ">
-            <div className=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
-              <div className=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
+          <div class="  relative  group overflow-hidden ">
+            <div class=" absolute group-hover:opacity-100  scale-150  transition-5 duration-300  opacity-0 w-full bg-[#211e1ec7] flex justify-center items-center	h-full">
+              <div class=" cursor-pointer h-[30px] w-[30px] rounded-full hover:bg-[#FF9800] bg-[#eeee] hover:text-[#eeee] text-[#FF9800] flex justify-center items-center">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -754,7 +754,7 @@ const cardData = [
             <img
               src="https://makecomponents.com/Image/overall/food/food4.webp"
               alt="cutter"
-              className="h-[400px] object-cover w-full"
+              class="h-[400px] object-cover w-full"
             />
           </div>
         </div>

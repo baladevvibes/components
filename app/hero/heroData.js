@@ -8,7 +8,7 @@ const heroData = [
     slug: "hero-with-searchbar-preview",
     htmlcode: `<div class='bg-no-repeat relative w-full bg-[url("https://makecomponents.com/Image/hero/hero001/hero001.webp")] h-[100vh] bg-cover bg-center'>
         <section>
-          <header className="w-full">
+          <header class="w-full">
             <div class="absolute h-[100vh] bg-[#060505cf] top-0 w-full">
               <div class="py-4 px-4 w-full absolute top-0">
                 <div class="container mx-auto">
@@ -425,8 +425,8 @@ const heroData = [
           </div>
         </div>
         <div class="min-h-[100vh] relative">
-          <div className=" absolute top-10  left-20 bg-[#c7295e] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
-          <div className=" absolute right-40  bg-[#4b91e2] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
+          <div class=" absolute top-10  left-20 bg-[#c7295e] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
+          <div class=" absolute right-40  bg-[#4b91e2] h-[300px] w-[300px] rounded-full blur-[250px]"></div>
         </div>
       </section>`,
   },
