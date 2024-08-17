@@ -1,6 +1,6 @@
 // import "../../../../public/Image/card/card003/card003.webp"
 
-import "../../../style.css"
+import "../../../style.css";
 
 export default function HalfBackgroundLayerCardPre() {
   return (
@@ -8,20 +8,26 @@ export default function HalfBackgroundLayerCardPre() {
       <div className="pt-32">
         <section className="pb-[300px] sm:pb-[200px] relative">
           <div className=" relative">
-            <div className=" h-[500px] sm:h-[250px] bg-[url('https://images.pexels.com/photos/193999/pexels-photo-193999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]  bg-no-repeat bg-cover bg-center  ">
+            <div className=" h-[500px] sm:h-[250px] bg-[url('/Image/card/card003/background-layer.webp')]  bg-no-repeat bg-cover bg-center  ">
               <div className=" bg-[#0f2471c7]  h-full absolute top-0 w-full z-10"></div>
               <div className="px-4 container mx-auto">
                 <div className=" absolute z-20 top-0">
                   <div className=" text-white bakbak-one-font  tracking-wide text-[44px] sm:px-4 pt-8 pb-16">
                     Our
-                    <span className=" font-semibold bakbak-one-font"> Services </span>
+                    <span className=" font-semibold bakbak-one-font">
+                      {" "}
+                      Services{" "}
+                    </span>
                   </div>
                 </div>
                 <div className=" pt-[140px]">
-                  <div className={` grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 overflow-auto gap-6 relative z-20`}>
+                  <div
+                    className={` grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 overflow-auto gap-6 relative z-20`}
+                  >
                     <div>
                       <img
-                        src={`https://images.pexels.com/photos/3264504/pexels-photo-3264504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                        src={`../../Image/card/card003/Image001.webp`}
+                        alt=" New Arrivals"
                         className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                       />
                       <div className=" sm:bg-white relative rounded-b-lg">
@@ -70,7 +76,8 @@ export default function HalfBackgroundLayerCardPre() {
 
                     <div>
                       <img
-                        src={`https://images.pexels.com/photos/4173189/pexels-photo-4173189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                        src={`../../Image/card/card003/Image002.webp`}
+                        alt="  Customer Reviews"
                         className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                       />
                       <div className=" sm:bg-white relative rounded-b-lg">
@@ -109,7 +116,8 @@ export default function HalfBackgroundLayerCardPre() {
 
                     <div>
                       <img
-                        src={`https://images.pexels.com/photos/7578984/pexels-photo-7578984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                        src={`../../Image/card/card003/Image003.webp`}
+                        alt="Special Offers"
                         className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                       />
                       <div className=" sm:bg-white relative rounded-b-lg">
@@ -144,7 +152,8 @@ export default function HalfBackgroundLayerCardPre() {
 
                     <div>
                       <img
-                        src={`https://images.pexels.com/photos/6870318/pexels-photo-6870318.jpeg`}
+                        src={`../../Image/card/card003/Image004.webp`}
+                        alt="Service & Maintenance"
                         className=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                       />
                       <div className=" sm:bg-white relative rounded-b-lg">

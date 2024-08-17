@@ -148,7 +148,7 @@ const handleSmDevices = () =>{
           >
             Make Components
           </h1>
-          <div className="px-6 tags space-x-10">
+          <div className="px-6 tags space-x-10 space-y-5">
             <a href="/hero" className=" hover:brightness-125 tracking-wide">
               Hero
             </a>
@@ -157,6 +157,9 @@ const handleSmDevices = () =>{
             </a>
             <a href="/about" className=" hover:brightness-125 tracking-wide">
               About
+            </a>
+            <a href="/services" className=" hover:brightness-125 tracking-wide">
+              Service
             </a>
           </div>
        

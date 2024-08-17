@@ -187,7 +187,7 @@ const cardData = [
     htmlcode: `    <div class="pt-32">
       <section class="pb-[300px] sm:pb-[200px] relative">
         <div class=" relative">
-          <div class=" h-[500px] sm:h-[250px] bg-[url('https://images.pexels.com/photos/193999/pexels-photo-193999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]  bg-no-repeat bg-cover bg-center  ">
+          <div class=" h-[500px] sm:h-[250px] bg-[url('https://makecomponents.com/Image/card/card003/background-layer.webp')]  bg-no-repeat bg-cover bg-center  ">
             <div class=" bg-[#0f2471c7]  h-full absolute top-0 w-full z-10"></div>
             <div class="px-4 container mx-auto">
               <div class=" absolute z-20 top-0">
@@ -200,7 +200,8 @@ const cardData = [
                 <div class=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 overflow-auto gap-6 relative z-20">
                   <div>
                     <img
-                      src="https://images.pexels.com/photos/3264504/pexels-photo-3264504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://makecomponents.com/Image/card/card003/Image001.webp"
+                        alt="New Arrivals"
                       class=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                     />
                     <div class=" sm:bg-white relative rounded-b-lg">
@@ -249,7 +250,8 @@ const cardData = [
 
                   <div>
                     <img
-                      src="https://images.pexels.com/photos/4173189/pexels-photo-4173189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://makecomponents.com/Image/card/card003/Image002.webp"
+                        alt="Customer Reviews"
                       class=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                     />
                     <div class=" sm:bg-white relative rounded-b-lg">
@@ -288,7 +290,8 @@ const cardData = [
 
                   <div>
                     <img
-                      src="https://images.pexels.com/photos/7578984/pexels-photo-7578984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      src="https://makecomponents.com/Image/card/card003/Image003.webp"
+                        alt="Special Offers"
                       class=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                     />
                     <div class=" sm:bg-white relative rounded-b-lg">
@@ -323,7 +326,8 @@ const cardData = [
 
                   <div>
                     <img
-                      src="https://images.pexels.com/photos/6870318/pexels-photo-6870318.jpeg"
+                      src="https://makecomponents.com/Image/card/card003/Image004.webp"
+                        alt="Service & Maintenance"
                       class=" h-[400px] object-cover sm:object-cover w-full rounded-md"
                     />
                     <div class=" sm:bg-white relative rounded-b-lg">
