@@ -53,6 +53,7 @@ export default function Hero() {
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
+    name: "Hero Components",
     itemListElement: [
       {
         "@type": "ListItem",

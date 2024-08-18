@@ -25,7 +25,7 @@ const HomeComponents = [
     _id: "045",
     image: "../Image/skeleton/skeleton002.webp",
     title: "Blog Skeleton tailwind css",
-    tag: "blog",
+    tag: "skeleton",
     link: "/skeleton/blog-skeleton-tailwind",
   },
   {
@@ -67,7 +67,7 @@ const HomeComponents = [
     _id: "040",
     image: "../Image/skeleton/skeleton001.webp",
     title: "Skeleton table tailwind css",
-    tag: "Skeleton",
+    tag: "skeleton",
     link: "/skeleton/skeleton-table-tailwind",
   },
   {
