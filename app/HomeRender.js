@@ -180,6 +180,9 @@ export default function HomeRender() {
             <a href="/skeleton" className=" hover:brightness-125 tracking-wide">
               Skeleton
             </a>
+            <a href="/tab" className=" hover:brightness-125 tracking-wide">
+              Tab
+            </a>
           </div>
 
           <h2

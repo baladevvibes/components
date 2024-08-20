@@ -28,6 +28,7 @@ import { RiBarChartGroupedLine } from "react-icons/ri";
 import { RiUserFollowLine } from "react-icons/ri";
 import { RiBillLine } from "react-icons/ri";
 import { MdArrowOutward } from "react-icons/md";
+import { MdOutlineSportsCricket } from "react-icons/md";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -83,7 +84,7 @@ export default function Preview() {
   }, []);
   return (
     <div className=" relative dark:bg-secondary">
-      <div className=" container mx-auto">
+      <div className=" py-10 container mx-auto">
         <div className=" sticky top-2 flex justify-end px-10 pb-10">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
@@ -116,6 +117,31 @@ export default function Preview() {
           </div>
         </div>
       </div>
+
+      <section>
+        <div className=" px-4 container mx-auto">
+          <div className=" w-full mx-auto">
+            <div className=" lg:flex lge:flex md:flex mdsm:block sm:block  lg:space-x-8  lge:space-x-8 md:space-x-4 mdsm:space-x-0 sm:space-x-0px-4   ">
+              <div className=" bg-[#cfe1f7] cursor-pointer  py-3 text-[#086bdd] font-normal border-b px-10 border-[#086bdd] boder-[2px] ">
+                Profile
+              </div>
+              <div className=" cursor-pointer duration-700 hover:bg-[#cfe1f7] hover:border-[#086bdd] hover:text-[#086bdd]  py-3 text-[#b0b0b0] font-normal border-b px-10 border-[#b0b0b0] boder-[2px] ">
+                Account
+              </div>
+
+              <div className=" cursor-pointer duration-700 hover:bg-[#cfe1f7] hover:border-[#086bdd] hover:text-[#086bdd]  py-3 text-[#b0b0b0] font-normal border-b px-10 border-[#b0b0b0] boder-[2px] ">
+                Notification
+              </div>
+
+              <div className="cursor-pointer duration-700 hover:bg-[#cfe1f7] hover:border-[#086bdd] hover:text-[#086bdd]  py-3 text-[#b0b0b0] font-normal border-b px-10 border-[#b0b0b0] boder-[2px] ">
+                Amount
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </section>
 
       <section className=" lg:block lge:block md:hidden mdsm:hidden sm:hidden py-32">
         <div className=" bg-[#f2f2f2]">
