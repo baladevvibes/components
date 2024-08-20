@@ -8,7 +8,6 @@ import HomeCard from "../HomePage/HomeCard";
 export default function TabCard() {
   const [data, setData] = useState(HomeComponents);
   var keyword = "tab";
-
   useEffect(() => {
     let localData = [];
     HomeComponents?.forEach((el) => {
