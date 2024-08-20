@@ -181,7 +181,7 @@ export default function HomeRender() {
               Skeleton
             </a>
             <a href="/tab" className=" hover:brightness-125 tracking-wide">
-              Tab
+              Tab   
             </a>
           </div>
 
