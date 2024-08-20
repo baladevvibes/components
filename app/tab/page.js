@@ -1,5 +1,5 @@
 import React from "react";
-import TabCard from "./tabCard";
+import TabcardData from "./TabcardData";
 
 export const metadata = {
   keywords:
@@ -75,7 +75,7 @@ export default function page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <TabCard />
+  <TabcardData/>
     </div>
   );
 }

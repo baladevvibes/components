@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import HomeComponents from "../HomePage/HomeComponents";
 import HomeCard from "../HomePage/HomeCard";
 
-export default function TabCard() {
+export default function TabcardData() {
   const [data, setData] = useState(HomeComponents);
   var keyword = "tab";
   useEffect(() => {
