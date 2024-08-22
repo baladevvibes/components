@@ -162,6 +162,7 @@ export default function HomeRender() {
           data-ad-format="auto"
           data-full-width-responsive="true"
         ></ins> */}
+        {/* <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div> */}
 
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>

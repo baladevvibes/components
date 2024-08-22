@@ -37,6 +37,12 @@ export default function RootLayout({ children }) {
           src="//pl24116206.highratecpm.com/c3d10aadb78d1e6613b3fc5333e31d3e/invoke.js"
         ></script>
 
+        <script
+          async="async"
+          data-cfasync="false"
+          src="//pl24116206.highratecpm.com/c3d10aadb78d1e6613b3fc5333e31d3e/invoke.js"
+        ></script>
+
         {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2500160320143617"
