@@ -154,16 +154,16 @@ export default function HomeRender() {
             <div className={` container mx-auto px-2 py-1`}></div>
           </div>
         </div>
-        <ins
+        {/* <ins
           className="adsbygoogle"
           style={{ display: "block" }}
           data-ad-client="ca-pub-2500160320143617"
           data-ad-slot="2477731086"
           data-ad-format="auto"
           data-full-width-responsive="true"
-        ></ins>
+        ></ins> */}
 
-<div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
+
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <h1
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
@@ -223,14 +223,16 @@ export default function HomeRender() {
             </>
           )}
         </div>
-        <ins
+        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
+
+        {/* <ins
           className="adsbygoogle"
           style={{ display: "block" }}
           data-ad-client="ca-pub-2500160320143617"
           data-ad-slot="2477731086"
           data-ad-format="auto"
           data-full-width-responsive="true"
-        ></ins>
+        ></ins> */}
         <Footer />
       </div>
     </div>
