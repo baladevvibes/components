@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import { DatasetJsonLd } from "next-seo";
 import { BiAlignLeft } from "react-icons/bi";
 import { MdOutlineCancelPresentation } from "react-icons/md";
+import Script from "next/script";
+
 
 export default function HomeRender() {
   const [buttonData, setButtonData] = useState();
@@ -51,6 +53,7 @@ export default function HomeRender() {
     setButtonData(arr);
   }, []);
   useEffect(() => {
+
     if (typeof window !== "undefined") {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -64,6 +67,7 @@ export default function HomeRender() {
     setSmDevice(!smDevice);
     setForceRender(!forceRender);
   };
+
   return (
     <div>
       <div className={` relative `}>
@@ -158,6 +162,8 @@ export default function HomeRender() {
           data-ad-format="auto"
           data-full-width-responsive="true"
         ></ins>
+
+<div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <h1
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
@@ -181,7 +187,7 @@ export default function HomeRender() {
               Skeleton
             </a>
             <a href="/tab" className=" hover:brightness-125 tracking-wide">
-              Tab   
+              Tab
             </a>
           </div>
 

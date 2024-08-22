@@ -118,6 +118,57 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className=" py-48 container mx-auto">
+        <section>
+          <div className=" grid grid-cols-5">
+            <div className=" col-span-2"></div>
+            <div className=" col-span-3">
+              <div>
+                <form>
+                  <div className=" grid grid-cols-2 gap-10">
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="First name"
+                        className=" border work border-[#ccc] text-[#444545]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Last name"
+                        className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className=" pt-6">
+                  <input
+                        type="text"
+                        placeholder="Email"
+                        className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                        required
+                      />
+                  </div>
+                  <div className=" pt-6">
+                  <textarea
+                        type="text"
+                        placeholder="Message"
+                        className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                        required
+                      />
+                  </div>
+                  <div className=" pt-6">
+                    <button className=" bg-[#656176] work hover:bg-[#DECDF5] hover:text-[#534D56] text-[#fcfcfc] px-10 py-2">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <section>
         <div className=" px-4 container mx-auto">
           <div className=" w-full mx-auto">
@@ -137,8 +188,6 @@ export default function Preview() {
                 Amount
               </div>
             </div>
-
-           
           </div>
         </div>
       </section>
