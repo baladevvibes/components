@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 export default function AdsterraAds(props) {
   const banner = useRef();
-console.log(props)
+// console.log(props)
   const atOptions = {
     key: `${props.id}`,
     format: "iframe",

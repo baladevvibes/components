@@ -84,7 +84,7 @@ export default function Preview() {
   }, []);
   return (
     <div className=" relative dark:bg-secondary">
-      <div className=" py-10 container mx-auto">
+      <div className=" py-10 container px-4 mx-auto">
         <div className=" sticky top-2 flex justify-end px-10 pb-10">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
@@ -120,11 +120,10 @@ export default function Preview() {
 
       <div className=" py-48 container mx-auto">
         <section>
-          <div className=" grid grid-cols-5 h-full gap-10">
+          <div className=" grid lg:grid-cols-5  lge:grid-cols-5 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 h-full lg:gap-10 lge:gap-10 md:gap-0 mdsm:gap-0 sm:gap-0">
             <div className=" col-span-2 h-full ">
               <div className=" relative h-full">
                 <div className=" bg-[#646076] p-10 h-[550px] w-full  ">
-                  <h3 className=" text-[#fff] work text-4xl ">Contact</h3>
                   <img
                     src="../Image/contact/contact002/contact002.jpeg"
                     alt=""
@@ -134,15 +133,25 @@ export default function Preview() {
                 </div>
               </div>
             </div>
-            <div className=" col-span-3 h-full">
+            <div className=" col-span-3  px-4 h-full">
               <div className="h-full">
                 <form className=" block">
+                  <h3 className=" dark:text-[#fcfcfc] text-[#646076] catamaran lg:pt-10 lge:pt-10 md:pt-24 mdsm:pt-24 sm:pt-24 lg:mt-0 lge:mt-0 md:mt-10 mdsm:mt-10 sm:mt-10 pb-4 lg:text-4xl lge:text-4xl md:text-3xl mdsm:text-3xl sm:text-3xl ">
+                    Contact us
+                  </h3>
+
+                  <p className=" tracking-wide dark:text-[#fcfcfc] text-[#333] lg:text-[18px] lge:text-[18px] catamaran md:text-[16px] mdsm:text-[16px] sm:text-[16px] pb-10">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print, and publishing industries for previewing
+                    layouts and visual mockups.
+                  </p>
+
                   <div className=" grid grid-cols-2 gap-10">
                     <div>
                       <input
                         type="text"
                         placeholder="First name"
-                        className=" border work border-[#ccc] text-[#444545]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                        className=" border catamaran border-[#ccc] text-[#444545]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
                         required
                       />
                     </div>
@@ -150,7 +159,7 @@ export default function Preview() {
                       <input
                         type="text"
                         placeholder="Last name"
-                        className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                        className=" border catamaran border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
                         required
                       />
                     </div>
@@ -159,7 +168,7 @@ export default function Preview() {
                     <input
                       type="text"
                       placeholder="Email"
-                      className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                      className=" border catamaran border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
                       required
                     />
                   </div>
@@ -167,12 +176,12 @@ export default function Preview() {
                     <textarea
                       type="text"
                       placeholder="Message"
-                      className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                      className=" border catamaran border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
                       required
                     />
                   </div>
                   <div className=" pt-6">
-                    <button className=" bg-[#646076] work hover:bg-[#DECDF5] hover:text-[#534D56] text-[#fcfcfc] px-10 py-2">
+                    <button className=" bg-[#646076] catamaran hover:bg-[#DECDF5] hover:text-[#534D56] text-[#fcfcfc] px-10 py-2">
                       Submit
                     </button>
                   </div>

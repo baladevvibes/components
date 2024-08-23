@@ -48,7 +48,6 @@ export const metadata = {
     canonical: "https://makecomponents.com/tab",
   },
 };
-
 export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",
