@@ -120,11 +120,23 @@ export default function Preview() {
 
       <div className=" py-48 container mx-auto">
         <section>
-          <div className=" grid grid-cols-5">
-            <div className=" col-span-2"></div>
-            <div className=" col-span-3">
-              <div>
-                <form>
+          <div className=" grid grid-cols-5 h-full gap-10">
+            <div className=" col-span-2 h-full ">
+              <div className=" relative h-full">
+                <div className=" bg-[#646076] p-10 h-[550px] w-full  ">
+                  <h3 className=" text-[#fff] work text-4xl ">Contact</h3>
+                  <img
+                    src="../Image/contact/contact002/contact002.jpeg"
+                    alt=""
+                    className="mt-10 h-[550px] object-cover w-full "
+                  />
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div className=" col-span-3 h-full">
+              <div className="h-full">
+                <form className=" block">
                   <div className=" grid grid-cols-2 gap-10">
                     <div>
                       <input
@@ -144,23 +156,25 @@ export default function Preview() {
                     </div>
                   </div>
                   <div className=" pt-6">
-                  <input
-                        type="text"
-                        placeholder="Email"
-                        className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
-                        required
-                      />
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                      required
+                    />
                   </div>
                   <div className=" pt-6">
-                  <textarea
-                        type="text"
-                        placeholder="Message"
-                        className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
-                        required
-                      />
+                    <textarea
+                      type="text"
+                      placeholder="Message"
+                      className=" border work border-[#ccc]  focus:outline-none bg-[#f2f2f2]  w-full py-2 px-2"
+                      required
+                    />
                   </div>
                   <div className=" pt-6">
-                    <button className=" bg-[#656176] work hover:bg-[#DECDF5] hover:text-[#534D56] text-[#fcfcfc] px-10 py-2">Submit</button>
+                    <button className=" bg-[#646076] work hover:bg-[#DECDF5] hover:text-[#534D56] text-[#fcfcfc] px-10 py-2">
+                      Submit
+                    </button>
                   </div>
                 </form>
               </div>

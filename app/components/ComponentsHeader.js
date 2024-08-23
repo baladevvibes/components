@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AdsterraAds from "./AdsterraAds";
 // import AdSense from "react-adsense";
 
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
@@ -104,6 +105,10 @@ export default function ComponentsHeader({
 
         </div>
         <div>
+        <div className=" flex h-full justify-center items-center">
+
+          <AdsterraAds id="2aa4a741618e1a4ebef6b2b945a3f4f3" height="60" width="468"/>
+          </div>
 
           
         {/* <ins

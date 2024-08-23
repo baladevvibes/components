@@ -12,8 +12,10 @@ import { useEffect, useState } from "react";
 import { DatasetJsonLd } from "next-seo";
 import { BiAlignLeft } from "react-icons/bi";
 import { MdOutlineCancelPresentation } from "react-icons/md";
+// import Script from "next/script";
 import Script from "next/script";
-
+import Banner720 from "./components/Banner720";
+import AdsterraAds from "./components/AdsterraAds";
 
 export default function HomeRender() {
   const [buttonData, setButtonData] = useState();
@@ -53,7 +55,6 @@ export default function HomeRender() {
     setButtonData(arr);
   }, []);
   useEffect(() => {
-
     if (typeof window !== "undefined") {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -81,6 +82,8 @@ export default function HomeRender() {
                   >
                     Make Components
                   </h3>
+               
+         
 
                   <ul className="pt-6 px-4">
                     <li>
@@ -164,13 +167,18 @@ export default function HomeRender() {
         ></ins> */}
         {/* <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div> */}
 
-
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
+          <div className=" flex justify-center items-center">
+          <AdsterraAds id="37bfd45a34f36324b962f1e32736a540" height="90" width="728"/>
+          {/* <Banner720  id="37bfd45a34f36324b962f1e32736a540" height="90" width="728"/> */}
+
+          </div>
           <h1
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
           >
             Make Components
           </h1>
+
           <div className="px-6 tags space-x-10 space-y-5">
             <a href="/hero" className=" hover:brightness-125 tracking-wide">
               Hero
