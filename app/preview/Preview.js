@@ -122,6 +122,35 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className="py-32">
+        <div className=" container mx-auto">
+        <section>
+          <div className=" grid grid-cols-5">
+            <div className=" col-span-2">
+              </div>
+              <div>
+                <div className=" relative bg-[#046E8F] rounded-t-[140px]">
+                <img
+                  src={`../../Image/overall/person/person006.png`}
+                  className="w-full"
+                  alt="Gym"
+                />
+                 <img
+                  src={`../../Image/overall/elements/right-triangle.png`}
+                  className="top-20 h-[50px] absolute "
+                  alt="Gym"
+                />
+                </div>
+       
+              </div>
+              <div className=" col-span-2">
+              </div>
+          </div>
+
+        </section>
+        </div>
+      </div>
+
       <div className=" py-32">
         <section className="h-full container mx-auto px-6">
           <div className=" grid lg:grid-cols-5 lge:grid-cols-5 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-10 lge:gap-10 md:gap-0 mdsm:gap-0 sm:gap-0">
