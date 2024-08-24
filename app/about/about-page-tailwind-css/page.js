@@ -7,12 +7,12 @@ export const metadata = {
     description:
       "About page tailwind css and with clean design proper color code. It fully responsive.",
     icons: {
-      icon: "../../favicon.ico",
-      shortcut: "../../favicon.ico",
-      apple: "../../favicon.ico",
+      icon: "../favicon.ico",
+      shortcut: "../favicon.ico",
+      apple: "../favicon.ico",
       other: {
         rel: "apple-touch-icon-precomposed",
-        url: "../../favicon.ico",
+        url: "../favicon.ico",
       },
     },
     openGraph: {
