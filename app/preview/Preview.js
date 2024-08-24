@@ -29,6 +29,10 @@ import { RiUserFollowLine } from "react-icons/ri";
 import { RiBillLine } from "react-icons/ri";
 import { MdArrowOutward } from "react-icons/md";
 import { MdOutlineSportsCricket } from "react-icons/md";
+import { HiOutlineSparkles } from "react-icons/hi";
+import { RiEarthLine } from "react-icons/ri";
+import { RiHeartAdd2Line } from "react-icons/ri";
+import { RiInputField } from "react-icons/ri";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -118,7 +122,60 @@ export default function Preview() {
         </div>
       </div>
 
-      <div className=" py-48 container mx-auto">
+      <div className=" py-32">
+        <section className="h-full container mx-auto px-6">
+          <div className=" grid lg:grid-cols-5 lge:grid-cols-5 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-10 lge:gap-10 md:gap-0 mdsm:gap-0 sm:gap-0">
+            <div className="h-full  col-span-3">
+              <div>
+                <h2 className="pt-0 text-4xl  font-semibold dosis-font text-[#720026] ">
+                  About us
+                </h2>
+                <p className=" dark:text-[#fcfcfc] text-[#333]  leading-7 pt-2 pb-6 text-1xl">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for previewing layouts and
+                  visual mockups.Lorem ipsum is placeholder text commonly used
+                  in the graphic, print, and publishing industries for
+                  previewing layouts and visual mockups.
+                </p>
+
+                <div className=" grid grid-cols-2 sm:grid-cols-1 gap-10">
+                  <div>
+                    <RiHeartAdd2Line className=" text-[#720026] text-[50px]" />
+                    <p className="text-[#333] dark:text-[#fcfcfc] leading-7 pt-2">
+                      Lorem ipsum is placeholder text commonly used in the
+                      graphic, print
+                    </p>
+                  </div>
+                  <div>
+                    <RiInputField className=" text-[#720026] text-[50px]" />
+                    <p className="text-[#333] dark:text-[#fcfcfc] leading-7 pt-2">
+                      Lorem ipsum is placeholder text commonly used in the
+                      graphic, print
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src={`../../Image/overall/person/person005.webp`}
+                  className="w-full lg:mt-0 lg:hidden lge:hidden md:block mdsm:block sm:block lge:mt-0 md:mt-12 mdsm:mt-12 sm:mt-10"
+                  alt="Gym"
+                />
+                <button className=" hover:bg-[#333] duration-700  mt-10 bg-[#720026] px-16 py-2 text-[#fcfcfc]">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div className="h-full  col-span-2 lg:block lge:block md:hidden mdsm:hidden sm:hidden">
+              <img
+                src={`../../Image/overall/person/person005.webp`}
+                className="w-full h-full  lg:mt-0  lge:mt-0 md:mt-12 mdsm:mt-12 sm:mt-10"
+                alt="Gym"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* <div className=" py-48 container mx-auto">
         <section>
           <div className=" grid lg:grid-cols-5  lge:grid-cols-5 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 h-full lg:gap-10 lge:gap-10 md:gap-0 mdsm:gap-0 sm:gap-0">
             <div className=" col-span-2 h-full ">
@@ -190,9 +247,9 @@ export default function Preview() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
-      <section>
+      {/* <section>
         <div className=" px-4 container mx-auto">
           <div className=" w-full mx-auto">
             <div className=" lg:flex lge:flex md:flex mdsm:block sm:block  lg:space-x-8  lge:space-x-8 md:space-x-4 mdsm:space-x-0 sm:space-x-0px-4   ">
@@ -213,9 +270,9 @@ export default function Preview() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className=" lg:block lge:block md:hidden mdsm:hidden sm:hidden py-32">
+      {/* <section className=" lg:block lge:block md:hidden mdsm:hidden sm:hidden py-32">
         <div className=" bg-[#f2f2f2]">
           <div className=" container mx-auto">
             <div className="group grid grid-cols-12 py-10">
@@ -340,9 +397,9 @@ export default function Preview() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className=" lg:hidden lge:hidden md:block mdsm:block sm:block py-32">
+      {/* <section className=" lg:hidden lge:hidden md:block mdsm:block sm:block py-32">
         <div className=" container px-4 mx-auto">
           <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
             <div className="cursor-pointer  group">
@@ -458,9 +515,9 @@ export default function Preview() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <div className=" container mx-auto">
+      {/* <div className=" container mx-auto">
         <section>
           <div className=" lg:grid grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-4">
             <div role="card" class=" animate-pulse">
@@ -542,7 +599,7 @@ export default function Preview() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
       {/* <div role="status" class="max-w-sm animate-pulse">
         <div class="h-2.5 bg-[#cccccc]  rounded-full dark:bg-[#374151] w-48 mb-4"></div>
@@ -554,9 +611,8 @@ export default function Preview() {
         <span class="sr-only">Loading...</span>
       </div> */}
 
-      <div className="py-32">
+      {/* <div className="py-32">
         <section className=" container mx-auto">
-          {/* <marquee> */}
           <div className="   relative w-[40%] mx-auto">
             <h4 className="varela-round-font font-semibold text-center text-[#26547C] text-3xl pb-4">
               News and Events
@@ -653,11 +709,10 @@ export default function Preview() {
               </div>
             </div>
           </div>
-          {/* </marquee> */}
         </section>
-      </div>
+      </div> */}
 
-      <div className=" relative bg-[url(/Image/overall/building/building4.webp)] bg-hero bg-no-repeat bg-cover bg-center bg-fixed">
+      {/* <div className=" relative bg-[url(/Image/overall/building/building4.webp)] bg-hero bg-no-repeat bg-cover bg-center bg-fixed">
         <div className=" py-[70px] bg-[#ff0014c9]">
           <div className=" container  mx-auto">
             <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
@@ -696,9 +751,9 @@ export default function Preview() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="py-[100px]   w-full">
+      {/* <div className="py-[100px]   w-full">
         <section className="container mx-auto">
           <div className=" grid lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
             <div className="bg-[#f2f2f2] dark:bg-[#313131] relative p-4 border-[#fff] dark:border-[#313131] border">
@@ -836,20 +891,12 @@ export default function Preview() {
                 alt="person"
                 className="h-[300px] mx-auto"
               />
-              {/* <img src={`../Image/overall/svg/arrow.svg`} alt="arrow"  className=""/> */}
-
-              {/* <div className="h-[150px] object-cover w-[150px] rounded-full bg-[#940027] absolute bottom-0">
-              <img
-                src={`../Image/overall/person/person1.webp`}
-                alt="person"
-                className="h-[130px] mt-4 ml-4 object-cover w-[130px] rounded-full "
-              />
-              </div> */}
             </div>
           </div>
         </section>
-      </div>
-      <div className="text-center container mx-auto">
+      </div> */}
+
+      {/* <div className="text-center container mx-auto">
         {buttonData?.map((v, i) => {
           return (
             <>
@@ -858,9 +905,9 @@ export default function Preview() {
           );
         })}
         <button onClick={() => handleMore()}>more </button>
-      </div>
+      </div> */}
 
-      <div className="py-40 container mx-auto">
+      {/* <div className="py-40 container mx-auto">
         <section>
           <div className=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1 gap-10 ">
             <div className=" bg-[#5700c9] w-56  mx-auto  p-8 px-4 rounded-lg">
@@ -897,9 +944,9 @@ export default function Preview() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
-      <div className=" container mx-auto">
+      {/* <div className=" container mx-auto">
         <div className=" overflow-auto">
           <div role="table" className="animate-pulse">
             <table className=" w-full">
@@ -997,19 +1044,9 @@ export default function Preview() {
             </table>
           </div>
         </div>
+      </div> */}
 
-        {/* <div role="status" class="max-w-sm animate-pulse">
-          <div class="h-2.5 bg-[#cccccc]  rounded-full dark:bg-[#374151] w-48 mb-4"></div>
-          <div class="h-2 bg-[#cccccc] rounded-full dark:bg-[#374151] max-w-[360px] mb-2.5"></div>
-          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] mb-2.5"></div>
-          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[330px] mb-2.5"></div>
-          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[300px] mb-2.5"></div>
-          <div class="h-2 bg-[#cccccc]  rounded-full dark:bg-[#374151] max-w-[360px]"></div>
-          <span class="sr-only">Loading...</span>
-        </div> */}
-      </div>
-
-      <div className=" py-[150px] container mx-auto">
+      {/* <div className=" py-[150px] container mx-auto">
         <section className=" w-[80%] mx-auto">
           <details class="group  relative pb-2">
             <summary class="flex relative mt-4 border-[1px] border-[#ccc] dark:border-[#5a5a5a] py-3 px-3 cursor-pointer list-none font-medium">
@@ -1201,9 +1238,9 @@ export default function Preview() {
             </div>
           </details>
         </section>
-      </div>
+      </div> */}
 
-      <div className=" container mx-auto">
+      {/* <div className=" container mx-auto">
         <section>
           <div className=" grid grid-cols-3">
             <div className=" grid grid-cols-5 gap-5 ">
@@ -1253,9 +1290,9 @@ export default function Preview() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
-      <section className="py-40 container mx-auto px-4">
+      {/* <section className="py-40 container mx-auto px-4">
         <div className=" grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
           <div>
             <h3 className="pt-14 text-5xl text-[#333533] font-semibold REM-font sm:text-4xl dark:text-[#F5CB5C] ">
@@ -1303,9 +1340,9 @@ export default function Preview() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="  container mx-auto px-4">
+      {/* <section className="  container mx-auto px-4">
         <div className=" grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1  mdsm:grid-cols-1 sm:grid-cols-1 gap-4">
           <div className=" border border-[#e2e2e2] dark:border-[#454545] rounded-lg ">
             <div className="group grid  md:grid-cols-3  mdsm:grid-cols-1 sm:grid-cols-1">
@@ -1355,7 +1392,7 @@ export default function Preview() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section>
         <div className=" grid py-40 lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1">
@@ -1595,7 +1632,7 @@ export default function Preview() {
         </div>
       </section> */}
 
-      <section className=" container mx-auto my-20">
+      {/* <section className=" container mx-auto my-20">
         <div className=" sm:w-full overflow-auto px-4">
           <table className=" md:w-[80%]  mdsm:w-full sm:w-full mx-auto">
             <thead className=" bg-[#0349ff] text-left text-[#f2f2f2] ">
@@ -2036,7 +2073,7 @@ export default function Preview() {
             culpa qui officia deserunt mollit anim id est laborum.
           </h4>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
