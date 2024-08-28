@@ -11,6 +11,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://makecomponents.com/info/info-design-css</loc>
+  <lastmod>2024-08-28T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://makecomponents.com/contact/contact-page-tailwind</loc>
   <lastmod>2024-08-24T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -304,6 +309,11 @@
   <loc>https://makecomponents.com/tab</loc>
   <lastmod>2024-08-20T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/info/info-design-css/preview</loc>
+  <lastmod>2024-08-28T04:34:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/contact/contact-page-tailwind/preview</loc>
