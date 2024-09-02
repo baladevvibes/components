@@ -405,5 +405,49 @@ const highlightData = [
         </div>
       </section>`
 },
+{
+  _id:3,
+  title:"highlight section css example",
+  htmlcode:`   <div>
+        <section class=" container px-4 mx-auto">
+          <div class=" lg:flex lge:flex md:block mdsm:block sm:block h-full">
+            <div class=" lg:w-[70%]  lge:w-[70%] md:w-full mdsm:w-full sm:w-full">
+              <img
+                src="https://makecomponents.com/Image/overall/transport/truck001.webp"
+                alt="truck001"
+              />
+            </div>
+            <div class=" lg:w-[30%] lge:w-[30%] md:w-full mdsm:w-full sm:w-full relative flex justify-center items-center ">
+              <div class=" h-full  lg:absolute lge:absolute md:relative mdsm:relative sm:relative   lg:w-[140%] lge:w-[140%] md:w-full mdsm:w-full sm:w-full  lg:right-10 lge:right-10 md:right-0 mdsm:right-0 sm:right-0 ">
+                <div class="bg-[#f2f2f2]    p-10  block">
+                  <h4 class=" text-4xl title text-[#EF2917]  Prompt font-semibold pb-4 ">
+                    
+                    Lorem ipsum
+                  </h4>
+
+                  <p class="  outfit  text-[#444444] leading-7">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print, and publishing industries for previewing
+                    layouts and visual mockups.Lorem ipsum is placeholder text
+                    commonly used in the graphic, print.
+                  </p>
+                  <p class="  outfit text-[#444444]  pt-4 leading-7">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print, and publishing industries for previewing
+                    layouts and visual mockups.Lorem ipsum is placeholder text
+                    commonly used in the graphic, print. and publishing
+                    industries for previewing layouts and visual mockups.Lorem
+                    ipsum is placeholder text commonly used in the graphic,
+                    print, and publishing industries for previewing layouts and
+                    visual mockups.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </section>
+      </div>`
+},
 ]
 export default highlightData
