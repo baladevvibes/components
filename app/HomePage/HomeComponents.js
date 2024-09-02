@@ -357,7 +357,7 @@ const HomeComponents = [
     _id: "006",
     image: "../Image/info/info001.webp",
     title: "Card Info Section Eight Grid",
-    tag: "Info",
+    tag: "info",
     link: "/info/card-info-section-eight-grid",
   },
 

@@ -176,6 +176,7 @@ export default function HighlightSectionTailwind() {
     var arrSort = arr.sort(function (a, b) {
       return a.tag.indexOf("faq") - b.tag.indexOf("faq");
     });
+    
     var reve = arrSort.reverse();
     var arrData = [];
     var anotherData = [];

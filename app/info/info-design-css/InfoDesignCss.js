@@ -116,16 +116,16 @@ export default function InfoDesignCss() {
   const handleTailwind = () => {
     setCode(false);
     setTailwind(true);
-    setFileName("app.js")
+    setFileName("app.js");
     setForceRender(!forceRender);
   };
 
   const handleBootstrap = () => {
     setCode(true);
-    setFileName("bootstrapIndex.html")
-   
+    setFileName("bootstrapIndex.html");
+
     setTailwind(false);
-// document.getElementById("screen-display").style.display = "none"
+    // document.getElementById("screen-display").style.display = "none"
     setForceRender(!forceRender);
   };
 
@@ -188,24 +188,66 @@ export default function InfoDesignCss() {
     setForceRender(true);
   };
 
-  const FilterCard = () => {
-    // id=1
-    var arr = [];
-    var idSection = "030";
-    HomeComponents?.forEach((el) => {
-      if (el._id !== idSection) {
-        console.log(el);
-        arr.push(el);
-      }
-    });
-
-    setRelatedComponents(arr);
-  };
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    FilterCard();
+  }, []);
+  const [count, setCount] = useState();
+  const [defaultvalue, value] = useState(12);
+  const [data, setData] = useState(HomeComponents);
+  const [finalDataArr, setFinalData] = useState();
+  const [anotherData, setAnotherData] = useState();
+  // const [forceRender, setForceRender] = useState(false);
+  const [buttonState, setButtonState] = useState(false);
+  console.log(count, anotherData);
+
+  const handleClick = () => {
+    setCount(count + 1);
+    setForceRender(!forceRender);
+    var countInc = count + 1;
+    var sum = countInc * defaultvalue;
+    console.log(anotherData.length <= finalDataArr.length);
+    var buttState = anotherData.length < finalDataArr.length;
+    var finalData = finalDataArr.slice(0, sum);
+    setAnotherData(finalData);
+    setButtonState(buttState);
+    // setFinalData(finalData)
+  };
+
+  useEffect(() => {
+    setCount(1);
+    var removeComponents = "050";
+    var tagName = "info";
+    var newData = [];
+    data.forEach((el) => {
+      if (el._id === removeComponents) {
+        console.log(el);
+      } else {
+        newData.push(el);
+      }
+    });
+    var arrSort = newData.sort(function (a, b) {
+      return a.tag.indexOf(tagName) - b.tag.indexOf(tagName);
+    });
+    var rev = arrSort.reverse();
+    var arrData = [];
+    var anotherData = [];
+    rev.forEach((el) => {
+      if (el.tag == tagName) {
+        arrData.push(el);
+      } else {
+        anotherData.push(el);
+      }
+    });
+    const shuffledArray = anotherData.sort((a, b) => 0.5 - Math.random());
+    const finalDataArr = arrData.concat(shuffledArray);
+    console.log(finalDataArr, "arrsort");
+    var sum = 1 * defaultvalue;
+    var finalData = finalDataArr.slice(0, sum);
+    var buttState = anotherData.length < finalDataArr.length;
+    setButtonState(buttState);
+    setFinalData(finalDataArr);
+    setAnotherData(finalData);
   }, []);
   return (
     <div className="bg-[rgb(255 255 255)]">
@@ -235,115 +277,115 @@ export default function InfoDesignCss() {
                   </>
                 ) : (
                   <>
-
-                  {code ? null : <>
-                    <div
-                      onClick={() => handleScreen("sm")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border ${
-                          smScreen ? "bg-secondary text-white" : ""
-                        } border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          className={`text-1xl ${
-                            smScreen ? `text-white` : ``
-                          } text-textcolor  group-hover:text-white`}
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                    {code ? null : (
+                      <>
+                        <div
+                          onClick={() => handleScreen("sm")}
+                          className={` group`}
                         >
-                          <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
-                          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> sm</p>
-                    </div>
+                          <div
+                            className={` p-1.5 border ${
+                              smScreen ? "bg-secondary text-white" : ""
+                            } border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              className={`text-1xl ${
+                                smScreen ? `text-white` : ``
+                              } text-textcolor  group-hover:text-white`}
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> sm</p>
+                        </div>
 
-                    <div
-                      onClick={() => handleScreen("md")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border  border-[#ccc]   ${
-                          mdScreen ? "bg-secondary text-white" : ""
-                        }  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          className={`text-1xl ${
-                            mdScreen ? `text-white` : ``
-                          } text-textcolor  group-hover:text-white`}
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          onClick={() => handleScreen("md")}
+                          className={` group`}
                         >
-                          <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
-                          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> md</p>
-                    </div>
+                          <div
+                            className={` p-1.5 border  border-[#ccc]   ${
+                              mdScreen ? "bg-secondary text-white" : ""
+                            }  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              className={`text-1xl ${
+                                mdScreen ? `text-white` : ``
+                              } text-textcolor  group-hover:text-white`}
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> md</p>
+                        </div>
 
-                    <div
-                      onClick={() => handleScreen("lg")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border   ${
-                          lgScreen ? "bg-secondary" : ""
-                        }  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          className={`text-1xl ${
-                            lgScreen ? `text-white` : ``
-                          } text-textcolor  group-hover:text-white`}
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          onClick={() => handleScreen("lg")}
+                          className={` group`}
                         >
-                          <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> lg</p>
-                    </div>
+                          <div
+                            className={` p-1.5 border   ${
+                              lgScreen ? "bg-secondary" : ""
+                            }  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              className={`text-1xl ${
+                                lgScreen ? `text-white` : ``
+                              } text-textcolor  group-hover:text-white`}
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> lg</p>
+                        </div>
 
-                    <div
-                      onClick={() => handleScreen("xl")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border    border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          class=" text-1xl  text-textcolor group-hover:text-white"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          onClick={() => handleScreen("xl")}
+                          className={` group`}
                         >
-                          <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> xl</p>
-                    </div>
-                  </> }
-                    
+                          <div
+                            className={` p-1.5 border    border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              class=" text-1xl  text-textcolor group-hover:text-white"
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> xl</p>
+                        </div>
+                      </>
+                    )}
                   </>
                 )}
               </div>
@@ -476,18 +518,30 @@ export default function InfoDesignCss() {
 
                   <div onClick={() => handleBootstrap()} className={` group`}>
                     <div
-                      className={` ${ code ? `bg-secondary text-[#fff]`:``} p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                      className={` ${
+                        code ? `bg-secondary text-[#fff]` : ``
+                      } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
                     >
-                      <TbBrandBootstrap className={`${code? `text-white`:``} text-base text-textcolor group-hover:text-white `} />
+                      <TbBrandBootstrap
+                        className={`${
+                          code ? `text-white` : ``
+                        } text-base text-textcolor group-hover:text-white `}
+                      />
                     </div>
                     <p className={` text-sm text-center `}> bs</p>
                   </div>
 
                   <div onClick={() => handleTailwind()} className={` group`}>
                     <div
-                      className={` ${tailwind? `bg-secondary text-[#fff]`:``} p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                      className={` ${
+                        tailwind ? `bg-secondary text-[#fff]` : ``
+                      } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
                     >
-                      <TbBrandTailwind className={`${tailwind? `text-white`:``} text-base text-textcolor group-hover:text-white `} />
+                      <TbBrandTailwind
+                        className={`${
+                          tailwind ? `text-white` : ``
+                        } text-base text-textcolor group-hover:text-white `}
+                      />
                     </div>
                     <p className={` text-sm text-center `}> tw</p>
                   </div>
@@ -596,8 +650,7 @@ export default function InfoDesignCss() {
               </>
             ) : (
               <>
-                <div
-                  className={` ${
+                <div    className={` ${
                     smScreen
                       ? `  w-[640px] h-auto overflow-auto mx-auto   px-20 `
                       : `${
@@ -609,163 +662,98 @@ export default function InfoDesignCss() {
                                   : ` ${xlScreen ? `w-full` : ``} `
                               }  `
                         }`
-                  } `}
-                >
-                  <div   id="screen-display" className="py-32  dark:bg-[#1e1e1e] screen-display">
-                    <div className=" container px-4 mx-auto">
-                      <section>
-                        <div
-                          className={` grid  ${
-                            xlScreen ? `grid-cols-8 gap-6` : ``
-                          } ${lgScreen ? `grid-cols-5 gap-0` : ``} ${
-                            mdScreen ? `grid-cols-1 gap-0` : ``
-                          }  ${smScreen ? `grid-cols-1 gap-0` : ``} ${
-                            responsiveState
-                              ? ``
-                              : `lg:grid-cols-8 h-full lge:grid-cols-8 md:grid-cols-5 mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-0 mdsm:gap-0 sm:gap-0`
-                          } `}
-                        >
-                          <div className=" col-span-3 h-full">
-                            <div
-                              className={` ${xlScreen ? ` pr-10 pt-10` : ``} ${
-                                lgScreen ? ` pr-10 pt-24` : ``
-                              } ${mdScreen ? ` pr-10 pt-10` : ``} ${
-                                smScreen ? ` pr-10 pt-10` : ``
-                              } ${
-                                responsiveState
-                                  ? ``
-                                  : `lg:pr-10  lg:pt-10 lge:pt-10 md:pt-10 mdsm:pt-10 sm:pt-10 lge:pr-10 md:pr-10 mdsm:pr-10 sm:pr-10`
-                              } `}
-                            >
-                              <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
-                                <span className="rowdies text-5xl pr-4">
-                                  01
-                                </span>{" "}
-                                Lorem ipsum
-                              </h4>
-                              <p className=" dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
-                                Lorem ipsum is placeholder text commonly used in
-                                the graphic, print, and publishing industries
-                                for previewing layouts and visual mockups.
-                              </p>
-                            </div>
-                            <div className="pr-10 pt-10">
-                              <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
-                                <span className="rowdies text-5xl pr-4">
-                                  02
-                                </span>{" "}
-                                Lorem ipsum
-                              </h4>
-                              <p className=" dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
-                                Lorem ipsum is placeholder text commonly used in
-                                the graphic, print, and publishing industries
-                                for previewing layouts and visual mockups.
-                              </p>
-                            </div>
-
-                            <div className="pr-10 pt-10">
-                              <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
-                                <span className="rowdies text-5xl pr-4">
-                                  03
-                                </span>{" "}
-                                Lorem ipsum
-                              </h4>
-                              <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
-                                Lorem ipsum is placeholder text commonly used in
-                                the graphic, print, and publishing industries
-                                for previewing layouts and visual mockups.
-                              </p>
-                            </div>
+                  }  py-32   dark:bg-[#1e1e1e]`}>
+                  <div className=" container px-4 mx-auto">
+                    <section>
+                      <div className=" grid lg:grid-cols-8 h-full lge:grid-cols-8 md:grid-cols-5 mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-0 mdsm:gap-0 sm:gap-0">
+                        <div className=" col-span-3 h-full">
+                          <div className="lg:pr-10 lge:pr-10 md:pr-0 mdsm:pr-0 sm:pr-0">
+                            <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                              <span className="rowdies text-5xl pr-4">01</span>{" "}
+                              Lorem ipsum
+                            </h4>
+                            <p className=" dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
+                              Lorem ipsum is placeholder text commonly used in
+                              the graphic, print, and publishing industries for
+                              previewing layouts and visual mockups.
+                            </p>
                           </div>
-                          <div className=" col-span-2 h-full relative">
-                            <div className="   bg-[#3772FF] border-[#B80C09] h-full rounded-t-full">
-                              <img
-                                src={`../../Image/overall/person/person007.png`}
-                                className="w-full object-cover  h-full"
-                                alt="person"
-                              />
-                              <img
-                                src={`../../Image/overall/elements/right.png`}
-                                className="top-4 h-[70px] -left-10  absolute "
-                                alt="element"
-                              />
-                            </div>
+                          <div className="pr-10 pt-10">
+                            <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                              <span className="rowdies text-5xl pr-4">02</span>{" "}
+                              Lorem ipsum
+                            </h4>
+                            <p className=" dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
+                              Lorem ipsum is placeholder text commonly used in
+                              the graphic, print, and publishing industries for
+                              previewing layouts and visual mockups.
+                            </p>
                           </div>
-                          <div className=" col-span-3 h-full">
-                            <div
-                              className={`${xlScreen ? `pl-10  pt-10` : ``} ${
-                                lgScreen ? `pl-0 ` : ``
-                              } ${mdScreen ? `pl-0  pt-10` : ``} ${
-                                smScreen ? `pl-0  pt-10` : ``
-                              } ${
-                                responsiveState
-                                  ? ``
-                                  : `lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 lg:pt-0 lge:pt-0 md:pt-10 mdsm:pt-10 sm:pt-10`
-                              } `}
-                            >
-                              <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
-                                <span className="rowdies text-5xl pr-4">
-                                  04
-                                </span>{" "}
-                                Lorem ipsum
-                              </h4>
-                              <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
-                                Lorem ipsum is placeholder text commonly used in
-                                the graphic, print, and publishing industries
-                                for previewing layouts and visual mockups.
-                              </p>
-                            </div>
-                            <div
-                              className={`  ${
-                                xlScreen ? `pl-10 pt-10` : ``
-                              }   ${lgScreen ? `pl-0` : ``}  ${
-                                mdScreen ? `pl-0` : ``
-                              } ${smScreen ? `pl-0` : ``} ${
-                                responsiveState
-                                  ? ``
-                                  : ` lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 pt-1`
-                              }"`}
-                            >
-                              <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
-                                <span className="rowdies text-5xl pr-4">
-                                  05
-                                </span>{" "}
-                                Lorem ipsum
-                              </h4>
-                              <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
-                                Lorem ipsum is placeholder text commonly used in
-                                the graphic, print, and publishing industries
-                                for previewing layouts and visual mockups.
-                              </p>
-                            </div>
 
-                            <div
-                              className={`  ${
-                                xlScreen ? `pl-10 pt-10` : ``
-                              }   ${lgScreen ? `pl-0` : ``}  ${
-                                mdScreen ? `pl-0` : ``
-                              } ${smScreen ? `pl-0` : ``} ${
-                                responsiveState
-                                  ? ``
-                                  : ` lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 pt-1`
-                              }"`}
-                            >
-                              <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
-                                <span className="rowdies text-5xl pr-4">
-                                  06
-                                </span>{" "}
-                                Lorem ipsum
-                              </h4>
-                              <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
-                                Lorem ipsum is placeholder text commonly used in
-                                the graphic, print, and publishing industries
-                                for previewing layouts and visual mockups.
-                              </p>
-                            </div>
+                          <div className="pr-10 pt-10">
+                            <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                              <span className="rowdies text-5xl pr-4">03</span>{" "}
+                              Lorem ipsum
+                            </h4>
+                            <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
+                              Lorem ipsum is placeholder text commonly used in
+                              the graphic, print, and publishing industries for
+                              previewing layouts and visual mockups.
+                            </p>
                           </div>
                         </div>
-                      </section>
-                    </div>
+                        <div className=" col-span-2 h-full relative">
+                          <div className="   bg-[#3772FF] border-[#B80C09] h-full rounded-t-full">
+                            <img
+                              src={`../../Image/overall/person/person007.png`}
+                              className="w-full object-cover  h-full"
+                              alt="person"
+                            />
+                            <img
+                              src={`../../Image/overall/elements/right.png`}
+                              className="top-4 h-[70px] -left-10  absolute "
+                              alt="element"
+                            />
+                          </div>
+                        </div>
+                        <div className=" col-span-3 h-full">
+                          <div className="lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 lg:pt-0 lge:pt-0 md:pt-10 mdsm:pt-10 sm:pt-10">
+                            <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                              <span className="rowdies text-5xl pr-4">04</span>{" "}
+                              Lorem ipsum
+                            </h4>
+                            <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
+                              Lorem ipsum is placeholder text commonly used in
+                              the graphic, print, and publishing industries for
+                              previewing layouts and visual mockups.
+                            </p>
+                          </div>
+                          <div className="lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 pt-10">
+                            <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                              <span className="rowdies text-5xl pr-4">05</span>{" "}
+                              Lorem ipsum
+                            </h4>
+                            <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
+                              Lorem ipsum is placeholder text commonly used in
+                              the graphic, print, and publishing industries for
+                              previewing layouts and visual mockups.
+                            </p>
+                          </div>
+
+                          <div className="lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 pt-10">
+                            <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                              <span className="rowdies text-5xl pr-4">06</span>{" "}
+                              Lorem ipsum
+                            </h4>
+                            <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
+                              Lorem ipsum is placeholder text commonly used in
+                              the graphic, print, and publishing industries for
+                              previewing layouts and visual mockups.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
                   </div>
                 </div>
               </>
@@ -784,7 +772,7 @@ export default function InfoDesignCss() {
         <div
           className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
         >
-          {reelatedComp?.map((v, i) => {
+          {anotherData?.map((v, i) => {
             return (
               <HomeCard
                 title={v?.title}
@@ -794,6 +782,17 @@ export default function InfoDesignCss() {
               />
             );
           })}
+        </div>
+
+        <div class="my-6 flex justify-center">
+          {buttonState ? (
+            <button
+              onClick={() => handleClick()}
+              class=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
+            >
+              More Components
+            </button>
+          ) : null}
         </div>
       </div>
       <Footer />

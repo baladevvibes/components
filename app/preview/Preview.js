@@ -122,13 +122,84 @@ export default function Preview() {
         </div>
       </div>
 
+      <div>
+        <section className=" container px-4 mx-auto">
+          <div className=" lg:flex lge:flex md:block mdsm:block sm:block h-full">
+            <div className=" lg:w-[70%]  lge:w-[70%] md:w-full mdsm:w-full sm:w-full">
+              <img
+                src="../../Image/overall/transport/truck001.webp"
+                alt="truck001"
+              />
+            </div>
+            <div className=" lg:w-[30%] lge:w-[30%] md:w-full mdsm:w-full sm:w-full relative flex justify-center items-center ">
+              <div className=" h-full  lg:absolute lge:absolute md:relative mdsm:relative sm:relative   lg:w-[140%] lge:w-[140%] md:w-full mdsm:w-full sm:w-full  lg:right-10 lge:right-10 md:right-0 mdsm:right-0 sm:right-0 ">
+                <div className="bg-[#f2f2f2]   dark:bg-[#454545] p-10  block">
+                  <h4 className=" text-4xl title text-[#EF2917]  Prompt font-semibold pb-4 ">
+                    {" "}
+                    Lorem ipsum
+                  </h4>
+
+                  <p className=" dark:text-[#fcfcfc] outfit  text-[#444444] leading-7">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print, and publishing industries for previewing
+                    layouts and visual mockups.Lorem ipsum is placeholder text
+                    commonly used in the graphic, print.
+                  </p>
+                  <p className="dark:text-[#fcfcfc]  outfit text-[#444444]  pt-4 leading-7">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print, and publishing industries for previewing
+                    layouts and visual mockups.Lorem ipsum is placeholder text
+                    commonly used in the graphic, print. and publishing
+                    industries for previewing layouts and visual mockups.Lorem
+                    ipsum is placeholder text commonly used in the graphic,
+                    print, and publishing industries for previewing layouts and
+                    visual mockups.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className=" flex h-full" >
+            <div className=" w-[70%] h-full">
+              <img
+                src="../../Image/overall/transport/truck001.webp"
+                alt="truck001"
+              />
+            </div>
+            <div className=" w-[35%]  relative h-full">
+              <div className=" bg-primary h-full   w-[130%] right-20 p-10">
+                <h4 className=" text-4xl  "> Lorem ipsum</h4>
+
+                <p>
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for previewing layouts and
+                  visual mockups.Lorem ipsum is placeholder text commonly used
+                  in the graphic, print, and publishing industries for
+                  previewing layouts and visual mockups.Lorem ipsum is
+                  placeholder text commonly used in the graphic, print, and
+                  publishing industries for previewing layouts and visual
+                  mockups.Lorem ipsum is placeholder text commonly used in the
+                  graphic, print, and publishing industries for previewing
+                  layouts and visual mockups.Lorem ipsum is placeholder text
+                  commonly used in the graphic, print, and publishing industries
+                  for previewing layouts and visual mockups.
+                </p>
+              </div>
+            </div>
+          </div> */}
+        </section>
+      </div>
+
       <div className="py-32">
         <div className=" container px-4 mx-auto">
           <section>
             <div className=" grid lg:grid-cols-8 h-full lge:grid-cols-8 md:grid-cols-5 mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-0 mdsm:gap-0 sm:gap-0">
               <div className=" col-span-3 h-full">
                 <div className="lg:pr-10 lge:pr-10 md:pr-0 mdsm:pr-0 sm:pr-0">
-                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl"><span className="rowdies text-5xl pr-4">01</span> Lorem ipsum</h4>
+                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                    <span className="rowdies text-5xl pr-4">01</span> Lorem
+                    ipsum
+                  </h4>
                   <p className=" dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
                     Lorem ipsum is placeholder text commonly used in the
                     graphic, print, and publishing industries for previewing
@@ -136,7 +207,10 @@ export default function Preview() {
                   </p>
                 </div>
                 <div className="pr-10 pt-10">
-                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl"><span className="rowdies text-5xl pr-4">02</span> Lorem ipsum</h4>
+                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                    <span className="rowdies text-5xl pr-4">02</span> Lorem
+                    ipsum
+                  </h4>
                   <p className=" dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
                     Lorem ipsum is placeholder text commonly used in the
                     graphic, print, and publishing industries for previewing
@@ -145,15 +219,16 @@ export default function Preview() {
                 </div>
 
                 <div className="pr-10 pt-10">
-                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl"><span className="rowdies text-5xl pr-4">03</span> Lorem ipsum</h4>
+                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                    <span className="rowdies text-5xl pr-4">03</span> Lorem
+                    ipsum
+                  </h4>
                   <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
                     Lorem ipsum is placeholder text commonly used in the
                     graphic, print, and publishing industries for previewing
                     layouts and visual mockups.
                   </p>
                 </div>
-      
-            
               </div>
               <div className=" col-span-2 h-full relative">
                 <div className="   bg-[#3772FF] border-[#B80C09] h-full rounded-t-full">
@@ -167,12 +242,14 @@ export default function Preview() {
                     className="top-4 h-[70px] -left-10  absolute "
                     alt="element"
                   />
-                  
                 </div>
               </div>
               <div className=" col-span-3 h-full">
                 <div className="lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 lg:pt-0 lge:pt-0 md:pt-10 mdsm:pt-10 sm:pt-10">
-                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl"><span className="rowdies text-5xl pr-4">04</span> Lorem ipsum</h4>
+                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                    <span className="rowdies text-5xl pr-4">04</span> Lorem
+                    ipsum
+                  </h4>
                   <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
                     Lorem ipsum is placeholder text commonly used in the
                     graphic, print, and publishing industries for previewing
@@ -180,7 +257,10 @@ export default function Preview() {
                   </p>
                 </div>
                 <div className="lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 pt-10">
-                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl"><span className="rowdies text-5xl pr-4">05</span> Lorem ipsum</h4>
+                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                    <span className="rowdies text-5xl pr-4">05</span> Lorem
+                    ipsum
+                  </h4>
                   <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
                     Lorem ipsum is placeholder text commonly used in the
                     graphic, print, and publishing industries for previewing
@@ -189,15 +269,16 @@ export default function Preview() {
                 </div>
 
                 <div className="lg:pl-10 lge:pl-10 md:pl-0 mdsm:pl-0 sm:pl-0 pt-10">
-                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl"><span className="rowdies text-5xl pr-4">06</span> Lorem ipsum</h4>
+                  <h4 className="  text-[#B80C09] rowdies  font-semibold text-3xl">
+                    <span className="rowdies text-5xl pr-4">06</span> Lorem
+                    ipsum
+                  </h4>
                   <p className="dark:text-[#fcfcfc] raleway-font text-[#444] pt-4">
                     Lorem ipsum is placeholder text commonly used in the
                     graphic, print, and publishing industries for previewing
                     layouts and visual mockups.
                   </p>
                 </div>
-      
-            
               </div>
             </div>
           </section>
