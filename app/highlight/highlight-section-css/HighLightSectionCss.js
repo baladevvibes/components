@@ -742,6 +742,29 @@ export default function HighLightSectionCss() {
             </button>
           ) : null}
         </div>
+
+        <div className="px-6 tags space-x-10 pb-10 space-y-5">
+            <h4 className={` title-font pt-2 pb-4 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}>Find Components</h4>
+            <a href="/hero" className=" hover:brightness-125 tracking-wide">
+              Hero
+            </a>
+            <a href="/card" className=" hover:brightness-125 tracking-wide">
+              Card
+            </a>
+            <a href="/about" className=" hover:brightness-125 tracking-wide">
+              About
+            </a>
+            <a href="/services" className=" hover:brightness-125 tracking-wide">
+              Service
+            </a>
+            <a href="/skeleton" className=" hover:brightness-125 tracking-wide">
+              Skeleton
+            </a>
+            <a href="/tab" className=" hover:brightness-125 tracking-wide">
+              Tab
+            </a>
+          
+          </div>
       </div>
       <Footer />
     </div>

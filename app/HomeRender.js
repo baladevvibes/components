@@ -82,8 +82,6 @@ export default function HomeRender() {
                   >
                     Make Components
                   </h3>
-               
-         
 
                   <ul className="pt-6 px-4">
                     <li>
@@ -169,9 +167,12 @@ export default function HomeRender() {
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <div className=" flex justify-center items-center">
-          <AdsterraAds id="37bfd45a34f36324b962f1e32736a540" height="90" width="728"/>
-          {/* <Banner720  id="37bfd45a34f36324b962f1e32736a540" height="90" width="728"/> */}
-
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+            {/* <Banner720  id="37bfd45a34f36324b962f1e32736a540" height="90" width="728"/> */}
           </div>
           <h1
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
@@ -197,6 +198,12 @@ export default function HomeRender() {
             </a>
             <a href="/tab" className=" hover:brightness-125 tracking-wide">
               Tab
+            </a>
+            <a
+              href="/highlight"
+              className=" hover:brightness-125 tracking-wide"
+            >
+              Highlight
             </a>
           </div>
 

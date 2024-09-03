@@ -116,7 +116,7 @@ export default function Preview() {
 
               <p className={` text-sm text-left  dark:text-[#f2f2f2]`}>
                 {dark ? "Da" : "Li"}
-              </p>
+            </p>
             </div>
           </div>
         </div>
