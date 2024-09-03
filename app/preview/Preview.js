@@ -127,10 +127,10 @@ export default function Preview() {
           <div className=" relative">
             <div className=" absolute top-0 h-full w-full bg-[#101010ab] flex justify-center items-center">
               <div className=" block p-4">
-                <h4 className=" text-[#F9F9F9] Actor font-semibold  text-center text-4xl pb-4">
+                <h4 className=" text-[#F9F9F9] tracking-wider c font-semibold  text-center text-4xl pb-4">
                   Slot your seats{" "}
                 </h4>
-                <p className="lg:w-[70%] lge:w-[70%] md:w-[80%] mdsm:w-full sm:w-full jost-font text-center text-[20px] mx-auto text-[#F9F9F9]">
+                <p className="lg:w-[70%] tracking-wide leading-7 lge:w-[70%] md:w-[80%] mdsm:w-full sm:w-full jost-font text-center text-[20px] mx-auto text-[#F9F9F9]">
                   Lorem ipsum is placeholder text commonly used in the graphic,
                   print, and publishing industries for previewing layouts and
                   visual mockups.

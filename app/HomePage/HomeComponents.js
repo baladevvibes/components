@@ -9,11 +9,18 @@ const HomeComponents = [
 
   // {
   //     _id:"011",
-  //     image:"../Image/teams/Teams002.webp",
+  //     image:"../Image/teams/Teams002.webp"
   //     title:"Team hover layer card section",
   //     tag:"E-Card ",
   //     link:"/e-card/white-space-product-design-card",
   // },
+  {
+    _id: "052",
+    image: "../Image/call-to-action/call002.webp",
+    title: "call to action section ui design",
+    tag: "call-to-action",
+    link: "/call-to-action/call-to-action-section",
+  },
   {
     _id: "051",
     image: "../Image/highlight/highlight004.webp",
