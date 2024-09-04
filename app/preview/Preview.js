@@ -124,6 +124,28 @@ export default function Preview() {
 
       <div className=" py-32">
         <section className=" container px-4 mx-auto">
+        <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1">
+          <div className="bg-[#F7D002]">
+            <img src="../Image/overall/person/person009.webp" alt="Person 009" className="  h-[300px] object-cover"/>
+          </div>
+          <div className="bg-[#F71735]">
+            <img src="../Image/overall/person/person010.webp" alt="Person 010" className="  h-[300px] object-cover"/>
+          </div>
+          <div className="bg-[#06BCC1]"> 
+            <img src="../Image/overall/person/person011.webp" alt="Person 011" className="  h-[300px] object-cover"/>
+          </div>
+          <div className="bg-[#363537]">
+            <img src="../Image/overall/person/person012.webp" alt="Person 012" className="  h-[300px] object-cover"/>
+          </div>
+
+        </div>
+
+        </section>
+
+      </div>
+
+      <div className=" py-32">
+        <section className=" container px-4 mx-auto">
           <div className=" relative">
             <div className=" absolute top-0 h-full w-full bg-[#101010ab] flex justify-center items-center">
               <div className=" block p-4">
