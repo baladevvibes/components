@@ -105,9 +105,13 @@ export default function ComponentsHeader({
 
         </div>
         <div>
-        <div className=" flex h-full justify-center items-center">
-
-          <AdsterraAds id="2aa4a741618e1a4ebef6b2b945a3f4f3" height="60" width="468"/>
+        <div className=" flex h-full py-4 justify-center items-center">
+        <AdsterraAds
+              id="673bc108361110ef05147e258d3dfbe9"
+              height="250"
+              width="300"
+              // className="lg:hidden lge:hidden md:hidden mdsm:block sm:block"
+            />
           </div>
 
           

@@ -63,6 +63,7 @@ export default function HighlightCard() {
               );
             })}
           </div>
+          
 
           <div className="px-6 tags space-x-10 pb-10 space-y-5">
             <h4 className={` title-font pt-16 pb-4 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}>Find Components</h4>

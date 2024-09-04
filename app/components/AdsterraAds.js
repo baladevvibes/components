@@ -25,5 +25,5 @@ export default function AdsterraAds(props) {
     }
   }, []);
 
-  return <div ref={banner} />;
+  return <div ref={banner} className={`${props.className}`}/>;
 }
