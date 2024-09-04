@@ -220,6 +220,32 @@ const teamsData = [
       </div>
     </section>`,
   },
+  {
+    _id: 2,
+    name: "team section design",
+    htmlcode: ` 
+      <div class=" py-32">
+        <section class=" container px-4 mx-auto">
+        <div class=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1">
+          <div class="bg-[#F7D002]">
+            <img src="https://makecomponents.com/Image/overall/person/person009.webp" alt="Person 009" class="  h-[300px] object-cover"/>
+          </div>
+          <div class="bg-[#F71735]">
+            <img src="https://makecomponents.com/Image/overall/person/person010.webp" alt="Person 010" class="  h-[300px] object-cover"/>
+          </div>
+          <div class="bg-[#06BCC1]"> 
+            <img src="https://makecomponents.com/Image/overall/person/person011.webp" alt="Person 011" class="  h-[300px] object-cover"/>
+          </div>
+          <div class="bg-[#363537]">
+            <img src="https://makecomponents.com/Image/overall/person/person012.webp" alt="Person 012" class="  h-[300px] object-cover"/>
+          </div>
+
+        </div>
+
+        </section>
+
+      </div>`,
+  },
 ];
 
 export default teamsData;

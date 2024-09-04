@@ -4,10 +4,10 @@ export default function AdsterraAds(props) {
   const banner = useRef();
 // console.log(props)
   const atOptions = {
-    key: `${props.id}`,
+    key: `${props?.id}`,
     format: "iframe",
-    height: `${props.height}`,
-    width: `${props.width}`,
+    height: `${props?.height}`,
+    width: `${props?.width}`,
   };
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function AdsterraAds(props) {
       const conf = document.createElement("script");
       const script = document.createElement("script");
       script.type = "text/javascript";
-      script.src = `//www.topcreativeformat.com/${props.id}/invoke.js`;
+      script.src = `//www.topcreativeformat.com/${props?.id}/invoke.js`;
       conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`;
 
       if (banner.current) {
@@ -25,5 +25,5 @@ export default function AdsterraAds(props) {
     }
   }, []);
 
-  return <div ref={banner} className={`${props.className}`}/>;
+  return <div ref={banner}/>;
 }

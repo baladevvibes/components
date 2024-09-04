@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "053",
+    image: "../Image/teams/Teams003.webp",
+    title: "Team section design",
+    tag: "team",
+    link: "/teams/team-section-design",
+  },
+  {
     _id: "052",
     image: "../Image/call-to-action/call002.webp",
     title: "call to action section ui design",

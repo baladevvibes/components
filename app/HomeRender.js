@@ -54,15 +54,7 @@ export default function HomeRender() {
     });
     setButtonData(arr);
   }, []);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {
-        console.error("AdSense error", e);
-      }
-    }
-  }, []);
+  
 
   const handleSmDevices = () => {
     setSmDevice(!smDevice);
@@ -155,15 +147,7 @@ export default function HomeRender() {
             <div className={` container mx-auto px-2 py-1`}></div>
           </div>
         </div>
-        {/* <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-2500160320143617"
-          data-ad-slot="2477731086"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins> */}
-        {/* <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div> */}
+       
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <div className=" flex justify-center items-center">
@@ -218,6 +202,7 @@ export default function HomeRender() {
             {buttonData?.map((v, i) => {
               return (
                 <HomeCard
+                
                   title={v?.title}
                   img={v?.image}
                   tag={v?.tag}
