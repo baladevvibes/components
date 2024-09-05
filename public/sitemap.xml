@@ -11,6 +11,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://makecomponents.com/teams/team-section-design</loc>
+  <lastmod>2024-09-05T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://makecomponents.com/call-to-action/call-to-action-section</loc>
   <lastmod>2024-09-04T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -324,6 +329,11 @@
   <loc>https://makecomponents.com/highlight</loc>
   <lastmod>2024-09-03T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/teams/team-section-design/preview</loc>
+  <lastmod>2024-09-05T04:34:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/call-to-action/call-to-action-section/preview</loc>

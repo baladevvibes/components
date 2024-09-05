@@ -102,6 +102,9 @@ export default function HeroCard() {
             <a href="/highlight" className=" hover:brightness-125 tracking-wide">
             Highlight
             </a>
+            <a href="/login" className=" hover:brightness-125 tracking-wide">
+            Login
+            </a>
           </div>
         </div>
         <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>

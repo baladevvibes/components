@@ -189,6 +189,12 @@ export default function HomeRender() {
             >
               Highlight
             </a>
+            <a
+              href="/login"
+              className=" hover:brightness-125 tracking-wide"
+            >
+              Login
+            </a>
           </div>
 
           <h2
