@@ -9,6 +9,25 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 // import Adsense, { AdUnit } from "@eisberg-labs/next-google-adsense";
 
 const inter = Inter({ subsets: ["latin"] });
+const HotjarSnippet = () => {
+
+  return (
+    <div>
+      <Script id="hotjar-snippet">
+        {`
+           (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5125258,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        `}
+      </Script>
+    </div>
+  );
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -36,6 +55,11 @@ export default function RootLayout({ children }) {
           data-cfasync="false"
           src="//pl24116206.highratecpm.com/c3d10aadb78d1e6613b3fc5333e31d3e/invoke.js"
         ></script>
+        <script>
+       
+        </script>
+
+
 
         {/* <script
           async="async"
@@ -51,7 +75,10 @@ export default function RootLayout({ children }) {
         <GoogleAnalytics gaId="G-5ES4FTLQ2V" />
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+
+      <HotjarSnippet />
+      </body>
     </html>
   );
 }

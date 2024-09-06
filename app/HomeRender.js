@@ -54,12 +54,14 @@ export default function HomeRender() {
     });
     setButtonData(arr);
   }, []);
-  
 
   const handleSmDevices = () => {
     setSmDevice(!smDevice);
     setForceRender(!forceRender);
   };
+  
+
+
 
   return (
     <div>
@@ -147,7 +149,6 @@ export default function HomeRender() {
             <div className={` container mx-auto px-2 py-1`}></div>
           </div>
         </div>
-       
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <div className=" flex justify-center items-center">
@@ -189,10 +190,7 @@ export default function HomeRender() {
             >
               Highlight
             </a>
-            <a
-              href="/login"
-              className=" hover:brightness-125 tracking-wide"
-            >
+            <a href="/login" className=" hover:brightness-125 tracking-wide">
               Login
             </a>
           </div>
@@ -208,7 +206,6 @@ export default function HomeRender() {
             {buttonData?.map((v, i) => {
               return (
                 <HomeCard
-                
                   title={v?.title}
                   img={v?.image}
                   tag={v?.tag}
