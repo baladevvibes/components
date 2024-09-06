@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import "../../../style.css";
 import { RiHeartAdd2Line, RiInputField } from "react-icons/ri";
 import { IoReturnDownBackSharp } from "react-icons/io5";
+import AdsterraAds from "../../../components/AdsterraAds";
 
 export default function AboutusPageTempPre() {
   const [dark, setDark] = useState(false);
@@ -16,7 +17,7 @@ export default function AboutusPageTempPre() {
   return (
     <div className="  dark:bg-[#1e1e1e]">
       <section className="container  mx-auto px-4 py-20">
-      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-12 sm:px-4  px-10 pb-10">
         <div className=" ">
           <a href="/about/about-page-tailwind-css">
             <div className=" group flex">
@@ -26,6 +27,17 @@ export default function AboutusPageTempPre() {
               </p>
             </div>
           </a>
+        </div>
+        <div className=" col-span-10">
+        <div className=" flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+
         </div>
         <div className=" flex justify-end">
           <div onClick={() => darkModeHandler()}>
@@ -131,6 +143,8 @@ export default function AboutusPageTempPre() {
               </div>
             </div>
           </section>
+        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
+
         </div>
       </section>
     </div>

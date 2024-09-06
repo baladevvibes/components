@@ -656,17 +656,17 @@ export default function AboutPageTailwnd() {
           </div>
         </div>
 
-        <div className=" flex justify-center pt-6 items-center">
+        {/* <div className=" flex justify-center pt-6 items-center">
             <AdsterraAds
               id="37bfd45a34f36324b962f1e32736a540"
               height="90"
               width="728"
             />
-          </div>
+          </div> */}
 
           <div>
           <h2
-            className={` title-font pt-4 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
+            className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
           >
             Related Components
           </h2>
