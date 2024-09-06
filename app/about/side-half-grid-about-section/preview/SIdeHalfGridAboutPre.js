@@ -1,9 +1,34 @@
+
+"use client"
 import React from "react";
 import "../../../style.css";
+import AdsterraAds from "../../../components/AdsterraAds";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 export default function SIdeHalfGridAboutPre() {
   return (
     <div className=" py-20 pb-32">
       <section>
+      <div className=" flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+
+          <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/about/side-half-grid-about-section">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
         <div className=" lg:flex lge:flex md:block mdsm:block sm:block ">
           <div className="lg:block lge:block  md:hidden mdsm:hidden sm:hidden w-[40%] relative">
             <div className="  absolute top-0 h-full my-auto w-[100%]">

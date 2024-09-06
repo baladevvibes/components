@@ -3,6 +3,8 @@ import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 import React, { useState } from "react";
 import "../../../style.css";
+import AdsterraAds from "../../../components/AdsterraAds";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
 export default function BlogCardDesignPre() {
   const [dark, setDark] = useState(false);
@@ -13,8 +15,26 @@ export default function BlogCardDesignPre() {
   };
   return (
     <div>
-      <div className=" dark:bg-[#1e1e1e]">
-        <div className=" sticky top-2  z-50 flex justify-end px-10 pb-10">
+      <div className=" py-12 dark:bg-[#1e1e1e]">
+        <div className=" flex justify-center items-center">
+          <AdsterraAds
+            id="37bfd45a34f36324b962f1e32736a540"
+            height="90"
+            width="728"
+          />
+        </div>
+        <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/blog/blog-card-design">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className=" flex justify-end">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div
@@ -43,7 +63,8 @@ export default function BlogCardDesignPre() {
             </div>
           </div>
         </div>
-        <section className="  container mx-auto px-4 py-40">
+      </div>
+        <section className="  container mx-auto px-4 py-10">
           <div className=" grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1  mdsm:grid-cols-1 sm:grid-cols-1 gap-4">
             <div className=" border border-[#e2e2e2] dark:border-[#454545] rounded-lg ">
               <div className="group grid  md:grid-cols-3  mdsm:grid-cols-1 sm:grid-cols-1">

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "../../../style.css";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
+import { IoReturnDownBackSharp } from "react-icons/io5";
+import AdsterraAds from "../../../components/AdsterraAds";
 
 export default function CurveCardDesignPre() {
   const [dark, setDark] = useState(false);
@@ -14,13 +16,33 @@ export default function CurveCardDesignPre() {
   return (
     <div className=" relative  py-20 dark:bg-secondary ">
       <section className="container mx-auto">
-        <div className=" sticky top-2 flex justify-end px-10 pb-10">
+      <div className=" flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+
+          <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/card/curve-card-design">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className=" flex justify-end">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div
                 className={` ${
                   dark ? `bg-secondary` : ``
-                } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                } p-1.5 border  border-[#ccc] z-40 mx-4  group-hover:bg-secondary  cursor-pointer  rounded-md`}
               >
                 {dark ? (
                   <>
@@ -43,6 +65,7 @@ export default function CurveCardDesignPre() {
             </div>
           </div>
         </div>
+      </div>
         
         <div className=" grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 px-4 gap-10">
           <div>

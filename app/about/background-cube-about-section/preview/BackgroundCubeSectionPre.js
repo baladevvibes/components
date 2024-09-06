@@ -3,10 +3,12 @@ import React, { useState } from "react";
 import "../../../style.css";
 // import { faMoon } from "@fortawesome/free-regular-svg-icons";
 // import React from "react";
-import { IoMoon } from "react-icons/io5";
+import { IoMoon, IoReturnDownBackSharp } from "react-icons/io5";
 import { IoSunny } from "react-icons/io5";
 
 import { IconContext } from "react-icons";
+import AdsterraAds from "../../../components/AdsterraAds";
+import { CiDark, CiLight } from "react-icons/ci";
 export default function BackgroundCubeSectionPre() {
   const [dark, setDark] = useState(false);
 
@@ -16,19 +18,60 @@ export default function BackgroundCubeSectionPre() {
   };
   return (
     <div>
-      <section className=" py-32 dark:bg-secondary relative">
+      <section className=" py-12 dark:bg-secondary relative">
         <div className=" container mx-auto px-4">
-          <div className=" flex justify-end w-full">
-            <div>
-              <button
-                onClick={() => darkModeHandler()}
-                className="  w-full sticky top-5 right-8"
+           <div className=" ">
+        <div className=" flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+
+        </div>
+        <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/about/background-cube-about-section">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className=" flex justify-end">
+          <div onClick={() => darkModeHandler()}>
+            <div className={` group`}>
+              <div
+                className={` ${
+                  dark ? `bg-secondary` : ``
+                } p-1.5 border  border-[#ccc] z-40 mx-4  group-hover:bg-secondary  cursor-pointer  rounded-md`}
               >
-                {dark && <IoSunny className=" dark:text-[#fff]" />}
-                {!dark && <IoMoon className=" dark:text-[#fff]" />}
-              </button>
+                {dark ? (
+                  <>
+                    <CiLight
+                      className={` ${dark ? ` text-[#fff] text-[16px]` : ``}`}
+                    />
+                  </>
+                ) : (
+                  <>
+                    <CiDark
+                      className={`  group-hover:text-[#fff] text-[16px]`}
+                    />
+                  </>
+                )}
+              </div>
+
+              <p className={` text-sm text-center dark:text-[#fff]`}>
+                {dark ? "Da" : "Li"}
+              </p>
             </div>
           </div>
+        </div>
+      </div>
           <div className=" grid lg:grid-cols-12 lge:grid-cols-12 md:grid-cols-12 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
             <div className=" lg:block lge:block  md:hidden mdsm:hidden sm:hidden"></div>
             <div className=" lg:col-span-4 lge:col-span-4 md:col-span-full mdsm:col-span-full sm:col-span-full relative px-6">
@@ -62,6 +105,8 @@ export default function BackgroundCubeSectionPre() {
             </div>
             <div className=" lg:block lge:block  md:hidden mdsm:hidden sm:hidden"></div>
           </div>
+
+     
         </div>
       </section>
     </div>

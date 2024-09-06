@@ -22,6 +22,7 @@ import { CiLight } from "react-icons/ci";
 import aboutData from "../aboutData";
 import aboutLightData from "../AboutLightData";
 import AdsterraAds from "../../components/AdsterraAds";
+import TagRender from "../../tag/TagRender";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -155,24 +156,11 @@ export default function AboutPageTailwnd() {
     setForceRender(true);
   };
 
-  const FilterCard = () => {
-    // id=1
-    var arr = [];
-    var idSection = "038";
-    HomeComponents?.forEach((el) => {
-      if (el._id !== idSection) {
-        console.log(el);
-        arr.push(el);
-      }
-    });
 
-    setRelatedComponents(arr);
-  };
 
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    FilterCard();
   }, []);
 
   const [count, setCount] = useState();
@@ -656,13 +644,7 @@ export default function AboutPageTailwnd() {
           </div>
         </div>
 
-        {/* <div className=" flex justify-center pt-6 items-center">
-            <AdsterraAds
-              id="37bfd45a34f36324b962f1e32736a540"
-              height="90"
-              width="728"
-            />
-          </div> */}
+     
 
           <div>
           <h2
@@ -698,6 +680,10 @@ export default function AboutPageTailwnd() {
           ) : null}
         </div>
 
+        <div className=" pb-4">
+
+        <TagRender tag="about"/>
+        </div>
 
         <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
       </div>

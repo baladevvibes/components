@@ -1,40 +1,41 @@
+"use client"
 import React from "react";
 import "../../../style.css";
+import AdsterraAds from "../../../components/AdsterraAds";
+import { CiLight } from "react-icons/ci";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
-export const metadata = {
-    title: "Gallery frame About us Preview",
-    description:
-      "This component create using CSS framework tailwindcss. It full responsive component. This template used for About section Preview",
-    keywords:
-      "about section preview,free components,free code, make components, make component",
-    openGraph: {
-      title: "Gallery frame About us Preview",
-      description:
-        "This component create using CSS framework tailwindcss. It full responsive component. This template used for About section Preview",
-      url: "https://makecomponents.com/about/gallery-frame-aboutus/preview",
-      siteName: "makecomponents.com",
-      images: [
-        {
-          url: "https://makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
-          width: 800,
-          height: 600,
-        },
-        {
-          url: "https://makecomponents.com/Image/about/about001.webp", // Must be an absolute URL
-          width: 800,
-          height: 600,
-          alt: "Gallery frame About us",
-        },
-      ],
-      locale: "en_US",
-      type: "website",
-    },
-  };
+
 
 export default function GalleryFrameAboutUsPre() {
   return (
     <section>
-      <div className={` container mx-auto py-36 `}>
+       <div className="  py-10">
+        <div className=" flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+
+        </div>
+
+        <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/about/gallery-frame-aboutus">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div className={` container mx-auto py-10 `}>
+
         <div className={` grid grid-cols-12 gap-10 sm:gap-0 sm:px-2`}>
           <div
             className={` lg:col-span-5 lge:col-span-5 md:col-span-12 mdsm:col-span-12 sm:col-span-12 p-10 sm:p-6 relative`}
