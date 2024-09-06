@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HomeComponents from "../HomePage/HomeComponents";
 import HomeCard from "../HomePage/HomeCard";
+import AdsterraAds from "../components/AdsterraAds";
 
 export default function Card() {
   const [data, setData] = useState(HomeComponents);
@@ -37,6 +38,13 @@ export default function Card() {
         ></ins> */}
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
+        <div className=" flex justify-center items-center">
+        <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+            </div>
           <h1 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
             Card Components
           </h1>

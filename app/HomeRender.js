@@ -16,6 +16,7 @@ import { MdOutlineCancelPresentation } from "react-icons/md";
 import Script from "next/script";
 import Banner720 from "./components/Banner720";
 import AdsterraAds from "./components/AdsterraAds";
+import TagRender from "./tag/TagRender";
 
 export default function HomeRender() {
   const [buttonData, setButtonData] = useState();
@@ -160,40 +161,12 @@ export default function HomeRender() {
             {/* <Banner720  id="37bfd45a34f36324b962f1e32736a540" height="90" width="728"/> */}
           </div>
           <h1
-            className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
+            className={` title-font pt-16 pb-6 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
           >
             Make Components
           </h1>
 
-          <div className="px-6 tags space-x-10 space-y-5">
-            <a href="/hero" className=" hover:brightness-125 tracking-wide">
-              Hero
-            </a>
-            <a href="/card" className=" hover:brightness-125 tracking-wide">
-              Card
-            </a>
-            <a href="/about" className=" hover:brightness-125 tracking-wide">
-              About
-            </a>
-            <a href="/services" className=" hover:brightness-125 tracking-wide">
-              Service
-            </a>
-            <a href="/skeleton" className=" hover:brightness-125 tracking-wide">
-              Skeleton
-            </a>
-            <a href="/tab" className=" hover:brightness-125 tracking-wide">
-              Tab
-            </a>
-            <a
-              href="/highlight"
-              className=" hover:brightness-125 tracking-wide"
-            >
-              Highlight
-            </a>
-            <a href="/login" className=" hover:brightness-125 tracking-wide">
-              Login
-            </a>
-          </div>
+        <TagRender title="no"/>
 
           <h2
             className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
