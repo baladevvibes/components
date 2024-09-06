@@ -159,7 +159,6 @@ export default function HomeRender() {
               height="90"
               width="728"
             />
-            {/* <Banner720  id="37bfd45a34f36324b962f1e32736a540" height="90" width="728"/> */}
           </div>
           <h1
             className={` title-font pt-16 pb-6 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}

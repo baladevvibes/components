@@ -24,6 +24,7 @@ import { TbBrandTailwind } from "react-icons/tb";
 import teamsData from "../teamsData"
 import bootStrapHtml from "../bootstrap/bootStrapHtml";
 import bootStrapCSS from "../bootstrap/bootstrapCss";
+import AdsterraAds from "../../components/AdsterraAds";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -258,6 +259,13 @@ export default function TeamSectionDesign() {
           section_name={`team`}
           using_font="no using "
         />
+
+
+<AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-lg pb-4   px-4">
           <div className={` `}>
