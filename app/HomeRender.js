@@ -153,6 +153,7 @@ export default function HomeRender() {
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
           <div className=" flex justify-center items-center">
+            
             <AdsterraAds
               id="37bfd45a34f36324b962f1e32736a540"
               height="90"

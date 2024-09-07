@@ -51,11 +51,10 @@ export default function HeroCard() {
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
         <div className=" flex justify-center items-center">
-            <AdsterraAds
+        <AdsterraAds
               id="37bfd45a34f36324b962f1e32736a540"
               height="90"
               width="728"
-              // className="lg:block lge:block md:block mdsm:hidden sm:hidden"
             />
           </div>
           <h2 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
