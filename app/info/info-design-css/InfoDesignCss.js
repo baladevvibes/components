@@ -25,6 +25,7 @@ import { TbBrandBootstrap } from "react-icons/tb";
 import { TbBrandTailwind } from "react-icons/tb";
 import bootStrapHtml from "../bootstrap/bootStrapHtml";
 import bootStrapCSS from "../bootstrap/bootstrapCss";
+import TagRender from "../../tag/TagRender";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -794,6 +795,13 @@ export default function InfoDesignCss() {
             </button>
           ) : null}
         </div>
+
+        <div className=" pb-4">
+
+        <TagRender tag="info"/>
+        </div>
+
+        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
       </div>
       <Footer />
     </div>

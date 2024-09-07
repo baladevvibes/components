@@ -157,8 +157,8 @@ export default function ThreeGridCardTemplate() {
 
   useEffect(() => {
     setCount(1);
-    var removeComponents = "049";
-    var tagName = "about";
+    var removeComponents = "005";
+    var tagName = "card";
     var newData = [];
     data.forEach((el) => {
       if (el._id === removeComponents) {

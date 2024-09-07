@@ -6,6 +6,7 @@ import "../../../style.css";
 import { IoReturnDownBackSharp } from "react-icons/io5";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { RiDeleteBinLine } from "react-icons/ri";
+import AdsterraAds from "../../../components/AdsterraAds";
 
 export default function FaqTableTailwindPre() {
   const [dark, setDark] = useState(false);
@@ -15,6 +16,14 @@ export default function FaqTableTailwindPre() {
   };
   return (
     <div className="  dark:bg-[#1e1e1e]">
+         <div className="pt-10 flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
       
       <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
         <div className=" ">
@@ -57,7 +66,7 @@ export default function FaqTableTailwindPre() {
           </div>
         </div>
       </div>
-      <div className=" py-[150px] container mx-auto">
+      <div className=" py-[50px] container mx-auto">
         <section className=" w-[96%] mx-auto ">
           <details class="group overflow-auto  relative pb-2">
             <summary class="flex relative mt-4 border-[1px] border-[#ccc] dark:border-[#5a5a5a] py-3 px-3 cursor-pointer list-none font-medium">

@@ -3,6 +3,8 @@ import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 import React, { useState } from 'react'
 import "../../../style.css"
+import AdsterraAds from "../../../components/AdsterraAds";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
 export default function ModernHeroSectPre() {
   const [dark, setDark] = useState(false);
@@ -12,7 +14,25 @@ export default function ModernHeroSectPre() {
   };
   return (
     <div>
-           <div className=" sticky top-2 flex justify-end px-10 pb-10">
+        <div className="pt-10 flex justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/hero/modern-hero-section-design">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className=" flex justify-end">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div
@@ -41,6 +61,7 @@ export default function ModernHeroSectPre() {
             </div>
           </div>
         </div>
+      </div>
         
       <section className=" dark:bg-[#1e1e1e] container px-4 py-10  mx-auto">
         <div className=" relative rounded-2xl  overflow-hidden ">

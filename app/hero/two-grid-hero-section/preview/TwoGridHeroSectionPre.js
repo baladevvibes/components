@@ -1,9 +1,32 @@
+"use client"
 import React from "react";
 
 import "../../../style.css";
+import { IoReturnDownBackSharp } from "react-icons/io5";
+import AdsterraAds from "../../../components/AdsterraAds";
 export default function TwoGridHeroSectionPre() {
   return (
     <div>
+        <div className=" flex pt-10 justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/hero/two-grid-hero-section">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+     
+      </div>
       <header>
         <div
           className={`grid grid-cols-3  portrait:h-[100vh]  landscape:lg:h-[100vh] landscape:lge:h-[100vh] landscape:md:h-[100vh] landscape:mdsm:h-[140vh] landscape:sm:h-auto landscape:h-auto h-[100vh] overflow-hidden relative`}

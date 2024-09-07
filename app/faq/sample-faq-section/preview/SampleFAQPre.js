@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "../../../style.css";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
+import AdsterraAds from "../../../components/AdsterraAds";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
 export default function SampleFAQPre() {
   const [dark, setDark] = useState(false);
@@ -13,15 +15,34 @@ export default function SampleFAQPre() {
   };
   return (
     <div className="dark:bg-[#1E1E1E]">
+         <div className="pt-10 flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
     
-      <section className=" container px-4 py-40   mx-auto">
-        <div className=" sticky top-2 flex justify-end px-10 pb-10">
+      <section className=" container px-4 py-10   mx-auto">
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/faq/sample-faq-section">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className=" flex justify-end">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div
                 className={` ${
                   dark ? `bg-secondary` : ``
-                } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                } p-1.5 border  border-[#ccc] z-40 mx-4  group-hover:bg-secondary  cursor-pointer  rounded-md`}
               >
                 {dark ? (
                   <>
@@ -44,6 +65,7 @@ export default function SampleFAQPre() {
             </div>
           </div>
         </div>
+      </div>
         <h3 className="text-[#434343] dark:text-[#f2f2f2] rowdies lg:text-4xl lge:text-4xl md:text-3xl mdsm:text-2xl  sm:text-2xl  text-center pb-10 ">
           Frequently Asked Questions
         </h3>

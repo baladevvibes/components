@@ -1,9 +1,32 @@
+"use client"
 import React from "react";
+import AdsterraAds from "../../../components/AdsterraAds";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
 export default function DashboardPercentageInfoPre() {
   return (
     <div className=" ">
-      <div className=" container my-[300px] mx-auto px-4">
+      <div className=" container my-[100px] mx-auto px-4">
+      <div className=" flex justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+          <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/dashboard-info/dashbaord-percentage-info">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+   
+      </div>
         <div className=" grid lg:grid-cols-4 lge:grid-cols-3 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1 gap-6">
           <div className="border border-[#e2e2e2] rounded-lg p-4 grid grid-cols-3 gap-4">
             <div className=" bg-[#9d30a6] flex justify-center p-4 rounded-lg  ">

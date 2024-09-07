@@ -4,6 +4,7 @@ import { CiLight } from "react-icons/ci";
 import React, { useState } from "react";
 import "../../../style.css";
 import { IoReturnDownBackSharp } from "react-icons/io5";
+import AdsterraAds from "../../../components/AdsterraAds";
 
 export default function InfoDesignCssPre() {
   const [dark, setDark] = useState(false);
@@ -12,6 +13,15 @@ export default function InfoDesignCssPre() {
     document.body.classList.toggle("dark");
   };
   return (
+    <>
+   <div className="pt-10 flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
     <div className="  dark:bg-[#1e1e1e]">
       <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
         <div className=" ">
@@ -56,7 +66,7 @@ export default function InfoDesignCssPre() {
       </div>
 
     
-      <div className="py-32">
+      <div className="py-10">
         <div className=" container px-4 mx-auto">
           <section>
             <div className=" grid lg:grid-cols-8 h-full lge:grid-cols-8 md:grid-cols-5 mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-0 mdsm:gap-0 sm:gap-0">
@@ -138,5 +148,6 @@ export default function InfoDesignCssPre() {
         </div>
       </div>
     </div>
+    </>
   );
 }

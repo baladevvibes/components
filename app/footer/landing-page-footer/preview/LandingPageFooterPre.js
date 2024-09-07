@@ -1,8 +1,31 @@
+"use client"
 import React from "react";
 import "../../../style.css";
+import { IoReturnDownBackSharp } from "react-icons/io5";
+import AdsterraAds from "../../../components/AdsterraAds";
 export default function LandingPageFooterPre() {
   return (
-    <div className=" py-32">
+    <div className=" py-10">
+        <div className=" flex justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/footer/landing-page-footer">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+    
+      </div>
       <footer>
         <div className={`mt-4 bg-[#2b4a44] py-16`}>
           <div className={` container mx-auto sm:px-4`}>

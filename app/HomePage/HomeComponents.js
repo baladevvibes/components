@@ -144,7 +144,7 @@ const HomeComponents = [
     _id: "036",
     image: "../Image/hero/hero005.webp",
     title: "Tailwind background section",
-    tag: "Hero",
+    tag: "hero",
     link: "/hero/tailwind-background-section",
   },
   {
@@ -179,14 +179,14 @@ const HomeComponents = [
     _id: "031",
     image: "../Image/footer/footer002.webp",
     title: "Dark theme footer design",
-    tag: "Footer",
+    tag: "footer",
     link: "/footer/dark-theme-footer-design",
   },
   {
     _id: "030",
     image: "../Image/hero/hero004.webp",
     title: "Modern hero section design",
-    tag: "Hero",
+    tag: "hero",
     link: "/hero/modern-hero-section-design",
   },
   {
@@ -228,7 +228,7 @@ const HomeComponents = [
     _id: "025",
     image: "../Image/hero/hero003.webp",
     title: "Background Layer Hero Section",
-    tag: "Hero",
+    tag: "hero",
     link: "/hero/background-layer-hero-section",
   },
 
@@ -252,7 +252,7 @@ const HomeComponents = [
     _id: "022",
     image: "../Image/login/login002.webp",
     title: "Sample Login Page",
-    tag: "Login in",
+    tag: "login-in",
     link: "/login/sample-login-page",
   },
 
@@ -260,7 +260,7 @@ const HomeComponents = [
     _id: "021",
     image: "../Image/login/login001.webp",
     title: "Standard Login Page",
-    tag: "Login in",
+    tag: "login-in",
     link: "/login/standard-login-page",
   },
 
@@ -268,7 +268,7 @@ const HomeComponents = [
     _id: "020",
     image: "../Image/dashboard-info/dashboard-info001.webp",
     title: "Dashbaord Percentage Info Component",
-    tag: "Dashbaord  Info",
+    tag: "dashboard-info",
     link: "/dashboard-info/dashbaord-percentage-info",
   },
 
@@ -307,7 +307,7 @@ const HomeComponents = [
     _id: "015",
     image: "../Image/footer/footer001.webp",
     title: "Landing page footer section",
-    tag: "Footer",
+    tag: "footer",
     link: "/footer/landing-page-footer",
   },
 
@@ -323,7 +323,7 @@ const HomeComponents = [
     _id: "013",
     image: "../Image/hero/hero002.webp",
     title: "Two Grid Hero Section",
-    tag: "Hero",
+    tag: "hero",
     link: "/hero/two-grid-hero-section",
   },
 
@@ -355,7 +355,7 @@ const HomeComponents = [
     _id: "009",
     image: "../Image/partners/partners001.webp",
     title: "Partners Hover effect scale section",
-    tag: "Partners ",
+    tag: "partners",
     link: "/partners/partners-hover-effects-scale",
   },
 
@@ -400,7 +400,7 @@ const HomeComponents = [
     _id: "001",
     image: "../Image/hero/hero001.webp",
     title: " Hero Section With Searching Options",
-    tag: "Hero",
+    tag: "hero",
     link: "/hero/hero-with-searchbar",
   },
   {

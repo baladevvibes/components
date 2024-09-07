@@ -3,6 +3,8 @@ import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 import React, { useState } from 'react'
 import "../../../style.css"
+import AdsterraAds from "../../../components/AdsterraAds";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
 export default function TailwindBackgroundPre() {
     const [dark, setDark] = useState(false);
@@ -13,8 +15,27 @@ export default function TailwindBackgroundPre() {
     };
   return (
     <>
+      <div className="pt-10 flex justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+     
     <div className=" dark:bg-[#1e1e1e]">
-         <div className=" sticky top-2  z-50 flex justify-end px-10 pb-10">
+    <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/hero/tailwind-background-section">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className=" flex justify-end">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div
@@ -43,6 +64,7 @@ export default function TailwindBackgroundPre() {
             </div>
           </div>
         </div>
+      </div>
         <section className=" relative">
         <div className=" absolute z-10 w-full top-0">
           <div className="h-full container px-4 mx-auto w-full ">

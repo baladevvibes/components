@@ -4,6 +4,8 @@ import "../../../style.css"
 import "../../../style.css"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { IoReturnDownBackSharp } from 'react-icons/io5';
+import AdsterraAds from '../../../components/AdsterraAds';
 
 export default function HeroWithSearchBarPre() {
     useEffect(() => {
@@ -11,6 +13,27 @@ export default function HeroWithSearchBarPre() {
         AOS.refresh();
       }, []);
   return (
+    <>
+     <div className="pt-10 flex justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/hero/hero-with-searchbar">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+       
+      </div>
     <div className='pb-[100px]'>
         <div class='bg-no-repeat relative w-full bg-[url("/Image/hero/hero001/hero001.webp")] h-[90vh] bg-cover bg-center'>
         <section>
@@ -81,5 +104,6 @@ export default function HeroWithSearchBarPre() {
         </section>
       </div>
     </div>
+    </>
   )
 }
