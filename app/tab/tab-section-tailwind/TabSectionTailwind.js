@@ -22,6 +22,7 @@ import { CiLight } from "react-icons/ci";
 import tabData from "../TabData";
 import { TbBrandBootstrap } from "react-icons/tb";
 import { TbBrandTailwind } from "react-icons/tb";
+import TagRender from "../../tag/TagRender";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -155,76 +156,68 @@ export default function TabSectionTailwind() {
     setForceRender(true);
   };
 
-  const [buttonData, setButtonData] = useState();
-  const [buttonNum, setButtonNum] = useState(1);
-  const [calculator, setCalculator] = useState();
-  const [buttonState, setButtonState] = useState(false);
-  //   const [forceRender,setForceRender] =useState(false)
-  const [smDevice, setSmDevice] = useState(false);
+ 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
-  const FilterCard = () => {
-    // id=1
-    var arr = [];
-    var idSection = "041";
-    HomeComponents?.forEach((el) => {
-      if (el._id !== idSection) {
+  const [count, setCount] = useState();
+  const [defaultvalue, value] = useState(12);
+  const [data, setData] = useState(HomeComponents);
+  const [finalDataArr, setFinalData] = useState();
+  const [anotherData, setAnotherData] = useState();
+  // const [forceRender, setForceRender] = useState(false);
+  const [buttonState, setButtonState] = useState(false);
+  console.log(count, anotherData);
+
+  const handleClick = () => {
+    setCount(count + 1);
+    setForceRender(!forceRender);
+    var countInc = count + 1;
+    var sum = countInc * defaultvalue;
+    console.log(anotherData.length <= finalDataArr.length);
+    var buttState = anotherData.length < finalDataArr.length;
+    var finalData = finalDataArr.slice(0, sum);
+    setAnotherData(finalData);
+    setButtonState(buttState);
+    // setFinalData(finalData)
+  };
+
+  useEffect(() => {
+    setCount(1);
+    var removeComponents = "047";
+    var tagName = "tab";
+    var newData = [];
+    data.forEach((el) => {
+      if (el._id === removeComponents) {
         console.log(el);
-        arr.push(el);
+      } else {
+        newData.push(el);
       }
     });
-    var arrSort = arr.sort(function (a, b) {
-      return a.tag.indexOf("faq") - b.tag.indexOf("faq");
+    var arrSort = newData.sort(function (a, b) {
+      return a.tag.indexOf(tagName) - b.tag.indexOf(tagName);
     });
-    var reve = arrSort.reverse();
+    var rev = arrSort.reverse();
     var arrData = [];
     var anotherData = [];
-    reve.forEach((el) => {
-      if (el.tag == "faq") {
+    rev.forEach((el) => {
+      if (el.tag == tagName) {
         arrData.push(el);
       } else {
         anotherData.push(el);
       }
     });
     const shuffledArray = anotherData.sort((a, b) => 0.5 - Math.random());
-    const finalData = arrData.concat(shuffledArray);
-
-    setRelatedComponents(finalData);
-  };
-
-  const handleMore = () => {
-    setButtonNum(buttonNum + 1);
-    let cal = 11 * buttonNum + 11;
-    let arr = [];
-    HomeComponents?.forEach((el, i) => {
-      if (cal >= i) {
-        arr.push(el);
-      }
-    });
-    if (buttonData.length === HomeComponents.length) {
-      setButtonState(true);
-    }
-    setCalculator(cal);
-    setButtonData(arr);
-  };
-
-  useEffect(() => {
-    let arr = [];
-    let cal = 11 * buttonNum;
-    setCalculator(cal);
-    setButtonData(2);
-    HomeComponents?.forEach((el, i) => {
-      if (buttonNum === 1) {
-        if (cal >= i) {
-          arr.push(el);
-        }
-      }
-    });
-    setButtonData(arr);
-  }, []);
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-    FilterCard();
+    const finalDataArr = arrData.concat(shuffledArray);
+    console.log(finalDataArr, "arrsort");
+    var sum = 1 * defaultvalue;
+    var finalData = finalDataArr.slice(0, sum);
+    var buttState = anotherData.length < finalDataArr.length;
+    setButtonState(buttState);
+    setFinalData(finalDataArr);
+    setAnotherData(finalData);
   }, []);
   return (
     <div className="bg-[rgb(255 255 255)]">
@@ -638,7 +631,7 @@ export default function TabSectionTailwind() {
         <div
           className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
         >
-          {buttonData?.map((v, i) => {
+          {anotherData?.map((v, i) => {
             return (
               <HomeCard
                 title={v?.title}
@@ -650,18 +643,23 @@ export default function TabSectionTailwind() {
           })}
         </div>
 
-        {buttonState ? null : (
-          <>
-            <div className="my-6 flex justify-center">
-              <button
-                className=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
-                onClick={() => handleMore()}
-              >
-                More Components
-              </button>
-            </div>
-          </>
-        )}
+        <div class="my-6 flex justify-center">
+          {buttonState ? (
+            <button
+              onClick={() => handleClick()}
+              class=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
+            >
+              More Components
+            </button>
+          ) : null}
+        </div>
+
+        <div className=" pb-4">
+
+        <TagRender tag="tab"/>
+        </div>
+
+        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
       </div>
       <Footer />
     </div>

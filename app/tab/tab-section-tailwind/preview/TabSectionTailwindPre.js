@@ -6,6 +6,7 @@ import "../../../style.css";
 import { IoReturnDownBackSharp } from "react-icons/io5";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { RiDeleteBinLine } from "react-icons/ri";
+import AdsterraAds from "../../../components/AdsterraAds";
 
 export default function TabSectionTailwindPre() {
   const [dark, setDark] = useState(false);
@@ -15,7 +16,14 @@ export default function TabSectionTailwindPre() {
   };
   return (
     <div className="  dark:bg-[#1e1e1e]">
-      
+         <div className="pt-10 flex justify-center items-center">
+            
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
       <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
         <div className=" ">
           <a href="/tab/tab-section-tailwind">
@@ -58,7 +66,7 @@ export default function TabSectionTailwindPre() {
         </div>
       </div>
       <section>
-        <div className=" px-4 container mx-auto py-48">
+        <div className=" px-4 container mx-auto py-20">
           <div className=" w-full mx-auto">
             <div className=" lg:flex lge:flex md:flex mdsm:block sm:block  lg:space-x-8  lge:space-x-8 md:space-x-4 mdsm:space-x-0 sm:space-x-0px-4   ">
               <div className=" bg-[#cfe1f7] cursor-pointer  py-3 text-[#086bdd] font-normal border-b px-10 border-[#086bdd] boder-[2px] ">

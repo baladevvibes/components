@@ -25,6 +25,7 @@ import teamsData from "../teamsData"
 import bootStrapHtml from "../bootstrap/bootStrapHtml";
 import bootStrapCSS from "../bootstrap/bootstrapCss";
 import AdsterraAds from "../../components/AdsterraAds";
+import TagRender from "../../tag/TagRender";
 
 const myCustomTheme = {
   base: "vs-dark",
@@ -261,11 +262,7 @@ export default function TeamSectionDesign() {
         />
 
 
-<AdsterraAds
-              id="37bfd45a34f36324b962f1e32736a540"
-              height="90"
-              width="728"
-            />
+
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-lg pb-4   px-4">
           <div className={` `}>
@@ -731,28 +728,13 @@ export default function TeamSectionDesign() {
           ) : null}
         </div>
 
-        <div className="px-6 tags space-x-10 pb-10 space-y-5">
-            <h4 className={` title-font pt-2 pb-4 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}>Find Components</h4>
-            <a href="/hero" className=" hover:brightness-125 tracking-wide">
-              Hero
-            </a>
-            <a href="/card" className=" hover:brightness-125 tracking-wide">
-              Card
-            </a>
-            <a href="/about" className=" hover:brightness-125 tracking-wide">
-              About
-            </a>
-            <a href="/services" className=" hover:brightness-125 tracking-wide">
-              Service
-            </a>
-            <a href="/skeleton" className=" hover:brightness-125 tracking-wide">
-              Skeleton
-            </a>
-            <a href="/tab" className=" hover:brightness-125 tracking-wide">
-              Tab
-            </a>
-          
-          </div>
+        <div className=" pb-4">
+
+        <TagRender tag="team"/>
+        </div>
+
+        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
+      
       </div>
       <Footer />
     </div>

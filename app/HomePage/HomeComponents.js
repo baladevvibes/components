@@ -370,7 +370,7 @@ const HomeComponents = [
     _id: "007",
     image: "../Image/table/table001.webp",
     title: "Table with sort option",
-    tag: "Table",
+    tag: "table",
     link: "/table/table-with-sort",
   },
 

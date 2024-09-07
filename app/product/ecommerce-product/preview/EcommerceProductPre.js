@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "../../../style.css";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
+import AdsterraAds from "../../../components/AdsterraAds";
+import { IoReturnDownBackSharp } from "react-icons/io5";
 
 export default function EcommerceProductPre() {
   const [dark, setDark] = useState(false);
@@ -11,15 +13,34 @@ export default function EcommerceProductPre() {
     setDark(!dark);
     document.body.classList.toggle("dark");
   };
-  return <div className="relative  dark:bg-[#0e0e0e]">
+  return(<>
+  <div className="relative  dark:bg-[#0e0e0e]">
     <div className=" container mx-auto ">
-    <div className="pt-10 sticky top-2 flex justify-end ">
+    <div className="pt-10 flex justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/product/ecommerce-product">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className=" flex justify-end">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div
                 className={` ${
                   dark ? `bg-secondary` : ``
-                } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                } p-1.5 border  border-[#ccc] z-40 mx-4  group-hover:bg-secondary  cursor-pointer  rounded-md`}
               >
                 {dark ? (
                   <>
@@ -42,9 +63,10 @@ export default function EcommerceProductPre() {
             </div>
           </div>
         </div>
+      </div>
     </div>
        <section>
-        <div className=" grid py-40 lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1">
+        <div className=" grid py-4 lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1">
           <div className=" bg-[#8fa8ae] dark:bg-[#151515] py-20 px-10 overflow-hidden relative ">
             <img
               src={`../../Image/overall/product/redmi.webp`}
@@ -244,5 +266,6 @@ export default function EcommerceProductPre() {
           </div>
         </div>
       </section>
-  </div>;
+  </div>
+  </>) ;
 }

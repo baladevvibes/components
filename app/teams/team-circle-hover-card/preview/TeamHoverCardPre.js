@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import "../../../style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { IoReturnDownBackSharp } from "react-icons/io5";
+import AdsterraAds from "../../../components/AdsterraAds";
 
 export default function TeamHoverCardPre() {
   useEffect(() => {
@@ -10,7 +12,27 @@ export default function TeamHoverCardPre() {
     AOS.refresh();
   }, []);
   return (
-    <div className={` container mx-auto py-48`}>
+    <div className={` container mx-auto py-20`}>
+      <div className="py-10 flex justify-center items-center">
+            <AdsterraAds
+              id="37bfd45a34f36324b962f1e32736a540"
+              height="90"
+              width="728"
+            />
+          </div>
+      <div className=" sticky z-50 top-2 py-4 grid grid-cols-2 sm:px-4  px-10 pb-10">
+        <div className=" ">
+          <a href="/teams/team-circle-hover-card">
+            <div className=" group flex">
+              <IoReturnDownBackSharp className=" cursor-pointer dark:text-primary group-hover:text-primary mt-1" />
+              <p className=" mx-4 group-hover:text-primary  cursor-pointer dark:text-primary">
+                Back
+              </p>
+            </div>
+          </a>
+        </div>
+
+      </div>
       <div
         data-aos="fade-up"
         className={`  grid  lge:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-16 mdsm:gap-16 sm:gap-16 lg:px-2 lge:px-2 md:px-2 mdsm:px-2 sm:px-2`}

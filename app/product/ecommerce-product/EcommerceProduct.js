@@ -187,8 +187,8 @@ export default function EcommerceProduct() {
 
   useEffect(() => {
     setCount(1);
-    var removeComponents = "049";
-    var tagName = "about";
+    var removeComponents = "035";
+    var tagName = "table";
     var newData = [];
     data.forEach((el) => {
       if (el._id === removeComponents) {

@@ -10,8 +10,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import cardData from "../../card/cardData";
 import tableData from "../TableData";
-
+import HomeComponents from "../../HomePage/HomeComponents";
 import HomeCard from "../../HomePage/HomeCard";
+import TagRender from "../../tag/TagRender";
 const myCustomTheme = {
   base: "vs-dark",
   inherit: true,
@@ -113,25 +114,68 @@ export default function TableSort() {
     setForceRender(true);
   };
 
-  const FilterCard = () => {
-    // id=1
-    var arr = [];
-    // var idSection =1;
-    cardData?.forEach((el) => {
-      arr.push(el);
-      // if(el._id!==idSection){
-      //   console.log(el)
-
-      // }
-    });
-
-    setRelatedComponents(arr);
-  };
-
+  
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    FilterCard();
+  }, []);
+
+  const [count, setCount] = useState();
+  const [defaultvalue, value] = useState(12);
+  const [data, setData] = useState(HomeComponents);
+  const [finalDataArr, setFinalData] = useState();
+  const [anotherData, setAnotherData] = useState();
+  // const [forceRender, setForceRender] = useState(false);
+  const [buttonState, setButtonState] = useState(false);
+  console.log(count, anotherData);
+
+  const handleClick = () => {
+    setCount(count + 1);
+    setForceRender(!forceRender);
+    var countInc = count + 1;
+    var sum = countInc * defaultvalue;
+    console.log(anotherData.length <= finalDataArr.length);
+    var buttState = anotherData.length < finalDataArr.length;
+    var finalData = finalDataArr.slice(0, sum);
+    setAnotherData(finalData);
+    setButtonState(buttState);
+    // setFinalData(finalData)
+  };
+
+  useEffect(() => {
+    setCount(1);
+    var removeComponents = "007";
+    var tagName = "table";
+    var newData = [];
+    data.forEach((el) => {
+      if (el._id === removeComponents) {
+        console.log(el);
+      } else {
+        newData.push(el);
+      }
+    });
+    var arrSort = newData.sort(function (a, b) {
+      return a.tag.indexOf(tagName) - b.tag.indexOf(tagName);
+    });
+    var rev = arrSort.reverse();
+    var arrData = [];
+    var anotherData = [];
+    rev.forEach((el) => {
+      if (el.tag == tagName) {
+        arrData.push(el);
+      } else {
+        anotherData.push(el);
+      }
+    });
+    const shuffledArray = anotherData.sort((a, b) => 0.5 - Math.random());
+    const finalDataArr = arrData.concat(shuffledArray);
+    console.log(finalDataArr, "arrsort");
+    var sum = 1 * defaultvalue;
+    var finalData = finalDataArr.slice(0, sum);
+    var buttState = anotherData.length < finalDataArr.length;
+    setButtonState(buttState);
+    setFinalData(finalDataArr);
+    setAnotherData(finalData);
   }, []);
   return (
     <div className="bg-[rgb(255 255 255)]">
@@ -1348,33 +1392,45 @@ export default function TableSort() {
         </div>
 
         <div>
-          {/* <h2>Related Components</h2>  */}
-          {/* <h2
-            data-aos="fade-up"
-            className={`title-font pt-10 pb-6 text-center text-secondary text-2xl font-semibold`}
+          <h2
+            className={` title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}
           >
             Related Components
           </h2>
-
-          <div>
-            <div
-              className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
-            >
-              {reelatedComp?.map((v, i) => {
-                return (
-                  <HomeCard
-                    title={v?.title}
-                    img={v?.image}
-                    tag={v?.section}
-                    link={v?.link}
-                  />
-                );
-              })}
-            </div>
-          </div> */}
-
-          <div></div>
         </div>
+
+        <div
+          className={` grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
+        >
+          {anotherData?.map((v, i) => {
+            return (
+              <HomeCard
+                title={v?.title}
+                img={v?.image}
+                tag={v?.tag}
+                link={v?.link}
+              />
+            );
+          })}
+        </div>
+
+        <div class="my-6 flex justify-center">
+          {buttonState ? (
+            <button
+              onClick={() => handleClick()}
+              class=" bg-primary py-2 px-12 tracking-wider hover:brightness-125 text-white rounded-lg"
+            >
+              More Components
+            </button>
+          ) : null}
+        </div>
+
+        <div className=" pb-4">
+
+        <TagRender tag="table"/>
+        </div>
+
+        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
       </div>
       <Footer />
     </div>
