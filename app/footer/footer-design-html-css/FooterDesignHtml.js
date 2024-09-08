@@ -15,11 +15,17 @@ import { VscSymbolColor } from "react-icons/vsc";
 import { ColorPicker, useColor } from "react-color-palette";
 import "react-color-palette/css";
 import { IoIosClose } from "react-icons/io";
-import { AiOutlineFontSize } from "react-icons/ai";
+import { AiOutlineFontSize, AiOutlineMenuFold } from "react-icons/ai";
 import fontData from "../../components/Font";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
+import { TbBrandBootstrap } from "react-icons/tb";
+import { TbBrandTailwind } from "react-icons/tb";
 import footerData from "../footerData";
+import DarkThemefooter from "../DarkThemeFooter";
+
+import bootStrapHtml from "../bootstrap/bootStrapHtml";
+import bootStrapCSS from "../bootstrap/bootstrapCss";
 import TagRender from "../../tag/TagRender";
 
 const myCustomTheme = {
@@ -36,7 +42,7 @@ const myCustomTheme = {
   },
 };
 
-export default function DarkThemeFooter() {
+export default function FooterDesignHtml() {
   const [smScreen, setSmScreen] = useState(false);
   const [mdScreen, setMdScreen] = useState(false);
   const [lgScreen, setLgScreen] = useState(false);
@@ -52,9 +58,12 @@ export default function DarkThemeFooter() {
   const [fontFlag, setFontFlag] = useState(false);
   const [fontT1Data, setFontt1Data] = useState("cormorant");
   const [dark, setDark] = useState(false);
+  const [tailwind, setTailwind] = useState(false);
 
   const darkModeHandler = () => {
     setDark(!dark);
+    setCode(false);
+    setTailwind(false);
     document.body.classList.toggle("dark");
   };
   const files = {
@@ -62,13 +71,13 @@ export default function DarkThemeFooter() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: footerData[1]?.htmlcode,
+      value: footerData[2]?.htmlcode,
     },
     "darkThemeCode.js": {
       _id: 1,
       name: "darkThemeCode.js",
       language: "javascript",
-      value: cardLightData[0]?.htmlcode,
+      value: DarkThemefooter[0]?.htmlcode,
     },
     "index.css": {
       _id: 2,
@@ -82,17 +91,44 @@ export default function DarkThemeFooter() {
       language: "javascript",
       value: componentConfig[0]?.tailwindcss,
     },
+    "bootstrapIndex.html": {
+      _id: 4,
+      name: "bootstrapIndex.html",
+      language: "html",
+      value: bootStrapHtml[0]?.htmlcode,
+    },
+    "bootstrapStyleSheet.css": {
+      _id: 5,
+      name: "bootstrapStyleSheet.css",
+      language: "css",
+      value: bootStrapCSS[0]?.stylecode,
+    },
   };
 
   const file = files[fileName];
 
   const handleCopy = () => {
     navigator.clipboard.writeText(file.value);
-
     setCopy(true);
     setTimeout(() => {
       setCopy(false);
     }, 1500);
+  };
+
+  const handleTailwind = () => {
+    setCode(false);
+    setTailwind(true);
+    setFileName("app.js");
+    setForceRender(!forceRender);
+  };
+
+  const handleBootstrap = () => {
+    setCode(true);
+    setFileName("bootstrapIndex.html");
+
+    setTailwind(false);
+    // document.getElementById("screen-display").style.display = "none"
+    setForceRender(!forceRender);
   };
 
   const handleColor = () => {
@@ -154,13 +190,10 @@ export default function DarkThemeFooter() {
     setForceRender(true);
   };
 
- 
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
-
   const [count, setCount] = useState();
   const [defaultvalue, value] = useState(12);
   const [data, setData] = useState(HomeComponents);
@@ -185,7 +218,7 @@ export default function DarkThemeFooter() {
 
   useEffect(() => {
     setCount(1);
-    var removeComponents = "031";
+    var removeComponents = "054";
     var tagName = "footer";
     var newData = [];
     data.forEach((el) => {
@@ -223,10 +256,10 @@ export default function DarkThemeFooter() {
       <Header />
       <div className={`pt-[100px] container mx-auto px-2 sm:px-3`}>
         <ComponentsHeader
-          title={`Dark theme footer design`}
-          des={`This footer was created by the dark theme-based. It will be easy for a website dark theme-based.`}
-          section_name={`Footer`}
-          using_font=" Raleway, Sedan-sc "
+          title={`footer design html `}
+          des={`footer design html design example and with clean design and proper color code. It is fully responsive.`}
+          section_name={`footer`}
+          using_font="varela-round-font,acme-font "
         />
 
         <div data-aos="fade-up" className="drop-css p-2 rounded-lg pb-4   px-4">
@@ -238,7 +271,7 @@ export default function DarkThemeFooter() {
               <div
                 className={`sm:hidden md:hidden mdsm:hidden lg:flex lge:flex flex space-x-5`}
               >
-                {code ? (
+                {tailwind ? (
                   <>
                     <div className={`  text-[red] text-base`}>
                       *Kindly use Tailwind config
@@ -246,111 +279,115 @@ export default function DarkThemeFooter() {
                   </>
                 ) : (
                   <>
-                    <div
-                      onClick={() => handleScreen("sm")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border ${
-                          smScreen ? "bg-secondary text-white" : ""
-                        } border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          className={`text-1xl ${
-                            smScreen ? `text-white` : ``
-                          } text-textcolor  group-hover:text-white`}
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                    {code ? null : (
+                      <>
+                        <div
+                          onClick={() => handleScreen("sm")}
+                          className={` group`}
                         >
-                          <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
-                          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> sm</p>
-                    </div>
+                          <div
+                            className={` p-1.5 border ${
+                              smScreen ? "bg-secondary text-white" : ""
+                            } border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              className={`text-1xl ${
+                                smScreen ? `text-white` : ``
+                              } text-textcolor  group-hover:text-white`}
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> sm</p>
+                        </div>
 
-                    <div
-                      onClick={() => handleScreen("md")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border  border-[#ccc]   ${
-                          mdScreen ? "bg-secondary text-white" : ""
-                        }  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          className={`text-1xl ${
-                            mdScreen ? `text-white` : ``
-                          } text-textcolor  group-hover:text-white`}
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          onClick={() => handleScreen("md")}
+                          className={` group`}
                         >
-                          <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
-                          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> md</p>
-                    </div>
+                          <div
+                            className={` p-1.5 border  border-[#ccc]   ${
+                              mdScreen ? "bg-secondary text-white" : ""
+                            }  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              className={`text-1xl ${
+                                mdScreen ? `text-white` : ``
+                              } text-textcolor  group-hover:text-white`}
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> md</p>
+                        </div>
 
-                    <div
-                      onClick={() => handleScreen("lg")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border   ${
-                          lgScreen ? "bg-secondary" : ""
-                        }  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          className={`text-1xl ${
-                            lgScreen ? `text-white` : ``
-                          } text-textcolor  group-hover:text-white`}
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          onClick={() => handleScreen("lg")}
+                          className={` group`}
                         >
-                          <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> lg</p>
-                    </div>
+                          <div
+                            className={` p-1.5 border   ${
+                              lgScreen ? "bg-secondary" : ""
+                            }  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              className={`text-1xl ${
+                                lgScreen ? `text-white` : ``
+                              } text-textcolor  group-hover:text-white`}
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> lg</p>
+                        </div>
 
-                    <div
-                      onClick={() => handleScreen("xl")}
-                      className={` group`}
-                    >
-                      <div
-                        className={` p-1.5 border    border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
-                      >
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          stroke-width="0"
-                          viewBox="0 0 16 16"
-                          class=" text-1xl  text-textcolor group-hover:text-white"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          onClick={() => handleScreen("xl")}
+                          className={` group`}
                         >
-                          <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"></path>
-                        </svg>
-                      </div>
-                      <p className={` text-sm text-center `}> xl</p>
-                    </div>
+                          <div
+                            className={` p-1.5 border    border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 16 16"
+                              class=" text-1xl  text-textcolor group-hover:text-white"
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25"></path>
+                            </svg>
+                          </div>
+                          <p className={` text-sm text-center `}> xl</p>
+                        </div>
+                      </>
+                    )}
                   </>
                 )}
               </div>
@@ -387,7 +424,7 @@ export default function DarkThemeFooter() {
                     </div>
                   </div>
 
-                  <a href={`/footer/dark-theme-footer-design/preview`}>
+                  <a href={`/footer/footer-design-html-css/preview`}>
                     <div className={` group`}>
                       <div
                         className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
@@ -450,14 +487,14 @@ export default function DarkThemeFooter() {
                             "index.html"
                           ) : (
                             <>{file?.name}</>
-                          )}{" "}
-                        </div>{" "}
-                        <div className={` px-1`}> Copied</div>{" "}
+                          )}
+                        </div>
+                        <div className={` px-1`}> Copied</div>
                       </div>
                     ) : null}
                   </div>
 
-                  <div onClick={() => handleCode()} className={` group`}>
+                  {/* <div onClick={() => handleCode()} className={` group`}>
                     <div
                       className={`flex justify-center p-1.5 border ${
                         code ? ` bg-secondary` : ``
@@ -479,6 +516,36 @@ export default function DarkThemeFooter() {
                       </svg>
                     </div>
                     <p className={` text-sm text-center `}> code</p>
+                  </div> */}
+
+                  <div onClick={() => handleBootstrap()} className={` group`}>
+                    <div
+                      className={` ${
+                        code ? `bg-secondary text-[#fff]` : ``
+                      } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                    >
+                      <TbBrandBootstrap
+                        className={`${
+                          code ? `text-white` : ``
+                        } text-base text-textcolor group-hover:text-white `}
+                      />
+                    </div>
+                    <p className={` text-sm text-center `}> bs</p>
+                  </div>
+
+                  <div onClick={() => handleTailwind()} className={` group`}>
+                    <div
+                      className={` ${
+                        tailwind ? `bg-secondary text-[#fff]` : ``
+                      } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                    >
+                      <TbBrandTailwind
+                        className={`${
+                          tailwind ? `text-white` : ``
+                        } text-base text-textcolor group-hover:text-white `}
+                      />
+                    </div>
+                    <p className={` text-sm text-center `}> tw</p>
                   </div>
                 </div>
               </div>
@@ -491,6 +558,46 @@ export default function DarkThemeFooter() {
             {code ? (
               <>
                 <button
+                  name="bootstrapIndex"
+                  className={` ${
+                    fileName === "bootstrapIndex.html"
+                      ? `bg-primary`
+                      : ` bg-[#f19c1c8a]`
+                  }   rounded-t-lg py-2  px-4 mr-2`}
+                  disabled={fileName === "bootstrapIndex.html"}
+                  onClick={() => setFileName("bootstrapIndex.html")}
+                >
+                  index.html
+                </button>
+
+                <button
+                  name="bootstrapStyleSheet"
+                  className={` ${
+                    fileName === "bootstrapStyleSheet.css"
+                      ? `bg-primary`
+                      : ` bg-[#f19c1c8a]`
+                  }   rounded-t-lg py-2  px-4 mr-2`}
+                  disabled={fileName === "bootstrapStyleSheet.css"}
+                  onClick={() => setFileName("bootstrapStyleSheet.css")}
+                >
+                  style.css
+                </button>
+
+                <Editor
+                  height="80vh"
+                  // theme="vs-dark"
+                  path={file?.name}
+                  options={{ readOnly: true }}
+                  defaultLanguage={file.language}
+                  defaultValue={file.value}
+                />
+              </>
+            ) : (
+              <></>
+            )}
+            {tailwind ? (
+              <>
+                <button
                   name="app"
                   className={` ${
                     fileName === "app.js" ? `bg-primary` : ` bg-[#f19c1c8a]`
@@ -500,7 +607,7 @@ export default function DarkThemeFooter() {
                 >
                   index.html
                 </button>
-                {/* <button
+                <button
                   name="darkThemeCode"
                   className={` ${
                     fileName === "darkThemeCode.js"
@@ -511,7 +618,7 @@ export default function DarkThemeFooter() {
                   onClick={() => setFileName("darkThemeCode.js")}
                 >
                   darkThemeCode.html
-                </button> */}
+                </button>
                 <button
                   name="index"
                   className={` ${
@@ -558,32 +665,63 @@ export default function DarkThemeFooter() {
                                   : ` ${xlScreen ? `w-full` : ``} `
                               }  `
                         }`
-                  } `}
+                  }  py-32   dark:bg-[#1e1e1e]`}
                 >
-                  <section className=" bg-[#191919] py-20 my-32">
-                    <footer className=" container mx-auto px-4">
+                  <div className=" bg-[#161925] ">
+                    <div className=" container mx-auto px-4 ">
                       <div
-                        className={` grid ${xlScreen ? `grid-cols-4` : ``} ${
-                          lgScreen ? `grid-cols-4` : ``
-                        } ${mdScreen ? `grid-cols-2` : ``} ${
+                        className={` grid ${xlScreen ? `grid-cols-2` : ``} ${
+                          lgScreen ? `grid-cols-2` : ``
+                        } ${mdScreen ? `grid-cols-1` : ``} ${
                           smScreen ? `grid-cols-1` : ``
                         } ${
                           responsiveState
                             ? ``
-                            : `lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1`
-                        } `}
+                            : `lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-1 sm:grid-cols-1`
+                        }   pt-10`}
                       >
-                        <div>
-                          <h3 className=" text-[#fff] sedan-sc-font text-4xl">
+                        <div className=" ">
+                          <h3 className="text-[#a3986c] acme-font text-5xl">
+                            {" "}
                             Logo
                           </h3>
+                        </div>
 
-                          <h5 className=" text-[#d0d0d0] font-semibold raleway-font  tracking-wide text-[14px] mt-6">
-                            Follow us
-                          </h5>
-                          <div className="mt-2 flex space-x-2">
-                            <div className="group cursor-pointer ">
-                              <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#fff] border border-[#fff]">
+                        <div
+                          className={` grid  ${xlScreen ? `grid-cols-2` : ``} ${
+                            lgScreen ? `grid-cols-2` : ``
+                          } ${mdScreen ? `grid-cols-1` : ``} ${
+                            smScreen ? `grid-cols-1` : ``
+                          } ${
+                            responsiveState
+                              ? ``
+                              : `lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-1 sm:grid-cols-1`
+                          } `}
+                        >
+                          <div>
+                            <ul>
+                              <li className="pt-2 varela-round-font text-[#fcfcfc] tracking-wide hover:text-[#a3986c] cursor-pointer">
+                                About us{" "}
+                              </li>
+                              <li className="pt-2 varela-round-font  text-[#fcfcfc] tracking-wide hover:text-[#a3986c] cursor-pointer">
+                                Our services{" "}
+                              </li>
+                              <li className="pt-2 varela-round-font text-[#fcfcfc] tracking-wide hover:text-[#a3986c] cursor-pointer">
+                                Responsiblity{" "}
+                              </li>
+                              <li className="pt-2 varela-round-font text-[#fcfcfc] tracking-wide hover:text-[#a3986c] cursor-pointer pb-6">
+                                Blog{" "}
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h4 className="varela-round-font text-[#fcfcfc]">
+                              Follow us
+                            </h4>
+
+                            <div className=" flex lg:mb-0 lge:mb-0 md:mb-0 mdsm:mb-6 sm:mb-6  space-x-4 mt-2">
+                              <div className=" flex justify-center items-center h-[35px] w-[35px] hover:bg-[#a3986c] cursor-pointer rounded-lg border border-[#ccc]">
                                 <svg
                                   stroke="currentColor"
                                   fill="currentColor"
@@ -599,16 +737,13 @@ export default function DarkThemeFooter() {
                                   <path d="M13 10h3v3h-3v7h-3v-7h-3v-3h3v-1.255c0-1.189.374-2.691 1.118-3.512.744-.823 1.673-1.233 2.786-1.233h2.096v3h-2.1c-.498 0-.9.402-.9.899v2.101z"></path>
                                 </svg>
                               </div>
-                            </div>
-
-                            <div className="group cursor-pointer ">
-                              <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#fff] border border-[#fff]">
+                              <div className=" flex justify-center items-center h-[35px] w-[35px] hover:bg-[#a3986c] cursor-pointer rounded-lg border border-[#ccc] sm:pb-6  mdsm:mb-6 ">
                                 <svg
                                   stroke="currentColor"
                                   fill="currentColor"
                                   stroke-width="0"
                                   viewBox="0 0 24 24"
-                                  class=" text-[16px] text-[#fff] group-hover:text-[#191919]"
+                                  class="  text-[16px] text-[#fff] group-hover:text-[#191919]"
                                   height="1em"
                                   width="1em"
                                   xmlns="http://www.w3.org/2000/svg"
@@ -616,10 +751,7 @@ export default function DarkThemeFooter() {
                                   <path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"></path>
                                 </svg>
                               </div>
-                            </div>
-
-                            <div className="group cursor-pointer ">
-                              <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center  group-hover:bg-[#fff] border border-[#fff]">
+                              <div className=" flex justify-center items-center h-[35px] w-[35px] hover:bg-[#a3986c] cursor-pointer rounded-lg border border-[#ccc]">
                                 <svg
                                   stroke="currentColor"
                                   fill="none"
@@ -652,50 +784,41 @@ export default function DarkThemeFooter() {
                             </div>
                           </div>
                         </div>
-                        <div></div>
-                        <div className={`${xlScreen ? `pt-0`: ``} ${lgScreen ? `pt-0`: ``} ${mdScreen ? `pt-6`: ``} ${smScreen ? `pt-6`: ``} ${responsiveState? ``: `lg:pt-0 lge:pt-0 md:pt-6 mdsm:pt-6 sm:pt-6`} `}>
-                          <ul className=" mt-4">
-                            <li className="group raleway-font  tracking-wide text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
-                              {" "}
-                              About{" "}
-                            </li>
-                            <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
-                              {" "}
-                              Services{" "}
-                            </li>
-                            <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
-                              {" "}
-                              project
-                            </li>
-                            <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
-                              {" "}
-                              Contant
-                            </li>
-                            <li className="group raleway-font  tracking-wide mt-2 text-[#fff] cursor-pointer hover:underline hover:underline-offset-4 flex space-x-5">
-                              {" "}
-                              Blog
-                            </li>
-                          </ul>
-                        </div>
-                        <div className={`${xlScreen ? `pt-0`: ``} ${lgScreen ? `pt-0`: ``} ${mdScreen ? `pt-6`: ``} ${smScreen ? `pt-6`: ``} ${responsiveState? ``: `lg:pt-0 lge:pt-0 md:pt-6 mdsm:pt-6 sm:pt-6`} `}>
-                          <h5 className=" text-[#d0d0d0] font-semibold   raleway-font  tracking-wide text-[14px] mt-4">
-                            Call us
-                          </h5>
-                          <div className=" text-[#fff] pt-2 raleway-font hover:underline hover:underline-offset-4">
-                            <a href="telto:+0090123456789">+00 090123456789 </a>
-                          </div>
+                      </div>
 
-                          <h5 className="text-[#d0d0d0] font-semibold  raleway-font  tracking-wide text-[14px] mt-4">
-                            Address
-                          </h5>
-                          <div className=" text-[#fff] pt-2 raleway-font">
-                            960 Blanche Terrace, Lake Judeside, <br />
-                            WA 93970-1195
+                      <div
+                        className={`pt-2 pb-6 border-[#ccc] border-t-[1px] grid  ${
+                          xlScreen ? `grid-cols-2` : ``
+                        } ${lgScreen ? `grid-cols-2` : ``} ${
+                          mdScreen ? `grid-cols-1` : ``
+                        } ${smScreen ? `grid-cols-1` : ``} ${
+                          responsiveState
+                            ? ``
+                            : `lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-1 sm:grid-cols-1`
+                        } `}
+                      >
+                        <div>
+                          {" "}
+                          <p className="varela-round-font text-[12px] text-[#fcfcfc] tracking-wider">
+                            Copyright.All right reserved.
+                          </p>{" "}
+                        </div>
+                        <div className=" grid grid-cols-2">
+                          <div>
+                            <p className="varela-round-font text-[12px] text-[#fcfcfc] tracking-wider">
+                              Terms and Ploicy
+                            </p>
+                          </div>
+                          <div>
+                            <p className="varela-round-font px-2 text-[12px] text-[#fcfcfc] tracking-wider">
+                              {" "}
+                              90123456789
+                            </p>
                           </div>
                         </div>
                       </div>
-                    </footer>
-                  </section>
+                    </div>
+                  </div>
                 </div>
               </>
             )}
@@ -737,8 +860,7 @@ export default function DarkThemeFooter() {
         </div>
 
         <div className=" pb-4">
-
-        <TagRender tag="footer"/>
+          <TagRender tag="footer" />
         </div>
 
         <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>

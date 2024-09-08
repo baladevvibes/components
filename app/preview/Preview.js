@@ -122,26 +122,171 @@ export default function Preview() {
         </div>
       </div>
 
-      <div className=" py-32">
-        <section className=" container px-4 mx-auto">
-        <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1">
-          <div className="bg-[#F7D002]">
-            <img src="../Image/overall/person/person009.webp" alt="Person 009" className="  h-[300px] object-cover"/>
-          </div>
-          <div className="bg-[#F71735]">
-            <img src="../Image/overall/person/person010.webp" alt="Person 010" className="  h-[300px] object-cover"/>
-          </div>
-          <div className="bg-[#06BCC1]"> 
-            <img src="../Image/overall/person/person011.webp" alt="Person 011" className="  h-[300px] object-cover"/>
-          </div>
-          <div className="bg-[#363537]">
-            <img src="../Image/overall/person/person012.webp" alt="Person 012" className="  h-[300px] object-cover"/>
-          </div>
+      <div className=" container mx-auto">
+        <div className=" grid grid-cols-4">
+          <div>
+            <div className=" text-center text-4xl">20K +</div>
+              <div className=" text-center">Reviews</div>
 
+          </div>
         </div>
 
-        </section>
+      </div>
 
+      <div className=" py-10">
+        <div className=" container mx-auto py-20">
+          <div className=" grid grid-cols-2">
+            <div className=" ">
+              <h3 className=" text-3xl">Ream Stay Logo</h3>
+            </div>
+
+            <div className=" grid grid-cols-2">
+              <div>
+                <ul>
+                  <li className="pt-4">About us </li>
+                  <li className="pt-4">Group </li>
+                  <li className="pt-4">Responsiblity </li>
+                  <li className="pt-4 pb-8">Blog </li>
+                </ul>
+              </div>
+
+              <div>
+                Follow us 
+
+                <div className=" flex  space-x-4 mt-2">
+                  <div className=" h-[40px] w-[40px] rounded-full border border-[#222]"></div>
+                  <div className=" h-[40px] w-[40px] rounded-full border border-[#222]"></div>
+
+                  <div className=" h-[40px] w-[40px] rounded-full border border-[#222]"></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-6 border-t-[1px] grid grid-cols-2">
+            <div > Copyright.All right reserved. </div>
+            <div className=" grid grid-cols-2">
+              <div>
+                Terms and Ploicy
+              </div>
+              <div>
+               +91 90123456789
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div></div>
+        <div>Hello</div>
+      </div>
+
+      <div className=" container mx-auto">
+        <div className=" grid grid-cols-4 gap-4">
+          <div className="bg-[#f2f2f2] px-10 py-20">
+            <img
+              src={`../Image/overall/icons/hospital.png`}
+              className=" mx-auto"
+            />
+            <div className=" text-center pt-4 text-[20px]">Hospital</div>
+          </div>
+          <div className="bg-[#f2f2f2] px-10 py-20">
+            <img src={`../Image/overall/icons/bed.png`} className=" mx-auto" />
+            <div className=" text-center pt-4 text-[20px]">Hospital</div>
+          </div>
+          <div className="bg-[#f2f2f2] px-10 py-20">
+            <img
+              src={`../Image/overall/icons/level.png`}
+              className=" mx-auto"
+            />
+            <div className=" text-center pt-4 text-[20px]">Hospital</div>
+          </div>
+          <div className="bg-[#f2f2f2] px-10 py-20">
+            <img
+              src={`../Image/overall/icons/x-ray.png`}
+              className=" mx-auto"
+            />
+            <div className=" text-center pt-4 text-[20px]">Hospital</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-20">
+        <div className=" container mx-auto">
+          <div className="gap-6 grid grid-cols-4">
+            <div>
+              <img
+                src={`../Image/overall/country/USA.png`}
+                alt="USA"
+                className="  rounded-2xl"
+              />
+              <div className=" p-4 ">
+                <div className=" grid grid-cols-2">
+                  <div>USA</div>
+                  <div>
+                    <button>Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img
+                src={`../Image/overall/country/Australia.png`}
+                alt="USA"
+                className="mt-8  rounded-2xl"
+              />
+            </div>
+            <div>
+              <img
+                src={`../Image/overall/country/London.png`}
+                alt="USA"
+                className="  rounded-2xl"
+              />
+            </div>
+            <div>
+              <img
+                src={`../Image/overall/country/Paris.png`}
+                alt="USA"
+                className="mt-8  rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" py-32">
+        <section className=" container px-4 mx-auto">
+          <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1">
+            <div className="bg-[#F7D002]">
+              <img
+                src="../Image/overall/person/person009.webp"
+                alt="Person 009"
+                className="  h-[300px] object-cover"
+              />
+            </div>
+            <div className="bg-[#F71735]">
+              <img
+                src="../Image/overall/person/person010.webp"
+                alt="Person 010"
+                className="  h-[300px] object-cover"
+              />
+            </div>
+            <div className="bg-[#06BCC1]">
+              <img
+                src="../Image/overall/person/person011.webp"
+                alt="Person 011"
+                className="  h-[300px] object-cover"
+              />
+            </div>
+            <div className="bg-[#363537]">
+              <img
+                src="../Image/overall/person/person012.webp"
+                alt="Person 012"
+                className="  h-[300px] object-cover"
+              />
+            </div>
+          </div>
+        </section>
       </div>
 
       <div className=" py-32">
@@ -158,7 +303,9 @@ export default function Preview() {
                   visual mockups.
                 </p>
                 <div className="flex justify-center items-center mt-4 ">
-                  <button className=" bg-[#fcfcfc] hover:bg-[#5AA9E6] hover:text-[#f9f9f9] jost-font px-10 py-2 rounded-md">Book Now</button>
+                  <button className=" bg-[#fcfcfc] hover:bg-[#5AA9E6] hover:text-[#f9f9f9] jost-font px-10 py-2 rounded-md">
+                    Book Now
+                  </button>
                 </div>
               </div>
             </div>

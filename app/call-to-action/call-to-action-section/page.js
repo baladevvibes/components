@@ -48,7 +48,6 @@ export const metadata = {
     canonical: "https://makecomponents.com/call-to-action/call-to-action-section",
   },
 };
-
 export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",
