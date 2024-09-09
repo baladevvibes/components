@@ -7,32 +7,21 @@ import HomeCard from "../HomePage/HomeCard";
 import AdsterraAds from "../components/AdsterraAds";
 import TagRender from "../tag/TagRender";
 
-export default function HeroCard() {
+export default function ContactCard() {
   const [data, setData] = useState(HomeComponents);
-  var keyword = "hero";
+  var keyword = ["contact", "login-in"];
 
   useEffect(() => {
     let localData = [];
     HomeComponents?.forEach((el) => {
-      if (el?.tag === keyword) {
+      if (el?.tag === keyword[0] || el?.tag === keyword[1]) {
         localData.push(el);
       }
     });
     setData(localData);
   }, []);
-
-  useEffect(() => {
-    var ads = document.getElementsByClassName("adsbygoogle").length;
-    for (var i = 0; i < ads; i++) {
-      try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {}
-    }
-  }, []);
   return (
     <div>
-   
-      {/* <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
       <div className={` `}>
         {/* <DatasetJsonLd
       description="The description needs to be at least 50 characters long"
@@ -56,12 +45,10 @@ export default function HeroCard() {
               height="90"
               width="728"
             />
-          </div>
-          <h2 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
-            Hero Components
-          </h2>
-       
-
+            </div>
+          <h1 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
+          Contact  Components
+          </h1>
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
           >
@@ -76,21 +63,12 @@ export default function HeroCard() {
               );
             })}
           </div>
-            <div className=" pb-8">
-            <TagRender tag="hero"/>
-            </div>
-     
-          
         </div>
-        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
-        {/* <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-2500160320143617"
-          data-ad-slot="2477731086"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins> */}
+        <div className=" pb-8">
+            <TagRender tag="contact"/>
+            </div>
+
+<div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
 
         <Footer />
       </div>

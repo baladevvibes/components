@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import HomeComponents from "../HomePage/HomeComponents";
 import HomeCard from "../HomePage/HomeCard";
 import AdsterraAds from "../components/AdsterraAds";
+import TagRender from "../tag/TagRender";
 
 export default function Card() {
   const [data, setData] = useState(HomeComponents);
@@ -64,15 +65,11 @@ export default function Card() {
           </div>
         </div>
 
-        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
-        {/* <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-2500160320143617"
-          data-ad-slot="2477731086"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins> */}
+        <div className=" pb-8">
+            <TagRender tag="card"/>
+            </div>
+
+<div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
 
         <Footer />
       </div>

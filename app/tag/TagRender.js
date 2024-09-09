@@ -13,7 +13,7 @@ export default function TagRender(props) {
     { _id: 7, name: "Login", tag: "login", link: "/login" },
     { _id: 8, name: "Blog", tag: "blog", link: "/blog" },
     { _id: 9, name: "Call to action", tag: "call-to-action", link: "/call-to-action" },
-
+    { _id: 10, name: "Contact", tag: "contact", link: "/contact" },
   ]);
   const [arr, setMapData] = useState();
 
