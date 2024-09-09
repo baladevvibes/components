@@ -63,8 +63,8 @@ export default function CssCardDesignCodePre() {
         </div>
       </div>
 
-      <div className="py-20">
-        <div className=" container mx-auto">
+      <div className="py-20 dark:bg-[#1e1e1e]">
+        <div className=" container mx-auto px-4">
           <div className="gap-6 grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1 ">
             <div className="group relative">
               <div className=" cursor-pointer absolute top-0 z-10 w-full hidden  group-hover:block   duration-300   h-[350px] bg-gradient-to-t from-[#8338EC]  rounded-2xl">

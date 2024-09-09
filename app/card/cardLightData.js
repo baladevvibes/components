@@ -178,6 +178,64 @@ const cardLightData = [
             </div>
           </section>`,
       },
+      {
+        _id: 2,
+        name: "css card design code",
+        htmlcode: ` <div class="py-20 dark:bg-[#1e1e1e]">
+        <div class=" container mx-auto px-4">
+          <div class="gap-6 grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-3 mdsm:grid-cols-2 sm:grid-cols-1 ">
+            <div class="group relative">
+              <div class=" cursor-pointer absolute top-0 z-10 w-full hidden  group-hover:block   duration-300   h-[350px] bg-gradient-to-t from-[#8338EC]  rounded-2xl">
+                <div class="NewsCycle absolute bottom-6 w-full text-[#fcfcfc] text-center text-3xl">
+                  USA
+                </div>
+              </div>
+              <img
+                src="https://makecomponents.com/Image/overall/country/USA.png"
+                alt="USA"
+                class=" h-[350px] rounded-2xl w-full sm:w-[450px] sm:object-cover"
+              />
+            </div>
+            <div class="group relative">
+              <div class="mt-8  cursor-pointer absolute top-0 z-10 w-full hidden  group-hover:block   duration-300   h-[350px] bg-gradient-to-t from-[#8338EC]  rounded-2xl">
+                <div class="NewsCycle absolute bottom-6 w-full text-[#fcfcfc] text-center text-3xl">
+                Australia
+                </div>
+              </div>
+              <img
+                src="https://makecomponents.com/Image/overall/country/Australia.png"
+                alt="Australia"
+                class="mt-8 h-[350px] rounded-2xl  w-full sm:w-[450px] sm:object-cover"
+              />
+            </div>
+            <div class="group relative">
+              <div class=" cursor-pointer absolute top-0 z-10 w-full hidden  group-hover:block   duration-300   h-[350px] bg-gradient-to-t from-[#8338EC]  rounded-2xl">
+                <div class=" absolute NewsCycle bottom-6 w-full text-[#fcfcfc] text-center text-3xl">
+                London
+                </div>
+              </div>
+              <img
+                src="https://makecomponents.com/Image/overall/country/london.png"
+                alt="london"
+                class=" h-[350px] rounded-2xl  w-full sm:w-[450px] sm:object-cover"
+              />
+            </div>
+            <div class="group relative">
+              <div class="mt-8  cursor-pointer absolute top-0 z-10 w-full hidden  group-hover:block   duration-300   h-[350px] bg-gradient-to-t from-[#8338EC]  rounded-2xl">
+                <div class="NewsCycle absolute bottom-6 w-full text-[#fcfcfc] text-center text-3xl">
+                Paris
+                </div>
+              </div>
+              <img
+                src="https://makecomponents.com/Image/overall/country/Paris.png"
+                alt="Paris"
+                class="mt-8 h-[350px] rounded-2xl  w-full sm:w-[450px] sm:object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>`,
+      },
 ];
 
 export default cardLightData;
