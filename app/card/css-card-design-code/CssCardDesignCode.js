@@ -700,7 +700,7 @@ export default function CssCardDesignCode() {
                 </div>
               </div>
               <img
-                src={`../../Image/overall/country/london.png`}
+                src={`../../Image/overall/country/London.png`}
                 alt="london"
                 className=" h-[350px] rounded-2xl  w-full sm:w-[450px] object-cover"
               />

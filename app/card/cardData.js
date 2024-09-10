@@ -797,7 +797,7 @@ const cardData = [
             </div>
           </div>
           <img
-            src="https://makecomponents.com/Image/overall/country/london.png"
+            src="https://makecomponents.com/Image/overall/country/London.png"
             alt="london"
             class=" h-[350px] rounded-2xl  w-full sm:w-[450px] sm:object-cover"
           />
