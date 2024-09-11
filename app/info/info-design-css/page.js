@@ -49,6 +49,7 @@ export const metadata = {
   },
 };
 
+
 export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",

@@ -91,7 +91,33 @@ const bootStrapHtml = [
         </div>
       </section>`
     },
-  
+    {
+      _id:1,
+      name:"Info number section css",
+      htmlcode:`   <div class=" info position-relative overflow-hidden ">
+        <img src="https://makecomponents.com/Image/overall/svg/background-path.svg" alt="svg" class="top-0 object-fit-cover h-sm-100 position-absolute"/>
+      <section class="container card-section overflow-hidden">
+        <div class="row gx-3">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="info-title">1 M</div>
+            <p class="info-para">Users</p>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="info-title">50+</div>
+            <p class="info-para">Faculties</p>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="info-title">100+</div>
+            <p class="info-para">Program</p>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="info-title">200+</div>
+            <p class="info-para">Task</p>
+          </div>
+        </div>
+      </section>
+    </div>`
+  },
 ]
 
 

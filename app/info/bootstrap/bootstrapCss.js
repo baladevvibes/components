@@ -73,6 +73,49 @@ const bootStrapCSS = [
 }
 `,
   },
+  {
+    _id: 1,
+    name: "Info number section css",
+    stylecode: `/* Rowdies */
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+.info-title {
+  font-family: "Rowdies", sans-serif;
+  font-size: 50px !important;
+  color: #fcfcfc;
+}
+.info-para {
+  color: #fcfcfc;
+}
+.info {
+  background-color: #054a91;
+  padding: 50px 0px;
+  margin: 100px 0px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 640px) {
+  .container {
+    width: 100% !important;
+    margin: 0px !important;
+    max-width: 100% !important;
+  }
+}
+`,
+  },
 ];
 
 export default bootStrapCSS;

@@ -20,7 +20,7 @@ import fontData from "../../components/Font";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
 import infoLightData from "../InfoLightData";
-import cardData from "../InfoData";
+import InfoData from "../InfoData";
 import { TbBrandBootstrap } from "react-icons/tb";
 import { TbBrandTailwind } from "react-icons/tb";
 import bootStrapHtml from "../bootstrap/bootStrapHtml";
@@ -70,7 +70,7 @@ export default function InfoDesignCss() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: cardData[1]?.htmlcode,
+      value: InfoData[1]?.htmlcode,
     },
     "darkThemeCode.js": {
       _id: 1,

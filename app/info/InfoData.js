@@ -1,5 +1,5 @@
 
-const cardData = [
+const infoData = [
     {
         _id:0,
         name:"hero-with-searchbar",
@@ -250,7 +250,38 @@ const cardData = [
         </div>
       </div>`
   },
+  {
+    _id:2,
+    name:"Info number section css",
+    htmlcode:`<div class=" bg-[#054A91] relative overflow-hidden">
+      <img src="https://makecomponents.com/Image/overall/svg/background-path.svg" alt=" " class="h-full w-full object-cover absolute top-0"/>
+        <section class="py-20 container mx-auto">
+            <div class=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
+                <div>
+                   
+                    <h4 class=" text-center relative z-10 rowdies   text-5xl text-[#fcfcfc]">1 M</h4>
+                    <p class=" text-xl  mt-2  relative z-10   text-center text-[#fcfcfc]">Users</p>
+                </div>
+                <div>
+                   
+                   <h4 class=" text-center rowdies relative z-10  text-5xl text-[#fcfcfc]">50+</h4>
+                   <p class=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Faculties</p>
+               </div>
+               <div>
+                   
+                   <h4 class=" text-center rowdies relative z-10  text-5xl text-[#fcfcfc]">100+</h4>
+                   <p class=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Program</p>
+               </div>
+               <div>
+                   
+                   <h4 class=" text-center relative z-10  rowdies  text-5xl text-[#fcfcfc]">200+</h4>
+                   <p class=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Task</p>
+               </div>
+            </div>
+        </section>
+     </div>`
+},
 ]
 
 
-export default cardData;
+export default infoData;

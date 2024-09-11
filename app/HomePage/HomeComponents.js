@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "056",
+    image: "../Image/info/info003.webp",
+    title: "Info number section css",
+    tag: "info",
+    link: "/info/info-number-section-css",
+  },
+  {
     _id: "055",
     image: "../Image/card/card008.webp",
     title: "css card design code",
