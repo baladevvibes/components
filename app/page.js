@@ -2,7 +2,7 @@ import HomeRender from "./HomeRender";
 export const metadata = {
   keywords: "tailwind free components, tailwind components, free components",
     description:
-    "Tailwind css free components. This components is easy and make a website. It will helpfull for all the developer, It most use front end developer for design the webpage. Code was free you just copy and paste.",
+    "50+ Tailwind css free components. This components is easy and make a website. It will helpfull for all the developer, It most use front end developer for design the webpage. Code was free you just copy and paste.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -13,9 +13,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Tailwind css free components",
+    title: "50+ Tailwind css free components",
     description:
-      "Tailwind css free components. This components is easy and make a website. It will helpfull for all the developer, It most use front end developer for design the webpage. Code was free you just copy and paste.",
+      "50+ Tailwind css free components. This components is easy and make a website. It will helpfull for all the developer, It most use front end developer for design the webpage. Code was free you just copy and paste.",
     url: "https://makecomponents.com",
     siteName: "makecomponents.com",
     alternates: {
@@ -41,7 +41,7 @@ export const metadata = {
     `https://makecomponents.com`
   ),
   title: {
-    default: `Tailwind css free components`,
+    default: `50+ Tailwind css free components`,
   },
   alternates: {
     canonical: "https://makecomponents.com",
