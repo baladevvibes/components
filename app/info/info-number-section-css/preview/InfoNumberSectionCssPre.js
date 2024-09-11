@@ -63,28 +63,29 @@ export default function InfoNumberSectionCssPre() {
         </div>
       </div>
 
-     <div className=" bg-[#054A91] py-20">
-        <section className=" container mx-auto">
-            <div className=" grid grid-cols-4">
+     <div className=" bg-[#054A91] dark:bg-[#3b3b3b]  relative overflow-hidden">
+      <img src="../../Image/overall/svg/background-path.svg" alt=" " className="h-full w-full object-cover absolute top-0"/>
+        <section className="py-20 container mx-auto">
+            <div className=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
                 <div>
                    
-                    <h4 className=" text-center title  text-5xl text-[#fcfcfc]">1 M</h4>
-                    <p className=" text-xl  mt-2 title text-center text-[#fcfcfc]">Users</p>
+                    <h4 className=" text-center relative z-10 rowdies   text-5xl text-[#fcfcfc]">1 M</h4>
+                    <p className=" text-xl  mt-2  relative z-10   text-center text-[#fcfcfc]">Users</p>
                 </div>
                 <div>
                    
-                   <h4 className=" text-center title  text-5xl text-[#fcfcfc]">50+</h4>
-                   <p className=" text-xl  mt-2 title text-center text-[#fcfcfc]">Faculties</p>
+                   <h4 className=" text-center rowdies relative z-10  text-5xl text-[#fcfcfc]">50+</h4>
+                   <p className=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Faculties</p>
                </div>
                <div>
                    
-                   <h4 className=" text-center title  text-5xl text-[#fcfcfc]">100+</h4>
-                   <p className=" text-xl  mt-2 title text-center text-[#fcfcfc]">Program</p>
+                   <h4 className=" text-center rowdies relative z-10  text-5xl text-[#fcfcfc]">100+</h4>
+                   <p className=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Program</p>
                </div>
                <div>
                    
-                   <h4 className=" text-center title  text-5xl text-[#fcfcfc]">200+</h4>
-                   <p className=" text-xl  mt-2 title text-center text-[#fcfcfc]">Task</p>
+                   <h4 className=" text-center relative z-10  rowdies  text-5xl text-[#fcfcfc]">200+</h4>
+                   <p className=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Task</p>
                </div>
             </div>
         </section>
