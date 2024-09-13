@@ -18,10 +18,10 @@ export const metadata = {
     title: "contact template section design",
     description:
       "There are many templates on this page. It will have different templates that are available, and it also has free code",
-    url: "https://makecomponents.com /contact",
+    url: "https://makecomponents.com/contact",
     siteName: "makecomponents.com",
     alternates: {
-      canonical: `https://makecomponents.com /contact`,
+      canonical: `https://makecomponents.com/contact`,
     },
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata = {
     default: "contact template section design",
   },
   alternates: {
-    canonical: "https://makecomponents.com /contact",
+    canonical: "https://makecomponents.com/contact",
   },
 };
 
