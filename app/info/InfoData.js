@@ -1,15 +1,15 @@
-
+import "../../app/style.css";
 const infoData = [
-    {
-        _id:0,
-        name:"hero-with-searchbar",
-        title:"Card Info Section Eight Grid",
-        des:"This component create using CSS framework tailwindcss. It fully responsive component.",
-        section:"Info",
-        slug:"card-info-section-eight-grid",
-        link:"/info/card-info-section-eight-grid/",
-        image:"../../Image/info/info001.webp",
-        htmlcode:` <section class=" container mx-auto py-24">
+  {
+    _id: 0,
+    name: "hero-with-searchbar",
+    title: "Card Info Section Eight Grid",
+    des: "This component create using CSS framework tailwindcss. It fully responsive component.",
+    section: "Info",
+    slug: "card-info-section-eight-grid",
+    link: "/info/card-info-section-eight-grid/",
+    image: "../../Image/info/info001.webp",
+    htmlcode: ` <section class=" container mx-auto py-24">
         <div class=" grid lg:grid-cols-12 lge:grid-cols-12 sm:grid-cols-1">
           <div class=" lg:col-span-2 lge:col-span-2  md:col-span-1 mdsm:col-span-1 sm:hidden"></div>
           <div class=" lg:col-span-8 lge:col-span-8 md:col-span-10 mdsm:col-span-10 sm:grid-cols-12">
@@ -163,12 +163,22 @@ const infoData = [
           </div>
           <div class=" lg:col-span-2 lge:col-span-2  md:col-span-1 mdsm:col-span-1 sm:hidden"></div>
         </div>
-      </section> `
-    },
-    {
-      _id:1,
-      name:"Info Design css",
-      htmlcode:` <div class="py-32">
+      </section> `,
+  },
+  {
+    _id: 1,
+    name: "Info Design css",
+    htmlcode: `
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title></title>
+</head>
+<body >
+      <div class="py-32">
         <div class=" container px-4 mx-auto">
           <section>
             <div class=" grid lg:grid-cols-8 h-full lge:grid-cols-8 md:grid-cols-5 mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-6 lge:gap-6 md:gap-0 mdsm:gap-0 sm:gap-0">
@@ -248,40 +258,64 @@ const infoData = [
             </div>
           </section>
         </div>
-      </div>`
+      </div>
+      
+      </body>
+</html>`,
   },
   {
-    _id:2,
-    name:"Info number section css",
-    htmlcode:`<div class=" bg-[#054A91] relative overflow-hidden">
+    _id: 2,
+    name: "Info number section css",
+    htmlcode: `
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title></title>
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+  .rowdies {
+  font-family: "Rowdies", sans-serif;
+  }
+  .raleway-font {
+  font-family: "Raleway", sans-serif !important;
+  }
+  </style>
+</head>
+<body>
+    <div class=" bg-[#054A91] relative overflow-hidden">
       <img src="https://makecomponents.com/Image/overall/svg/background-path.svg" alt=" " class="h-full w-full object-cover absolute top-0"/>
         <section class="py-20 container mx-auto">
             <div class=" grid lg:grid-cols-4 lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1">
                 <div>
                    
                     <h4 class=" text-center relative z-10 rowdies   text-5xl text-[#fcfcfc]">1 M</h4>
-                    <p class=" text-xl  mt-2  relative z-10   text-center text-[#fcfcfc]">Users</p>
+                    <p class=" text-xl  mt-2  relative z-10 raleway-font  text-center text-[#fcfcfc]">Users</p>
                 </div>
                 <div>
                    
-                   <h4 class=" text-center rowdies relative z-10  text-5xl text-[#fcfcfc]">50+</h4>
-                   <p class=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Faculties</p>
+                   <h4 class=" text-center rowdies relative z-10   text-5xl text-[#fcfcfc]">50+</h4>
+                   <p class=" text-xl  mt-2 relative z-10 raleway-font  text-center text-[#fcfcfc]">Faculties</p>
                </div>
                <div>
                    
                    <h4 class=" text-center rowdies relative z-10  text-5xl text-[#fcfcfc]">100+</h4>
-                   <p class=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Program</p>
+                   <p class=" text-xl  mt-2 relative z-10 raleway-font  text-center text-[#fcfcfc]">Program</p>
                </div>
                <div>
                    
                    <h4 class=" text-center relative z-10  rowdies  text-5xl text-[#fcfcfc]">200+</h4>
-                   <p class=" text-xl  mt-2 relative z-10   text-center text-[#fcfcfc]">Task</p>
+                   <p class=" text-xl  mt-2 relative z-10  raleway-font  text-center text-[#fcfcfc]">Task</p>
                </div>
             </div>
         </section>
-     </div>`
-},
-]
-
+     </div>
+      </body>
+</html>
+     `,
+  },
+];
 
 export default infoData;

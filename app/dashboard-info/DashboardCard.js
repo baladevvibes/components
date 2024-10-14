@@ -7,6 +7,7 @@ import HomeCard from "../HomePage/HomeCard";
 import AdsterraAds from "../components/AdsterraAds";
 import TagRender from "../tag/TagRender";
 
+
 export default function DashboardCard() {
   const [data, setData] = useState(HomeComponents);
   var keyword = ["dashboard-info",];
@@ -22,6 +23,7 @@ export default function DashboardCard() {
   }, []);
   return (
     <div>
+ <div>
       <div className={` `}>
         {/* <DatasetJsonLd
       description="The description needs to be at least 50 characters long"
@@ -74,5 +76,6 @@ export default function DashboardCard() {
         <Footer />
       </div>
     </div>
-  );
+    </div>
+  )
 }

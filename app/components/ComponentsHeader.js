@@ -14,15 +14,15 @@ export default function ComponentsHeader({
   using_font,
 }) {
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {
-        console.error('AdSense error', e);
-      }
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     try {
+  //       (window.adsbygoogle = window.adsbygoogle || []).push({});
+  //     } catch (e) {
+  //       console.error('AdSense error', e);
+  //     }
+  //   }
+  // }, []);
     useEffect(() => {
         AOS.init();
         AOS.refresh();

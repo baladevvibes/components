@@ -8,11 +8,11 @@ import axios from "axios";
 export default function HomeCard({ title, img, tag, link, date }) {
   const handleClick = (tag) => {
     console.log(tag);
-    const data ={
-      views:0,
-      tag:tag,
-      name:title
-    }
+    const data = {
+      views: 0,
+      tag: tag,
+      name: title,
+    };
     axios
       .post("https://backend-api-coral.vercel.app/api/countadd", data)
       .then((res) => {
@@ -27,9 +27,10 @@ export default function HomeCard({ title, img, tag, link, date }) {
     AOS.refresh();
   }, []);
   return (
-    <div data-aos="fade-up">
-      <Link href={link}> 
+    <div  data-aos="fade-up">
+      <Link href={link}>
         <div
+         
           onClick={() => handleClick(tag)}
           className={`group cursor-pointer relative  drop-css rounded-lg`}
         >
@@ -58,7 +59,7 @@ export default function HomeCard({ title, img, tag, link, date }) {
             </div>
           </div>
         </div>
-      </Link> 
+      </Link>
     </div>
   );
 }

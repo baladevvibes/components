@@ -158,7 +158,7 @@ export default function IconServicesSection() {
   const [finalDataArr, setFinalData] = useState();
   const [anotherData, setAnotherData] = useState();
   // const [forceRender, setForceRender] = useState(false);
-  console.log(count, anotherData);
+  
 
   const handleClick = () => {
     setCount(count + 1);

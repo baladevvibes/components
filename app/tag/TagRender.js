@@ -12,10 +12,19 @@ export default function TagRender(props) {
     { _id: 6, name: "Highlight", tag: "highlight", link: "/highlight" },
     { _id: 7, name: "Login", tag: "login", link: "/login" },
     { _id: 8, name: "Blog", tag: "blog", link: "/blog" },
-    { _id: 9, name: "Call to action", tag: "call-to-action", link: "/call-to-action" },
+    {
+      _id: 9,
+      name: "Call to action",
+      tag: "call-to-action",
+      link: "/call-to-action",
+    },
     { _id: 10, name: "Contact", tag: "contact", link: "/contact" },
-    { _id: 11, name: "Dashboard Info", tag: "dashboard-info", link: "/dashboard-info" },
-
+    {
+      _id: 11,
+      name: "Dashboard Info",
+      tag: "dashboard-info",
+      link: "/dashboard-info",
+    },
   ]);
   const [arr, setMapData] = useState();
 
@@ -48,10 +57,11 @@ export default function TagRender(props) {
           </>
         )}
 
-        {arr?.map((v, i) => {
+        {arr?.map((v, index) => {
           return (
             <>
               <a
+                key={index}
                 href={`${v?.link}`}
                 className=" hover:brightness-125 tracking-wide"
               >

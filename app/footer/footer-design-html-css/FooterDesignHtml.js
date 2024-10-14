@@ -201,7 +201,7 @@ export default function FooterDesignHtml() {
   const [anotherData, setAnotherData] = useState();
   // const [forceRender, setForceRender] = useState(false);
   const [buttonState, setButtonState] = useState(false);
-  console.log(count, anotherData);
+  
 
   const handleClick = () => {
     setCount(count + 1);
