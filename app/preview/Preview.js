@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 import "../style.css";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
-import { AiOutlineMenuFold } from "react-icons/ai";
+import { AiFillProduct, AiOutlineMenuFold, AiOutlineProduct } from "react-icons/ai";
 import { BsArrowUpRight } from "react-icons/bs";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
 import { LuInstagram } from "react-icons/lu";
 import { VscEye } from "react-icons/vsc";
-import { MdOutlineDateRange } from "react-icons/md";
+import { MdOutlineDateRange, MdPeopleAlt } from "react-icons/md";
 import { RiAndroidLine } from "react-icons/ri";
 import { MdOutlineSdStorage } from "react-icons/md";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
@@ -18,7 +18,7 @@ import { RxDoubleArrowRight } from "react-icons/rx";
 import { GoKey } from "react-icons/go";
 import { FaKey } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
-import { FaCloudArrowDown } from "react-icons/fa6";
+import { FaArrowUpShortWide, FaCloudArrowDown, FaHandHoldingDollar } from "react-icons/fa6";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { RiGlobeLine } from "react-icons/ri";
 import { BiBroadcast } from "react-icons/bi";
@@ -33,6 +33,7 @@ import { HiOutlineSparkles } from "react-icons/hi";
 import { RiEarthLine } from "react-icons/ri";
 import { RiHeartAdd2Line } from "react-icons/ri";
 import { RiInputField } from "react-icons/ri";
+import { TbBrandCashapp } from "react-icons/tb";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -119,6 +120,71 @@ export default function Preview() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className=" container mx-auto px-4">
+        <div className=" grid lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-6">
+          <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
+            <div className=" flex ">
+              <div className=" w-1/2">
+              <div className=" text-4xl concert text-[#f2f2f2]">500</div>
+              <p className=" text-[#f2f2f2] plus-jakarta-sans-font">Total Orders</p>
+              </div>
+              <div className="w-1/2 flex justify-end ">
+              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+              <FaHandHoldingDollar className=" text-[40px] text-[#011936]"/>
+
+              </div>
+              </div>
+            </div>
+
+           
+          </div>
+
+          <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
+            <div className=" flex ">
+              <div className=" w-1/2">
+              <div className=" text-4xl concert text-[#f2f2f2]">985</div>
+              <p className=" text-[#f2f2f2] plus-jakarta-sans-font"> Sales</p>
+              </div>
+              <div className="w-1/2 flex justify-end ">
+              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+              <FaArrowUpShortWide className=" text-[40px] text-[#011936]"/>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
+            <div className=" flex ">
+              <div className=" w-1/2">
+              <div className=" text-4xl concert text-[#f2f2f2]">52</div>
+              <p className=" text-[#f2f2f2] plus-jakarta-sans-font"> Product</p>
+              </div>
+              <div className="w-1/2 flex justify-end ">
+              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+              <AiFillProduct className=" text-[40px] text-[#011936]"/>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
+            <div className=" flex ">
+              <div className=" w-1/2">
+              <div className=" text-4xl concert text-[#f2f2f2]">52K</div>
+              <p className=" text-[#f2f2f2] plus-jakarta-sans-font"> Visitors</p>
+              </div>
+              <div className="w-1/2 flex justify-end ">
+              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+              <MdPeopleAlt className=" text-[40px] text-[#011936]"/>
+              </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

@@ -1,27 +1,27 @@
 import React from 'react'
-import DashboardInfromation from './DashboardInfromation'
+import DashboardInfromationPre from './DashboardInfromationPre'
 
 export const metadata = {
-  keywords: "Dashboard information examples,Dashboard Information design,Simple dashboard examples",
+  keywords: "Dashboard Information preview examples,Dashboard Information preview design,Simple dashboard examples",
   description:
-    "Dashboard Information and with clean design and proper color code. It is fully responsive.",
+    "Dashboard Information preview and with clean design and proper color code. It is fully responsive.",
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "../../favicon.ico",
+    shortcut: "../../favicon.ico",
+    apple: "../../favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "../../favicon.ico",
     },
   },
   openGraph: {
-    title: "Dashboard Information",
+    title: "Dashboard Information preview",
     description:
-      "Dashboard Information and with clean design and proper color code. It is fully responsive.",
-    url: "https://makecomponents.com/dashboard-info/dashboard-information",
+      "Dashboard Information preview and with clean design and proper color code. It is fully responsive.",
+    url: "https://makecomponents.com/dashboard-info/dashboard-information/preview",
     siteName: "makecomponents.com",
     alternates: {
-      canonical: `https://makecomponents.com/dashboard-info/dashboard-information`,
+      canonical: `https://makecomponents.com/dashboard-info/dashboard-information/preview`,
     },
     images: [
       {
@@ -33,21 +33,20 @@ export const metadata = {
         url: "https://makecomponents.com/Image/dashboard-info/dashboard-info002.webp", // Must be an absolute URL
         width: 800,
         height: 600,
-        alt: "Dashboard Information",
+        alt: "Dashboard Information preview",
       },
     ],
     locale: "en_US",
     type: "website",
   },
-  metadataBase: new URL(`https://makecomponents.com/dashboard-info/dashboard-information`),
+  metadataBase: new URL(`https://makecomponents.com/dashboard-info/dashboard-information/preview`),
   title: {
-    default: "Dashboard Information ",
+    default: "Dashboard Information preview",
   },
   alternates: {
-    canonical: "https://makecomponents.com/dashboard-info/dashboard-information",
+    canonical: "https://makecomponents.com/dashboard-info/dashboard-information/preview",
   },
 };
-
 
 export default function page() {
   const jsonLd = {
@@ -73,6 +72,12 @@ export default function page() {
         name: "Dashboard Information",
         item: "https://makecomponents.com/dashboard-info/dashboard-information",
       },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Dashboard Information preview",
+        item: "https://makecomponents.com/dashboard-info/dashboard-information/preview",
+      },
     ],
   };
   return (
@@ -81,7 +86,7 @@ export default function page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <DashboardInfromation/>
+        <DashboardInfromationPre/>
     </div>
   )
 }
