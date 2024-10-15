@@ -420,7 +420,7 @@ function DashboardInfromation() {
                       <p className={` text-sm text-center `}> vi</p>
                     </div>
 
-                    <a href={`/info/info-number-section-css/preview`}>
+                    <a href={`/dashboard-info/dashboard-information/preview`}>
                       <div className={` group`}>
                         <div
                           className={` p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
