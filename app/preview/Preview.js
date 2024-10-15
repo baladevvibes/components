@@ -3,7 +3,11 @@ import React, { useEffect, useState } from "react";
 import "../style.css";
 import { CiDark } from "react-icons/ci";
 import { CiLight } from "react-icons/ci";
-import { AiFillProduct, AiOutlineMenuFold, AiOutlineProduct } from "react-icons/ai";
+import {
+  AiFillProduct,
+  AiOutlineMenuFold,
+  AiOutlineProduct,
+} from "react-icons/ai";
 import { BsArrowUpRight } from "react-icons/bs";
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -16,9 +20,13 @@ import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { TbBrandApple } from "react-icons/tb";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { GoKey } from "react-icons/go";
-import { FaKey } from "react-icons/fa";
+import { FaKey, FaQuoteLeft } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
-import { FaArrowUpShortWide, FaCloudArrowDown, FaHandHoldingDollar } from "react-icons/fa6";
+import {
+  FaArrowUpShortWide,
+  FaCloudArrowDown,
+  FaHandHoldingDollar,
+} from "react-icons/fa6";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { RiGlobeLine } from "react-icons/ri";
 import { BiBroadcast } from "react-icons/bi";
@@ -123,35 +131,91 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className="  container mx-auto py-32">
+        <div className=" grid lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1">
+          <div className=" bg-[#3066BE]">
+            <div className=" grid grid-cols-2 sm:grid-cols-1">
+              <div className=" p-6 pt-20">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  class=" text-4xl text-[#FBFF12]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
+                </svg>
+                <p className=" text-[#f2f2f2] pt-4 work leading-8 font-semibold text-[24px] w-[130%] sm:w-full">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for previewing layouts and
+                  visual mockups.
+                </p>
+                <h3 className="pt-4 text-[18px] work text-[#f2f2f2]">
+                  - Sean Roldan
+                </h3>
+              </div>
+              <div className=" w-full relative flex justify-end">
+                <img
+                  src="http://localhost:3000/Image/overall/person/person14.webp"
+                  className=" h-[400px] sm:hidden absolute bottom-0"
+                  alt="Person"
+                />
+              </div>
+            </div>
+          </div>
+          <div className=" bg-[#9368B7]">
+            <div className=" grid grid-cols-2 sm:grid-cols-1">
+              <div className=" p-6 pt-20">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  class=" text-4xl text-[#FBFF12]"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
+                </svg>
+                <p className=" text-[#f2f2f2] pt-4 work leading-8 font-semibold text-[24px] w-[130%] sm:w-full">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing industries for previewing layouts and
+                  visual mockups.
+                </p>
+                <h3 className="pt-4 text-[18px] work text-[#f2f2f2]">
+                  - Emma Watson
+                </h3>
+              </div>
+              <div className=" w-full flex justify-end relative">
+                <img
+                  src="http://localhost:3000/Image/overall/person/person13.webp"
+                  className=" h-[400px] sm:hidden absolute bottom-0"
+                  alt="Person"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className=" container mx-auto px-4">
         <div className=" grid lg:grid-cols-4  lge:grid-cols-4 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-6">
           <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
             <div className=" flex ">
               <div className=" w-1/2">
-              <div className=" text-4xl concert text-[#f2f2f2]">500</div>
-              <p className=" text-[#f2f2f2] plus-jakarta-sans-font">Total Orders</p>
+                <div className=" text-4xl concert text-[#f2f2f2]">500</div>
+                <p className=" text-[#f2f2f2] plus-jakarta-sans-font">
+                  Total Orders
+                </p>
               </div>
               <div className="w-1/2 flex justify-end ">
-              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
-              <FaHandHoldingDollar className=" text-[40px] text-[#011936]"/>
-
-              </div>
-              </div>
-            </div>
-
-           
-          </div>
-
-          <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
-            <div className=" flex ">
-              <div className=" w-1/2">
-              <div className=" text-4xl concert text-[#f2f2f2]">985</div>
-              <p className=" text-[#f2f2f2] plus-jakarta-sans-font"> Sales</p>
-              </div>
-              <div className="w-1/2 flex justify-end ">
-              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
-              <FaArrowUpShortWide className=" text-[40px] text-[#011936]"/>
-              </div>
+                <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+                  <FaHandHoldingDollar className=" text-[40px] text-[#011936]" />
+                </div>
               </div>
             </div>
           </div>
@@ -159,32 +223,50 @@ export default function Preview() {
           <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
             <div className=" flex ">
               <div className=" w-1/2">
-              <div className=" text-4xl concert text-[#f2f2f2]">52</div>
-              <p className=" text-[#f2f2f2] plus-jakarta-sans-font"> Product</p>
+                <div className=" text-4xl concert text-[#f2f2f2]">985</div>
+                <p className=" text-[#f2f2f2] plus-jakarta-sans-font"> Sales</p>
               </div>
               <div className="w-1/2 flex justify-end ">
-              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
-              <AiFillProduct className=" text-[40px] text-[#011936]"/>
-              </div>
+                <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+                  <FaArrowUpShortWide className=" text-[40px] text-[#011936]" />
+                </div>
               </div>
             </div>
           </div>
-
 
           <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
             <div className=" flex ">
               <div className=" w-1/2">
-              <div className=" text-4xl concert text-[#f2f2f2]">52K</div>
-              <p className=" text-[#f2f2f2] plus-jakarta-sans-font"> Visitors</p>
+                <div className=" text-4xl concert text-[#f2f2f2]">52</div>
+                <p className=" text-[#f2f2f2] plus-jakarta-sans-font">
+                  {" "}
+                  Product
+                </p>
               </div>
               <div className="w-1/2 flex justify-end ">
-              <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
-              <MdPeopleAlt className=" text-[40px] text-[#011936]"/>
-              </div>
+                <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+                  <AiFillProduct className=" text-[40px] text-[#011936]" />
+                </div>
               </div>
             </div>
           </div>
 
+          <div className=" bg-[#011936] p-6 shadow-2xl rounded-lg">
+            <div className=" flex ">
+              <div className=" w-1/2">
+                <div className=" text-4xl concert text-[#f2f2f2]">52K</div>
+                <p className=" text-[#f2f2f2] plus-jakarta-sans-font">
+                  {" "}
+                  Visitors
+                </p>
+              </div>
+              <div className="w-1/2 flex justify-end ">
+                <div className=" h-[60px] flex justify-center items-center w-[60px] rounded-full bg-[#F9DC5C]">
+                  <MdPeopleAlt className=" text-[40px] text-[#011936]" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -192,11 +274,9 @@ export default function Preview() {
         <div className=" grid grid-cols-4">
           <div>
             <div className=" text-center text-4xl">20K +</div>
-              <div className=" text-center">Reviews</div>
-
+            <div className=" text-center">Reviews</div>
           </div>
         </div>
-
       </div>
 
       <div className=" py-10">
@@ -217,30 +297,23 @@ export default function Preview() {
               </div>
 
               <div>
-                Follow us 
-
+                Follow us
                 <div className=" flex  space-x-4 mt-2">
                   <div className=" h-[40px] w-[40px] rounded-full border border-[#222]"></div>
                   <div className=" h-[40px] w-[40px] rounded-full border border-[#222]"></div>
 
                   <div className=" h-[40px] w-[40px] rounded-full border border-[#222]"></div>
-
                 </div>
               </div>
             </div>
           </div>
 
           <div className="py-6 border-t-[1px] grid grid-cols-2">
-            <div > Copyright.All right reserved. </div>
+            <div> Copyright.All right reserved. </div>
             <div className=" grid grid-cols-2">
-              <div>
-                Terms and Ploicy
-              </div>
-              <div>
-               +91 90123456789
-              </div>
+              <div>Terms and Ploicy</div>
+              <div>+91 90123456789</div>
             </div>
-
           </div>
         </div>
         <div></div>
