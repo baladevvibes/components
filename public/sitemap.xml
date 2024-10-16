@@ -11,6 +11,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://makecomponents.com/testimonials/testimonials-tailwind</loc>
+  <lastmod>2024-10-15T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://makecomponents.com/dashboard-info/dashboard-information</loc>
   <lastmod>2024-10-15T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -369,6 +374,11 @@
   <loc>https://makecomponents.com/faq</loc>
   <lastmod>2024-09-13T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/testimonials/testimonials-tailwind/preview</loc>
+  <lastmod>2024-10-15T04:34:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/dashboard-info/dashboard-information/preview</loc>
