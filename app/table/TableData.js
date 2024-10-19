@@ -1052,6 +1052,97 @@ const tableData = [
       </section>
     </div>`
   }
+  ,
+    {
+      _id:2,
+      title:"Table design in HTML examples",
+      htmlcode:`  <div class="py-20">
+        <section class="container mx-auto">
+          <div class="sm:w-full overflow-auto px-4">
+            <table class=" sm:w-[200%] md:w-[150%] mdsm:w-[150%] lge:w-full lg:w-full mx-auto">
+              <thead>
+                <tr class="  text-[#333]  font-bold border-b border-[#ccc]">
+                  <td class=" sm:w-[100px] px-4 py-4">Order ID</td>
+                  <td>Customer Name</td>
+                  <td>Product</td>
+                  <td>Price</td>
+                  <td>Date</td>
+                  <td>Location</td>
+                  <td class=" px-4">Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="group cursor-pointer hover:bg-[#ecf1f4] text-[14px]  text-[#333]  border-b border-[#ccc]">
+                  <td class="px-4 font-bold py-4">#05122</td>
+                  <td class=" py-4">Noah</td>
+                  <td class=" py-4">Wireless Earbuds</td>
+                  <td class=" py-4 font-semibold text-[green]">$33</td>
+                  <td class=" py-4">19-10-2024</td>
+                  <td class=" py-4">Cape Town, South Africa </td>
+                  <td class="py-4 flex text-[green]">
+                    {" "}
+                    <div class="mt-2 h-[5px] mx-2 w-[5px]  rounded-full bg-[green]"></div>
+                    Delivered{" "}
+                  </td>
+                </tr>
+                <tr class="group cursor-pointer hover:bg-[#ecf1f4] text-[14px]  text-[#333]  border-b border-[#ccc]">
+                  <td class="px-4 font-bold py-4">#5410</td>
+                  <td class=" py-4">Alexander </td>
+                  <td class=" py-4">Smart Doorbell Camera</td>
+                  <td class=" py-4 font-semibold text-[green]">$53</td>
+                  <td class=" py-4">19-10-2024</td>
+                  <td class=" py-4">Cape Town, South Africa </td>
+                  <td class="py-4 flex text-[green]">
+                    {" "}
+                    <div class="mt-2 h-[5px] mx-2 w-[5px]  rounded-full bg-[green]"></div>
+                    Delivered{" "}
+                  </td>
+                </tr>
+                <tr class="group cursor-pointer hover:bg-[#ecf1f4] text-[14px]  text-[#333]  border-b border-[#ccc]">
+                  <td class="px-4 font-bold py-4">#95120</td>
+                  <td class=" py-4">Fatima </td>
+                  <td class=" py-4">Compact Air Fryer</td>
+                  <td class=" py-4 font-semibold text-[green]">$64</td>
+                  <td class=" py-4">19-10-2024</td>
+                  <td class=" py-4">Sydney, Australia</td>
+                  <td class="py-4 flex text-[#f5a524]">
+                    {" "}
+                    <div class="mt-2 h-[5px] mx-2 w-[5px]  rounded-full bg-[#f5a524]"></div>
+                    On-Delivered{" "}
+                  </td>
+                </tr>
+                <tr class="group cursor-pointer hover:bg-[#ecf1f4] text-[14px]  text-[#333]  border-b border-[#ccc]">
+                  <td class="px-4 font-bold py-4">#85410</td>
+                  <td class=" py-4">Sakura </td>
+                  <td class=" py-4">Smart Water Bottle</td>
+                  <td class=" py-4 font-semibold text-[green]">$10</td>
+                  <td class=" py-4">19-10-2024</td>
+                  <td class=" py-4">Rio de Janeiro, Brazil</td>
+                  <td class="py-4 flex text-[#cf021a]">
+                    {" "}
+                    <div class="mt-2 h-[5px] mx-2 w-[5px]  rounded-full bg-[#cf021a]"></div>
+                    Canceled{" "}
+                  </td>
+                </tr>
+                <tr class="group cursor-pointer hover:bg-[#ecf1f4] text-[14px]  text-[#333]  border-b border-[#ccc]">
+                  <td class="px-4 font-bold py-4">#06412</td>
+                  <td class=" py-4">Zara  </td>
+                  <td class=" py-4">Power Bank</td>
+                  <td class=" py-4 font-semibold text-[green]">$23</td>
+                  <td class=" py-4">19-10-2024</td>
+                  <td class=" py-4">Sydney, Australia</td>
+                  <td class="py-4 flex text-[#f5a524]">
+                    {" "}
+                    <div class="mt-2 h-[5px] mx-2 w-[5px]  rounded-full bg-[#f5a524]"></div>
+                    On-Delivered{" "}
+                  </td>
+                </tr>
+              </tbody>
+            </table>{" "}
+          </div>
+        </section>
+      </div>`
+  }
 ]
 
 

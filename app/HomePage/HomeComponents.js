@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "059",
+    image: "../Image/table/table003.webp",
+    title: "Table design in HTML examples",
+    tag: "table",
+    link: "/table/table-design",
+  },
+  {
     _id: "058",
     image: "../Image/testimonials/testimonials002.webp",
     title: "Testimonials tailwind component html",
