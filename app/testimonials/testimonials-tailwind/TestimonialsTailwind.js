@@ -654,12 +654,12 @@ function TestimonialsTailwind() {
                 <>
                   <div>
 
-                  <div className="  container mx-auto py-">
+                  <div className="  container mx-auto py-10">
                     <div className={` ${xlScreen ? `w-[w-full]`:``} ${lgScreen ? `w-[980px]`:``} ${mdScreen ? `w-[780px]`:``} ${smScreen ? `w-[400px]`:``} ${responsiveState ? ``:` sm:w-[600px] md:w-[780px] lg:w-full lge:w-full mdsm:w-[980px]`} mx-auto`}>
 
           
                     
-        {/* <div className={` grid ${xlScreen?` grid-cols-2`:``} ${lgScreen?` grid-cols-1`:``} ${mdScreen?` grid-cols-1`:``} ${smScreen?` grid-cols-1`:``} ${responsiveState ? ``:`lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1`}`}>
+        <div className={` grid ${xlScreen?` grid-cols-2`:``} ${lgScreen?` grid-cols-1`:``} ${mdScreen?` grid-cols-1`:``} ${smScreen?` grid-cols-1`:``} ${responsiveState ? ``:`lg:grid-cols-2 lge:grid-cols-2 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1`}`}>
           <div className=" bg-[#3066BE]">
             <div className=" grid grid-cols-2 sm:grid-cols-1">
               <div className=" p-6 pt-20">
@@ -726,10 +726,10 @@ function TestimonialsTailwind() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         </div>
       </div>
-                    <div className={ ` lg:py-10 lge:py-10 md:py-10 mdsm:py-10 sm:py-10 sm:pb-10  ${
+                    {/* <div className={ ` lg:py-10 lge:py-10 md:py-10 mdsm:py-10 sm:py-10 sm:pb-10  ${
                           xlScreen ? `h-[100vh]` : ``
                         }  ${lgScreen ? `h-[100vh]` : ``}  ${
                           mdScreen ? `h-[80vh]` : ``
@@ -744,7 +744,7 @@ function TestimonialsTailwind() {
                           mdScreen ? `w-[780px]` : ``
                         } ${smScreen ? `w-[600px]` : ``}`}
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </>
               )}
