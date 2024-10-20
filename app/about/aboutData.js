@@ -308,5 +308,96 @@ const aboutData = [
             </div>
           </section>`,
   },
+  {
+    _id: 6,
+    title: "Tailwind CSS About us page",
+    htmlcode: ` <div class=" py-10">
+        <div class=" container mx-auto">
+          <div class="px-4 grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
+            <div>
+              <img
+                src="https://makecomponents.com/Image/overall/about/about004.png"
+                class="mx-auto h-[400px] w-[400px] lge:block lg:block md:hidden mdsm:hidden sm:block"
+                alt="meeting"
+              />
+            </div>
+            <div class="col-span-2">
+              <h2 class="mt-12 font-semibold Comic text-[#091057] text-3xl ">
+                What is Lorem Ipsum
+              </h2>
+              <p class=" text-[#434343] pt-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class=" grid grid-cols-2 sm:grid-cols-1">
+                <div>
+                  <ul class=" mt-6">
+                    <li class="flex ">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+                    <li class="flex mt-2">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+                    <li class="flex mt-2">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+
+                    <li class="flex mt-2">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class=" mt-6 sm:mt-2">
+                    <li class="flex ">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+                    <li class="flex mt-2">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+                    <li class="flex mt-2">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+
+                    <li class="flex mt-2">
+                      <GiCheckMark class=" mx-4 text-[#091057]" />
+                      <p class=" text-[#434343]">
+                        Lorem Ipsum is simply dummy text
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="mx-6 hover:bg-[#222] text-[#fcfcfc] px-6 py-2 rounded-full bg-[#091057] mt-6">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>`,
+  },
 ];
 export default aboutData;

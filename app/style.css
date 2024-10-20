@@ -117,6 +117,8 @@
 /* Actor */
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 
+/* Comic */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap");
 
 * {
@@ -128,6 +130,9 @@
 }
 .Prompt{
   font-family: "Prompt", sans-serif;
+}
+.Comic{
+  font-family: "Comic Neue", cursive;
 }
 .Actor{
   font-family: "Actor", sans-serif;

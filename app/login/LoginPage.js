@@ -5,10 +5,11 @@ import Header from "../components/Header";
 import HomeComponents from "../HomePage/HomeComponents";
 import HomeCard from "../HomePage/HomeCard";
 import AdsterraAds from "../components/AdsterraAds";
+import TagRender from "../tag/TagRender";
 
 export default function LoginPage() {
   const [data, setData] = useState(HomeComponents);
-  var keyword = ["Login in"];
+  var keyword = ["login-in"];
 
   useEffect(() => {
     let localData = [];
@@ -55,29 +56,12 @@ export default function LoginPage() {
               );
             })}
           </div>
-          <div className="px-6 tags space-x-10 pb-10 space-y-5">
-            <h4 className={` title-font pt-16 pb-4 text-center text-secondary text-2xl font-semibold aos-init aos-animate`}>Find Components</h4>
          
-            <a href="/card" className=" hover:brightness-125 tracking-wide">
-              Card
-            </a>
-            <a href="/about" className=" hover:brightness-125 tracking-wide">
-              About
-            </a>
-            <a href="/services" className=" hover:brightness-125 tracking-wide">
-              Service
-            </a>
-            <a href="/skeleton" className=" hover:brightness-125 tracking-wide">
-              Skeleton
-            </a>
-            <a href="/tab" className=" hover:brightness-125 tracking-wide">
-              Tab
-            </a>
-            <a href="/highlight" className=" hover:brightness-125 tracking-wide">
-            Highlight
-            </a>
-          
-          </div>
+
+         
+        <div className=" pb-8">
+            <TagRender tag="login-in"/>
+            </div>
         </div>
         <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
 

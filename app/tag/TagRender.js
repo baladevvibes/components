@@ -10,7 +10,7 @@ export default function TagRender(props) {
     { _id: 4, name: "Skeleton", tag: "skeleton", link: "/skeleton" },
     { _id: 5, name: "Tab", tag: "tab", link: "/tab" },
     { _id: 6, name: "Highlight", tag: "highlight", link: "/highlight" },
-    { _id: 7, name: "Login", tag: "login", link: "/login" },
+    { _id: 7, name: "Login", tag: "login-in", link: "/login" },
     { _id: 8, name: "Blog", tag: "blog", link: "/blog" },
     {
       _id: 9,
