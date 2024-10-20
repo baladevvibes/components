@@ -25,6 +25,12 @@ export default function TagRender(props) {
       tag: "dashboard-info",
       link: "/dashboard-info",
     },
+    {
+      _id: 12,
+      name: "Table",
+      tag: "table",
+      link: "/table",
+    },
   ]);
   const [arr, setMapData] = useState();
 
