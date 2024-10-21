@@ -818,6 +818,52 @@ const cardData = [
     </div>
   </div>`,
   },
+  {
+    _id: 9,
+    name: "Modern tailwind card design",
+    htmlcode: `  <div class="py-4">
+        <div class="container mx-auto">
+          <div class="grid px-4 lg:grid-cols-3  lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 gap-10">
+            <div class="lg:pt-0 lge:pt-0 mdsm:pt-0 md:pt-10 sm:pt-16">
+              <img
+                src="https://makecomponents.com/Image/overall/hotel/hotel001.webp"
+                alt="hotel"
+                class=" rounded-3xl"
+              />
+              <div class="relative w-full flex justify-center">
+                <div class="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
+                  <h3 class="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Aurelia Heights</h3>
+                </div>
+              </div>
+            </div>
+            <div class=" lg:pt-0 lge:pt-0 mdsm:pt-0 md:pt-10 sm:pt-16">
+              <img
+                src="https://makecomponents.com/Image/overall/hotel/hotel002.webp"
+                alt="hotel"
+                class=" rounded-3xl"
+              />
+              <div class="relative w-full flex justify-center">
+                <div class="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
+                  <h3 class="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Sovereign Bay Retreat</h3>
+                </div>
+              </div>
+            </div>
+            <div class="lg:pt-0 lge:pt-0 mdsm:pt-0 md:pt-10 sm:pt-16">
+              <img
+                src="https://makecomponents.com/Image/overall/hotel/hotel003.webp"
+                alt="hotel"
+                class=" rounded-3xl"
+              />
+              <div class="relative w-full flex justify-center">
+                <div class="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
+                  <h3 class="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Elysian Crown Resort</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`,
+  },
 ];
 
 export default cardData;

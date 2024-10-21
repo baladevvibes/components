@@ -132,6 +132,49 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className="py-20">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-3 gap-10">
+            <div className="">
+              <img
+                src="../Image/overall/hotel/hotel001.webp"
+                alt="hotel"
+                className=" rounded-3xl"
+              />
+              <div className="relative w-full flex justify-center">
+                <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
+                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Aurelia Heights</h3>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <img
+                src="../Image/overall/hotel/hotel002.webp"
+                alt="hotel"
+                className=" rounded-3xl"
+              />
+              <div className="relative w-full flex justify-center">
+                <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
+                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Sovereign Bay Retreat</h3>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <img
+                src="../Image/overall/hotel/hotel003.webp"
+                alt="hotel"
+                className=" rounded-3xl"
+              />
+              <div className="relative w-full flex justify-center">
+                <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
+                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Elysian Crown Resort</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className=" py-20">
         <div className=" container mx-auto">
           <div className="px-4 grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
