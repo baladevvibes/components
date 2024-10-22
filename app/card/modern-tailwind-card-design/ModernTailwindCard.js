@@ -493,7 +493,7 @@ export default function ModernTailwindCard() {
                           />
                           <div className="relative w-full flex justify-center">
                             <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
-                              <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">
+                              <h3 className={`text-center font-semibold Fira text-[#454545] mx-auto ${xlScreen?`text-2xl`:``} ${lgScreen?`text-2xl`:``} ${mdScreen?`text-2xl`:``} ${smScreen?`text-1xl`:``} ${responsiveState?``:`text-2xl sm:text-1xl`} `}>
                                 Aurelia Heights
                               </h3>
                             </div>
@@ -507,7 +507,7 @@ export default function ModernTailwindCard() {
                           />
                           <div className="relative w-full flex justify-center">
                             <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
-                              <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">
+                              <h3 className={`text-center font-semibold Fira text-[#454545] mx-auto ${xlScreen?`text-2xl`:``} ${lgScreen?`text-2xl`:``} ${mdScreen?`text-2xl`:``} ${smScreen?`text-1xl`:``} ${responsiveState?``:`text-2xl sm:text-1xl`} `}>
                                 Sovereign Bay Retreat
                               </h3>
                             </div>
@@ -521,7 +521,7 @@ export default function ModernTailwindCard() {
                           />
                           <div className="relative w-full flex justify-center">
                             <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
-                              <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">
+                              <h3 className={`text-center font-semibold Fira text-[#454545] mx-auto ${xlScreen?`text-2xl`:``} ${lgScreen?`text-2xl`:``} ${mdScreen?`text-2xl`:``} ${smScreen?`text-1xl`:``} ${responsiveState?``:`text-2xl sm:text-1xl`} `}>
                                 Elysian Crown Resort
                               </h3>
                             </div>

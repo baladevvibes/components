@@ -41,7 +41,7 @@ export default function ModernTailwindCardPre() {
               />
               <div className="relative w-full flex justify-center">
                 <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
-                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Aurelia Heights</h3>
+                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto sm:text-1xl text-2xl">Aurelia Heights</h3>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function ModernTailwindCardPre() {
               />
               <div className="relative w-full flex justify-center">
                 <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
-                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Sovereign Bay Retreat</h3>
+                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto sm:text-1xl text-2xl">Sovereign Bay Retreat</h3>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function ModernTailwindCardPre() {
               />
               <div className="relative w-full flex justify-center">
                 <div className="bg-[#fff] p-8 rounded-3xl absolute w-[80%]  -top-8">
-                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto text-2xl">Elysian Crown Resort</h3>
+                  <h3 className="text-center font-semibold Fira text-[#454545] mx-auto sm:text-1xl text-2xl">Elysian Crown Resort</h3>
                 </div>
               </div>
             </div>
