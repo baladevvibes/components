@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export default function TagRender(props) {
   const [data, setData] = useState([
+    { _id: 0, name: "All", tag: "all", link: "/" },
     { _id: 0, name: "Hero", tag: "hero", link: "/hero" },
     { _id: 1, name: "Card", tag: "card", link: "/card" },
     { _id: 2, name: "About", tag: "about", link: "/about" },
@@ -30,6 +31,12 @@ export default function TagRender(props) {
       name: "Table",
       tag: "table",
       link: "/table",
+    },
+    {
+      _id: 13,
+      name: "Testimonials",
+      tag: "testimonials",
+      link: "/testimonials",
     },
   ]);
   const [arr, setMapData] = useState();
