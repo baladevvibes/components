@@ -97,15 +97,15 @@ export default function Preview() {
     setButtonData(arr);
   }, []);
   return (
-    <div className=" relative dark:bg-secondary">
+    <div className=" relative dark:bg-[#fb3640]">
       <div className=" py-10 container px-4 mx-auto">
         <div className=" sticky top-2 flex justify-end px-10 pb-10">
           <div onClick={() => darkModeHandler()}>
             <div className={` group`}>
               <div
                 className={` ${
-                  dark ? `bg-secondary` : ``
-                } p-1.5 border  border-[#ccc]  group-hover:bg-secondary  cursor-pointer  rounded-md`}
+                  dark ? `bg-[#fb3640]` : ``
+                } p-1.5 border  border-[#ccc]  group-hover:bg-[#fb3640]  cursor-pointer  rounded-md`}
               >
                 {dark ? (
                   <>
@@ -132,11 +132,142 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className="py-20 ">
+        <div className="container mx-auto">
+        <div className="grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2  mdsm:gris-cols-2 sm:grid-cols-1 gap-10">
+          <div className="group  cursor-pointer " >
+            <div className="overflow-hidden  relative">
+              <img
+                src={`../Image/overall/hotel/hotel001.webp`}
+                alt="img"
+                className="group-hover:scale-125   duration-700 h-[350px] w-full object-cover"
+              />
+
+              <div class="absolute h-full top-0 w-full">
+                <div class="tranasition duration-300 bg-gradient-to-t from-[#222] h-full">
+                  <div className=" absolute left-4 bottom-2">
+                    <bold className="merriweather text-[12px] bg-[#fb3640] group-hover:bg-[#fcfcfc] group-hover:text-[#222]  text-[#fcfcfc] px-2 py-1">
+                   world
+                    </bold>
+
+                    <bold className="merriweather text-[12px] mx-2 bg-[#fb3640] group-hover:bg-[#fcfcfc] group-hover:text-[#222] text-[#fcfcfc] px-2 py-1">
+                    growth
+                    </bold>
+                  </div>
+                  <div className="absolute right-4 bottom-2">
+                    <span className="merriweather text-[#fcfcfc] px-2 py-1 bg-[#222] text-[12px] title">
+                      by : Admin
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" border border-[#e6e6e6] pb-4">
+              <span className="merriweather pt-10 group-hover:text-secondary text-gray-700 font-semibold leading-10 title text-[12px] px-4 ">
+                24/10/2024
+              </span>
+
+              <h2 className="merriweather text-[18px] pt-0 group-hover:text-secondary px-4 leading-6  title font-semibold">
+              What to Do All Year Round
+              </h2>
+            </div>
+          </div>
+
+          <div className="group  cursor-pointer " >
+            <div className="overflow-hidden  relative">
+              <img
+                src={`../Image/overall/hotel/hotel002.webp`}
+                alt="img"
+                className="group-hover:scale-125   duration-700 h-[350px] w-full object-cover"
+              />
+
+              <div class="absolute h-full top-0 w-full">
+                <div class="tranasition duration-300 bg-gradient-to-t from-[#222] h-full">
+                  <div className=" absolute left-4 bottom-2">
+                    <bold className="merriweather text-[12px] bg-[#fb3640] group-hover:bg-[#fcfcfc] group-hover:text-[#222]  text-[#fcfcfc] px-2 py-1">
+                    hidden
+                    </bold>
+
+                    <bold className="merriweather text-[12px] mx-2 bg-[#fb3640] group-hover:bg-[#fcfcfc] group-hover:text-[#222] text-[#fcfcfc] px-2 py-1">
+                    gems
+                    </bold>
+                  </div>
+                  <div className="absolute right-4 bottom-2">
+                    <span className="merriweather text-[#fcfcfc] px-2 py-1 bg-[#222] text-[12px] title">
+                      by : Admin
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" border border-[#e6e6e6] pb-4">
+              <span className="merriweather  pt-10 group-hover:text-secondary text-gray-700 font-semibold leading-10 title text-[12px] px-4 ">
+                24/10/2024
+              </span>
+
+              <h2 className="merriweather text-[18px] pt-0 group-hover:text-secondary px-4 leading-6  title font-semibold">
+              Uncover Hidden Gems
+              </h2>
+            </div>
+          </div>
+
+          <div className="group  cursor-pointer " >
+            <div className="overflow-hidden  relative">
+              <img
+                src={`../Image/overall/hotel/hotel003.webp`}
+                alt="img"
+                className="group-hover:scale-125   duration-700 h-[350px] w-full object-cover"
+              />
+
+              <div class="absolute h-full top-0 w-full">
+                <div class="tranasition duration-300 bg-gradient-to-t from-[#222] h-full">
+                  <div className=" absolute left-4 bottom-2">
+                    <bold className="merriweather text-[12px] bg-[#fb3640] group-hover:bg-[#fcfcfc] group-hover:text-[#222]  text-[#fcfcfc] px-2 py-1">
+                    trip
+                    </bold>
+
+                    <bold className="merriweather text-[12px] mx-2 bg-[#fb3640] group-hover:bg-[#fcfcfc] group-hover:text-[#222] text-[#fcfcfc] px-2 py-1">
+                    day
+                    </bold>
+                  </div>
+                  <div className="absolute right-4 bottom-2">
+                    <span className="merriweather text-[#fcfcfc] px-2 py-1 bg-[#222] text-[12px] title">
+                      by : Admin
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" border border-[#e6e6e6] pb-4">
+              <span className="merriweather pt-10 group-hover:text-secondary text-gray-700 font-semibold leading-10 title text-[12px] px-4 ">
+                24/10/2024
+              </span>
+
+              <h2 className="merriweather text-[18px] pt-0 group-hover:text-secondary px-4 leading-6  title font-semibold">
+              The Ultimate Day Trip Itinerary
+              </h2>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
       <div className="py-20 bg-[#990033]">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2  mdsm:gris-cols-2 sm:grid-cols-1 gap-10">
             <div className=" bg-[#ffffff]  relative shadow-xl px-10 rounded-3xl p-6">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-5xl text-[#FF9000]  absolute right-10 top-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path></svg>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="text-5xl text-[#FF9000]  absolute right-10 top-4"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path>
+              </svg>
               <h4 className="text-3xl text-[#990033] acme-font font-semibold Mulish pt-4 pb-2">
                 Lorem ipsum dolor sit amet
               </h4>
@@ -155,16 +286,29 @@ export default function Preview() {
                     className="rounded-md mr-4 h-[60px] w-[60px] object-cover"
                   />
                   <div className="block">
-
-                  <p className="pt-2 acme-font font-semibold text-[18px] text-[#990033]">James Parker </p>
-                  <p className="text-[#434343] text-[12px] Mulish">Software Engineer </p>
+                    <p className="pt-2 acme-font font-semibold text-[18px] text-[#990033]">
+                      James Parker{" "}
+                    </p>
+                    <p className="text-[#434343] text-[12px] Mulish">
+                      Software Engineer{" "}
+                    </p>
                   </div>
-
                 </div>
               </div>
             </div>
             <div className=" bg-[#ffffff]  relative shadow-xl px-10 rounded-3xl p-6">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-5xl text-[#FF9000]  absolute right-10 top-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path></svg>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="text-5xl text-[#FF9000]  absolute right-10 top-4"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path>
+              </svg>
               <h4 className="text-3xl text-[#990033] acme-font font-semibold Mulish pt-4 pb-2">
                 Lorem ipsum dolor sit amet
               </h4>
@@ -183,17 +327,30 @@ export default function Preview() {
                     className="rounded-md mr-4 h-[60px] w-[60px] object-cover"
                   />
                   <div className="block">
-
-                  <p className="pt-2 acme-font font-semibold text-[18px] text-[#990033]">Emily Turner </p>
-                  <p className="text-[#434343] text-[12px] Mulish">Marketing Manager </p>
+                    <p className="pt-2 acme-font font-semibold text-[18px] text-[#990033]">
+                      Emily Turner{" "}
+                    </p>
+                    <p className="text-[#434343] text-[12px] Mulish">
+                      Marketing Manager{" "}
+                    </p>
                   </div>
-
                 </div>
               </div>
             </div>
 
             <div className=" bg-[#ffffff]  relative shadow-xl px-10 rounded-3xl p-6">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-5xl text-[#FF9000]  absolute right-10 top-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path></svg>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="text-5xl text-[#FF9000]  absolute right-10 top-4"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path>
+              </svg>
               <h4 className="text-3xl text-[#990033] acme-font font-semibold Mulish pt-4 pb-2">
                 Lorem ipsum dolor sit amet
               </h4>
@@ -212,11 +369,13 @@ export default function Preview() {
                     className="rounded-md mr-4 h-[60px] w-[60px] object-cover"
                   />
                   <div className="block">
-
-                  <p className="pt-2 acme-font font-semibold text-[18px] text-[#990033]">Daniel Brooks </p>
-                  <p className="text-[#434343] text-[12px] Mulish">Financial Analyst </p>
+                    <p className="pt-2 acme-font font-semibold text-[18px] text-[#990033]">
+                      Daniel Brooks{" "}
+                    </p>
+                    <p className="text-[#434343] text-[12px] Mulish">
+                      Financial Analyst{" "}
+                    </p>
                   </div>
-
                 </div>
               </div>
             </div>

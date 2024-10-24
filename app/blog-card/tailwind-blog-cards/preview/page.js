@@ -1,10 +1,10 @@
-import React from "react";
-import SkeletonTableTailwind from "./SkeletonTableTailwind";
+import React from 'react'
+import TailwindBlogCardsPre from './TailwindBlogCardsPre'
 
 export const metadata = {
   keywords:
-    "Skeleton table tailwind css, Skeleton table tailwin , Skeleton table ",
-  description: "Skeleton section and it perform loading and resreated.",
+    "tailwind blog cards, tailwind  cards, Tailwind blog cards list ",
+  description: "tailwind blog cards and with clean design and proper color code. It is fully responsive.",
   icons: {
     icon: "../favicon.ico",
     shortcut: "../favicon.ico",
@@ -16,46 +16,48 @@ export const metadata = {
   },
   
   openGraph: {
-    title: "Skeleton table tailwind css",
+    title: "tailwind blog cards",
     description:
-      "Many hero section in modern day. They are unique, give a separate template to read, and are attractive.",
-    url: "https://makecomponents.com/skeleton/skeleton-table-tailwind",
+      "tailwind blog cards and with clean design and proper color code. It is fully responsive.",
+    url: "https://makecomponents.com/blog-card/tailwind-blog-cards",
     siteName: "makecomponents.com",
     alternates: {
-      canonical: `https://makecomponents.com/skeleton/skeleton-table-tailwind`,
+      canonical: `https://makecomponents.com/blog-card/tailwind-blog-cards`,
     },
     images: [
       {
-        url: "https://makecomponents.com/Image/skeleton/skeleton001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/blog-card/blogcard001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
       },
       {
-        url: "https://makecomponents.com/Image/skeleton/skeleton001.webp", // Must be an absolute URL
+        url: "https://makecomponents.com/Image/blog-card/blogcard001.webp", // Must be an absolute URL
         width: 800,
         height: 600,
-        alt: "skeleton components",
+        alt: "Blog cards components",
       },
     ],
     locale: "en_US",
     type: "website",
   },
   metadataBase: new URL(
-    `https://makecomponents.com/skeleton/skeleton-table-tailwind`
+    `https://makecomponents.com/blog-card/tailwind-blog-cards`
   ),
   title: {
-    default: "Skeleton table tailwind css",
+    default: "tailwind blog cards",
   },
   alternates: {
     canonical:
-      "https://makecomponents.com/skeleton/skeleton-table-tailwind",
+      "https://makecomponents.com/blog-card/tailwind-blog-cards",
   },
 };
+
 export default function page() {
+
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
-    name: "Skeleton Table section",
+    name: "Tailwind blog cards",
     itemListElement: [
       {
         "@type": "ListItem",
@@ -66,24 +68,24 @@ export default function page() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Skeleton component",
+        name: "Blog cards component",
         item: "https://makecomponents.com/skeleton",
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "Modern hero section design",
-        item: "https://makecomponents.com/skeleton/skeleton-table-tailwind",
+        name: "Tailwind blog cards",
+        item: "https://makecomponents.com/blog-card/tailwind-blog-cards",
       },
     ],
   };
   return (
     <div>
-      <script
+          <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <SkeletonTableTailwind />
+      <TailwindBlogCardsPre/>
     </div>
-  );
+  )
 }
