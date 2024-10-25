@@ -3,8 +3,8 @@ import TailwindBlogCards from './TailwindBlogCards'
 
 export const metadata = {
     keywords:
-      "tailwind blog cards, tailwind  cards, Tailwind blog cards list ",
-    description: "tailwind blog cards and with clean design and proper color code. It is fully responsive.",
+      "Tailwind blog cards, tailwind  cards, Tailwind blog cards list ",
+    description: "Tailwind blog cards and with clean design and proper color code. It is fully responsive.",
     icons: {
       icon: "../favicon.ico",
       shortcut: "../favicon.ico",
@@ -16,9 +16,9 @@ export const metadata = {
     },
     
     openGraph: {
-      title: "tailwind blog cards",
+      title: "Tailwind blog cards",
       description:
-        "tailwind blog cards and with clean design and proper color code. It is fully responsive.",
+        "Tailwind blog cards and with clean design and proper color code. It is fully responsive.",
       url: "https://makecomponents.com/blog-card/tailwind-blog-cards",
       siteName: "makecomponents.com",
       alternates: {
@@ -44,7 +44,7 @@ export const metadata = {
       `https://makecomponents.com/blog-card/tailwind-blog-cards`
     ),
     title: {
-      default: "tailwind blog cards",
+      default: "Tailwind blog cards",
     },
     alternates: {
       canonical:

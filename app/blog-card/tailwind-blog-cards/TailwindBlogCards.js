@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
-import testimonialsData from "../../testimonials/testimonialsData";
+import BlogCardData from "../BlogCardData"
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -45,7 +45,7 @@ export default function TailwindBlogCards() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: testimonialsData[2]?.htmlcode,
+      value: BlogCardData[1]?.htmlcode,
     },
     "index.css": {
       _id: 1,

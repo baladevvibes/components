@@ -3,26 +3,26 @@ import TailwindBlogCardsPre from './TailwindBlogCardsPre'
 
 export const metadata = {
   keywords:
-    "tailwind blog cards, tailwind  cards, Tailwind blog cards list ",
-  description: "tailwind blog cards and with clean design and proper color code. It is fully responsive.",
+    "Tailwind blog cards preview, tailwind  cards, Tailwind blog cards preview list ",
+  description: "Tailwind blog cards preview and with clean design and proper color code. It is fully responsive.",
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "../../favicon.ico",
+    shortcut: "../../favicon.ico",
+    apple: "../../favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "../../favicon.ico",
     },
   },
   
   openGraph: {
-    title: "tailwind blog cards",
+    title: "Tailwind blog cards preview",
     description:
-      "tailwind blog cards and with clean design and proper color code. It is fully responsive.",
-    url: "https://makecomponents.com/blog-card/tailwind-blog-cards",
+      "Tailwind blog cards preview and with clean design and proper color code. It is fully responsive.",
+    url: "https://makecomponents.com/blog-card/tailwind-blog-cards/preview",
     siteName: "makecomponents.com",
     alternates: {
-      canonical: `https://makecomponents.com/blog-card/tailwind-blog-cards`,
+      canonical: `https://makecomponents.com/blog-card/tailwind-blog-cards/preview`,
     },
     images: [
       {
@@ -41,14 +41,14 @@ export const metadata = {
     type: "website",
   },
   metadataBase: new URL(
-    `https://makecomponents.com/blog-card/tailwind-blog-cards`
+    `https://makecomponents.com/blog-card/tailwind-blog-cards/preview`
   ),
   title: {
-    default: "tailwind blog cards",
+    default: "Tailwind blog cards preview",
   },
   alternates: {
     canonical:
-      "https://makecomponents.com/blog-card/tailwind-blog-cards",
+      "https://makecomponents.com/blog-card/tailwind-blog-cards/preview",
   },
 };
 
@@ -57,7 +57,7 @@ export default function page() {
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
-    name: "Tailwind blog cards",
+    name: "Tailwind blog cards preview",
     itemListElement: [
       {
         "@type": "ListItem",
@@ -69,13 +69,19 @@ export default function page() {
         "@type": "ListItem",
         position: 2,
         name: "Blog cards component",
-        item: "https://makecomponents.com/skeleton",
+        item: "https://makecomponents.com/blog-card",
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "Tailwind blog cards",
-        item: "https://makecomponents.com/blog-card/tailwind-blog-cards",
+        name: "Tailwind blog cards ",
+        item: "https://makecomponents.com/blog-card/tailwind-blog-cards/",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Tailwind blog cards preview",
+        item: "https://makecomponents.com/blog-card/tailwind-blog-cards/preview",
       },
     ],
   };
