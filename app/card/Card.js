@@ -9,7 +9,7 @@ import TagRender from "../tag/TagRender";
 
 export default function Card() {
   const [data, setData] = useState(HomeComponents);
-  var keyword = ["card", "team"];
+  var keyword = ["card", "team", "blog-card"];
 
   useEffect(() => {
     let localData = [];
@@ -39,13 +39,13 @@ export default function Card() {
         ></ins> */}
 
         <div className={`pt-[150px] sm:px-4 container mx-auto py-6`}>
-        <div className=" flex justify-center items-center">
-        <AdsterraAds
+          <div className=" flex justify-center items-center">
+            <AdsterraAds
               id="37bfd45a34f36324b962f1e32736a540"
               height="90"
               width="728"
             />
-            </div>
+          </div>
           <h1 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
             Card Components
           </h1>
@@ -66,10 +66,10 @@ export default function Card() {
         </div>
 
         <div className=" pb-8">
-            <TagRender tag="card"/>
-            </div>
+          <TagRender tag="card" />
+        </div>
 
-<div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
+        <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>
 
         <Footer />
       </div>

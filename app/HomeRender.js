@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Header from "./components/Header";
 import "./style.css";
@@ -173,6 +174,7 @@ export default function HomeRender() {
           >
             Tailwind css free components
           </h2>
+   
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
           >
@@ -215,3 +217,7 @@ export default function HomeRender() {
     </div>
   );
 }
+
+
+
+

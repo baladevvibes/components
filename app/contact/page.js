@@ -2,7 +2,7 @@ import React from 'react'
 import ContactCard from './ContactCard'
 
 export const metadata = {
-  keywords: "contact template section design free , Tailwind contact page free, Free Tailwind templates",
+  keywords: "Contact component tailwind css free , Tailwind contact page free, Free Tailwind templates",
   description:
     "There are many templates on this page. It will have different templates that are available, and it also has free code",
   icons: {
@@ -15,7 +15,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "contact template section design",
+    title: "Contact component tailwind css",
     description:
       "There are many templates on this page. It will have different templates that are available, and it also has free code",
     url: "https://makecomponents.com/contact",
@@ -39,7 +39,7 @@ export const metadata = {
     `https://makecomponents.com/contact`
   ),
   title: {
-    default: "contact template section design",
+    default: "Contact component tailwind css",
   },
   alternates: {
     canonical: "https://makecomponents.com/contact",

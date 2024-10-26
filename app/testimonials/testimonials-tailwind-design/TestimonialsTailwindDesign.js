@@ -666,7 +666,7 @@ export default function TestimonialsTailwindDesign() {
         </div>
 
         <div className=" pb-4">
-          <TagRender tag="card" />
+          <TagRender tag="testimonials" />
         </div>
 
         <div id="container-c3d10aadb78d1e6613b3fc5333e31d3e"></div>

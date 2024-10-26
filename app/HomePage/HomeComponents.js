@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "064",
+    image: "../Image/contact/contact003.webp",
+    title: "Contact us page design tailwind css",
+    tag: "contact",
+    link: "/contact/contact-us-page-design",
+  },
+  {
     _id: "063",
     image: "../Image/blog-card/blogcard001.webp",
     title: "Tailwind blog cards",

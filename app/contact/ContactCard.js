@@ -9,7 +9,7 @@ import TagRender from "../tag/TagRender";
 
 export default function ContactCard() {
   const [data, setData] = useState(HomeComponents);
-  var keyword = ["contact", "login-in"];
+  var keyword = ["contact"];
 
   useEffect(() => {
     let localData = [];
@@ -47,7 +47,7 @@ export default function ContactCard() {
             />
             </div>
           <h1 class=" title-font pt-16 pb-10 text-center text-secondary text-2xl font-semibold aos-init aos-animate">
-          Contact  Components
+          Contact component tailwind css
           </h1>
           <div
             className={` grid lg:grid-cols-3 lge:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2 sm:grid-cols-1 sm:px-2 gap-5`}
