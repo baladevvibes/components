@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
+import contactData from "../contactData";
 import testimonialsData from "../../testimonials/testimonialsData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
@@ -45,7 +46,7 @@ export default function ContactUsPageDesign() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: testimonialsData[2]?.htmlcode,
+      value: contactData[2]?.htmlcode,
     },
     "index.css": {
       _id: 1,
