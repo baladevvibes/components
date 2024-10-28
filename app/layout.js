@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
+        <meta name="p:domain_verify" content="caac931f374c4c5bbaa784214bfd176f"/>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           name="google-site-verification"
