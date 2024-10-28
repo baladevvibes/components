@@ -138,8 +138,8 @@ export default function TailwindAboutUsPageFree() {
 
   useEffect(() => {
     setCount(1);
-    var removeComponents = "062";
-    var tagName = "testimonials";
+    var removeComponents = "065";
+    var tagName = "about";
     var newData = [];
     data.forEach((el) => {
       if (el._id === removeComponents) {
