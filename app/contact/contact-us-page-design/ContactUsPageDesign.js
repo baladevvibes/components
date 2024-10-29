@@ -631,7 +631,7 @@ export default function ContactUsPageDesign() {
                                   onClick={(e) => {
                                     e.preventDefault();
                                     window.location.href =
-                                      "http://makecomponents.com";
+                                      "http://makecomponents.com/contact/contact-us-page-design";
                                   }}
                                   className="REM-font  bg-[#6256CA] hover:bg-[#222]  delay-200 transition-all rounded-full text-[#fff]  px-10 py-2"
                                 >

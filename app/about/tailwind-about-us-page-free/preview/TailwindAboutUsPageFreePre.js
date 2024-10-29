@@ -83,7 +83,11 @@ export default function TailwindAboutUsPageFreePre() {
                 enim ad minim veniam.
               </p>
 
-              <button className="mt-6 py-2 px-8 bg-[#c99342] hover:bg-[#fcfcfc] text-[#fff] hover:text-[#c99342] rounded-full">
+              <button onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href =
+                                      "http://makecomponents.com/about/tailwind-about-us-page-free/preview";
+                                  }} className="mt-6 py-2 px-8 bg-[#c99342] hover:bg-[#fcfcfc] text-[#fff] hover:text-[#c99342] rounded-full">
                 Read more
               </button>
             </div>

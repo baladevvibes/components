@@ -508,7 +508,11 @@ export default function EcommerceTshirtDesign() {
                 </div>
               </div>
               <div className=" flex justify-center my-4">
-                <button className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
+                <button onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href =
+                                      "http://makecomponents.com/e-card/e-commerce-t-shirt-design";
+                                  }} className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
                   Add to Cart
                 </button>
               </div>
@@ -525,7 +529,11 @@ export default function EcommerceTshirtDesign() {
                 </div>
               </div>
               <div className=" flex justify-center my-4">
-                <button className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
+                <button onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href =
+                                      "http://makecomponents.com/e-card/e-commerce-t-shirt-design";
+                                  }} className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
                   Add to Cart
                 </button>
               </div>
@@ -542,7 +550,11 @@ export default function EcommerceTshirtDesign() {
                 </div>
               </div>
               <div className=" flex justify-center my-4">
-                <button className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
+                <button onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href =
+                                      "http://makecomponents.com/e-card/e-commerce-t-shirt-design";
+                                  }} className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
                   Add to Cart
                 </button>
               </div>
@@ -559,7 +571,11 @@ export default function EcommerceTshirtDesign() {
                 </div>
               </div>
               <div className=" flex justify-center my-4">
-                <button className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
+                <button onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href =
+                                      "http://makecomponents.com/e-card/e-commerce-t-shirt-design";
+                                  }} className=" py-2 px-10 bg-[#0064b0] hover:bg-[#003b80] rounded-full text-[#fcfcfc]">
                   Add to Cart
                 </button>
               </div>

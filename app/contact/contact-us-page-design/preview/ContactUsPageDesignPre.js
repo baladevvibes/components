@@ -106,10 +106,11 @@ export default function ContactUsPageDesignPre() {
                   </div>
 
                   <div className=" w-full flex pt-4 mt-4 pb-0 justify-center ">
-                    <button  onClick={(e) => {
-      e.preventDefault();
-      window.location.href='http://makecomponents.com';
-      }} className="REM-font  bg-[#6256CA] hover:bg-[#222]  delay-200 transition-all rounded-full text-[#fff]  px-10 py-2">Submit </button>
+                    <button     onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href =
+                                      "http://makecomponents.com/contact/contact-us-page-design";
+                                  }} className="REM-font  bg-[#6256CA] hover:bg-[#222]  delay-200 transition-all rounded-full text-[#fff]  px-10 py-2">Submit </button>
                   </div>
                 
                   </form>
