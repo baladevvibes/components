@@ -49,7 +49,7 @@ import { TbBrandCashapp } from "react-icons/tb";
 import { GiCheckMark } from "react-icons/gi";
 import { GrLocationPin } from "react-icons/gr";
 import { SlLocationPin } from "react-icons/sl";
-import { FiHeart } from "react-icons/fi";
+import { FiCodesandbox, FiCommand, FiDribbble, FiHeart } from "react-icons/fi";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -140,6 +140,65 @@ export default function Preview() {
           </div>
         </div>
       </div>
+      <div className="py-20">
+        <div className="container mx-auto px-4">
+          <div className=" grid  lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-1 sm:grid-cols-1  gap-10">
+            <div className=" flex drop-shadow-xl rounded-l-lg  rounded-r-lg	">
+              <div className="w-[30%] rounded-l-lg  overflow-hidden flex p-4 relative justify-center items-center bg-[#0267C1]">
+                <div className="absolute -top-5 left-20 h-[100px] w-[100px] rounded-full bg-[#ffffff40]">
+                  {" "}
+                </div>
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-5xl text-[#fcfcfc]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+              </div>
+              <div className="w-[70%] border border-[#ccc] rounded-r-lg p-4 px-6 ">
+                <h4 className="text-2xl Mulish text-[#2f2f2f] pt-2 font-semibold pb-2">
+                  Lorem Ipsum
+                </h4>
+                <p className="pb-4 text-[#878787] outfit leading-6">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing .
+                </p>
+              </div>
+            </div>
+
+            <div className=" flex drop-shadow-xl rounded-l-lg  rounded-r-lg	">
+              <div className="w-[30%] rounded-l-lg  overflow-hidden flex p-4 relative justify-center items-center bg-[#EFA00B]">
+                <div className="absolute -top-5 left-20 h-[100px] w-[100px] rounded-full bg-[#ffffff40]">
+                  {" "}
+                </div>
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-5xl text-[#fcfcfc]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <div className="w-[70%] border border-[#ccc] rounded-r-lg p-4 px-6 ">
+                <h4 className="text-2xl Mulish text-[#2f2f2f] pt-2 font-semibold pb-2">
+                  Lorem Ipsum
+                </h4>
+                <p className="pb-4 text-[#878787] outfit leading-6">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing .
+                </p>
+              </div>
+            </div>
+
+            <div className=" flex drop-shadow-xl rounded-l-lg  rounded-r-lg	">
+              <div className="w-[30%] rounded-l-lg  overflow-hidden flex p-4 relative justify-center items-center bg-[#B8001F]">
+                <div className="absolute -top-5 left-20 h-[100px] w-[100px] rounded-full bg-[#ffffff40]">
+                  {" "}
+                </div>
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-5xl text-[#fcfcfc]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg>
+              </div>
+              <div className="w-[70%] border border-[#ccc] rounded-r-lg p-4 px-6 ">
+                <h4 className="text-2xl Mulish text-[#2f2f2f] pt-2 font-semibold pb-2">
+                  Lorem Ipsum
+                </h4>
+                <p className="pb-4 text-[#878787] outfit leading-6">
+                  Lorem ipsum is placeholder text commonly used in the graphic,
+                  print, and publishing .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="py-20">
         <div className="container mx-auto">
@@ -152,7 +211,18 @@ export default function Preview() {
                   alt="Shirt 001"
                 />
                 <div className="absolute top-4 right-4 ">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                  </svg>
                 </div>
               </div>
               <div className=" flex justify-center my-4">
@@ -169,7 +239,18 @@ export default function Preview() {
                   alt="Shirt 001"
                 />
                 <div className="absolute top-4 right-4 ">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                  </svg>
                 </div>
               </div>
               <div className=" flex justify-center my-4">
@@ -186,7 +267,18 @@ export default function Preview() {
                   alt="Shirt 001"
                 />
                 <div className="absolute top-4 right-4 ">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                  </svg>
                 </div>
               </div>
               <div className=" flex justify-center my-4">
@@ -203,7 +295,18 @@ export default function Preview() {
                   alt="Shirt 001"
                 />
                 <div className="absolute top-4 right-4 ">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    class=" group-hover:text-[#003b80]  cursor-pointer text-[#ffff] text-2xl"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                  </svg>
                 </div>
               </div>
               <div className=" flex justify-center my-4">

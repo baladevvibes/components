@@ -11,6 +11,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://makecomponents.com/services/tailwind-services-section</loc>
+  <lastmod>2024-11-03T04:34:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://makecomponents.com/e-card/e-commerce-t-shirt-design</loc>
   <lastmod>2024-10-29T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -424,6 +429,11 @@
   <loc>https://makecomponents.com/testimonials</loc>
   <lastmod>2024-10-21T04:34:47+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://makecomponents.com/services/tailwind-services-section/preview</loc>
+  <lastmod>2024-11-03T04:34:47+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://makecomponents.com/e-card/e-commerce-t-shirt-design/preview</loc>
