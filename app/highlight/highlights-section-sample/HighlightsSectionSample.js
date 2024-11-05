@@ -8,6 +8,7 @@ import testimonialsData from "../../testimonials/testimonialsData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
+import highlightData from "../highLightData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HomeCard from "../../HomePage/HomeCard";
@@ -45,7 +46,7 @@ export default function HighlightsSectionSample() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: testimonialsData[2]?.htmlcode,
+      value: highlightData[4]?.htmlcode,
     },
     "index.css": {
       _id: 1,
