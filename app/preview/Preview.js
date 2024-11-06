@@ -154,6 +154,54 @@ export default function Preview() {
         </div>
       </div>
 
+      <div className=" py-20">
+        <div className=" container mx-auto">
+          <div className=" grid lg:grid-cols-12  lge:grid-cols-12 md:grid-cols-1  mdsm:grid-cols-1 sm:grid-cols-1 lg:gap-2 lge:gap-2 md:gap-0 mdsm:gap-0 sm:gap-0">
+            <div className=" col-span-3">
+              <img
+                src="../../Image/d-animals/dog/dog001.webp"
+                alt="dog"
+                className="h-[500px] w-full  object-cover"
+              />
+            </div>
+            <div className=" col-span-6 lg:gap-2 lge:gap-2 md:gap-0 mdsm:gap-0 sm:gap-0 lg:pt-0 lge:pt-0 md:pt-2 mdsm:pt-2 sm:pt-2 ">
+              <div className="h-[240px]">
+                <div className=" grid grid-cols-2 lg:gap-2 lge:gap-2 md:gap-0 mdsm:gap-0 sm:gap-0">
+                  <div>
+                    <img
+                      src="../../Image/d-animals/dog/dog003.webp"
+                      alt="dog"
+                      className="h-[240px] w-full  object-cover"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="../../Image/d-animals/dog/dog002.webp"
+                      alt="dog"
+                      className="h-[240px]  w-full  object-cover lg:pl-0 lge:pl-0 md:pl-2 mdsm:pl-2 sm:pl-2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="h-[250px] lg:pt-2 lge:pt-2  md:pt-2 mdsm:pt-2 sm:pt-2">
+                <img
+                  src="../../Image/d-animals/dog/dog006.webp"
+                  alt="dog"
+                  className="h-[250px]  w-full  object-cover"
+                />
+              </div>
+            </div>
+            <div className=" col-span-3 lg:mt-0 lge:mt-0 md:mt-4 mdsm:mt-4 sm:mt-4">
+              <img
+                src="../../Image/d-animals/dog/dog005.webp"
+                alt="dog"
+                className="h-[500px]  w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="py-20 ">
         <div className=" container mx-auto">
           <div className="grid lg:grid-cols-2 lge:grid-cols-1 md:grid-cols-1 mdsm:grid-cols-1 sm:grid-cols-1 gap-10  p-10">
@@ -259,7 +307,24 @@ export default function Preview() {
                   </p>
 
                   <div className="pt-2 flex space-x-3">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mt-3 text-[16px] text-[#878787]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0 1 16 16v288a16 16 0 0 1-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0 1 16-16c131.57.59 192 32.84 208 96zm0 0v288"></path></svg>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="mt-3 text-[16px] text-[#878787]"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="32"
+                        d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0 1 16 16v288a16 16 0 0 1-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0 1 16-16c131.57.59 192 32.84 208 96zm0 0v288"
+                      ></path>
+                    </svg>
                     <p className="pt-2  work text-[#878787] text-[16px]">
                       Lesson - 10
                     </p>
@@ -387,7 +452,24 @@ export default function Preview() {
                   </p>
 
                   <div className="pt-2 flex space-x-3">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mt-3 text-[16px] text-[#878787]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0 1 16 16v288a16 16 0 0 1-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0 1 16-16c131.57.59 192 32.84 208 96zm0 0v288"></path></svg>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="mt-3 text-[16px] text-[#878787]"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="32"
+                        d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0 1 16 16v288a16 16 0 0 1-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0 1 16-16c131.57.59 192 32.84 208 96zm0 0v288"
+                      ></path>
+                    </svg>
                     <p className="pt-2  work text-[#878787] text-[16px]">
                       Lesson - 10
                     </p>
@@ -401,7 +483,7 @@ export default function Preview() {
                         className="h-[50px]  object-cover w-[50px]  rounded-full"
                       />
                       <h5 className="work text-[#323232] text-[14px] pt-4 pl-4">
-                      Emily Parker
+                        Emily Parker
                       </h5>
                     </div>
                     <div className=" flex justify-end ">
