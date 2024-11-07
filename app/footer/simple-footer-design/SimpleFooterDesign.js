@@ -5,6 +5,7 @@ import "../../style.css";
 import Editor, { loader } from "@monaco-editor/react";
 import Footer from "../../components/Footer";
 import testimonialsData from "../../testimonials/testimonialsData";
+import footerData from "../footerData";
 import HomeComponents from "../../HomePage/HomeComponents";
 import componentConfig from "../../config/componentConfig";
 import ComponentsHeader from "../../components/ComponentsHeader";
@@ -45,7 +46,7 @@ export default function SimpleFooterDesign() {
       _id: 0,
       name: "app.js",
       language: "javascript",
-      value: testimonialsData[2]?.htmlcode,
+      value: footerData[3]?.htmlcode,
     },
     "index.css": {
       _id: 1,
