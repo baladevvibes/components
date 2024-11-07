@@ -125,27 +125,37 @@ export default function HomeRender() {
                     <h2
                       className={`title-font text-secondary font-semibold text-2xl px-2 mt-5 `}
                     >
-                      Make Components
+                      Make Components 
                     </h2>
                   </a>
                 </div>
               </div>
-              <div
-                className={`pt-7 sm:hidden flex justify-end space-x-6`}
-              ></div>
+              {/* <div
+                className={`pt-7 pr-10 sm:pt-0 sm:justify-center sm:space-x-3  flex justify-end space-x-10 `}
+              >
+               <a href="/" className=" hover:text-primary text-secondary"> Home</a>
+
+               <a href="/about-us" className=" hover:text-primary text-secondary"> About us</a>
+                
+               <a href="/contact-us" className=" hover:text-primary text-secondary"> Contact us</a>
+
+               <a href="/terms-and-condition" className=" hover:text-primary text-secondary">  Terms</a>
+
+               <a href="/legal" className=" hover:text-primary text-secondary"> Legal</a>
+              </div> */}
             </div>
-            {smDevice ? null : (
+     
               <>
                 <div
                   onClick={() => {
                     handleSmDevices();
                   }}
-                  className=" absolute lg:hidden lge:hidden md:hidden mdsm:block sm:block top-8 right-6"
+                  className=" absolute  top-8 right-6"
                 >
                   <BiAlignLeft className=" cursor-pointer text-2xl" />
                 </div>
               </>
-            )}
+       
           </div>
           <div className={`bg-primary`}>
             <div className={` container mx-auto px-2 py-1`}></div>

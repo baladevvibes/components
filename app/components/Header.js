@@ -69,7 +69,7 @@ export default function Header() {
                   <h2
                     className={`title-font text-secondary font-semibold text-2xl px-2 mt-5 `}
                   >
-                    Make Components
+                    Make Component
                   </h2>
                 </a>
               </div>
