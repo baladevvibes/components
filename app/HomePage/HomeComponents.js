@@ -15,6 +15,13 @@ const HomeComponents = [
   //     link:"/e-card/white-space-product-design-card",
   // },
   {
+    _id: "072",
+    image: "../Image/card/card011.webp",
+    title: "Mordern card design tailwind css",
+    tag: "card",
+    link: "/card/modern-card-design-tailwind-css",
+  },
+  {
     _id: "071",
     image: "../Image/footer/footer004.webp",
     title: "Simple Footer design",
