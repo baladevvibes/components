@@ -36,6 +36,7 @@ import {
   FaKey,
   FaQuoteLeft,
   FaQuoteRight,
+  FaSearchPlus,
 } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import {
@@ -150,6 +151,32 @@ export default function Preview() {
                 {dark ? "Da" : "Li"}
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-20"> 
+        <div className="grid grid-cols-6">
+          <div className="  relative">
+            <div className=" absolute opacity-1 top-0 w-full h-full bg-[#222222] flex justify-center items-center">
+            <FaSearchPlus/>
+            </div>
+            <img src="../Image/card/card003/Image001.webp" alt=""/>
+          </div>
+          <div>
+            <img src="../Image/card/card003/Image001.webp" alt=""/>
+          </div>
+          <div>
+            <img src="../Image/card/card003/Image001.webp" alt=""/>
+          </div>
+          <div>
+            <img src="../Image/card/card003/Image001.webp" alt=""/>
+          </div>
+          <div>
+            <img src="../Image/card/card003/Image001.webp" alt=""/>
+          </div>
+          <div>
+            <img src="../Image/card/card003/Image001.webp" alt=""/>
           </div>
         </div>
       </div>

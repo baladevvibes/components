@@ -337,8 +337,8 @@
 }
 .tags a {
   display: inline-block;
-  height: 24px;
-  line-height: 24px;
+  height: 23px;
+  line-height: 22px;
   position: relative;
   padding: 0 10px 0 12px;
   background: #f19c1c;
@@ -358,7 +358,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -12px;
+  left: -11.5px;
   width: 0;
   height: 0;
   border-color: transparent #f19c1c transparent transparent;

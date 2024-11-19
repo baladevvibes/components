@@ -38,6 +38,12 @@ export default function TagRender(props) {
       tag: "testimonials",
       link: "/testimonials",
     },
+    {
+      _id: 13,
+      name: "Gallery",
+      tag: "gallery",
+      link: "/gallery",
+    },
   ]);
   const [arr, setMapData] = useState();
 
