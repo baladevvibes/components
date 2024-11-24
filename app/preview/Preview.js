@@ -64,6 +64,7 @@ import { GrFingerPrint, GrLocationPin } from "react-icons/gr";
 import { SlLocationPin } from "react-icons/sl";
 import { FiCodesandbox, FiCommand, FiDribbble, FiHeart } from "react-icons/fi";
 import { IoBookOutline, IoStarOutline } from "react-icons/io5";
+import { IoMdQuote } from "react-icons/io";
 
 export default function Preview() {
   const [dark, setDark] = useState(false);
@@ -155,28 +156,159 @@ export default function Preview() {
         </div>
       </div>
 
-      <div className="py-20"> 
+      <div className="py-20">
+        <div className=" container mx-auto">
+          <div className="grid grid-cols-2">
+            <div className='bg-[url("https://makecomponents.com/Image/hero/hero001/hero001.webp")] h-[20vh]'></div>
+          </div>
+        
+        </div>
+      </div>
+
+      <div className="py-20">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-4">
+            <div className="h-full ">
+              <img src="../../Image/overall/random/trip.webp" className=" h-full object-cover rounded-l-lg" alt="person"/>
+            </div>
+            <div className=" col-span-3 h-full ">
+              <div className="bg-[#222] h-full p-10 px-16 rounded-r-lg">
+                <IoMdQuote className=" text-[42px] text-[#fcfcfc]"/>
+                <p className="text-[#fcfcfc] text-[24px] pt-6">My experience has been truly transformative. The guidance and support provided by the instructors helped me develop skills I never thought I could achieve. The environment encouraged growth, collaboration, and creativity, making learning enjoyable and fulfilling. I would highly recommend this to anyone looking to excel in their studies and personal growth.</p>
+
+
+                <h4 className="text-[#fcfcfc] pt-6 text-[18px]">Dina s</h4>
+                <p className="text-[#fcfcfc] pt-1 pb-6 text-[18px]">2020 Batch Student - B.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-10 bg-[#222222]">
+        <div>
+          <div className="flex">
+          <marquee className=" text-5xl text-[#fcfcfc] ">Knowledge is power</marquee>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="py-20">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-3 gap-10">
+            <div className=" bg-[#f2f2f2]">
+              <img src="../../Image/overall/random/trip.webp"  alt="trip"/>
+                <div className=" p-6">
+                  <span className="text-[#fcfcfc] font-semibold rounded-full py-1 bg-[#003b80] px-4 text-[12px] ">Trip</span>
+                  <h4 className="text-[22px] pt-3 text-[#333333] ">Traveling is not just about visiting popular destinations</h4>
+                  <p className="text-base pt-4">it's about discovering unique places, connecting with cultures, and creating unforgettable memories. While iconic landmarks have their charm, the magic often lies in hidden gems waiting to be explored.</p>
+                </div>
+            </div>
+
+            <div className=" bg-[#f2f2f2]">
+              <img src="../../Image/overall/random/trip.webp"  alt="trip"/>
+                <div className=" p-6">
+                  <span className="text-[#fcfcfc] font-semibold rounded-full py-1 bg-[#003b80] px-4 text-[12px] ">Trip</span>
+                  <h4 className="text-[22px] pt-3 text-[#333333] ">Traveling is not just about visiting popular destinations</h4>
+                  <p className="text-base pt-4">it's about discovering unique places, connecting with cultures, and creating unforgettable memories. While iconic landmarks have their charm, the magic often lies in hidden gems waiting to be explored.</p>
+                </div>
+            </div>
+
+            <div className=" bg-[#f2f2f2]">
+              <img src="../../Image/overall/random/trip.webp"  alt="trip"/>
+                <div className=" p-6">
+                  <span className="text-[#fcfcfc] font-semibold rounded-full py-1 bg-[#003b80] px-4 text-[12px] ">Trip</span>
+                  <h4 className="text-[22px] pt-3 text-[#333333] ">Traveling is not just about visiting popular destinations</h4>
+                  <p className="text-base pt-4">it's about discovering unique places, connecting with cultures, and creating unforgettable memories. While iconic landmarks have their charm, the magic often lies in hidden gems waiting to be explored.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-20 bg-[#f2f2f2]">
+        <div className="container mx-auto">
+          <h3 className=" text-center text-4xl pb-10">New Product Services</h3>
+          <div className="grid grid-cols-4 gap-10">
+            <div className=" bg-[#fcfcfc] shadow-2xl transition duration-700   hover:-translate-y-6">
+              <h4 className="text-center text-2xl pt-4">1 Year</h4>
+              <h5 className="text-center pt-2 pb-6">Warranty</h5>
+            </div>
+
+            <div className=" bg-[#fcfcfc] shadow-2xl transition duration-700   hover:-translate-y-6">
+              <h4 className="text-center text-2xl pt-4">18 Hours</h4>
+              <h5 className="text-center pt-2 pb-6">Testing</h5>
+            </div>
+
+            <div className=" bg-[#fcfcfc] shadow-2xl transition duration-700   hover:-translate-y-6">
+              <h4 className="text-center text-2xl pt-4">Performance</h4>
+              <h5 className="text-center pt-2 pb-6">Place the order</h5>
+            </div>
+
+            <div className=" bg-[#fcfcfc] shadow-2xl transition duration-700   hover:-translate-y-6">
+              <h4 className="text-center text-2xl pt-4">Free</h4>
+              <h5 className="text-center pt-2 pb-6">Delivery</h5>
+            </div>
+          </div>
+        </div>{" "}
+      </div>
+
+      <div className="py-20">
+        <div className=" container mx-auto">
+          <div className="">
+            <div className="flex">
+              <div className=" bg-[#f2f2f2] px-10">
+                <p className=" border-b border-[#ff5722]  py-4">Business</p>
+              </div>
+
+              <div className=" bg-[#f2f2f2] px-10">
+                <p className=" border-b border-[#ff5722]  py-4">
+                  Health education
+                </p>
+              </div>
+
+              <div className=" bg-[#f2f2f2] px-10">
+                <p className=" border-b border-[#ff5722]  py-4">
+                  Entertainment
+                </p>
+              </div>
+
+              <div className=" bg-[#f2f2f2] px-10">
+                <p className=" border-b border-[#ff5722]  py-4">Weather</p>
+              </div>
+              <div className=" bg-[#f2f2f2] px-10">
+                <p className=" border-b border-[#ff5722]  py-4">
+                  Sports journalism
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-20">
         <div className="grid grid-cols-6">
           <div className="  relative">
             <div className=" absolute opacity-1 top-0 w-full h-full bg-[#222222] flex justify-center items-center">
-            <FaSearchPlus/>
+              <FaSearchPlus />
             </div>
-            <img src="../Image/card/card003/Image001.webp" alt=""/>
+            <img src="../Image/card/card003/Image001.webp" alt="" />
           </div>
           <div>
-            <img src="../Image/card/card003/Image001.webp" alt=""/>
+            <img src="../Image/card/card003/Image001.webp" alt="" />
           </div>
           <div>
-            <img src="../Image/card/card003/Image001.webp" alt=""/>
+            <img src="../Image/card/card003/Image001.webp" alt="" />
           </div>
           <div>
-            <img src="../Image/card/card003/Image001.webp" alt=""/>
+            <img src="../Image/card/card003/Image001.webp" alt="" />
           </div>
           <div>
-            <img src="../Image/card/card003/Image001.webp" alt=""/>
+            <img src="../Image/card/card003/Image001.webp" alt="" />
           </div>
           <div>
-            <img src="../Image/card/card003/Image001.webp" alt=""/>
+            <img src="../Image/card/card003/Image001.webp" alt="" />
           </div>
         </div>
       </div>
@@ -185,52 +317,64 @@ export default function Preview() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid-cols-1 sm:grid-cols-1 gap-10">
             <div>
-            <img
+              <img
                 src="../../Image/card/card003/Image001.webp"
                 alt="Car"
                 className="h-[450px] w-full  object-cover"
               />
               <div className="-mt-20 bg-[#fff]">
-      
-              <div className=" w-[80%] bg-[#fff] relative pb-10  px-6 z-10 ">
-                <h4 className="text-[24px] merriweather pt-6 pb-6 text-[#333333] font-semibold">New Arrivals</h4>
-                <p className="bg-[#fff] text-[16px] leading-7 merriweather text-[#5a5a5a]">
-                Discover the latest additions to our showroom! Featuring cutting-edge technology, modern design, and superior performance, our new arrivals are sure to impress. Be among the first to test drive these stunning vehicles.
-                </p>
+                <div className=" w-[80%] bg-[#fff] relative pb-10  px-6 z-10 ">
+                  <h4 className="text-[24px] merriweather pt-6 pb-6 text-[#333333] font-semibold">
+                    New Arrivals
+                  </h4>
+                  <p className="bg-[#fff] text-[16px] leading-7 merriweather text-[#5a5a5a]">
+                    Discover the latest additions to our showroom! Featuring
+                    cutting-edge technology, modern design, and superior
+                    performance, our new arrivals are sure to impress. Be among
+                    the first to test drive these stunning vehicles.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div>
-            <img
+              <img
                 src="../../Image/card/card003/Image002.webp"
                 alt="Car"
                 className="h-[450px] w-full  object-cover"
               />
               <div className="-mt-20 bg-[#fff]">
-      
-              <div className=" w-[80%] bg-[#fff] relative pb-10  px-6 z-10 ">
-                <h4 className="text-[24px] merriweather pt-6 pb-6 text-[#333333] font-semibold">Customer Reviews</h4>
-                <p className="bg-[#fff] text-[16px] leading-7 merriweather text-[#5a5a5a]">
-                Our customers love us! Read real reviews and testimonials from satisfied buyers who found their perfect vehicle with us. Their experiences speak volumes about our commitment to quality and service.
-                </p>
+                <div className=" w-[80%] bg-[#fff] relative pb-10  px-6 z-10 ">
+                  <h4 className="text-[24px] merriweather pt-6 pb-6 text-[#333333] font-semibold">
+                    Customer Reviews
+                  </h4>
+                  <p className="bg-[#fff] text-[16px] leading-7 merriweather text-[#5a5a5a]">
+                    Our customers love us! Read real reviews and testimonials
+                    from satisfied buyers who found their perfect vehicle with
+                    us. Their experiences speak volumes about our commitment to
+                    quality and service.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div>
-            <img
+              <img
                 src="../../Image/card/card003/Image003.webp"
                 alt="Car"
                 className="h-[450px] w-full  object-cover"
               />
               <div className="-mt-20 bg-[#fff]">
-      
-              <div className=" w-[80%] bg-[#fff] relative pb-10  px-6 z-10 ">
-                <h4 className="text-[24px] merriweather pt-6 pb-6 text-[#333333] font-semibold">Special Offers </h4>
-                <p className="bg-[#fff] text-[16px] leading-7 merriweather text-[#5a5a5a]">
-                Take advantage of our limited-time special offers and drive away with incredible savings. From discounted prices to attractive financing options, there's never been a better time to buy your dream car.
-                </p>
+                <div className=" w-[80%] bg-[#fff] relative pb-10  px-6 z-10 ">
+                  <h4 className="text-[24px] merriweather pt-6 pb-6 text-[#333333] font-semibold">
+                    Special Offers{" "}
+                  </h4>
+                  <p className="bg-[#fff] text-[16px] leading-7 merriweather text-[#5a5a5a]">
+                    Take advantage of our limited-time special offers and drive
+                    away with incredible savings. From discounted prices to
+                    attractive financing options, there's never been a better
+                    time to buy your dream car.
+                  </p>
                 </div>
               </div>
             </div>
